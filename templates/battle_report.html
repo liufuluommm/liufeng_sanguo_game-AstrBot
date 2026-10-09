@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 460px; font-family: "Microsoft YaHei", sans-serif; background: #0d0d12; }
+  .report {
+    width: 460px; padding: 20px; border-radius: 16px;
+    border: 2px solid #d4af37;
+    background: linear-gradient(160deg, #1a1a24, #0d0d12);
+    color: #f0e6d2;
+  }
+  h1 { font-size: 22px; color: #f5d76e; text-align: center; letter-spacing: 2px; }
+  .teams { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; }
+  .team { flex: 1; background: rgba(255,255,255,.04); border-radius: 10px; padding: 12px; }
+  .team.left { border-left: 3px solid #3aa0ff; }
+  .team.right { border-right: 3px solid #ff5e5e; }
+  .team .h { font-weight: 800; margin-bottom: 8px; }
+  .team .g { font-size: 13px; color: #cbbf9c; line-height: 1.8; }
+  .log { margin-top: 14px; font-size: 13px; color: #a99e86; line-height: 1.8; }
+  .result { margin-top: 14px; text-align: center; font-size: 22px; font-weight: 800; color: #ffce54; }
+</style>
+</head>
+<body>
+  <div class="report">
+    <h1>⚔️ 三国战报</h1>
+    <div class="teams">
+      <div class="team left">
+        <div class="h">{{ a_name }}</div>
+        <div class="g">{{ a_team }}</div>
+      </div>
+      <div class="team right">
+        <div class="h">{{ b_name }}</div>
+        <div class="g">{{ b_team }}</div>
+      </div>
+    </div>
+    <div class="log">
+      {% for line in log %}<div>{{ line }}</div>{% endfor %}
+    </div>
+    <div class="result">{{ outcome }}</div>
+  </div>
+</body>
+</html>

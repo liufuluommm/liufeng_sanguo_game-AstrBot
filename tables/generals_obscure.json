@@ -1,0 +1,2008 @@
+{
+  "ssr": [],
+  "sr": [],
+  "r": [
+    {
+      "id": "陈到",
+      "name": "陈到",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陈到",
+        "passive": "sk_pas_陈到"
+      },
+      "force": 79,
+      "intellect": 44,
+      "vitality": 72,
+      "charisma": 51,
+      "eloquence": 33,
+      "speed": 65
+    },
+    {
+      "id": "霍峻",
+      "name": "霍峻",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_霍峻",
+        "passive": "sk_pas_霍峻"
+      },
+      "force": 77,
+      "intellect": 38,
+      "vitality": 69,
+      "charisma": 51,
+      "eloquence": 35,
+      "speed": 64
+    },
+    {
+      "id": "张燕",
+      "name": "张燕",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张燕",
+        "passive": "sk_pas_张燕"
+      },
+      "force": 81,
+      "intellect": 42,
+      "vitality": 75,
+      "charisma": 47,
+      "eloquence": 36,
+      "speed": 65
+    },
+    {
+      "id": "臧霸",
+      "name": "臧霸",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_臧霸",
+        "passive": "sk_pas_臧霸"
+      },
+      "force": 77,
+      "intellect": 40,
+      "vitality": 69,
+      "charisma": 49,
+      "eloquence": 30,
+      "speed": 71
+    },
+    {
+      "id": "田豫",
+      "name": "田豫",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_田豫",
+        "passive": "sk_pas_田豫"
+      },
+      "force": 55,
+      "intellect": 69,
+      "vitality": 60,
+      "charisma": 80,
+      "eloquence": 77,
+      "speed": 54
+    },
+    {
+      "id": "牵招",
+      "name": "牵招",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_牵招",
+        "passive": "sk_pas_牵招"
+      },
+      "force": 84,
+      "intellect": 44,
+      "vitality": 75,
+      "charisma": 50,
+      "eloquence": 28,
+      "speed": 68
+    },
+    {
+      "id": "贾逵",
+      "name": "贾逵",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_贾逵",
+        "passive": "sk_pas_贾逵"
+      },
+      "force": 43,
+      "intellect": 82,
+      "vitality": 49,
+      "charisma": 56,
+      "eloquence": 72,
+      "speed": 58
+    },
+    {
+      "id": "刘晔",
+      "name": "刘晔",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_刘晔",
+        "passive": "sk_pas_刘晔"
+      },
+      "force": 49,
+      "intellect": 82,
+      "vitality": 51,
+      "charisma": 60,
+      "eloquence": 70,
+      "speed": 57
+    },
+    {
+      "id": "蒋济",
+      "name": "蒋济",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_蒋济",
+        "passive": "sk_pas_蒋济"
+      },
+      "force": 43,
+      "intellect": 82,
+      "vitality": 48,
+      "charisma": 55,
+      "eloquence": 74,
+      "speed": 61
+    },
+    {
+      "id": "董昭",
+      "name": "董昭",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_董昭",
+        "passive": "sk_pas_董昭"
+      },
+      "force": 45,
+      "intellect": 77,
+      "vitality": 50,
+      "charisma": 58,
+      "eloquence": 68,
+      "speed": 53
+    },
+    {
+      "id": "孙礼",
+      "name": "孙礼",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙礼",
+        "passive": "sk_pas_孙礼"
+      },
+      "force": 81,
+      "intellect": 43,
+      "vitality": 73,
+      "charisma": 49,
+      "eloquence": 35,
+      "speed": 69
+    },
+    {
+      "id": "王凌",
+      "name": "王凌",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王凌",
+        "passive": "sk_pas_王凌"
+      },
+      "force": 55,
+      "intellect": 63,
+      "vitality": 64,
+      "charisma": 73,
+      "eloquence": 70,
+      "speed": 50
+    },
+    {
+      "id": "毌丘俭",
+      "name": "毌丘俭",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_毌丘俭",
+        "passive": "sk_pas_毌丘俭"
+      },
+      "force": 59,
+      "intellect": 66,
+      "vitality": 61,
+      "charisma": 79,
+      "eloquence": 69,
+      "speed": 57
+    },
+    {
+      "id": "文钦",
+      "name": "文钦",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_文钦",
+        "passive": "sk_pas_文钦"
+      },
+      "force": 82,
+      "intellect": 46,
+      "vitality": 69,
+      "charisma": 43,
+      "eloquence": 33,
+      "speed": 64
+    },
+    {
+      "id": "诸葛诞",
+      "name": "诸葛诞",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_诸葛诞",
+        "passive": "sk_pas_诸葛诞"
+      },
+      "force": 56,
+      "intellect": 63,
+      "vitality": 59,
+      "charisma": 76,
+      "eloquence": 76,
+      "speed": 54
+    },
+    {
+      "id": "夏侯霸",
+      "name": "夏侯霸",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_夏侯霸",
+        "passive": "sk_pas_夏侯霸"
+      },
+      "force": 81,
+      "intellect": 39,
+      "vitality": 73,
+      "charisma": 44,
+      "eloquence": 34,
+      "speed": 71
+    },
+    {
+      "id": "罗宪",
+      "name": "罗宪",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_罗宪",
+        "passive": "sk_pas_罗宪"
+      },
+      "force": 84,
+      "intellect": 44,
+      "vitality": 75,
+      "charisma": 50,
+      "eloquence": 30,
+      "speed": 67
+    },
+    {
+      "id": "霍弋",
+      "name": "霍弋",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_霍弋",
+        "passive": "sk_pas_霍弋"
+      },
+      "force": 76,
+      "intellect": 45,
+      "vitality": 76,
+      "charisma": 46,
+      "eloquence": 29,
+      "speed": 65
+    },
+    {
+      "id": "句扶",
+      "name": "句扶",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_句扶",
+        "passive": "sk_pas_句扶"
+      },
+      "force": 82,
+      "intellect": 46,
+      "vitality": 75,
+      "charisma": 44,
+      "eloquence": 28,
+      "speed": 68
+    },
+    {
+      "id": "杨仪",
+      "name": "杨仪",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_杨仪",
+        "passive": "sk_pas_杨仪"
+      },
+      "force": 43,
+      "intellect": 83,
+      "vitality": 47,
+      "charisma": 59,
+      "eloquence": 69,
+      "speed": 55
+    },
+    {
+      "id": "王嗣",
+      "name": "王嗣",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王嗣",
+        "passive": "sk_pas_王嗣"
+      },
+      "force": 79,
+      "intellect": 45,
+      "vitality": 76,
+      "charisma": 48,
+      "eloquence": 28,
+      "speed": 65
+    },
+    {
+      "id": "张南",
+      "name": "张南",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张南",
+        "passive": "sk_pas_张南"
+      },
+      "force": 83,
+      "intellect": 39,
+      "vitality": 76,
+      "charisma": 44,
+      "eloquence": 32,
+      "speed": 65
+    },
+    {
+      "id": "冯习",
+      "name": "冯习",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_冯习",
+        "passive": "sk_pas_冯习"
+      },
+      "force": 77,
+      "intellect": 42,
+      "vitality": 74,
+      "charisma": 48,
+      "eloquence": 29,
+      "speed": 70
+    },
+    {
+      "id": "吕凯",
+      "name": "吕凯",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吕凯",
+        "passive": "sk_pas_吕凯"
+      },
+      "force": 49,
+      "intellect": 82,
+      "vitality": 53,
+      "charisma": 59,
+      "eloquence": 68,
+      "speed": 56
+    },
+    {
+      "id": "李恢",
+      "name": "李恢",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_李恢",
+        "passive": "sk_pas_李恢"
+      },
+      "force": 59,
+      "intellect": 61,
+      "vitality": 63,
+      "charisma": 76,
+      "eloquence": 71,
+      "speed": 53
+    },
+    {
+      "id": "留赞",
+      "name": "留赞",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_留赞",
+        "passive": "sk_pas_留赞"
+      },
+      "force": 76,
+      "intellect": 41,
+      "vitality": 74,
+      "charisma": 43,
+      "eloquence": 36,
+      "speed": 68
+    },
+    {
+      "id": "吕岱",
+      "name": "吕岱",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吕岱",
+        "passive": "sk_pas_吕岱"
+      },
+      "force": 55,
+      "intellect": 61,
+      "vitality": 61,
+      "charisma": 79,
+      "eloquence": 71,
+      "speed": 55
+    },
+    {
+      "id": "陶濬",
+      "name": "陶濬",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陶濬",
+        "passive": "sk_pas_陶濬"
+      },
+      "force": 81,
+      "intellect": 42,
+      "vitality": 75,
+      "charisma": 49,
+      "eloquence": 35,
+      "speed": 71
+    },
+    {
+      "id": "钟离牧",
+      "name": "钟离牧",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_钟离牧",
+        "passive": "sk_pas_钟离牧"
+      },
+      "force": 83,
+      "intellect": 39,
+      "vitality": 76,
+      "charisma": 50,
+      "eloquence": 29,
+      "speed": 64
+    },
+    {
+      "id": "吾粲",
+      "name": "吾粲",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吾粲",
+        "passive": "sk_pas_吾粲"
+      },
+      "force": 43,
+      "intellect": 82,
+      "vitality": 52,
+      "charisma": 56,
+      "eloquence": 75,
+      "speed": 60
+    }
+  ],
+  "n": [
+    {
+      "id": "乐綝",
+      "name": "乐綝",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_乐綝",
+        "passive": "sk_pas_乐綝"
+      },
+      "force": 76,
+      "intellect": 38,
+      "vitality": 69,
+      "charisma": 41,
+      "eloquence": 27,
+      "speed": 60
+    },
+    {
+      "id": "石苞",
+      "name": "石苞",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_石苞",
+        "passive": "sk_pas_石苞"
+      },
+      "force": 37,
+      "intellect": 76,
+      "vitality": 41,
+      "charisma": 54,
+      "eloquence": 62,
+      "speed": 50
+    },
+    {
+      "id": "陈泰",
+      "name": "陈泰",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陈泰",
+        "passive": "sk_pas_陈泰"
+      },
+      "force": 53,
+      "intellect": 57,
+      "vitality": 61,
+      "charisma": 73,
+      "eloquence": 62,
+      "speed": 44
+    },
+    {
+      "id": "王基",
+      "name": "王基",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王基",
+        "passive": "sk_pas_王基"
+      },
+      "force": 53,
+      "intellect": 58,
+      "vitality": 56,
+      "charisma": 66,
+      "eloquence": 65,
+      "speed": 51
+    },
+    {
+      "id": "州泰",
+      "name": "州泰",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_州泰",
+        "passive": "sk_pas_州泰"
+      },
+      "force": 69,
+      "intellect": 37,
+      "vitality": 61,
+      "charisma": 46,
+      "eloquence": 32,
+      "speed": 60
+    },
+    {
+      "id": "邓忠",
+      "name": "邓忠",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_邓忠",
+        "passive": "sk_pas_邓忠"
+      },
+      "force": 72,
+      "intellect": 41,
+      "vitality": 64,
+      "charisma": 39,
+      "eloquence": 26,
+      "speed": 62
+    },
+    {
+      "id": "师纂",
+      "name": "师纂",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_师纂",
+        "passive": "sk_pas_师纂"
+      },
+      "force": 69,
+      "intellect": 41,
+      "vitality": 62,
+      "charisma": 44,
+      "eloquence": 25,
+      "speed": 57
+    },
+    {
+      "id": "胡烈",
+      "name": "胡烈",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_胡烈",
+        "passive": "sk_pas_胡烈"
+      },
+      "force": 69,
+      "intellect": 37,
+      "vitality": 65,
+      "charisma": 44,
+      "eloquence": 26,
+      "speed": 64
+    },
+    {
+      "id": "胡渊",
+      "name": "胡渊",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_胡渊",
+        "passive": "sk_pas_胡渊"
+      },
+      "force": 73,
+      "intellect": 36,
+      "vitality": 65,
+      "charisma": 39,
+      "eloquence": 29,
+      "speed": 60
+    },
+    {
+      "id": "田续",
+      "name": "田续",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_田续",
+        "passive": "sk_pas_田续"
+      },
+      "force": 74,
+      "intellect": 40,
+      "vitality": 66,
+      "charisma": 40,
+      "eloquence": 27,
+      "speed": 64
+    },
+    {
+      "id": "卫瓘",
+      "name": "卫瓘",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_卫瓘",
+        "passive": "sk_pas_卫瓘"
+      },
+      "force": 42,
+      "intellect": 73,
+      "vitality": 49,
+      "charisma": 49,
+      "eloquence": 66,
+      "speed": 52
+    },
+    {
+      "id": "羊祜",
+      "name": "羊祜",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_羊祜",
+        "passive": "sk_pas_羊祜"
+      },
+      "force": 55,
+      "intellect": 63,
+      "vitality": 61,
+      "charisma": 68,
+      "eloquence": 66,
+      "speed": 46
+    },
+    {
+      "id": "杜预",
+      "name": "杜预",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_杜预",
+        "passive": "sk_pas_杜预"
+      },
+      "force": 36,
+      "intellect": 70,
+      "vitality": 42,
+      "charisma": 57,
+      "eloquence": 64,
+      "speed": 49
+    },
+    {
+      "id": "王濬",
+      "name": "王濬",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王濬",
+        "passive": "sk_pas_王濬"
+      },
+      "force": 49,
+      "intellect": 57,
+      "vitality": 57,
+      "charisma": 65,
+      "eloquence": 67,
+      "speed": 48
+    },
+    {
+      "id": "唐咨",
+      "name": "唐咨",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_唐咨",
+        "passive": "sk_pas_唐咨"
+      },
+      "force": 71,
+      "intellect": 34,
+      "vitality": 65,
+      "charisma": 38,
+      "eloquence": 29,
+      "speed": 63
+    },
+    {
+      "id": "诸葛绪",
+      "name": "诸葛绪",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_诸葛绪",
+        "passive": "sk_pas_诸葛绪"
+      },
+      "force": 75,
+      "intellect": 40,
+      "vitality": 68,
+      "charisma": 46,
+      "eloquence": 29,
+      "speed": 56
+    },
+    {
+      "id": "王颀",
+      "name": "王颀",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王颀",
+        "passive": "sk_pas_王颀"
+      },
+      "force": 73,
+      "intellect": 41,
+      "vitality": 68,
+      "charisma": 39,
+      "eloquence": 26,
+      "speed": 62
+    },
+    {
+      "id": "丘本",
+      "name": "丘本",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_丘本",
+        "passive": "sk_pas_丘本"
+      },
+      "force": 68,
+      "intellect": 38,
+      "vitality": 62,
+      "charisma": 42,
+      "eloquence": 30,
+      "speed": 61
+    },
+    {
+      "id": "荀恺",
+      "name": "荀恺",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_荀恺",
+        "passive": "sk_pas_荀恺"
+      },
+      "force": 75,
+      "intellect": 40,
+      "vitality": 61,
+      "charisma": 38,
+      "eloquence": 27,
+      "speed": 62
+    },
+    {
+      "id": "李辅",
+      "name": "李辅",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_李辅",
+        "passive": "sk_pas_李辅"
+      },
+      "force": 76,
+      "intellect": 34,
+      "vitality": 61,
+      "charisma": 38,
+      "eloquence": 26,
+      "speed": 64
+    },
+    {
+      "id": "张虎",
+      "name": "张虎",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张虎",
+        "passive": "sk_pas_张虎"
+      },
+      "force": 72,
+      "intellect": 36,
+      "vitality": 69,
+      "charisma": 41,
+      "eloquence": 29,
+      "speed": 64
+    },
+    {
+      "id": "乐方",
+      "name": "乐方",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_乐方",
+        "passive": "sk_pas_乐方"
+      },
+      "force": 71,
+      "intellect": 42,
+      "vitality": 67,
+      "charisma": 46,
+      "eloquence": 26,
+      "speed": 56
+    },
+    {
+      "id": "蔡和",
+      "name": "蔡和",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_蔡和",
+        "passive": "sk_pas_蔡和"
+      },
+      "force": 76,
+      "intellect": 34,
+      "vitality": 67,
+      "charisma": 46,
+      "eloquence": 27,
+      "speed": 61
+    },
+    {
+      "id": "蔡中",
+      "name": "蔡中",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_蔡中",
+        "passive": "sk_pas_蔡中"
+      },
+      "force": 72,
+      "intellect": 36,
+      "vitality": 66,
+      "charisma": 38,
+      "eloquence": 33,
+      "speed": 56
+    },
+    {
+      "id": "蔡勋",
+      "name": "蔡勋",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_蔡勋",
+        "passive": "sk_pas_蔡勋"
+      },
+      "force": 70,
+      "intellect": 35,
+      "vitality": 67,
+      "charisma": 45,
+      "eloquence": 30,
+      "speed": 58
+    },
+    {
+      "id": "关统",
+      "name": "关统",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_关统",
+        "passive": "sk_pas_关统"
+      },
+      "force": 74,
+      "intellect": 38,
+      "vitality": 63,
+      "charisma": 43,
+      "eloquence": 25,
+      "speed": 57
+    },
+    {
+      "id": "关彝",
+      "name": "关彝",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_关彝",
+        "passive": "sk_pas_关彝"
+      },
+      "force": 76,
+      "intellect": 39,
+      "vitality": 62,
+      "charisma": 42,
+      "eloquence": 33,
+      "speed": 57
+    },
+    {
+      "id": "赵广",
+      "name": "赵广",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_赵广",
+        "passive": "sk_pas_赵广"
+      },
+      "force": 68,
+      "intellect": 40,
+      "vitality": 68,
+      "charisma": 41,
+      "eloquence": 30,
+      "speed": 60
+    },
+    {
+      "id": "赵统",
+      "name": "赵统",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_赵统",
+        "passive": "sk_pas_赵统"
+      },
+      "force": 75,
+      "intellect": 38,
+      "vitality": 66,
+      "charisma": 44,
+      "eloquence": 32,
+      "speed": 57
+    },
+    {
+      "id": "张绍",
+      "name": "张绍",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张绍",
+        "passive": "sk_pas_张绍"
+      },
+      "force": 39,
+      "intellect": 72,
+      "vitality": 44,
+      "charisma": 54,
+      "eloquence": 65,
+      "speed": 54
+    },
+    {
+      "id": "诸葛瞻",
+      "name": "诸葛瞻",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_诸葛瞻",
+        "passive": "sk_pas_诸葛瞻"
+      },
+      "force": 52,
+      "intellect": 58,
+      "vitality": 55,
+      "charisma": 69,
+      "eloquence": 62,
+      "speed": 51
+    },
+    {
+      "id": "诸葛尚",
+      "name": "诸葛尚",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_诸葛尚",
+        "passive": "sk_pas_诸葛尚"
+      },
+      "force": 76,
+      "intellect": 39,
+      "vitality": 66,
+      "charisma": 41,
+      "eloquence": 32,
+      "speed": 57
+    },
+    {
+      "id": "黄崇",
+      "name": "黄崇",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_黄崇",
+        "passive": "sk_pas_黄崇"
+      },
+      "force": 75,
+      "intellect": 39,
+      "vitality": 66,
+      "charisma": 38,
+      "eloquence": 33,
+      "speed": 56
+    },
+    {
+      "id": "李球",
+      "name": "李球",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_李球",
+        "passive": "sk_pas_李球"
+      },
+      "force": 73,
+      "intellect": 37,
+      "vitality": 64,
+      "charisma": 39,
+      "eloquence": 30,
+      "speed": 57
+    },
+    {
+      "id": "张遵",
+      "name": "张遵",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张遵",
+        "passive": "sk_pas_张遵"
+      },
+      "force": 76,
+      "intellect": 39,
+      "vitality": 67,
+      "charisma": 45,
+      "eloquence": 29,
+      "speed": 61
+    },
+    {
+      "id": "董厥",
+      "name": "董厥",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_董厥",
+        "passive": "sk_pas_董厥"
+      },
+      "force": 40,
+      "intellect": 68,
+      "vitality": 47,
+      "charisma": 57,
+      "eloquence": 69,
+      "speed": 54
+    },
+    {
+      "id": "樊建",
+      "name": "樊建",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_樊建",
+        "passive": "sk_pas_樊建"
+      },
+      "force": 40,
+      "intellect": 71,
+      "vitality": 45,
+      "charisma": 50,
+      "eloquence": 61,
+      "speed": 53
+    },
+    {
+      "id": "胡济",
+      "name": "胡济",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_胡济",
+        "passive": "sk_pas_胡济"
+      },
+      "force": 71,
+      "intellect": 36,
+      "vitality": 62,
+      "charisma": 38,
+      "eloquence": 31,
+      "speed": 56
+    },
+    {
+      "id": "阎宇",
+      "name": "阎宇",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_阎宇",
+        "passive": "sk_pas_阎宇"
+      },
+      "force": 68,
+      "intellect": 41,
+      "vitality": 67,
+      "charisma": 42,
+      "eloquence": 27,
+      "speed": 59
+    },
+    {
+      "id": "马勖",
+      "name": "马勖",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_马勖",
+        "passive": "sk_pas_马勖"
+      },
+      "force": 69,
+      "intellect": 35,
+      "vitality": 63,
+      "charisma": 42,
+      "eloquence": 29,
+      "speed": 63
+    },
+    {
+      "id": "孙峻",
+      "name": "孙峻",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙峻",
+        "passive": "sk_pas_孙峻"
+      },
+      "force": 53,
+      "intellect": 62,
+      "vitality": 57,
+      "charisma": 68,
+      "eloquence": 68,
+      "speed": 50
+    },
+    {
+      "id": "孙綝",
+      "name": "孙綝",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙綝",
+        "passive": "sk_pas_孙綝"
+      },
+      "force": 53,
+      "intellect": 61,
+      "vitality": 61,
+      "charisma": 67,
+      "eloquence": 69,
+      "speed": 48
+    },
+    {
+      "id": "孙休",
+      "name": "孙休",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙休",
+        "passive": "sk_pas_孙休"
+      },
+      "force": 51,
+      "intellect": 56,
+      "vitality": 57,
+      "charisma": 68,
+      "eloquence": 63,
+      "speed": 49
+    },
+    {
+      "id": "孙皓",
+      "name": "孙皓",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙皓",
+        "passive": "sk_pas_孙皓"
+      },
+      "force": 52,
+      "intellect": 55,
+      "vitality": 59,
+      "charisma": 66,
+      "eloquence": 62,
+      "speed": 45
+    },
+    {
+      "id": "张悌",
+      "name": "张悌",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张悌",
+        "passive": "sk_pas_张悌"
+      },
+      "force": 56,
+      "intellect": 58,
+      "vitality": 58,
+      "charisma": 73,
+      "eloquence": 67,
+      "speed": 47
+    },
+    {
+      "id": "沈莹",
+      "name": "沈莹",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_沈莹",
+        "passive": "sk_pas_沈莹"
+      },
+      "force": 75,
+      "intellect": 39,
+      "vitality": 61,
+      "charisma": 43,
+      "eloquence": 30,
+      "speed": 61
+    },
+    {
+      "id": "孙震",
+      "name": "孙震",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙震",
+        "passive": "sk_pas_孙震"
+      },
+      "force": 73,
+      "intellect": 41,
+      "vitality": 67,
+      "charisma": 45,
+      "eloquence": 32,
+      "speed": 61
+    },
+    {
+      "id": "陆凯",
+      "name": "陆凯",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陆凯",
+        "passive": "sk_pas_陆凯"
+      },
+      "force": 36,
+      "intellect": 72,
+      "vitality": 43,
+      "charisma": 49,
+      "eloquence": 69,
+      "speed": 53
+    },
+    {
+      "id": "陆胤",
+      "name": "陆胤",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陆胤",
+        "passive": "sk_pas_陆胤"
+      },
+      "force": 37,
+      "intellect": 74,
+      "vitality": 47,
+      "charisma": 57,
+      "eloquence": 63,
+      "speed": 49
+    },
+    {
+      "id": "范疆",
+      "name": "范疆",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_范疆",
+        "passive": "sk_pas_范疆"
+      },
+      "force": 69,
+      "intellect": 36,
+      "vitality": 63,
+      "charisma": 45,
+      "eloquence": 33,
+      "speed": 60
+    },
+    {
+      "id": "朱异",
+      "name": "朱异",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_朱异",
+        "passive": "sk_pas_朱异"
+      },
+      "force": 70,
+      "intellect": 39,
+      "vitality": 63,
+      "charisma": 39,
+      "eloquence": 29,
+      "speed": 56
+    },
+    {
+      "id": "丁封",
+      "name": "丁封",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_丁封",
+        "passive": "sk_pas_丁封"
+      },
+      "force": 68,
+      "intellect": 41,
+      "vitality": 67,
+      "charisma": 44,
+      "eloquence": 30,
+      "speed": 57
+    },
+    {
+      "id": "孙冀",
+      "name": "孙冀",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙冀",
+        "passive": "sk_pas_孙冀"
+      },
+      "force": 69,
+      "intellect": 40,
+      "vitality": 65,
+      "charisma": 41,
+      "eloquence": 25,
+      "speed": 58
+    },
+    {
+      "id": "滕胤",
+      "name": "滕胤",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_滕胤",
+        "passive": "sk_pas_滕胤"
+      },
+      "force": 36,
+      "intellect": 74,
+      "vitality": 45,
+      "charisma": 54,
+      "eloquence": 64,
+      "speed": 52
+    },
+    {
+      "id": "吕据",
+      "name": "吕据",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吕据",
+        "passive": "sk_pas_吕据"
+      },
+      "force": 74,
+      "intellect": 42,
+      "vitality": 62,
+      "charisma": 42,
+      "eloquence": 25,
+      "speed": 62
+    },
+    {
+      "id": "留平",
+      "name": "留平",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_留平",
+        "passive": "sk_pas_留平"
+      },
+      "force": 68,
+      "intellect": 41,
+      "vitality": 66,
+      "charisma": 41,
+      "eloquence": 25,
+      "speed": 57
+    },
+    {
+      "id": "陆景",
+      "name": "陆景",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陆景",
+        "passive": "sk_pas_陆景"
+      },
+      "force": 76,
+      "intellect": 38,
+      "vitality": 61,
+      "charisma": 40,
+      "eloquence": 30,
+      "speed": 64
+    },
+    {
+      "id": "盛曼",
+      "name": "盛曼",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_盛曼",
+        "passive": "sk_pas_盛曼"
+      },
+      "force": 71,
+      "intellect": 41,
+      "vitality": 66,
+      "charisma": 39,
+      "eloquence": 27,
+      "speed": 56
+    },
+    {
+      "id": "施绩",
+      "name": "施绩",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_施绩",
+        "passive": "sk_pas_施绩"
+      },
+      "force": 54,
+      "intellect": 56,
+      "vitality": 55,
+      "charisma": 70,
+      "eloquence": 70,
+      "speed": 44
+    },
+    {
+      "id": "徐详",
+      "name": "徐详",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_徐详",
+        "passive": "sk_pas_徐详"
+      },
+      "force": 42,
+      "intellect": 76,
+      "vitality": 49,
+      "charisma": 49,
+      "eloquence": 68,
+      "speed": 53
+    },
+    {
+      "id": "袁谭",
+      "name": "袁谭",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_袁谭",
+        "passive": "sk_pas_袁谭"
+      },
+      "force": 73,
+      "intellect": 37,
+      "vitality": 68,
+      "charisma": 44,
+      "eloquence": 26,
+      "speed": 58
+    },
+    {
+      "id": "袁尚",
+      "name": "袁尚",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_袁尚",
+        "passive": "sk_pas_袁尚"
+      },
+      "force": 68,
+      "intellect": 39,
+      "vitality": 61,
+      "charisma": 39,
+      "eloquence": 33,
+      "speed": 56
+    },
+    {
+      "id": "袁熙",
+      "name": "袁熙",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_袁熙",
+        "passive": "sk_pas_袁熙"
+      },
+      "force": 72,
+      "intellect": 35,
+      "vitality": 62,
+      "charisma": 39,
+      "eloquence": 30,
+      "speed": 59
+    },
+    {
+      "id": "高干",
+      "name": "高干",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_高干",
+        "passive": "sk_pas_高干"
+      },
+      "force": 73,
+      "intellect": 38,
+      "vitality": 66,
+      "charisma": 46,
+      "eloquence": 31,
+      "speed": 63
+    },
+    {
+      "id": "郭图",
+      "name": "郭图",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_郭图",
+        "passive": "sk_pas_郭图"
+      },
+      "force": 44,
+      "intellect": 68,
+      "vitality": 41,
+      "charisma": 53,
+      "eloquence": 61,
+      "speed": 55
+    },
+    {
+      "id": "辛评",
+      "name": "辛评",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_辛评",
+        "passive": "sk_pas_辛评"
+      },
+      "force": 41,
+      "intellect": 72,
+      "vitality": 45,
+      "charisma": 53,
+      "eloquence": 66,
+      "speed": 49
+    },
+    {
+      "id": "苏由",
+      "name": "苏由",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_苏由",
+        "passive": "sk_pas_苏由"
+      },
+      "force": 73,
+      "intellect": 39,
+      "vitality": 67,
+      "charisma": 42,
+      "eloquence": 30,
+      "speed": 56
+    },
+    {
+      "id": "岑璧",
+      "name": "岑璧",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_岑璧",
+        "passive": "sk_pas_岑璧"
+      },
+      "force": 72,
+      "intellect": 40,
+      "vitality": 69,
+      "charisma": 45,
+      "eloquence": 26,
+      "speed": 63
+    },
+    {
+      "id": "张卫",
+      "name": "张卫",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张卫",
+        "passive": "sk_pas_张卫"
+      },
+      "force": 74,
+      "intellect": 40,
+      "vitality": 67,
+      "charisma": 39,
+      "eloquence": 32,
+      "speed": 56
+    },
+    {
+      "id": "杨昂",
+      "name": "杨昂",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "obscure",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_杨昂",
+        "passive": "sk_pas_杨昂"
+      },
+      "force": 73,
+      "intellect": 34,
+      "vitality": 62,
+      "charisma": 39,
+      "eloquence": 27,
+      "speed": 60
+    }
+  ]
+}

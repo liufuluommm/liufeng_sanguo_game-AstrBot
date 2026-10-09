@@ -1,0 +1,524 @@
+{
+  "season_name": "三国·群雄逐鹿",
+  "max_level": 50,
+  "duration_days": 30,
+  "premium_cost": 50,
+  "levels": [
+    {
+      "level": 1,
+      "exp": 1000,
+      "free": {
+        "gold": 380
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 2,
+      "exp": 1200,
+      "free": {
+        "gold": 460
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 3,
+      "exp": 1400,
+      "free": {
+        "gold": 540
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 4,
+      "exp": 1600,
+      "free": {
+        "gold": 620
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 5,
+      "exp": 1800,
+      "free": {
+        "gold": 700,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10
+      }
+    },
+    {
+      "level": 6,
+      "exp": 2000,
+      "free": {
+        "gold": 780
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 7,
+      "exp": 2200,
+      "free": {
+        "gold": 860
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 8,
+      "exp": 2400,
+      "free": {
+        "gold": 940
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 9,
+      "exp": 2600,
+      "free": {
+        "gold": 1020
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 10,
+      "exp": 2800,
+      "free": {
+        "gold": 1100,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10,
+        "event_ticket": 2
+      }
+    },
+    {
+      "level": 11,
+      "exp": 3000,
+      "free": {
+        "gold": 1180
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 12,
+      "exp": 3200,
+      "free": {
+        "gold": 1260
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 13,
+      "exp": 3400,
+      "free": {
+        "gold": 1340
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 14,
+      "exp": 3600,
+      "free": {
+        "gold": 1420
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 15,
+      "exp": 3800,
+      "free": {
+        "gold": 1500,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10
+      }
+    },
+    {
+      "level": 16,
+      "exp": 4000,
+      "free": {
+        "gold": 1580
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 17,
+      "exp": 4200,
+      "free": {
+        "gold": 1660
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 18,
+      "exp": 4400,
+      "free": {
+        "gold": 1740
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 19,
+      "exp": 4600,
+      "free": {
+        "gold": 1820
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 20,
+      "exp": 4800,
+      "free": {
+        "gold": 1900,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10,
+        "event_ticket": 2
+      }
+    },
+    {
+      "level": 21,
+      "exp": 5000,
+      "free": {
+        "gold": 1980
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 22,
+      "exp": 5200,
+      "free": {
+        "gold": 2060
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 23,
+      "exp": 5400,
+      "free": {
+        "gold": 2140
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 24,
+      "exp": 5600,
+      "free": {
+        "gold": 2220
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 25,
+      "exp": 5800,
+      "free": {
+        "gold": 2300,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10
+      }
+    },
+    {
+      "level": 26,
+      "exp": 6000,
+      "free": {
+        "gold": 2380
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 27,
+      "exp": 6200,
+      "free": {
+        "gold": 2460
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 28,
+      "exp": 6400,
+      "free": {
+        "gold": 2540
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 29,
+      "exp": 6600,
+      "free": {
+        "gold": 2620
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 30,
+      "exp": 6800,
+      "free": {
+        "gold": 2700,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10,
+        "event_ticket": 2
+      }
+    },
+    {
+      "level": 31,
+      "exp": 7000,
+      "free": {
+        "gold": 2780
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 32,
+      "exp": 7200,
+      "free": {
+        "gold": 2860
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 33,
+      "exp": 7400,
+      "free": {
+        "gold": 2940
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 34,
+      "exp": 7600,
+      "free": {
+        "gold": 3020
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 35,
+      "exp": 7800,
+      "free": {
+        "gold": 3100,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10
+      }
+    },
+    {
+      "level": 36,
+      "exp": 8000,
+      "free": {
+        "gold": 3180
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 37,
+      "exp": 8200,
+      "free": {
+        "gold": 3260
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 38,
+      "exp": 8400,
+      "free": {
+        "gold": 3340
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 39,
+      "exp": 8600,
+      "free": {
+        "gold": 3420
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 40,
+      "exp": 8800,
+      "free": {
+        "gold": 3500,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10,
+        "event_ticket": 2
+      }
+    },
+    {
+      "level": 41,
+      "exp": 9000,
+      "free": {
+        "gold": 3580
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 42,
+      "exp": 9200,
+      "free": {
+        "gold": 3660
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 43,
+      "exp": 9400,
+      "free": {
+        "gold": 3740
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 44,
+      "exp": 9600,
+      "free": {
+        "gold": 3820
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 45,
+      "exp": 9800,
+      "free": {
+        "gold": 3900,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10
+      }
+    },
+    {
+      "level": 46,
+      "exp": 10000,
+      "free": {
+        "gold": 3980
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 47,
+      "exp": 10200,
+      "free": {
+        "gold": 4060
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 48,
+      "exp": 10400,
+      "free": {
+        "gold": 4140
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 49,
+      "exp": 10600,
+      "free": {
+        "gold": 4220
+      },
+      "premium": {
+        "diamond": 3
+      }
+    },
+    {
+      "level": 50,
+      "exp": 10800,
+      "free": {
+        "gold": 4300,
+        "fragment": 2
+      },
+      "premium": {
+        "diamond": 10,
+        "event_ticket": 2,
+        "title": "赛季霸主"
+      }
+    }
+  ]
+}

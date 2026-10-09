@@ -1,0 +1,12 @@
+[
+  {"id": "boss_zhangjiao", "name": "天公将军·张角", "hp": 2000000, "atk": 800, "def": 300,
+   "reward": {"mail": "世界BOSS奖励"}},
+  {"id": "boss_lvbu", "name": "战神·吕布", "hp": 4000000, "atk": 1200, "def": 500,
+   "reward": {"mail": "世界BOSS奖励"}},
+  {"id": "boss_dongzhuo", "name": "暴虐·董卓", "hp": 3000000, "atk": 1000, "def": 420,
+   "reward": {"mail": "世界BOSS奖励"}},
+  {"id": "boss_simayi", "name": "冢虎·司马懿", "hp": 5000000, "atk": 1400, "def": 600,
+   "reward": {"mail": "世界BOSS奖励"}},
+  {"id": "boss_caocao", "name": "乱世·曹操", "hp": 6000000, "atk": 1600, "def": 680,
+   "reward": {"mail": "世界BOSS奖励"}}
+]

@@ -1,0 +1,58 @@
+{
+  "chapters": [
+    {
+      "id": 1, "name": "黄巾之乱", "desc": "苍天已死，黄天当立。平定黄巾，初露锋芒。",
+      "stages": [
+        {"id": "1-1", "name": "广宗前哨", "stamina": 6, "drop": 0.05, "gold": 200, "enemy": ["樊稠", "张济", "纪灵"], "level": 12},
+        {"id": "1-2", "name": "颍川遭遇", "stamina": 6, "drop": 0.06, "gold": 260, "enemy": ["李傕", "郭汜", "樊稠"], "level": 15},
+        {"id": "1-3", "name": "曲阳鏖战", "stamina": 7, "drop": 0.07, "gold": 320, "enemy": ["李傕", "郭汜", "华雄"], "level": 18},
+        {"id": "1-4", "name": "天公将军", "stamina": 8, "drop": 0.08, "gold": 420, "enemy": ["张角", "华雄", "纪灵"], "level": 22}
+      ]
+    },
+    {
+      "id": 2, "name": "虎牢关", "desc": "十八路诸侯讨董，温酒斩华雄，三英战吕布。",
+      "stages": [
+        {"id": "2-1", "name": "汜水关", "stamina": 8, "drop": 0.07, "gold": 400, "enemy": ["华雄", "李傕", "郭汜"], "level": 25},
+        {"id": "2-2", "name": "虎牢关下", "stamina": 8, "drop": 0.08, "gold": 460, "enemy": ["高顺", "张辽", "华雄"], "level": 28},
+        {"id": "2-3", "name": "三英战吕布", "stamina": 9, "drop": 0.09, "gold": 560, "enemy": ["吕布", "高顺", "张辽"], "level": 32},
+        {"id": "2-4", "name": "洛阳残阳", "stamina": 10, "drop": 0.10, "gold": 660, "enemy": ["吕布", "董卓", "高顺"], "level": 36}
+      ]
+    },
+    {
+      "id": 3, "name": "官渡之战", "desc": "袁曹对决，以少胜多，火烧乌巢。",
+      "stages": [
+        {"id": "3-1", "name": "白马津", "stamina": 10, "drop": 0.09, "gold": 600, "enemy": ["颜良", "文丑", "审配"], "level": 38},
+        {"id": "3-2", "name": "延津渡", "stamina": 10, "drop": 0.10, "gold": 680, "enemy": ["文丑", "张郃", "逢纪"], "level": 41},
+        {"id": "3-3", "name": "乌巢火起", "stamina": 11, "drop": 0.11, "gold": 780, "enemy": ["颜良", "文丑", "张郃"], "level": 44},
+        {"id": "3-4", "name": "邺城归降", "stamina": 12, "drop": 0.12, "gold": 900, "enemy": ["张郃", "审配", "逢纪"], "level": 48}
+      ]
+    },
+    {
+      "id": 4, "name": "赤壁之战", "desc": "东风起，火烧连营八百里。",
+      "stages": [
+        {"id": "4-1", "name": "长坂坡", "stamina": 12, "drop": 0.10, "gold": 850, "enemy": ["蔡瑁", "张辽", "曹仁"], "level": 50},
+        {"id": "4-2", "name": "草船借箭", "stamina": 12, "drop": 0.11, "gold": 950, "enemy": ["曹操", "张辽", "徐晃"], "level": 53},
+        {"id": "4-3", "name": "苦肉连环", "stamina": 13, "drop": 0.12, "gold": 1050, "enemy": ["曹操", "许褚", "曹仁"], "level": 56},
+        {"id": "4-4", "name": "火烧赤壁", "stamina": 14, "drop": 0.13, "gold": 1200, "enemy": ["曹操", "司马懿", "张辽"], "level": 60}
+      ]
+    },
+    {
+      "id": 5, "name": "夷陵之战", "desc": "连营七百里，一炬成灰。",
+      "stages": [
+        {"id": "5-1", "name": "猇亭前哨", "stamina": 14, "drop": 0.11, "gold": 1100, "enemy": ["韩当", "周泰", "凌统"], "level": 62},
+        {"id": "5-2", "name": "马鞍山", "stamina": 14, "drop": 0.12, "gold": 1250, "enemy": ["甘宁", "凌统", "徐盛"], "level": 65},
+        {"id": "5-3", "name": "火烧连营", "stamina": 15, "drop": 0.13, "gold": 1400, "enemy": ["陆逊", "甘宁", "周泰"], "level": 68},
+        {"id": "5-4", "name": "白帝托孤", "stamina": 16, "drop": 0.15, "gold": 1600, "enemy": ["陆逊", "周瑜", "孙策"], "level": 72}
+      ]
+    },
+    {
+      "id": 6, "name": "五丈原", "desc": "出师未捷身先死，长使英雄泪满襟。",
+      "stages": [
+        {"id": "6-1", "name": "祁山道", "stamina": 16, "drop": 0.12, "gold": 1500, "enemy": ["郭淮", "曹真", "王双"], "level": 74},
+        {"id": "6-2", "name": "街亭", "stamina": 16, "drop": 0.13, "gold": 1650, "enemy": ["张郃", "郭淮", "曹真"], "level": 77},
+        {"id": "6-3", "name": "上方谷", "stamina": 17, "drop": 0.14, "gold": 1800, "enemy": ["司马懿", "张郃", "钟会"], "level": 80},
+        {"id": "6-4", "name": "五丈原", "stamina": 18, "drop": 0.15, "gold": 2000, "enemy": ["司马懿", "邓艾", "钟会"], "level": 85}
+      ]
+    }
+  ]
+}

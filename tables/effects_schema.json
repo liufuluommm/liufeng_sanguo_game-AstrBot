@@ -1,0 +1,92 @@
+{
+  "grant_gold": {
+    "name": "发放金币",
+    "category": "resource",
+    "params": [
+      {"key": "amount", "label": "数量", "type": "int", "min": 1, "default": 1000}
+    ]
+  },
+  "grant_fragment": {
+    "name": "发放武将碎片",
+    "category": "resource",
+    "params": [
+      {"key": "amount", "label": "数量", "type": "int", "min": 1, "default": 1}
+    ]
+  },
+  "grant_stamina": {
+    "name": "恢复行动力",
+    "category": "resource",
+    "params": [
+      {"key": "amount", "label": "数量", "type": "int", "min": 1, "default": 30}
+    ]
+  },
+  "grant_currency": {
+    "name": "发放货币",
+    "category": "resource",
+    "params": [
+      {"key": "currency", "label": "货币", "type": "enum",
+       "options": ["diamond", "merit", "soul", "repute", "event_ticket", "challenge"],
+       "default": "diamond"},
+      {"key": "amount", "label": "数量", "type": "int", "min": 1, "default": 100}
+    ]
+  },
+  "grant_general": {
+    "name": "发放武将",
+    "category": "general",
+    "params": [
+      {"key": "rarity", "label": "稀有度", "type": "enum",
+       "options": ["ssr", "sr", "r", "n", "any"], "default": "sr"},
+      {"key": "category", "label": "类目", "type": "enum",
+       "options": ["any", "historical", "obscure", "fictional"], "default": "any"},
+      {"key": "count", "label": "数量", "type": "int", "min": 1, "default": 1}
+    ]
+  },
+  "grant_equipment": {
+    "name": "发放装备",
+    "category": "equipment",
+    "params": [
+      {"key": "rarity", "label": "稀有度", "type": "enum",
+       "options": ["ssr", "sr", "r", "n", "any"], "default": "r"},
+      {"key": "count", "label": "数量", "type": "int", "min": 1, "default": 1}
+    ]
+  },
+  "general_level_up": {
+    "name": "武将升级",
+    "category": "general",
+    "params": [
+      {"key": "count", "label": "提升等级数", "type": "int", "min": 1, "default": 1}
+    ]
+  },
+  "general_star_up": {
+    "name": "武将升星",
+    "category": "general",
+    "params": [
+      {"key": "count", "label": "提升星级数", "type": "int", "min": 1, "default": 1}
+    ]
+  },
+  "buff": {
+    "name": "限时增益",
+    "category": "buff",
+    "params": [
+      {"key": "buff_type", "label": "类型", "type": "enum",
+       "options": ["double_gold", "double_drop", "atk", "def", "hp", "free_stamina"],
+       "default": "double_gold"},
+      {"key": "value", "label": "数值(倍率或百分比)", "type": "float", "min": 0, "default": 2.0},
+      {"key": "duration", "label": "持续秒数", "type": "int", "min": 1, "default": 3600}
+    ]
+  },
+  "loot_box": {
+    "name": "随机礼盒",
+    "category": "gift",
+    "params": [
+      {"key": "entries", "label": "奖池", "type": "loot_table", "default": []}
+    ]
+  },
+  "choice_box": {
+    "name": "自选礼盒",
+    "category": "gift",
+    "params": [
+      {"key": "options", "label": "选项", "type": "choice_list", "default": []}
+    ]
+  }
+}

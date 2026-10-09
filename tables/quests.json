@@ -1,0 +1,20 @@
+{
+  "daily": [
+    {"id": "d_signin", "name": "每日签到", "event": "signin", "target": 1, "reward": {"gold": 200}},
+    {"id": "d_battle", "name": "对战 3 次", "event": "battle", "target": 3, "reward": {"gold": 300}},
+    {"id": "d_dungeon", "name": "通关副本 3 次", "event": "dungeon_clear", "target": 3, "reward": {"fragment": 2}},
+    {"id": "d_gacha", "name": "招募 5 次", "event": "gacha", "target": 5, "reward": {"gold": 400}},
+    {"id": "d_use", "name": "使用道具 2 次", "event": "use_item", "target": 2, "reward": {"stamina": 20}}
+  ],
+  "weekly": [
+    {"id": "w_battle", "name": "本周对战 20 次", "event": "battle", "target": 20, "reward": {"diamond": 30}},
+    {"id": "w_dungeon", "name": "本周通关副本 15 次", "event": "dungeon_clear", "target": 15, "reward": {"diamond": 30}},
+    {"id": "w_gacha", "name": "本周招募 30 次", "event": "gacha", "target": 30, "reward": {"diamond": 50}},
+    {"id": "w_donate", "name": "本周势力捐献 5 次", "event": "donate", "target": 5, "reward": {"merit": 100}}
+  ],
+  "growth": [
+    {"id": "g_collect10", "name": "收集 10 名武将", "event": "general_obtain", "target": 10, "reward": {"gold": 1000}},
+    {"id": "g_collect30", "name": "收集 30 名武将", "event": "general_obtain", "target": 30, "reward": {"diamond": 30}},
+    {"id": "g_level20", "name": "将一名武将升至 20 级", "event": "general_level", "target": 20, "reward": {"gold": 2000}}
+  ]
+}

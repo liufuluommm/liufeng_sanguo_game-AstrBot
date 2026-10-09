@@ -1,0 +1,5922 @@
+{
+  "sk_act_曹操": {
+    "id": "sk_act_曹操",
+    "name": "激励",
+    "type": "active",
+    "owner": "曹操",
+    "rarity": "exclusive",
+    "desc": "曹操的active技能。"
+  },
+  "sk_pas_曹操": {
+    "id": "sk_pas_曹操",
+    "name": "威望",
+    "type": "passive",
+    "owner": "曹操",
+    "rarity": "exclusive",
+    "desc": "曹操的passive技能。"
+  },
+  "sk_act_司马懿": {
+    "id": "sk_act_司马懿",
+    "name": "连环",
+    "type": "active",
+    "owner": "司马懿",
+    "rarity": "exclusive",
+    "desc": "司马懿的active技能。"
+  },
+  "sk_pas_司马懿": {
+    "id": "sk_pas_司马懿",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "司马懿",
+    "rarity": "exclusive",
+    "desc": "司马懿的passive技能。"
+  },
+  "sk_act_郭嘉": {
+    "id": "sk_act_郭嘉",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "郭嘉",
+    "rarity": "exclusive",
+    "desc": "郭嘉的active技能。"
+  },
+  "sk_pas_郭嘉": {
+    "id": "sk_pas_郭嘉",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "郭嘉",
+    "rarity": "exclusive",
+    "desc": "郭嘉的passive技能。"
+  },
+  "sk_act_张辽": {
+    "id": "sk_act_张辽",
+    "name": "突袭",
+    "type": "active",
+    "owner": "张辽",
+    "rarity": "exclusive",
+    "desc": "张辽的active技能。"
+  },
+  "sk_pas_张辽": {
+    "id": "sk_pas_张辽",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "张辽",
+    "rarity": "exclusive",
+    "desc": "张辽的passive技能。"
+  },
+  "sk_act_张郃": {
+    "id": "sk_act_张郃",
+    "name": "突袭",
+    "type": "active",
+    "owner": "张郃",
+    "rarity": "exclusive",
+    "desc": "张郃的active技能。"
+  },
+  "sk_pas_张郃": {
+    "id": "sk_pas_张郃",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "张郃",
+    "rarity": "exclusive",
+    "desc": "张郃的passive技能。"
+  },
+  "sk_act_许褚": {
+    "id": "sk_act_许褚",
+    "name": "突袭",
+    "type": "active",
+    "owner": "许褚",
+    "rarity": "exclusive",
+    "desc": "许褚的active技能。"
+  },
+  "sk_pas_许褚": {
+    "id": "sk_pas_许褚",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "许褚",
+    "rarity": "exclusive",
+    "desc": "许褚的passive技能。"
+  },
+  "sk_act_关羽": {
+    "id": "sk_act_关羽",
+    "name": "突袭",
+    "type": "active",
+    "owner": "关羽",
+    "rarity": "exclusive",
+    "desc": "关羽的active技能。"
+  },
+  "sk_pas_关羽": {
+    "id": "sk_pas_关羽",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "关羽",
+    "rarity": "exclusive",
+    "desc": "关羽的passive技能。"
+  },
+  "sk_act_赵云": {
+    "id": "sk_act_赵云",
+    "name": "破军",
+    "type": "active",
+    "owner": "赵云",
+    "rarity": "exclusive",
+    "desc": "赵云的active技能。"
+  },
+  "sk_pas_赵云": {
+    "id": "sk_pas_赵云",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "赵云",
+    "rarity": "exclusive",
+    "desc": "赵云的passive技能。"
+  },
+  "sk_act_诸葛亮": {
+    "id": "sk_act_诸葛亮",
+    "name": "火计",
+    "type": "active",
+    "owner": "诸葛亮",
+    "rarity": "exclusive",
+    "desc": "诸葛亮的active技能。"
+  },
+  "sk_pas_诸葛亮": {
+    "id": "sk_pas_诸葛亮",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "诸葛亮",
+    "rarity": "exclusive",
+    "desc": "诸葛亮的passive技能。"
+  },
+  "sk_act_张飞": {
+    "id": "sk_act_张飞",
+    "name": "斩将",
+    "type": "active",
+    "owner": "张飞",
+    "rarity": "exclusive",
+    "desc": "张飞的active技能。"
+  },
+  "sk_pas_张飞": {
+    "id": "sk_pas_张飞",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "张飞",
+    "rarity": "exclusive",
+    "desc": "张飞的passive技能。"
+  },
+  "sk_act_马超": {
+    "id": "sk_act_马超",
+    "name": "斩将",
+    "type": "active",
+    "owner": "马超",
+    "rarity": "exclusive",
+    "desc": "马超的active技能。"
+  },
+  "sk_pas_马超": {
+    "id": "sk_pas_马超",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "马超",
+    "rarity": "exclusive",
+    "desc": "马超的passive技能。"
+  },
+  "sk_act_黄忠": {
+    "id": "sk_act_黄忠",
+    "name": "破军",
+    "type": "active",
+    "owner": "黄忠",
+    "rarity": "exclusive",
+    "desc": "黄忠的active技能。"
+  },
+  "sk_pas_黄忠": {
+    "id": "sk_pas_黄忠",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "黄忠",
+    "rarity": "exclusive",
+    "desc": "黄忠的passive技能。"
+  },
+  "sk_act_周瑜": {
+    "id": "sk_act_周瑜",
+    "name": "妙算",
+    "type": "active",
+    "owner": "周瑜",
+    "rarity": "exclusive",
+    "desc": "周瑜的active技能。"
+  },
+  "sk_pas_周瑜": {
+    "id": "sk_pas_周瑜",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "周瑜",
+    "rarity": "exclusive",
+    "desc": "周瑜的passive技能。"
+  },
+  "sk_act_陆逊": {
+    "id": "sk_act_陆逊",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "陆逊",
+    "rarity": "exclusive",
+    "desc": "陆逊的active技能。"
+  },
+  "sk_pas_陆逊": {
+    "id": "sk_pas_陆逊",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "陆逊",
+    "rarity": "exclusive",
+    "desc": "陆逊的passive技能。"
+  },
+  "sk_act_孙策": {
+    "id": "sk_act_孙策",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "孙策",
+    "rarity": "exclusive",
+    "desc": "孙策的active技能。"
+  },
+  "sk_pas_孙策": {
+    "id": "sk_pas_孙策",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "孙策",
+    "rarity": "exclusive",
+    "desc": "孙策的passive技能。"
+  },
+  "sk_act_孙坚": {
+    "id": "sk_act_孙坚",
+    "name": "突袭",
+    "type": "active",
+    "owner": "孙坚",
+    "rarity": "exclusive",
+    "desc": "孙坚的active技能。"
+  },
+  "sk_pas_孙坚": {
+    "id": "sk_pas_孙坚",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "孙坚",
+    "rarity": "exclusive",
+    "desc": "孙坚的passive技能。"
+  },
+  "sk_act_甘宁": {
+    "id": "sk_act_甘宁",
+    "name": "横扫",
+    "type": "active",
+    "owner": "甘宁",
+    "rarity": "exclusive",
+    "desc": "甘宁的active技能。"
+  },
+  "sk_pas_甘宁": {
+    "id": "sk_pas_甘宁",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "甘宁",
+    "rarity": "exclusive",
+    "desc": "甘宁的passive技能。"
+  },
+  "sk_act_吕布": {
+    "id": "sk_act_吕布",
+    "name": "力战",
+    "type": "active",
+    "owner": "吕布",
+    "rarity": "exclusive",
+    "desc": "吕布的active技能。"
+  },
+  "sk_pas_吕布": {
+    "id": "sk_pas_吕布",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "吕布",
+    "rarity": "exclusive",
+    "desc": "吕布的passive技能。"
+  },
+  "sk_act_董卓": {
+    "id": "sk_act_董卓",
+    "name": "威压",
+    "type": "active",
+    "owner": "董卓",
+    "rarity": "exclusive",
+    "desc": "董卓的active技能。"
+  },
+  "sk_pas_董卓": {
+    "id": "sk_pas_董卓",
+    "name": "守成",
+    "type": "passive",
+    "owner": "董卓",
+    "rarity": "exclusive",
+    "desc": "董卓的passive技能。"
+  },
+  "sk_act_张角": {
+    "id": "sk_act_张角",
+    "name": "连环",
+    "type": "active",
+    "owner": "张角",
+    "rarity": "exclusive",
+    "desc": "张角的active技能。"
+  },
+  "sk_pas_张角": {
+    "id": "sk_pas_张角",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "张角",
+    "rarity": "exclusive",
+    "desc": "张角的passive技能。"
+  },
+  "sk_act_夏侯惇": {
+    "id": "sk_act_夏侯惇",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "夏侯惇",
+    "rarity": "exclusive",
+    "desc": "夏侯惇的active技能。"
+  },
+  "sk_pas_夏侯惇": {
+    "id": "sk_pas_夏侯惇",
+    "name": "武略",
+    "type": "passive",
+    "owner": "夏侯惇",
+    "rarity": "exclusive",
+    "desc": "夏侯惇的passive技能。"
+  },
+  "sk_act_夏侯渊": {
+    "id": "sk_act_夏侯渊",
+    "name": "横扫",
+    "type": "active",
+    "owner": "夏侯渊",
+    "rarity": "exclusive",
+    "desc": "夏侯渊的active技能。"
+  },
+  "sk_pas_夏侯渊": {
+    "id": "sk_pas_夏侯渊",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "夏侯渊",
+    "rarity": "exclusive",
+    "desc": "夏侯渊的passive技能。"
+  },
+  "sk_act_曹仁": {
+    "id": "sk_act_曹仁",
+    "name": "破军",
+    "type": "active",
+    "owner": "曹仁",
+    "rarity": "exclusive",
+    "desc": "曹仁的active技能。"
+  },
+  "sk_pas_曹仁": {
+    "id": "sk_pas_曹仁",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "曹仁",
+    "rarity": "exclusive",
+    "desc": "曹仁的passive技能。"
+  },
+  "sk_act_典韦": {
+    "id": "sk_act_典韦",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "典韦",
+    "rarity": "exclusive",
+    "desc": "典韦的active技能。"
+  },
+  "sk_pas_典韦": {
+    "id": "sk_pas_典韦",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "典韦",
+    "rarity": "exclusive",
+    "desc": "典韦的passive技能。"
+  },
+  "sk_act_荀彧": {
+    "id": "sk_act_荀彧",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "荀彧",
+    "rarity": "exclusive",
+    "desc": "荀彧的active技能。"
+  },
+  "sk_pas_荀彧": {
+    "id": "sk_pas_荀彧",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "荀彧",
+    "rarity": "exclusive",
+    "desc": "荀彧的passive技能。"
+  },
+  "sk_act_荀攸": {
+    "id": "sk_act_荀攸",
+    "name": "连环",
+    "type": "active",
+    "owner": "荀攸",
+    "rarity": "exclusive",
+    "desc": "荀攸的active技能。"
+  },
+  "sk_pas_荀攸": {
+    "id": "sk_pas_荀攸",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "荀攸",
+    "rarity": "exclusive",
+    "desc": "荀攸的passive技能。"
+  },
+  "sk_act_庞德": {
+    "id": "sk_act_庞德",
+    "name": "力战",
+    "type": "active",
+    "owner": "庞德",
+    "rarity": "exclusive",
+    "desc": "庞德的active技能。"
+  },
+  "sk_pas_庞德": {
+    "id": "sk_pas_庞德",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "庞德",
+    "rarity": "exclusive",
+    "desc": "庞德的passive技能。"
+  },
+  "sk_act_徐晃": {
+    "id": "sk_act_徐晃",
+    "name": "破军",
+    "type": "active",
+    "owner": "徐晃",
+    "rarity": "exclusive",
+    "desc": "徐晃的active技能。"
+  },
+  "sk_pas_徐晃": {
+    "id": "sk_pas_徐晃",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "徐晃",
+    "rarity": "exclusive",
+    "desc": "徐晃的passive技能。"
+  },
+  "sk_act_于禁": {
+    "id": "sk_act_于禁",
+    "name": "突袭",
+    "type": "active",
+    "owner": "于禁",
+    "rarity": "exclusive",
+    "desc": "于禁的active技能。"
+  },
+  "sk_pas_于禁": {
+    "id": "sk_pas_于禁",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "于禁",
+    "rarity": "exclusive",
+    "desc": "于禁的passive技能。"
+  },
+  "sk_act_曹洪": {
+    "id": "sk_act_曹洪",
+    "name": "横扫",
+    "type": "active",
+    "owner": "曹洪",
+    "rarity": "exclusive",
+    "desc": "曹洪的active技能。"
+  },
+  "sk_pas_曹洪": {
+    "id": "sk_pas_曹洪",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "曹洪",
+    "rarity": "exclusive",
+    "desc": "曹洪的passive技能。"
+  },
+  "sk_act_姜维": {
+    "id": "sk_act_姜维",
+    "name": "应变",
+    "type": "active",
+    "owner": "姜维",
+    "rarity": "exclusive",
+    "desc": "姜维的active技能。"
+  },
+  "sk_pas_姜维": {
+    "id": "sk_pas_姜维",
+    "name": "强运",
+    "type": "passive",
+    "owner": "姜维",
+    "rarity": "exclusive",
+    "desc": "姜维的passive技能。"
+  },
+  "sk_act_魏延": {
+    "id": "sk_act_魏延",
+    "name": "横扫",
+    "type": "active",
+    "owner": "魏延",
+    "rarity": "exclusive",
+    "desc": "魏延的active技能。"
+  },
+  "sk_pas_魏延": {
+    "id": "sk_pas_魏延",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "魏延",
+    "rarity": "exclusive",
+    "desc": "魏延的passive技能。"
+  },
+  "sk_act_庞统": {
+    "id": "sk_act_庞统",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "庞统",
+    "rarity": "exclusive",
+    "desc": "庞统的active技能。"
+  },
+  "sk_pas_庞统": {
+    "id": "sk_pas_庞统",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "庞统",
+    "rarity": "exclusive",
+    "desc": "庞统的passive技能。"
+  },
+  "sk_act_法正": {
+    "id": "sk_act_法正",
+    "name": "火计",
+    "type": "active",
+    "owner": "法正",
+    "rarity": "exclusive",
+    "desc": "法正的active技能。"
+  },
+  "sk_pas_法正": {
+    "id": "sk_pas_法正",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "法正",
+    "rarity": "exclusive",
+    "desc": "法正的passive技能。"
+  },
+  "sk_act_黄月英": {
+    "id": "sk_act_黄月英",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "黄月英",
+    "rarity": "exclusive",
+    "desc": "黄月英的active技能。"
+  },
+  "sk_pas_黄月英": {
+    "id": "sk_pas_黄月英",
+    "name": "神算",
+    "type": "passive",
+    "owner": "黄月英",
+    "rarity": "exclusive",
+    "desc": "黄月英的passive技能。"
+  },
+  "sk_act_关平": {
+    "id": "sk_act_关平",
+    "name": "横扫",
+    "type": "active",
+    "owner": "关平",
+    "rarity": "exclusive",
+    "desc": "关平的active技能。"
+  },
+  "sk_pas_关平": {
+    "id": "sk_pas_关平",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "关平",
+    "rarity": "exclusive",
+    "desc": "关平的passive技能。"
+  },
+  "sk_act_马岱": {
+    "id": "sk_act_马岱",
+    "name": "斩将",
+    "type": "active",
+    "owner": "马岱",
+    "rarity": "exclusive",
+    "desc": "马岱的active技能。"
+  },
+  "sk_pas_马岱": {
+    "id": "sk_pas_马岱",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "马岱",
+    "rarity": "exclusive",
+    "desc": "马岱的passive技能。"
+  },
+  "sk_act_徐庶": {
+    "id": "sk_act_徐庶",
+    "name": "连环",
+    "type": "active",
+    "owner": "徐庶",
+    "rarity": "exclusive",
+    "desc": "徐庶的active技能。"
+  },
+  "sk_pas_徐庶": {
+    "id": "sk_pas_徐庶",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "徐庶",
+    "rarity": "exclusive",
+    "desc": "徐庶的passive技能。"
+  },
+  "sk_act_王平": {
+    "id": "sk_act_王平",
+    "name": "号令",
+    "type": "active",
+    "owner": "王平",
+    "rarity": "exclusive",
+    "desc": "王平的active技能。"
+  },
+  "sk_pas_王平": {
+    "id": "sk_pas_王平",
+    "name": "威望",
+    "type": "passive",
+    "owner": "王平",
+    "rarity": "exclusive",
+    "desc": "王平的passive技能。"
+  },
+  "sk_act_太史慈": {
+    "id": "sk_act_太史慈",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "太史慈",
+    "rarity": "exclusive",
+    "desc": "太史慈的active技能。"
+  },
+  "sk_pas_太史慈": {
+    "id": "sk_pas_太史慈",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "太史慈",
+    "rarity": "exclusive",
+    "desc": "太史慈的passive技能。"
+  },
+  "sk_act_吕蒙": {
+    "id": "sk_act_吕蒙",
+    "name": "应变",
+    "type": "active",
+    "owner": "吕蒙",
+    "rarity": "exclusive",
+    "desc": "吕蒙的active技能。"
+  },
+  "sk_pas_吕蒙": {
+    "id": "sk_pas_吕蒙",
+    "name": "强运",
+    "type": "passive",
+    "owner": "吕蒙",
+    "rarity": "exclusive",
+    "desc": "吕蒙的passive技能。"
+  },
+  "sk_act_鲁肃": {
+    "id": "sk_act_鲁肃",
+    "name": "妙算",
+    "type": "active",
+    "owner": "鲁肃",
+    "rarity": "exclusive",
+    "desc": "鲁肃的active技能。"
+  },
+  "sk_pas_鲁肃": {
+    "id": "sk_pas_鲁肃",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "鲁肃",
+    "rarity": "exclusive",
+    "desc": "鲁肃的passive技能。"
+  },
+  "sk_act_黄盖": {
+    "id": "sk_act_黄盖",
+    "name": "横扫",
+    "type": "active",
+    "owner": "黄盖",
+    "rarity": "exclusive",
+    "desc": "黄盖的active技能。"
+  },
+  "sk_pas_黄盖": {
+    "id": "sk_pas_黄盖",
+    "name": "武略",
+    "type": "passive",
+    "owner": "黄盖",
+    "rarity": "exclusive",
+    "desc": "黄盖的passive技能。"
+  },
+  "sk_act_孙尚香": {
+    "id": "sk_act_孙尚香",
+    "name": "突袭",
+    "type": "active",
+    "owner": "孙尚香",
+    "rarity": "exclusive",
+    "desc": "孙尚香的active技能。"
+  },
+  "sk_pas_孙尚香": {
+    "id": "sk_pas_孙尚香",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "孙尚香",
+    "rarity": "exclusive",
+    "desc": "孙尚香的passive技能。"
+  },
+  "sk_act_周泰": {
+    "id": "sk_act_周泰",
+    "name": "斩将",
+    "type": "active",
+    "owner": "周泰",
+    "rarity": "exclusive",
+    "desc": "周泰的active技能。"
+  },
+  "sk_pas_周泰": {
+    "id": "sk_pas_周泰",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "周泰",
+    "rarity": "exclusive",
+    "desc": "周泰的passive技能。"
+  },
+  "sk_act_程普": {
+    "id": "sk_act_程普",
+    "name": "御敌",
+    "type": "active",
+    "owner": "程普",
+    "rarity": "exclusive",
+    "desc": "程普的active技能。"
+  },
+  "sk_pas_程普": {
+    "id": "sk_pas_程普",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "程普",
+    "rarity": "exclusive",
+    "desc": "程普的passive技能。"
+  },
+  "sk_act_凌统": {
+    "id": "sk_act_凌统",
+    "name": "横扫",
+    "type": "active",
+    "owner": "凌统",
+    "rarity": "exclusive",
+    "desc": "凌统的active技能。"
+  },
+  "sk_pas_凌统": {
+    "id": "sk_pas_凌统",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "凌统",
+    "rarity": "exclusive",
+    "desc": "凌统的passive技能。"
+  },
+  "sk_act_韩当": {
+    "id": "sk_act_韩当",
+    "name": "横扫",
+    "type": "active",
+    "owner": "韩当",
+    "rarity": "exclusive",
+    "desc": "韩当的active技能。"
+  },
+  "sk_pas_韩当": {
+    "id": "sk_pas_韩当",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "韩当",
+    "rarity": "exclusive",
+    "desc": "韩当的passive技能。"
+  },
+  "sk_act_华雄": {
+    "id": "sk_act_华雄",
+    "name": "破军",
+    "type": "active",
+    "owner": "华雄",
+    "rarity": "exclusive",
+    "desc": "华雄的active技能。"
+  },
+  "sk_pas_华雄": {
+    "id": "sk_pas_华雄",
+    "name": "武略",
+    "type": "passive",
+    "owner": "华雄",
+    "rarity": "exclusive",
+    "desc": "华雄的passive技能。"
+  },
+  "sk_act_颜良": {
+    "id": "sk_act_颜良",
+    "name": "横扫",
+    "type": "active",
+    "owner": "颜良",
+    "rarity": "exclusive",
+    "desc": "颜良的active技能。"
+  },
+  "sk_pas_颜良": {
+    "id": "sk_pas_颜良",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "颜良",
+    "rarity": "exclusive",
+    "desc": "颜良的passive技能。"
+  },
+  "sk_act_文丑": {
+    "id": "sk_act_文丑",
+    "name": "斩将",
+    "type": "active",
+    "owner": "文丑",
+    "rarity": "exclusive",
+    "desc": "文丑的active技能。"
+  },
+  "sk_pas_文丑": {
+    "id": "sk_pas_文丑",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "文丑",
+    "rarity": "exclusive",
+    "desc": "文丑的passive技能。"
+  },
+  "sk_act_高顺": {
+    "id": "sk_act_高顺",
+    "name": "横扫",
+    "type": "active",
+    "owner": "高顺",
+    "rarity": "exclusive",
+    "desc": "高顺的active技能。"
+  },
+  "sk_pas_高顺": {
+    "id": "sk_pas_高顺",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "高顺",
+    "rarity": "exclusive",
+    "desc": "高顺的passive技能。"
+  },
+  "sk_act_陈宫": {
+    "id": "sk_act_陈宫",
+    "name": "连环",
+    "type": "active",
+    "owner": "陈宫",
+    "rarity": "exclusive",
+    "desc": "陈宫的active技能。"
+  },
+  "sk_pas_陈宫": {
+    "id": "sk_pas_陈宫",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "陈宫",
+    "rarity": "exclusive",
+    "desc": "陈宫的passive技能。"
+  },
+  "sk_act_公孙瓒": {
+    "id": "sk_act_公孙瓒",
+    "name": "破军",
+    "type": "active",
+    "owner": "公孙瓒",
+    "rarity": "exclusive",
+    "desc": "公孙瓒的active技能。"
+  },
+  "sk_pas_公孙瓒": {
+    "id": "sk_pas_公孙瓒",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "公孙瓒",
+    "rarity": "exclusive",
+    "desc": "公孙瓒的passive技能。"
+  },
+  "sk_act_乐进": {
+    "id": "sk_act_乐进",
+    "name": "破军",
+    "type": "active",
+    "owner": "乐进",
+    "rarity": "generic",
+    "desc": "乐进的active技能。"
+  },
+  "sk_pas_乐进": {
+    "id": "sk_pas_乐进",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "乐进",
+    "rarity": "generic",
+    "desc": "乐进的passive技能。"
+  },
+  "sk_act_李典": {
+    "id": "sk_act_李典",
+    "name": "援军",
+    "type": "active",
+    "owner": "李典",
+    "rarity": "generic",
+    "desc": "李典的active技能。"
+  },
+  "sk_pas_李典": {
+    "id": "sk_pas_李典",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "李典",
+    "rarity": "generic",
+    "desc": "李典的passive技能。"
+  },
+  "sk_act_程昱": {
+    "id": "sk_act_程昱",
+    "name": "妙算",
+    "type": "active",
+    "owner": "程昱",
+    "rarity": "generic",
+    "desc": "程昱的active技能。"
+  },
+  "sk_pas_程昱": {
+    "id": "sk_pas_程昱",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "程昱",
+    "rarity": "generic",
+    "desc": "程昱的passive技能。"
+  },
+  "sk_act_满宠": {
+    "id": "sk_act_满宠",
+    "name": "连环",
+    "type": "active",
+    "owner": "满宠",
+    "rarity": "generic",
+    "desc": "满宠的active技能。"
+  },
+  "sk_pas_满宠": {
+    "id": "sk_pas_满宠",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "满宠",
+    "rarity": "generic",
+    "desc": "满宠的passive技能。"
+  },
+  "sk_act_文聘": {
+    "id": "sk_act_文聘",
+    "name": "破军",
+    "type": "active",
+    "owner": "文聘",
+    "rarity": "generic",
+    "desc": "文聘的active技能。"
+  },
+  "sk_pas_文聘": {
+    "id": "sk_pas_文聘",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "文聘",
+    "rarity": "generic",
+    "desc": "文聘的passive技能。"
+  },
+  "sk_act_曹纯": {
+    "id": "sk_act_曹纯",
+    "name": "横扫",
+    "type": "active",
+    "owner": "曹纯",
+    "rarity": "generic",
+    "desc": "曹纯的active技能。"
+  },
+  "sk_pas_曹纯": {
+    "id": "sk_pas_曹纯",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "曹纯",
+    "rarity": "generic",
+    "desc": "曹纯的passive技能。"
+  },
+  "sk_act_邓艾": {
+    "id": "sk_act_邓艾",
+    "name": "威压",
+    "type": "active",
+    "owner": "邓艾",
+    "rarity": "generic",
+    "desc": "邓艾的active技能。"
+  },
+  "sk_pas_邓艾": {
+    "id": "sk_pas_邓艾",
+    "name": "威望",
+    "type": "passive",
+    "owner": "邓艾",
+    "rarity": "generic",
+    "desc": "邓艾的passive技能。"
+  },
+  "sk_act_钟会": {
+    "id": "sk_act_钟会",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "钟会",
+    "rarity": "generic",
+    "desc": "钟会的active技能。"
+  },
+  "sk_pas_钟会": {
+    "id": "sk_pas_钟会",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "钟会",
+    "rarity": "generic",
+    "desc": "钟会的passive技能。"
+  },
+  "sk_act_蔡瑁": {
+    "id": "sk_act_蔡瑁",
+    "name": "统御",
+    "type": "active",
+    "owner": "蔡瑁",
+    "rarity": "generic",
+    "desc": "蔡瑁的active技能。"
+  },
+  "sk_pas_蔡瑁": {
+    "id": "sk_pas_蔡瑁",
+    "name": "御众",
+    "type": "passive",
+    "owner": "蔡瑁",
+    "rarity": "generic",
+    "desc": "蔡瑁的passive技能。"
+  },
+  "sk_act_曹丕": {
+    "id": "sk_act_曹丕",
+    "name": "援军",
+    "type": "active",
+    "owner": "曹丕",
+    "rarity": "generic",
+    "desc": "曹丕的active技能。"
+  },
+  "sk_pas_曹丕": {
+    "id": "sk_pas_曹丕",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "曹丕",
+    "rarity": "generic",
+    "desc": "曹丕的passive技能。"
+  },
+  "sk_act_曹彰": {
+    "id": "sk_act_曹彰",
+    "name": "突袭",
+    "type": "active",
+    "owner": "曹彰",
+    "rarity": "generic",
+    "desc": "曹彰的active技能。"
+  },
+  "sk_pas_曹彰": {
+    "id": "sk_pas_曹彰",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "曹彰",
+    "rarity": "generic",
+    "desc": "曹彰的passive技能。"
+  },
+  "sk_act_郭淮": {
+    "id": "sk_act_郭淮",
+    "name": "威压",
+    "type": "active",
+    "owner": "郭淮",
+    "rarity": "generic",
+    "desc": "郭淮的active技能。"
+  },
+  "sk_pas_郭淮": {
+    "id": "sk_pas_郭淮",
+    "name": "威望",
+    "type": "passive",
+    "owner": "郭淮",
+    "rarity": "generic",
+    "desc": "郭淮的passive技能。"
+  },
+  "sk_act_关兴": {
+    "id": "sk_act_关兴",
+    "name": "横扫",
+    "type": "active",
+    "owner": "关兴",
+    "rarity": "generic",
+    "desc": "关兴的active技能。"
+  },
+  "sk_pas_关兴": {
+    "id": "sk_pas_关兴",
+    "name": "武略",
+    "type": "passive",
+    "owner": "关兴",
+    "rarity": "generic",
+    "desc": "关兴的passive技能。"
+  },
+  "sk_act_张苞": {
+    "id": "sk_act_张苞",
+    "name": "横扫",
+    "type": "active",
+    "owner": "张苞",
+    "rarity": "generic",
+    "desc": "张苞的active技能。"
+  },
+  "sk_pas_张苞": {
+    "id": "sk_pas_张苞",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "张苞",
+    "rarity": "generic",
+    "desc": "张苞的passive技能。"
+  },
+  "sk_act_廖化": {
+    "id": "sk_act_廖化",
+    "name": "突袭",
+    "type": "active",
+    "owner": "廖化",
+    "rarity": "generic",
+    "desc": "廖化的active技能。"
+  },
+  "sk_pas_廖化": {
+    "id": "sk_pas_廖化",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "廖化",
+    "rarity": "generic",
+    "desc": "廖化的passive技能。"
+  },
+  "sk_act_严颜": {
+    "id": "sk_act_严颜",
+    "name": "横扫",
+    "type": "active",
+    "owner": "严颜",
+    "rarity": "generic",
+    "desc": "严颜的active技能。"
+  },
+  "sk_pas_严颜": {
+    "id": "sk_pas_严颜",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "严颜",
+    "rarity": "generic",
+    "desc": "严颜的passive技能。"
+  },
+  "sk_act_周仓": {
+    "id": "sk_act_周仓",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "周仓",
+    "rarity": "generic",
+    "desc": "周仓的active技能。"
+  },
+  "sk_pas_周仓": {
+    "id": "sk_pas_周仓",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "周仓",
+    "rarity": "generic",
+    "desc": "周仓的passive技能。"
+  },
+  "sk_act_马良": {
+    "id": "sk_act_马良",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "马良",
+    "rarity": "generic",
+    "desc": "马良的active技能。"
+  },
+  "sk_pas_马良": {
+    "id": "sk_pas_马良",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "马良",
+    "rarity": "generic",
+    "desc": "马良的passive技能。"
+  },
+  "sk_act_蒋琬": {
+    "id": "sk_act_蒋琬",
+    "name": "激励",
+    "type": "active",
+    "owner": "蒋琬",
+    "rarity": "generic",
+    "desc": "蒋琬的active技能。"
+  },
+  "sk_pas_蒋琬": {
+    "id": "sk_pas_蒋琬",
+    "name": "威望",
+    "type": "passive",
+    "owner": "蒋琬",
+    "rarity": "generic",
+    "desc": "蒋琬的passive技能。"
+  },
+  "sk_act_费祎": {
+    "id": "sk_act_费祎",
+    "name": "妙算",
+    "type": "active",
+    "owner": "费祎",
+    "rarity": "generic",
+    "desc": "费祎的active技能。"
+  },
+  "sk_pas_费祎": {
+    "id": "sk_pas_费祎",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "费祎",
+    "rarity": "generic",
+    "desc": "费祎的passive技能。"
+  },
+  "sk_act_黄权": {
+    "id": "sk_act_黄权",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "黄权",
+    "rarity": "generic",
+    "desc": "黄权的active技能。"
+  },
+  "sk_pas_黄权": {
+    "id": "sk_pas_黄权",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "黄权",
+    "rarity": "generic",
+    "desc": "黄权的passive技能。"
+  },
+  "sk_act_刘封": {
+    "id": "sk_act_刘封",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "刘封",
+    "rarity": "generic",
+    "desc": "刘封的active技能。"
+  },
+  "sk_pas_刘封": {
+    "id": "sk_pas_刘封",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "刘封",
+    "rarity": "generic",
+    "desc": "刘封的passive技能。"
+  },
+  "sk_act_糜竺": {
+    "id": "sk_act_糜竺",
+    "name": "威压",
+    "type": "active",
+    "owner": "糜竺",
+    "rarity": "generic",
+    "desc": "糜竺的active技能。"
+  },
+  "sk_pas_糜竺": {
+    "id": "sk_pas_糜竺",
+    "name": "御众",
+    "type": "passive",
+    "owner": "糜竺",
+    "rarity": "generic",
+    "desc": "糜竺的passive技能。"
+  },
+  "sk_act_徐盛": {
+    "id": "sk_act_徐盛",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "徐盛",
+    "rarity": "generic",
+    "desc": "徐盛的active技能。"
+  },
+  "sk_pas_徐盛": {
+    "id": "sk_pas_徐盛",
+    "name": "武略",
+    "type": "passive",
+    "owner": "徐盛",
+    "rarity": "generic",
+    "desc": "徐盛的passive技能。"
+  },
+  "sk_act_丁奉": {
+    "id": "sk_act_丁奉",
+    "name": "力战",
+    "type": "active",
+    "owner": "丁奉",
+    "rarity": "generic",
+    "desc": "丁奉的active技能。"
+  },
+  "sk_pas_丁奉": {
+    "id": "sk_pas_丁奉",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "丁奉",
+    "rarity": "generic",
+    "desc": "丁奉的passive技能。"
+  },
+  "sk_act_张昭": {
+    "id": "sk_act_张昭",
+    "name": "火计",
+    "type": "active",
+    "owner": "张昭",
+    "rarity": "generic",
+    "desc": "张昭的active技能。"
+  },
+  "sk_pas_张昭": {
+    "id": "sk_pas_张昭",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "张昭",
+    "rarity": "generic",
+    "desc": "张昭的passive技能。"
+  },
+  "sk_act_诸葛瑾": {
+    "id": "sk_act_诸葛瑾",
+    "name": "火计",
+    "type": "active",
+    "owner": "诸葛瑾",
+    "rarity": "generic",
+    "desc": "诸葛瑾的active技能。"
+  },
+  "sk_pas_诸葛瑾": {
+    "id": "sk_pas_诸葛瑾",
+    "name": "神算",
+    "type": "passive",
+    "owner": "诸葛瑾",
+    "rarity": "generic",
+    "desc": "诸葛瑾的passive技能。"
+  },
+  "sk_act_小乔": {
+    "id": "sk_act_小乔",
+    "name": "妙算",
+    "type": "active",
+    "owner": "小乔",
+    "rarity": "generic",
+    "desc": "小乔的active技能。"
+  },
+  "sk_pas_小乔": {
+    "id": "sk_pas_小乔",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "小乔",
+    "rarity": "generic",
+    "desc": "小乔的passive技能。"
+  },
+  "sk_act_大乔": {
+    "id": "sk_act_大乔",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "大乔",
+    "rarity": "generic",
+    "desc": "大乔的active技能。"
+  },
+  "sk_pas_大乔": {
+    "id": "sk_pas_大乔",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "大乔",
+    "rarity": "generic",
+    "desc": "大乔的passive技能。"
+  },
+  "sk_act_朱然": {
+    "id": "sk_act_朱然",
+    "name": "力战",
+    "type": "active",
+    "owner": "朱然",
+    "rarity": "generic",
+    "desc": "朱然的active技能。"
+  },
+  "sk_pas_朱然": {
+    "id": "sk_pas_朱然",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "朱然",
+    "rarity": "generic",
+    "desc": "朱然的passive技能。"
+  },
+  "sk_act_朱桓": {
+    "id": "sk_act_朱桓",
+    "name": "破军",
+    "type": "active",
+    "owner": "朱桓",
+    "rarity": "generic",
+    "desc": "朱桓的active技能。"
+  },
+  "sk_pas_朱桓": {
+    "id": "sk_pas_朱桓",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "朱桓",
+    "rarity": "generic",
+    "desc": "朱桓的passive技能。"
+  },
+  "sk_act_全琮": {
+    "id": "sk_act_全琮",
+    "name": "斩将",
+    "type": "active",
+    "owner": "全琮",
+    "rarity": "generic",
+    "desc": "全琮的active技能。"
+  },
+  "sk_pas_全琮": {
+    "id": "sk_pas_全琮",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "全琮",
+    "rarity": "generic",
+    "desc": "全琮的passive技能。"
+  },
+  "sk_act_潘璋": {
+    "id": "sk_act_潘璋",
+    "name": "横扫",
+    "type": "active",
+    "owner": "潘璋",
+    "rarity": "generic",
+    "desc": "潘璋的active技能。"
+  },
+  "sk_pas_潘璋": {
+    "id": "sk_pas_潘璋",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "潘璋",
+    "rarity": "generic",
+    "desc": "潘璋的passive技能。"
+  },
+  "sk_act_马忠": {
+    "id": "sk_act_马忠",
+    "name": "破军",
+    "type": "active",
+    "owner": "马忠",
+    "rarity": "generic",
+    "desc": "马忠的active技能。"
+  },
+  "sk_pas_马忠": {
+    "id": "sk_pas_马忠",
+    "name": "武略",
+    "type": "passive",
+    "owner": "马忠",
+    "rarity": "generic",
+    "desc": "马忠的passive技能。"
+  },
+  "sk_act_顾雍": {
+    "id": "sk_act_顾雍",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "顾雍",
+    "rarity": "generic",
+    "desc": "顾雍的active技能。"
+  },
+  "sk_pas_顾雍": {
+    "id": "sk_pas_顾雍",
+    "name": "神算",
+    "type": "passive",
+    "owner": "顾雍",
+    "rarity": "generic",
+    "desc": "顾雍的passive技能。"
+  },
+  "sk_act_袁术": {
+    "id": "sk_act_袁术",
+    "name": "援军",
+    "type": "active",
+    "owner": "袁术",
+    "rarity": "generic",
+    "desc": "袁术的active技能。"
+  },
+  "sk_pas_袁术": {
+    "id": "sk_pas_袁术",
+    "name": "御众",
+    "type": "passive",
+    "owner": "袁术",
+    "rarity": "generic",
+    "desc": "袁术的passive技能。"
+  },
+  "sk_act_刘表": {
+    "id": "sk_act_刘表",
+    "name": "统御",
+    "type": "active",
+    "owner": "刘表",
+    "rarity": "generic",
+    "desc": "刘表的active技能。"
+  },
+  "sk_pas_刘表": {
+    "id": "sk_pas_刘表",
+    "name": "御众",
+    "type": "passive",
+    "owner": "刘表",
+    "rarity": "generic",
+    "desc": "刘表的passive技能。"
+  },
+  "sk_act_刘璋": {
+    "id": "sk_act_刘璋",
+    "name": "激励",
+    "type": "active",
+    "owner": "刘璋",
+    "rarity": "generic",
+    "desc": "刘璋的active技能。"
+  },
+  "sk_pas_刘璋": {
+    "id": "sk_pas_刘璋",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "刘璋",
+    "rarity": "generic",
+    "desc": "刘璋的passive技能。"
+  },
+  "sk_act_张绣": {
+    "id": "sk_act_张绣",
+    "name": "斩将",
+    "type": "active",
+    "owner": "张绣",
+    "rarity": "generic",
+    "desc": "张绣的active技能。"
+  },
+  "sk_pas_张绣": {
+    "id": "sk_pas_张绣",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "张绣",
+    "rarity": "generic",
+    "desc": "张绣的passive技能。"
+  },
+  "sk_act_马腾": {
+    "id": "sk_act_马腾",
+    "name": "斩将",
+    "type": "active",
+    "owner": "马腾",
+    "rarity": "generic",
+    "desc": "马腾的active技能。"
+  },
+  "sk_pas_马腾": {
+    "id": "sk_pas_马腾",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "马腾",
+    "rarity": "generic",
+    "desc": "马腾的passive技能。"
+  },
+  "sk_act_韩遂": {
+    "id": "sk_act_韩遂",
+    "name": "突袭",
+    "type": "active",
+    "owner": "韩遂",
+    "rarity": "generic",
+    "desc": "韩遂的active技能。"
+  },
+  "sk_pas_韩遂": {
+    "id": "sk_pas_韩遂",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "韩遂",
+    "rarity": "generic",
+    "desc": "韩遂的passive技能。"
+  },
+  "sk_act_刘繇": {
+    "id": "sk_act_刘繇",
+    "name": "激励",
+    "type": "active",
+    "owner": "刘繇",
+    "rarity": "generic",
+    "desc": "刘繇的active技能。"
+  },
+  "sk_pas_刘繇": {
+    "id": "sk_pas_刘繇",
+    "name": "威望",
+    "type": "passive",
+    "owner": "刘繇",
+    "rarity": "generic",
+    "desc": "刘繇的passive技能。"
+  },
+  "sk_act_张鲁": {
+    "id": "sk_act_张鲁",
+    "name": "号令",
+    "type": "active",
+    "owner": "张鲁",
+    "rarity": "generic",
+    "desc": "张鲁的active技能。"
+  },
+  "sk_pas_张鲁": {
+    "id": "sk_pas_张鲁",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "张鲁",
+    "rarity": "generic",
+    "desc": "张鲁的passive技能。"
+  },
+  "sk_act_刘岱": {
+    "id": "sk_act_刘岱",
+    "name": "号令",
+    "type": "active",
+    "owner": "刘岱",
+    "rarity": "generic",
+    "desc": "刘岱的active技能。"
+  },
+  "sk_pas_刘岱": {
+    "id": "sk_pas_刘岱",
+    "name": "守成",
+    "type": "passive",
+    "owner": "刘岱",
+    "rarity": "generic",
+    "desc": "刘岱的passive技能。"
+  },
+  "sk_act_孔融": {
+    "id": "sk_act_孔融",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "孔融",
+    "rarity": "generic",
+    "desc": "孔融的active技能。"
+  },
+  "sk_pas_孔融": {
+    "id": "sk_pas_孔融",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "孔融",
+    "rarity": "generic",
+    "desc": "孔融的passive技能。"
+  },
+  "sk_act_陶谦": {
+    "id": "sk_act_陶谦",
+    "name": "威压",
+    "type": "active",
+    "owner": "陶谦",
+    "rarity": "generic",
+    "desc": "陶谦的active技能。"
+  },
+  "sk_pas_陶谦": {
+    "id": "sk_pas_陶谦",
+    "name": "威望",
+    "type": "passive",
+    "owner": "陶谦",
+    "rarity": "generic",
+    "desc": "陶谦的passive技能。"
+  },
+  "sk_act_曹植": {
+    "id": "sk_act_曹植",
+    "name": "妙算",
+    "type": "active",
+    "owner": "曹植",
+    "rarity": "generic",
+    "desc": "曹植的active技能。"
+  },
+  "sk_pas_曹植": {
+    "id": "sk_pas_曹植",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "曹植",
+    "rarity": "generic",
+    "desc": "曹植的passive技能。"
+  },
+  "sk_act_夏侯尚": {
+    "id": "sk_act_夏侯尚",
+    "name": "力战",
+    "type": "active",
+    "owner": "夏侯尚",
+    "rarity": "generic",
+    "desc": "夏侯尚的active技能。"
+  },
+  "sk_pas_夏侯尚": {
+    "id": "sk_pas_夏侯尚",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "夏侯尚",
+    "rarity": "generic",
+    "desc": "夏侯尚的passive技能。"
+  },
+  "sk_act_郝昭": {
+    "id": "sk_act_郝昭",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "郝昭",
+    "rarity": "generic",
+    "desc": "郝昭的active技能。"
+  },
+  "sk_pas_郝昭": {
+    "id": "sk_pas_郝昭",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "郝昭",
+    "rarity": "generic",
+    "desc": "郝昭的passive技能。"
+  },
+  "sk_act_王双": {
+    "id": "sk_act_王双",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "王双",
+    "rarity": "generic",
+    "desc": "王双的active技能。"
+  },
+  "sk_pas_王双": {
+    "id": "sk_pas_王双",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "王双",
+    "rarity": "generic",
+    "desc": "王双的passive技能。"
+  },
+  "sk_act_许攸": {
+    "id": "sk_act_许攸",
+    "name": "连环",
+    "type": "active",
+    "owner": "许攸",
+    "rarity": "generic",
+    "desc": "许攸的active技能。"
+  },
+  "sk_pas_许攸": {
+    "id": "sk_pas_许攸",
+    "name": "神算",
+    "type": "passive",
+    "owner": "许攸",
+    "rarity": "generic",
+    "desc": "许攸的passive技能。"
+  },
+  "sk_act_曹真": {
+    "id": "sk_act_曹真",
+    "name": "援军",
+    "type": "active",
+    "owner": "曹真",
+    "rarity": "generic",
+    "desc": "曹真的active技能。"
+  },
+  "sk_pas_曹真": {
+    "id": "sk_pas_曹真",
+    "name": "守成",
+    "type": "passive",
+    "owner": "曹真",
+    "rarity": "generic",
+    "desc": "曹真的passive技能。"
+  },
+  "sk_act_曹休": {
+    "id": "sk_act_曹休",
+    "name": "破军",
+    "type": "active",
+    "owner": "曹休",
+    "rarity": "generic",
+    "desc": "曹休的active技能。"
+  },
+  "sk_pas_曹休": {
+    "id": "sk_pas_曹休",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "曹休",
+    "rarity": "generic",
+    "desc": "曹休的passive技能。"
+  },
+  "sk_act_陈群": {
+    "id": "sk_act_陈群",
+    "name": "妙算",
+    "type": "active",
+    "owner": "陈群",
+    "rarity": "generic",
+    "desc": "陈群的active技能。"
+  },
+  "sk_pas_陈群": {
+    "id": "sk_pas_陈群",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "陈群",
+    "rarity": "generic",
+    "desc": "陈群的passive技能。"
+  },
+  "sk_act_司马朗": {
+    "id": "sk_act_司马朗",
+    "name": "妙算",
+    "type": "active",
+    "owner": "司马朗",
+    "rarity": "generic",
+    "desc": "司马朗的active技能。"
+  },
+  "sk_pas_司马朗": {
+    "id": "sk_pas_司马朗",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "司马朗",
+    "rarity": "generic",
+    "desc": "司马朗的passive技能。"
+  },
+  "sk_act_卞夫人": {
+    "id": "sk_act_卞夫人",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "卞夫人",
+    "rarity": "generic",
+    "desc": "卞夫人的active技能。"
+  },
+  "sk_pas_卞夫人": {
+    "id": "sk_pas_卞夫人",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "卞夫人",
+    "rarity": "generic",
+    "desc": "卞夫人的passive技能。"
+  },
+  "sk_act_毛玠": {
+    "id": "sk_act_毛玠",
+    "name": "妙算",
+    "type": "active",
+    "owner": "毛玠",
+    "rarity": "generic",
+    "desc": "毛玠的active技能。"
+  },
+  "sk_pas_毛玠": {
+    "id": "sk_pas_毛玠",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "毛玠",
+    "rarity": "generic",
+    "desc": "毛玠的passive技能。"
+  },
+  "sk_act_李通": {
+    "id": "sk_act_李通",
+    "name": "横扫",
+    "type": "active",
+    "owner": "李通",
+    "rarity": "generic",
+    "desc": "李通的active技能。"
+  },
+  "sk_pas_李通": {
+    "id": "sk_pas_李通",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "李通",
+    "rarity": "generic",
+    "desc": "李通的passive技能。"
+  },
+  "sk_act_简雍": {
+    "id": "sk_act_简雍",
+    "name": "妙算",
+    "type": "active",
+    "owner": "简雍",
+    "rarity": "generic",
+    "desc": "简雍的active技能。"
+  },
+  "sk_pas_简雍": {
+    "id": "sk_pas_简雍",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "简雍",
+    "rarity": "generic",
+    "desc": "简雍的passive技能。"
+  },
+  "sk_act_孙乾": {
+    "id": "sk_act_孙乾",
+    "name": "火计",
+    "type": "active",
+    "owner": "孙乾",
+    "rarity": "generic",
+    "desc": "孙乾的active技能。"
+  },
+  "sk_pas_孙乾": {
+    "id": "sk_pas_孙乾",
+    "name": "神算",
+    "type": "passive",
+    "owner": "孙乾",
+    "rarity": "generic",
+    "desc": "孙乾的passive技能。"
+  },
+  "sk_act_马谡": {
+    "id": "sk_act_马谡",
+    "name": "连环",
+    "type": "active",
+    "owner": "马谡",
+    "rarity": "generic",
+    "desc": "马谡的active技能。"
+  },
+  "sk_pas_马谡": {
+    "id": "sk_pas_马谡",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "马谡",
+    "rarity": "generic",
+    "desc": "马谡的passive技能。"
+  },
+  "sk_act_刘巴": {
+    "id": "sk_act_刘巴",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "刘巴",
+    "rarity": "generic",
+    "desc": "刘巴的active技能。"
+  },
+  "sk_pas_刘巴": {
+    "id": "sk_pas_刘巴",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "刘巴",
+    "rarity": "generic",
+    "desc": "刘巴的passive技能。"
+  },
+  "sk_act_董允": {
+    "id": "sk_act_董允",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "董允",
+    "rarity": "generic",
+    "desc": "董允的active技能。"
+  },
+  "sk_pas_董允": {
+    "id": "sk_pas_董允",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "董允",
+    "rarity": "generic",
+    "desc": "董允的passive技能。"
+  },
+  "sk_act_伊籍": {
+    "id": "sk_act_伊籍",
+    "name": "连环",
+    "type": "active",
+    "owner": "伊籍",
+    "rarity": "generic",
+    "desc": "伊籍的active技能。"
+  },
+  "sk_pas_伊籍": {
+    "id": "sk_pas_伊籍",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "伊籍",
+    "rarity": "generic",
+    "desc": "伊籍的passive技能。"
+  },
+  "sk_act_向朗": {
+    "id": "sk_act_向朗",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "向朗",
+    "rarity": "generic",
+    "desc": "向朗的active技能。"
+  },
+  "sk_pas_向朗": {
+    "id": "sk_pas_向朗",
+    "name": "神算",
+    "type": "passive",
+    "owner": "向朗",
+    "rarity": "generic",
+    "desc": "向朗的passive技能。"
+  },
+  "sk_act_张翼": {
+    "id": "sk_act_张翼",
+    "name": "横扫",
+    "type": "active",
+    "owner": "张翼",
+    "rarity": "generic",
+    "desc": "张翼的active技能。"
+  },
+  "sk_pas_张翼": {
+    "id": "sk_pas_张翼",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "张翼",
+    "rarity": "generic",
+    "desc": "张翼的passive技能。"
+  },
+  "sk_act_张嶷": {
+    "id": "sk_act_张嶷",
+    "name": "横扫",
+    "type": "active",
+    "owner": "张嶷",
+    "rarity": "generic",
+    "desc": "张嶷的active技能。"
+  },
+  "sk_pas_张嶷": {
+    "id": "sk_pas_张嶷",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "张嶷",
+    "rarity": "generic",
+    "desc": "张嶷的passive技能。"
+  },
+  "sk_act_傅肜": {
+    "id": "sk_act_傅肜",
+    "name": "突袭",
+    "type": "active",
+    "owner": "傅肜",
+    "rarity": "generic",
+    "desc": "傅肜的active技能。"
+  },
+  "sk_pas_傅肜": {
+    "id": "sk_pas_傅肜",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "傅肜",
+    "rarity": "generic",
+    "desc": "傅肜的passive技能。"
+  },
+  "sk_act_关索": {
+    "id": "sk_act_关索",
+    "name": "破军",
+    "type": "active",
+    "owner": "关索",
+    "rarity": "generic",
+    "desc": "关索的active技能。"
+  },
+  "sk_pas_关索": {
+    "id": "sk_pas_关索",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "关索",
+    "rarity": "generic",
+    "desc": "关索的passive技能。"
+  },
+  "sk_act_鲍三娘": {
+    "id": "sk_act_鲍三娘",
+    "name": "斩将",
+    "type": "active",
+    "owner": "鲍三娘",
+    "rarity": "generic",
+    "desc": "鲍三娘的active技能。"
+  },
+  "sk_pas_鲍三娘": {
+    "id": "sk_pas_鲍三娘",
+    "name": "武略",
+    "type": "passive",
+    "owner": "鲍三娘",
+    "rarity": "generic",
+    "desc": "鲍三娘的passive技能。"
+  },
+  "sk_act_黄皓": {
+    "id": "sk_act_黄皓",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "黄皓",
+    "rarity": "generic",
+    "desc": "黄皓的active技能。"
+  },
+  "sk_pas_黄皓": {
+    "id": "sk_pas_黄皓",
+    "name": "神算",
+    "type": "passive",
+    "owner": "黄皓",
+    "rarity": "generic",
+    "desc": "黄皓的passive技能。"
+  },
+  "sk_act_陆抗": {
+    "id": "sk_act_陆抗",
+    "name": "号令",
+    "type": "active",
+    "owner": "陆抗",
+    "rarity": "generic",
+    "desc": "陆抗的active技能。"
+  },
+  "sk_pas_陆抗": {
+    "id": "sk_pas_陆抗",
+    "name": "威望",
+    "type": "passive",
+    "owner": "陆抗",
+    "rarity": "generic",
+    "desc": "陆抗的passive技能。"
+  },
+  "sk_act_步练师": {
+    "id": "sk_act_步练师",
+    "name": "连环",
+    "type": "active",
+    "owner": "步练师",
+    "rarity": "generic",
+    "desc": "步练师的active技能。"
+  },
+  "sk_pas_步练师": {
+    "id": "sk_pas_步练师",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "步练师",
+    "rarity": "generic",
+    "desc": "步练师的passive技能。"
+  },
+  "sk_act_朱治": {
+    "id": "sk_act_朱治",
+    "name": "妙算",
+    "type": "active",
+    "owner": "朱治",
+    "rarity": "generic",
+    "desc": "朱治的active技能。"
+  },
+  "sk_pas_朱治": {
+    "id": "sk_pas_朱治",
+    "name": "神算",
+    "type": "passive",
+    "owner": "朱治",
+    "rarity": "generic",
+    "desc": "朱治的passive技能。"
+  },
+  "sk_act_吕范": {
+    "id": "sk_act_吕范",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "吕范",
+    "rarity": "generic",
+    "desc": "吕范的active技能。"
+  },
+  "sk_pas_吕范": {
+    "id": "sk_pas_吕范",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "吕范",
+    "rarity": "generic",
+    "desc": "吕范的passive技能。"
+  },
+  "sk_act_贺齐": {
+    "id": "sk_act_贺齐",
+    "name": "力战",
+    "type": "active",
+    "owner": "贺齐",
+    "rarity": "generic",
+    "desc": "贺齐的active技能。"
+  },
+  "sk_pas_贺齐": {
+    "id": "sk_pas_贺齐",
+    "name": "武略",
+    "type": "passive",
+    "owner": "贺齐",
+    "rarity": "generic",
+    "desc": "贺齐的passive技能。"
+  },
+  "sk_act_董袭": {
+    "id": "sk_act_董袭",
+    "name": "破军",
+    "type": "active",
+    "owner": "董袭",
+    "rarity": "generic",
+    "desc": "董袭的active技能。"
+  },
+  "sk_pas_董袭": {
+    "id": "sk_pas_董袭",
+    "name": "武略",
+    "type": "passive",
+    "owner": "董袭",
+    "rarity": "generic",
+    "desc": "董袭的passive技能。"
+  },
+  "sk_act_陈武": {
+    "id": "sk_act_陈武",
+    "name": "横扫",
+    "type": "active",
+    "owner": "陈武",
+    "rarity": "generic",
+    "desc": "陈武的active技能。"
+  },
+  "sk_pas_陈武": {
+    "id": "sk_pas_陈武",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "陈武",
+    "rarity": "generic",
+    "desc": "陈武的passive技能。"
+  },
+  "sk_act_蒋钦": {
+    "id": "sk_act_蒋钦",
+    "name": "破军",
+    "type": "active",
+    "owner": "蒋钦",
+    "rarity": "generic",
+    "desc": "蒋钦的active技能。"
+  },
+  "sk_pas_蒋钦": {
+    "id": "sk_pas_蒋钦",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "蒋钦",
+    "rarity": "generic",
+    "desc": "蒋钦的passive技能。"
+  },
+  "sk_act_孙翊": {
+    "id": "sk_act_孙翊",
+    "name": "力战",
+    "type": "active",
+    "owner": "孙翊",
+    "rarity": "generic",
+    "desc": "孙翊的active技能。"
+  },
+  "sk_pas_孙翊": {
+    "id": "sk_pas_孙翊",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "孙翊",
+    "rarity": "generic",
+    "desc": "孙翊的passive技能。"
+  },
+  "sk_act_吴国太": {
+    "id": "sk_act_吴国太",
+    "name": "火计",
+    "type": "active",
+    "owner": "吴国太",
+    "rarity": "generic",
+    "desc": "吴国太的active技能。"
+  },
+  "sk_pas_吴国太": {
+    "id": "sk_pas_吴国太",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "吴国太",
+    "rarity": "generic",
+    "desc": "吴国太的passive技能。"
+  },
+  "sk_act_徐氏": {
+    "id": "sk_act_徐氏",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "徐氏",
+    "rarity": "generic",
+    "desc": "徐氏的active技能。"
+  },
+  "sk_pas_徐氏": {
+    "id": "sk_pas_徐氏",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "徐氏",
+    "rarity": "generic",
+    "desc": "徐氏的passive技能。"
+  },
+  "sk_act_孙鲁育": {
+    "id": "sk_act_孙鲁育",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "孙鲁育",
+    "rarity": "generic",
+    "desc": "孙鲁育的active技能。"
+  },
+  "sk_pas_孙鲁育": {
+    "id": "sk_pas_孙鲁育",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "孙鲁育",
+    "rarity": "generic",
+    "desc": "孙鲁育的passive技能。"
+  },
+  "sk_act_朱据": {
+    "id": "sk_act_朱据",
+    "name": "破军",
+    "type": "active",
+    "owner": "朱据",
+    "rarity": "generic",
+    "desc": "朱据的active技能。"
+  },
+  "sk_pas_朱据": {
+    "id": "sk_pas_朱据",
+    "name": "武略",
+    "type": "passive",
+    "owner": "朱据",
+    "rarity": "generic",
+    "desc": "朱据的passive技能。"
+  },
+  "sk_act_张任": {
+    "id": "sk_act_张任",
+    "name": "斩将",
+    "type": "active",
+    "owner": "张任",
+    "rarity": "generic",
+    "desc": "张任的active技能。"
+  },
+  "sk_pas_张任": {
+    "id": "sk_pas_张任",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "张任",
+    "rarity": "generic",
+    "desc": "张任的passive技能。"
+  },
+  "sk_act_李儒": {
+    "id": "sk_act_李儒",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "李儒",
+    "rarity": "generic",
+    "desc": "李儒的active技能。"
+  },
+  "sk_pas_李儒": {
+    "id": "sk_pas_李儒",
+    "name": "神算",
+    "type": "passive",
+    "owner": "李儒",
+    "rarity": "generic",
+    "desc": "李儒的passive技能。"
+  },
+  "sk_act_李傕": {
+    "id": "sk_act_李傕",
+    "name": "突袭",
+    "type": "active",
+    "owner": "李傕",
+    "rarity": "generic",
+    "desc": "李傕的active技能。"
+  },
+  "sk_pas_李傕": {
+    "id": "sk_pas_李傕",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "李傕",
+    "rarity": "generic",
+    "desc": "李傕的passive技能。"
+  },
+  "sk_act_郭汜": {
+    "id": "sk_act_郭汜",
+    "name": "力战",
+    "type": "active",
+    "owner": "郭汜",
+    "rarity": "generic",
+    "desc": "郭汜的active技能。"
+  },
+  "sk_pas_郭汜": {
+    "id": "sk_pas_郭汜",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "郭汜",
+    "rarity": "generic",
+    "desc": "郭汜的passive技能。"
+  },
+  "sk_act_樊稠": {
+    "id": "sk_act_樊稠",
+    "name": "横扫",
+    "type": "active",
+    "owner": "樊稠",
+    "rarity": "generic",
+    "desc": "樊稠的active技能。"
+  },
+  "sk_pas_樊稠": {
+    "id": "sk_pas_樊稠",
+    "name": "武略",
+    "type": "passive",
+    "owner": "樊稠",
+    "rarity": "generic",
+    "desc": "樊稠的passive技能。"
+  },
+  "sk_act_张济": {
+    "id": "sk_act_张济",
+    "name": "横扫",
+    "type": "active",
+    "owner": "张济",
+    "rarity": "generic",
+    "desc": "张济的active技能。"
+  },
+  "sk_pas_张济": {
+    "id": "sk_pas_张济",
+    "name": "武略",
+    "type": "passive",
+    "owner": "张济",
+    "rarity": "generic",
+    "desc": "张济的passive技能。"
+  },
+  "sk_act_纪灵": {
+    "id": "sk_act_纪灵",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "纪灵",
+    "rarity": "generic",
+    "desc": "纪灵的active技能。"
+  },
+  "sk_pas_纪灵": {
+    "id": "sk_pas_纪灵",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "纪灵",
+    "rarity": "generic",
+    "desc": "纪灵的passive技能。"
+  },
+  "sk_act_淳于琼": {
+    "id": "sk_act_淳于琼",
+    "name": "横扫",
+    "type": "active",
+    "owner": "淳于琼",
+    "rarity": "generic",
+    "desc": "淳于琼的active技能。"
+  },
+  "sk_pas_淳于琼": {
+    "id": "sk_pas_淳于琼",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "淳于琼",
+    "rarity": "generic",
+    "desc": "淳于琼的passive技能。"
+  },
+  "sk_act_审配": {
+    "id": "sk_act_审配",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "审配",
+    "rarity": "generic",
+    "desc": "审配的active技能。"
+  },
+  "sk_pas_审配": {
+    "id": "sk_pas_审配",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "审配",
+    "rarity": "generic",
+    "desc": "审配的passive技能。"
+  },
+  "sk_act_逢纪": {
+    "id": "sk_act_逢纪",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "逢纪",
+    "rarity": "generic",
+    "desc": "逢纪的active技能。"
+  },
+  "sk_pas_逢纪": {
+    "id": "sk_pas_逢纪",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "逢纪",
+    "rarity": "generic",
+    "desc": "逢纪的passive技能。"
+  },
+  "sk_act_田丰": {
+    "id": "sk_act_田丰",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "田丰",
+    "rarity": "generic",
+    "desc": "田丰的active技能。"
+  },
+  "sk_pas_田丰": {
+    "id": "sk_pas_田丰",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "田丰",
+    "rarity": "generic",
+    "desc": "田丰的passive技能。"
+  },
+  "sk_act_沮授": {
+    "id": "sk_act_沮授",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "沮授",
+    "rarity": "generic",
+    "desc": "沮授的active技能。"
+  },
+  "sk_pas_沮授": {
+    "id": "sk_pas_沮授",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "沮授",
+    "rarity": "generic",
+    "desc": "沮授的passive技能。"
+  },
+  "sk_act_陈到": {
+    "id": "sk_act_陈到",
+    "name": "突袭",
+    "type": "active",
+    "owner": "陈到",
+    "rarity": "generic",
+    "desc": "陈到的active技能。"
+  },
+  "sk_pas_陈到": {
+    "id": "sk_pas_陈到",
+    "name": "武略",
+    "type": "passive",
+    "owner": "陈到",
+    "rarity": "generic",
+    "desc": "陈到的passive技能。"
+  },
+  "sk_act_霍峻": {
+    "id": "sk_act_霍峻",
+    "name": "横扫",
+    "type": "active",
+    "owner": "霍峻",
+    "rarity": "generic",
+    "desc": "霍峻的active技能。"
+  },
+  "sk_pas_霍峻": {
+    "id": "sk_pas_霍峻",
+    "name": "武略",
+    "type": "passive",
+    "owner": "霍峻",
+    "rarity": "generic",
+    "desc": "霍峻的passive技能。"
+  },
+  "sk_act_张燕": {
+    "id": "sk_act_张燕",
+    "name": "破军",
+    "type": "active",
+    "owner": "张燕",
+    "rarity": "generic",
+    "desc": "张燕的active技能。"
+  },
+  "sk_pas_张燕": {
+    "id": "sk_pas_张燕",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "张燕",
+    "rarity": "generic",
+    "desc": "张燕的passive技能。"
+  },
+  "sk_act_臧霸": {
+    "id": "sk_act_臧霸",
+    "name": "斩将",
+    "type": "active",
+    "owner": "臧霸",
+    "rarity": "generic",
+    "desc": "臧霸的active技能。"
+  },
+  "sk_pas_臧霸": {
+    "id": "sk_pas_臧霸",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "臧霸",
+    "rarity": "generic",
+    "desc": "臧霸的passive技能。"
+  },
+  "sk_act_田豫": {
+    "id": "sk_act_田豫",
+    "name": "统御",
+    "type": "active",
+    "owner": "田豫",
+    "rarity": "generic",
+    "desc": "田豫的active技能。"
+  },
+  "sk_pas_田豫": {
+    "id": "sk_pas_田豫",
+    "name": "御众",
+    "type": "passive",
+    "owner": "田豫",
+    "rarity": "generic",
+    "desc": "田豫的passive技能。"
+  },
+  "sk_act_牵招": {
+    "id": "sk_act_牵招",
+    "name": "横扫",
+    "type": "active",
+    "owner": "牵招",
+    "rarity": "generic",
+    "desc": "牵招的active技能。"
+  },
+  "sk_pas_牵招": {
+    "id": "sk_pas_牵招",
+    "name": "武略",
+    "type": "passive",
+    "owner": "牵招",
+    "rarity": "generic",
+    "desc": "牵招的passive技能。"
+  },
+  "sk_act_贾逵": {
+    "id": "sk_act_贾逵",
+    "name": "妙算",
+    "type": "active",
+    "owner": "贾逵",
+    "rarity": "generic",
+    "desc": "贾逵的active技能。"
+  },
+  "sk_pas_贾逵": {
+    "id": "sk_pas_贾逵",
+    "name": "神算",
+    "type": "passive",
+    "owner": "贾逵",
+    "rarity": "generic",
+    "desc": "贾逵的passive技能。"
+  },
+  "sk_act_刘晔": {
+    "id": "sk_act_刘晔",
+    "name": "火计",
+    "type": "active",
+    "owner": "刘晔",
+    "rarity": "generic",
+    "desc": "刘晔的active技能。"
+  },
+  "sk_pas_刘晔": {
+    "id": "sk_pas_刘晔",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "刘晔",
+    "rarity": "generic",
+    "desc": "刘晔的passive技能。"
+  },
+  "sk_act_蒋济": {
+    "id": "sk_act_蒋济",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "蒋济",
+    "rarity": "generic",
+    "desc": "蒋济的active技能。"
+  },
+  "sk_pas_蒋济": {
+    "id": "sk_pas_蒋济",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "蒋济",
+    "rarity": "generic",
+    "desc": "蒋济的passive技能。"
+  },
+  "sk_act_董昭": {
+    "id": "sk_act_董昭",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "董昭",
+    "rarity": "generic",
+    "desc": "董昭的active技能。"
+  },
+  "sk_pas_董昭": {
+    "id": "sk_pas_董昭",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "董昭",
+    "rarity": "generic",
+    "desc": "董昭的passive技能。"
+  },
+  "sk_act_孙礼": {
+    "id": "sk_act_孙礼",
+    "name": "力战",
+    "type": "active",
+    "owner": "孙礼",
+    "rarity": "generic",
+    "desc": "孙礼的active技能。"
+  },
+  "sk_pas_孙礼": {
+    "id": "sk_pas_孙礼",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "孙礼",
+    "rarity": "generic",
+    "desc": "孙礼的passive技能。"
+  },
+  "sk_act_王凌": {
+    "id": "sk_act_王凌",
+    "name": "统御",
+    "type": "active",
+    "owner": "王凌",
+    "rarity": "generic",
+    "desc": "王凌的active技能。"
+  },
+  "sk_pas_王凌": {
+    "id": "sk_pas_王凌",
+    "name": "守成",
+    "type": "passive",
+    "owner": "王凌",
+    "rarity": "generic",
+    "desc": "王凌的passive技能。"
+  },
+  "sk_act_毌丘俭": {
+    "id": "sk_act_毌丘俭",
+    "name": "号令",
+    "type": "active",
+    "owner": "毌丘俭",
+    "rarity": "generic",
+    "desc": "毌丘俭的active技能。"
+  },
+  "sk_pas_毌丘俭": {
+    "id": "sk_pas_毌丘俭",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "毌丘俭",
+    "rarity": "generic",
+    "desc": "毌丘俭的passive技能。"
+  },
+  "sk_act_文钦": {
+    "id": "sk_act_文钦",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "文钦",
+    "rarity": "generic",
+    "desc": "文钦的active技能。"
+  },
+  "sk_pas_文钦": {
+    "id": "sk_pas_文钦",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "文钦",
+    "rarity": "generic",
+    "desc": "文钦的passive技能。"
+  },
+  "sk_act_诸葛诞": {
+    "id": "sk_act_诸葛诞",
+    "name": "激励",
+    "type": "active",
+    "owner": "诸葛诞",
+    "rarity": "generic",
+    "desc": "诸葛诞的active技能。"
+  },
+  "sk_pas_诸葛诞": {
+    "id": "sk_pas_诸葛诞",
+    "name": "威望",
+    "type": "passive",
+    "owner": "诸葛诞",
+    "rarity": "generic",
+    "desc": "诸葛诞的passive技能。"
+  },
+  "sk_act_夏侯霸": {
+    "id": "sk_act_夏侯霸",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "夏侯霸",
+    "rarity": "generic",
+    "desc": "夏侯霸的active技能。"
+  },
+  "sk_pas_夏侯霸": {
+    "id": "sk_pas_夏侯霸",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "夏侯霸",
+    "rarity": "generic",
+    "desc": "夏侯霸的passive技能。"
+  },
+  "sk_act_罗宪": {
+    "id": "sk_act_罗宪",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "罗宪",
+    "rarity": "generic",
+    "desc": "罗宪的active技能。"
+  },
+  "sk_pas_罗宪": {
+    "id": "sk_pas_罗宪",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "罗宪",
+    "rarity": "generic",
+    "desc": "罗宪的passive技能。"
+  },
+  "sk_act_霍弋": {
+    "id": "sk_act_霍弋",
+    "name": "斩将",
+    "type": "active",
+    "owner": "霍弋",
+    "rarity": "generic",
+    "desc": "霍弋的active技能。"
+  },
+  "sk_pas_霍弋": {
+    "id": "sk_pas_霍弋",
+    "name": "武略",
+    "type": "passive",
+    "owner": "霍弋",
+    "rarity": "generic",
+    "desc": "霍弋的passive技能。"
+  },
+  "sk_act_句扶": {
+    "id": "sk_act_句扶",
+    "name": "力战",
+    "type": "active",
+    "owner": "句扶",
+    "rarity": "generic",
+    "desc": "句扶的active技能。"
+  },
+  "sk_pas_句扶": {
+    "id": "sk_pas_句扶",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "句扶",
+    "rarity": "generic",
+    "desc": "句扶的passive技能。"
+  },
+  "sk_act_杨仪": {
+    "id": "sk_act_杨仪",
+    "name": "妙算",
+    "type": "active",
+    "owner": "杨仪",
+    "rarity": "generic",
+    "desc": "杨仪的active技能。"
+  },
+  "sk_pas_杨仪": {
+    "id": "sk_pas_杨仪",
+    "name": "神算",
+    "type": "passive",
+    "owner": "杨仪",
+    "rarity": "generic",
+    "desc": "杨仪的passive技能。"
+  },
+  "sk_act_王嗣": {
+    "id": "sk_act_王嗣",
+    "name": "横扫",
+    "type": "active",
+    "owner": "王嗣",
+    "rarity": "generic",
+    "desc": "王嗣的active技能。"
+  },
+  "sk_pas_王嗣": {
+    "id": "sk_pas_王嗣",
+    "name": "武略",
+    "type": "passive",
+    "owner": "王嗣",
+    "rarity": "generic",
+    "desc": "王嗣的passive技能。"
+  },
+  "sk_act_张南": {
+    "id": "sk_act_张南",
+    "name": "力战",
+    "type": "active",
+    "owner": "张南",
+    "rarity": "generic",
+    "desc": "张南的active技能。"
+  },
+  "sk_pas_张南": {
+    "id": "sk_pas_张南",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "张南",
+    "rarity": "generic",
+    "desc": "张南的passive技能。"
+  },
+  "sk_act_冯习": {
+    "id": "sk_act_冯习",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "冯习",
+    "rarity": "generic",
+    "desc": "冯习的active技能。"
+  },
+  "sk_pas_冯习": {
+    "id": "sk_pas_冯习",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "冯习",
+    "rarity": "generic",
+    "desc": "冯习的passive技能。"
+  },
+  "sk_act_吕凯": {
+    "id": "sk_act_吕凯",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "吕凯",
+    "rarity": "generic",
+    "desc": "吕凯的active技能。"
+  },
+  "sk_pas_吕凯": {
+    "id": "sk_pas_吕凯",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "吕凯",
+    "rarity": "generic",
+    "desc": "吕凯的passive技能。"
+  },
+  "sk_act_李恢": {
+    "id": "sk_act_李恢",
+    "name": "威压",
+    "type": "active",
+    "owner": "李恢",
+    "rarity": "generic",
+    "desc": "李恢的active技能。"
+  },
+  "sk_pas_李恢": {
+    "id": "sk_pas_李恢",
+    "name": "威望",
+    "type": "passive",
+    "owner": "李恢",
+    "rarity": "generic",
+    "desc": "李恢的passive技能。"
+  },
+  "sk_act_留赞": {
+    "id": "sk_act_留赞",
+    "name": "突袭",
+    "type": "active",
+    "owner": "留赞",
+    "rarity": "generic",
+    "desc": "留赞的active技能。"
+  },
+  "sk_pas_留赞": {
+    "id": "sk_pas_留赞",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "留赞",
+    "rarity": "generic",
+    "desc": "留赞的passive技能。"
+  },
+  "sk_act_吕岱": {
+    "id": "sk_act_吕岱",
+    "name": "统御",
+    "type": "active",
+    "owner": "吕岱",
+    "rarity": "generic",
+    "desc": "吕岱的active技能。"
+  },
+  "sk_pas_吕岱": {
+    "id": "sk_pas_吕岱",
+    "name": "威望",
+    "type": "passive",
+    "owner": "吕岱",
+    "rarity": "generic",
+    "desc": "吕岱的passive技能。"
+  },
+  "sk_act_陶濬": {
+    "id": "sk_act_陶濬",
+    "name": "突袭",
+    "type": "active",
+    "owner": "陶濬",
+    "rarity": "generic",
+    "desc": "陶濬的active技能。"
+  },
+  "sk_pas_陶濬": {
+    "id": "sk_pas_陶濬",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "陶濬",
+    "rarity": "generic",
+    "desc": "陶濬的passive技能。"
+  },
+  "sk_act_钟离牧": {
+    "id": "sk_act_钟离牧",
+    "name": "力战",
+    "type": "active",
+    "owner": "钟离牧",
+    "rarity": "generic",
+    "desc": "钟离牧的active技能。"
+  },
+  "sk_pas_钟离牧": {
+    "id": "sk_pas_钟离牧",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "钟离牧",
+    "rarity": "generic",
+    "desc": "钟离牧的passive技能。"
+  },
+  "sk_act_吾粲": {
+    "id": "sk_act_吾粲",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "吾粲",
+    "rarity": "generic",
+    "desc": "吾粲的active技能。"
+  },
+  "sk_pas_吾粲": {
+    "id": "sk_pas_吾粲",
+    "name": "神算",
+    "type": "passive",
+    "owner": "吾粲",
+    "rarity": "generic",
+    "desc": "吾粲的passive技能。"
+  },
+  "sk_act_乐綝": {
+    "id": "sk_act_乐綝",
+    "name": "横扫",
+    "type": "active",
+    "owner": "乐綝",
+    "rarity": "generic",
+    "desc": "乐綝的active技能。"
+  },
+  "sk_pas_乐綝": {
+    "id": "sk_pas_乐綝",
+    "name": "武略",
+    "type": "passive",
+    "owner": "乐綝",
+    "rarity": "generic",
+    "desc": "乐綝的passive技能。"
+  },
+  "sk_act_石苞": {
+    "id": "sk_act_石苞",
+    "name": "妙算",
+    "type": "active",
+    "owner": "石苞",
+    "rarity": "generic",
+    "desc": "石苞的active技能。"
+  },
+  "sk_pas_石苞": {
+    "id": "sk_pas_石苞",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "石苞",
+    "rarity": "generic",
+    "desc": "石苞的passive技能。"
+  },
+  "sk_act_陈泰": {
+    "id": "sk_act_陈泰",
+    "name": "威压",
+    "type": "active",
+    "owner": "陈泰",
+    "rarity": "generic",
+    "desc": "陈泰的active技能。"
+  },
+  "sk_pas_陈泰": {
+    "id": "sk_pas_陈泰",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "陈泰",
+    "rarity": "generic",
+    "desc": "陈泰的passive技能。"
+  },
+  "sk_act_王基": {
+    "id": "sk_act_王基",
+    "name": "号令",
+    "type": "active",
+    "owner": "王基",
+    "rarity": "generic",
+    "desc": "王基的active技能。"
+  },
+  "sk_pas_王基": {
+    "id": "sk_pas_王基",
+    "name": "御众",
+    "type": "passive",
+    "owner": "王基",
+    "rarity": "generic",
+    "desc": "王基的passive技能。"
+  },
+  "sk_act_州泰": {
+    "id": "sk_act_州泰",
+    "name": "突袭",
+    "type": "active",
+    "owner": "州泰",
+    "rarity": "generic",
+    "desc": "州泰的active技能。"
+  },
+  "sk_pas_州泰": {
+    "id": "sk_pas_州泰",
+    "name": "武略",
+    "type": "passive",
+    "owner": "州泰",
+    "rarity": "generic",
+    "desc": "州泰的passive技能。"
+  },
+  "sk_act_邓忠": {
+    "id": "sk_act_邓忠",
+    "name": "突袭",
+    "type": "active",
+    "owner": "邓忠",
+    "rarity": "generic",
+    "desc": "邓忠的active技能。"
+  },
+  "sk_pas_邓忠": {
+    "id": "sk_pas_邓忠",
+    "name": "武略",
+    "type": "passive",
+    "owner": "邓忠",
+    "rarity": "generic",
+    "desc": "邓忠的passive技能。"
+  },
+  "sk_act_师纂": {
+    "id": "sk_act_师纂",
+    "name": "斩将",
+    "type": "active",
+    "owner": "师纂",
+    "rarity": "generic",
+    "desc": "师纂的active技能。"
+  },
+  "sk_pas_师纂": {
+    "id": "sk_pas_师纂",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "师纂",
+    "rarity": "generic",
+    "desc": "师纂的passive技能。"
+  },
+  "sk_act_胡烈": {
+    "id": "sk_act_胡烈",
+    "name": "破军",
+    "type": "active",
+    "owner": "胡烈",
+    "rarity": "generic",
+    "desc": "胡烈的active技能。"
+  },
+  "sk_pas_胡烈": {
+    "id": "sk_pas_胡烈",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "胡烈",
+    "rarity": "generic",
+    "desc": "胡烈的passive技能。"
+  },
+  "sk_act_胡渊": {
+    "id": "sk_act_胡渊",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "胡渊",
+    "rarity": "generic",
+    "desc": "胡渊的active技能。"
+  },
+  "sk_pas_胡渊": {
+    "id": "sk_pas_胡渊",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "胡渊",
+    "rarity": "generic",
+    "desc": "胡渊的passive技能。"
+  },
+  "sk_act_田续": {
+    "id": "sk_act_田续",
+    "name": "破军",
+    "type": "active",
+    "owner": "田续",
+    "rarity": "generic",
+    "desc": "田续的active技能。"
+  },
+  "sk_pas_田续": {
+    "id": "sk_pas_田续",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "田续",
+    "rarity": "generic",
+    "desc": "田续的passive技能。"
+  },
+  "sk_act_卫瓘": {
+    "id": "sk_act_卫瓘",
+    "name": "连环",
+    "type": "active",
+    "owner": "卫瓘",
+    "rarity": "generic",
+    "desc": "卫瓘的active技能。"
+  },
+  "sk_pas_卫瓘": {
+    "id": "sk_pas_卫瓘",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "卫瓘",
+    "rarity": "generic",
+    "desc": "卫瓘的passive技能。"
+  },
+  "sk_act_羊祜": {
+    "id": "sk_act_羊祜",
+    "name": "号令",
+    "type": "active",
+    "owner": "羊祜",
+    "rarity": "generic",
+    "desc": "羊祜的active技能。"
+  },
+  "sk_pas_羊祜": {
+    "id": "sk_pas_羊祜",
+    "name": "守成",
+    "type": "passive",
+    "owner": "羊祜",
+    "rarity": "generic",
+    "desc": "羊祜的passive技能。"
+  },
+  "sk_act_杜预": {
+    "id": "sk_act_杜预",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "杜预",
+    "rarity": "generic",
+    "desc": "杜预的active技能。"
+  },
+  "sk_pas_杜预": {
+    "id": "sk_pas_杜预",
+    "name": "神算",
+    "type": "passive",
+    "owner": "杜预",
+    "rarity": "generic",
+    "desc": "杜预的passive技能。"
+  },
+  "sk_act_王濬": {
+    "id": "sk_act_王濬",
+    "name": "威压",
+    "type": "active",
+    "owner": "王濬",
+    "rarity": "generic",
+    "desc": "王濬的active技能。"
+  },
+  "sk_pas_王濬": {
+    "id": "sk_pas_王濬",
+    "name": "守成",
+    "type": "passive",
+    "owner": "王濬",
+    "rarity": "generic",
+    "desc": "王濬的passive技能。"
+  },
+  "sk_act_唐咨": {
+    "id": "sk_act_唐咨",
+    "name": "破军",
+    "type": "active",
+    "owner": "唐咨",
+    "rarity": "generic",
+    "desc": "唐咨的active技能。"
+  },
+  "sk_pas_唐咨": {
+    "id": "sk_pas_唐咨",
+    "name": "武略",
+    "type": "passive",
+    "owner": "唐咨",
+    "rarity": "generic",
+    "desc": "唐咨的passive技能。"
+  },
+  "sk_act_诸葛绪": {
+    "id": "sk_act_诸葛绪",
+    "name": "横扫",
+    "type": "active",
+    "owner": "诸葛绪",
+    "rarity": "generic",
+    "desc": "诸葛绪的active技能。"
+  },
+  "sk_pas_诸葛绪": {
+    "id": "sk_pas_诸葛绪",
+    "name": "武略",
+    "type": "passive",
+    "owner": "诸葛绪",
+    "rarity": "generic",
+    "desc": "诸葛绪的passive技能。"
+  },
+  "sk_act_王颀": {
+    "id": "sk_act_王颀",
+    "name": "横扫",
+    "type": "active",
+    "owner": "王颀",
+    "rarity": "generic",
+    "desc": "王颀的active技能。"
+  },
+  "sk_pas_王颀": {
+    "id": "sk_pas_王颀",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "王颀",
+    "rarity": "generic",
+    "desc": "王颀的passive技能。"
+  },
+  "sk_act_丘本": {
+    "id": "sk_act_丘本",
+    "name": "横扫",
+    "type": "active",
+    "owner": "丘本",
+    "rarity": "generic",
+    "desc": "丘本的active技能。"
+  },
+  "sk_pas_丘本": {
+    "id": "sk_pas_丘本",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "丘本",
+    "rarity": "generic",
+    "desc": "丘本的passive技能。"
+  },
+  "sk_act_荀恺": {
+    "id": "sk_act_荀恺",
+    "name": "力战",
+    "type": "active",
+    "owner": "荀恺",
+    "rarity": "generic",
+    "desc": "荀恺的active技能。"
+  },
+  "sk_pas_荀恺": {
+    "id": "sk_pas_荀恺",
+    "name": "武略",
+    "type": "passive",
+    "owner": "荀恺",
+    "rarity": "generic",
+    "desc": "荀恺的passive技能。"
+  },
+  "sk_act_李辅": {
+    "id": "sk_act_李辅",
+    "name": "横扫",
+    "type": "active",
+    "owner": "李辅",
+    "rarity": "generic",
+    "desc": "李辅的active技能。"
+  },
+  "sk_pas_李辅": {
+    "id": "sk_pas_李辅",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "李辅",
+    "rarity": "generic",
+    "desc": "李辅的passive技能。"
+  },
+  "sk_act_张虎": {
+    "id": "sk_act_张虎",
+    "name": "横扫",
+    "type": "active",
+    "owner": "张虎",
+    "rarity": "generic",
+    "desc": "张虎的active技能。"
+  },
+  "sk_pas_张虎": {
+    "id": "sk_pas_张虎",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "张虎",
+    "rarity": "generic",
+    "desc": "张虎的passive技能。"
+  },
+  "sk_act_乐方": {
+    "id": "sk_act_乐方",
+    "name": "横扫",
+    "type": "active",
+    "owner": "乐方",
+    "rarity": "generic",
+    "desc": "乐方的active技能。"
+  },
+  "sk_pas_乐方": {
+    "id": "sk_pas_乐方",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "乐方",
+    "rarity": "generic",
+    "desc": "乐方的passive技能。"
+  },
+  "sk_act_蔡和": {
+    "id": "sk_act_蔡和",
+    "name": "力战",
+    "type": "active",
+    "owner": "蔡和",
+    "rarity": "generic",
+    "desc": "蔡和的active技能。"
+  },
+  "sk_pas_蔡和": {
+    "id": "sk_pas_蔡和",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "蔡和",
+    "rarity": "generic",
+    "desc": "蔡和的passive技能。"
+  },
+  "sk_act_蔡中": {
+    "id": "sk_act_蔡中",
+    "name": "力战",
+    "type": "active",
+    "owner": "蔡中",
+    "rarity": "generic",
+    "desc": "蔡中的active技能。"
+  },
+  "sk_pas_蔡中": {
+    "id": "sk_pas_蔡中",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "蔡中",
+    "rarity": "generic",
+    "desc": "蔡中的passive技能。"
+  },
+  "sk_act_蔡勋": {
+    "id": "sk_act_蔡勋",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "蔡勋",
+    "rarity": "generic",
+    "desc": "蔡勋的active技能。"
+  },
+  "sk_pas_蔡勋": {
+    "id": "sk_pas_蔡勋",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "蔡勋",
+    "rarity": "generic",
+    "desc": "蔡勋的passive技能。"
+  },
+  "sk_act_关统": {
+    "id": "sk_act_关统",
+    "name": "破军",
+    "type": "active",
+    "owner": "关统",
+    "rarity": "generic",
+    "desc": "关统的active技能。"
+  },
+  "sk_pas_关统": {
+    "id": "sk_pas_关统",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "关统",
+    "rarity": "generic",
+    "desc": "关统的passive技能。"
+  },
+  "sk_act_关彝": {
+    "id": "sk_act_关彝",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "关彝",
+    "rarity": "generic",
+    "desc": "关彝的active技能。"
+  },
+  "sk_pas_关彝": {
+    "id": "sk_pas_关彝",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "关彝",
+    "rarity": "generic",
+    "desc": "关彝的passive技能。"
+  },
+  "sk_act_赵广": {
+    "id": "sk_act_赵广",
+    "name": "力战",
+    "type": "active",
+    "owner": "赵广",
+    "rarity": "generic",
+    "desc": "赵广的active技能。"
+  },
+  "sk_pas_赵广": {
+    "id": "sk_pas_赵广",
+    "name": "武略",
+    "type": "passive",
+    "owner": "赵广",
+    "rarity": "generic",
+    "desc": "赵广的passive技能。"
+  },
+  "sk_act_赵统": {
+    "id": "sk_act_赵统",
+    "name": "突袭",
+    "type": "active",
+    "owner": "赵统",
+    "rarity": "generic",
+    "desc": "赵统的active技能。"
+  },
+  "sk_pas_赵统": {
+    "id": "sk_pas_赵统",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "赵统",
+    "rarity": "generic",
+    "desc": "赵统的passive技能。"
+  },
+  "sk_act_张绍": {
+    "id": "sk_act_张绍",
+    "name": "连环",
+    "type": "active",
+    "owner": "张绍",
+    "rarity": "generic",
+    "desc": "张绍的active技能。"
+  },
+  "sk_pas_张绍": {
+    "id": "sk_pas_张绍",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "张绍",
+    "rarity": "generic",
+    "desc": "张绍的passive技能。"
+  },
+  "sk_act_诸葛瞻": {
+    "id": "sk_act_诸葛瞻",
+    "name": "御敌",
+    "type": "active",
+    "owner": "诸葛瞻",
+    "rarity": "generic",
+    "desc": "诸葛瞻的active技能。"
+  },
+  "sk_pas_诸葛瞻": {
+    "id": "sk_pas_诸葛瞻",
+    "name": "守成",
+    "type": "passive",
+    "owner": "诸葛瞻",
+    "rarity": "generic",
+    "desc": "诸葛瞻的passive技能。"
+  },
+  "sk_act_诸葛尚": {
+    "id": "sk_act_诸葛尚",
+    "name": "力战",
+    "type": "active",
+    "owner": "诸葛尚",
+    "rarity": "generic",
+    "desc": "诸葛尚的active技能。"
+  },
+  "sk_pas_诸葛尚": {
+    "id": "sk_pas_诸葛尚",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "诸葛尚",
+    "rarity": "generic",
+    "desc": "诸葛尚的passive技能。"
+  },
+  "sk_act_黄崇": {
+    "id": "sk_act_黄崇",
+    "name": "横扫",
+    "type": "active",
+    "owner": "黄崇",
+    "rarity": "generic",
+    "desc": "黄崇的active技能。"
+  },
+  "sk_pas_黄崇": {
+    "id": "sk_pas_黄崇",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "黄崇",
+    "rarity": "generic",
+    "desc": "黄崇的passive技能。"
+  },
+  "sk_act_李球": {
+    "id": "sk_act_李球",
+    "name": "斩将",
+    "type": "active",
+    "owner": "李球",
+    "rarity": "generic",
+    "desc": "李球的active技能。"
+  },
+  "sk_pas_李球": {
+    "id": "sk_pas_李球",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "李球",
+    "rarity": "generic",
+    "desc": "李球的passive技能。"
+  },
+  "sk_act_张遵": {
+    "id": "sk_act_张遵",
+    "name": "斩将",
+    "type": "active",
+    "owner": "张遵",
+    "rarity": "generic",
+    "desc": "张遵的active技能。"
+  },
+  "sk_pas_张遵": {
+    "id": "sk_pas_张遵",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "张遵",
+    "rarity": "generic",
+    "desc": "张遵的passive技能。"
+  },
+  "sk_act_董厥": {
+    "id": "sk_act_董厥",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "董厥",
+    "rarity": "generic",
+    "desc": "董厥的active技能。"
+  },
+  "sk_pas_董厥": {
+    "id": "sk_pas_董厥",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "董厥",
+    "rarity": "generic",
+    "desc": "董厥的passive技能。"
+  },
+  "sk_act_樊建": {
+    "id": "sk_act_樊建",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "樊建",
+    "rarity": "generic",
+    "desc": "樊建的active技能。"
+  },
+  "sk_pas_樊建": {
+    "id": "sk_pas_樊建",
+    "name": "神算",
+    "type": "passive",
+    "owner": "樊建",
+    "rarity": "generic",
+    "desc": "樊建的passive技能。"
+  },
+  "sk_act_胡济": {
+    "id": "sk_act_胡济",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "胡济",
+    "rarity": "generic",
+    "desc": "胡济的active技能。"
+  },
+  "sk_pas_胡济": {
+    "id": "sk_pas_胡济",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "胡济",
+    "rarity": "generic",
+    "desc": "胡济的passive技能。"
+  },
+  "sk_act_阎宇": {
+    "id": "sk_act_阎宇",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "阎宇",
+    "rarity": "generic",
+    "desc": "阎宇的active技能。"
+  },
+  "sk_pas_阎宇": {
+    "id": "sk_pas_阎宇",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "阎宇",
+    "rarity": "generic",
+    "desc": "阎宇的passive技能。"
+  },
+  "sk_act_马勖": {
+    "id": "sk_act_马勖",
+    "name": "力战",
+    "type": "active",
+    "owner": "马勖",
+    "rarity": "generic",
+    "desc": "马勖的active技能。"
+  },
+  "sk_pas_马勖": {
+    "id": "sk_pas_马勖",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "马勖",
+    "rarity": "generic",
+    "desc": "马勖的passive技能。"
+  },
+  "sk_act_孙峻": {
+    "id": "sk_act_孙峻",
+    "name": "统御",
+    "type": "active",
+    "owner": "孙峻",
+    "rarity": "generic",
+    "desc": "孙峻的active技能。"
+  },
+  "sk_pas_孙峻": {
+    "id": "sk_pas_孙峻",
+    "name": "御众",
+    "type": "passive",
+    "owner": "孙峻",
+    "rarity": "generic",
+    "desc": "孙峻的passive技能。"
+  },
+  "sk_act_孙綝": {
+    "id": "sk_act_孙綝",
+    "name": "激励",
+    "type": "active",
+    "owner": "孙綝",
+    "rarity": "generic",
+    "desc": "孙綝的active技能。"
+  },
+  "sk_pas_孙綝": {
+    "id": "sk_pas_孙綝",
+    "name": "守成",
+    "type": "passive",
+    "owner": "孙綝",
+    "rarity": "generic",
+    "desc": "孙綝的passive技能。"
+  },
+  "sk_act_孙休": {
+    "id": "sk_act_孙休",
+    "name": "号令",
+    "type": "active",
+    "owner": "孙休",
+    "rarity": "generic",
+    "desc": "孙休的active技能。"
+  },
+  "sk_pas_孙休": {
+    "id": "sk_pas_孙休",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "孙休",
+    "rarity": "generic",
+    "desc": "孙休的passive技能。"
+  },
+  "sk_act_孙皓": {
+    "id": "sk_act_孙皓",
+    "name": "激励",
+    "type": "active",
+    "owner": "孙皓",
+    "rarity": "generic",
+    "desc": "孙皓的active技能。"
+  },
+  "sk_pas_孙皓": {
+    "id": "sk_pas_孙皓",
+    "name": "守成",
+    "type": "passive",
+    "owner": "孙皓",
+    "rarity": "generic",
+    "desc": "孙皓的passive技能。"
+  },
+  "sk_act_张悌": {
+    "id": "sk_act_张悌",
+    "name": "援军",
+    "type": "active",
+    "owner": "张悌",
+    "rarity": "generic",
+    "desc": "张悌的active技能。"
+  },
+  "sk_pas_张悌": {
+    "id": "sk_pas_张悌",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "张悌",
+    "rarity": "generic",
+    "desc": "张悌的passive技能。"
+  },
+  "sk_act_沈莹": {
+    "id": "sk_act_沈莹",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "沈莹",
+    "rarity": "generic",
+    "desc": "沈莹的active技能。"
+  },
+  "sk_pas_沈莹": {
+    "id": "sk_pas_沈莹",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "沈莹",
+    "rarity": "generic",
+    "desc": "沈莹的passive技能。"
+  },
+  "sk_act_孙震": {
+    "id": "sk_act_孙震",
+    "name": "力战",
+    "type": "active",
+    "owner": "孙震",
+    "rarity": "generic",
+    "desc": "孙震的active技能。"
+  },
+  "sk_pas_孙震": {
+    "id": "sk_pas_孙震",
+    "name": "武略",
+    "type": "passive",
+    "owner": "孙震",
+    "rarity": "generic",
+    "desc": "孙震的passive技能。"
+  },
+  "sk_act_陆凯": {
+    "id": "sk_act_陆凯",
+    "name": "连环",
+    "type": "active",
+    "owner": "陆凯",
+    "rarity": "generic",
+    "desc": "陆凯的active技能。"
+  },
+  "sk_pas_陆凯": {
+    "id": "sk_pas_陆凯",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "陆凯",
+    "rarity": "generic",
+    "desc": "陆凯的passive技能。"
+  },
+  "sk_act_陆胤": {
+    "id": "sk_act_陆胤",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "陆胤",
+    "rarity": "generic",
+    "desc": "陆胤的active技能。"
+  },
+  "sk_pas_陆胤": {
+    "id": "sk_pas_陆胤",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "陆胤",
+    "rarity": "generic",
+    "desc": "陆胤的passive技能。"
+  },
+  "sk_act_范疆": {
+    "id": "sk_act_范疆",
+    "name": "突袭",
+    "type": "active",
+    "owner": "范疆",
+    "rarity": "generic",
+    "desc": "范疆的active技能。"
+  },
+  "sk_pas_范疆": {
+    "id": "sk_pas_范疆",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "范疆",
+    "rarity": "generic",
+    "desc": "范疆的passive技能。"
+  },
+  "sk_act_朱异": {
+    "id": "sk_act_朱异",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "朱异",
+    "rarity": "generic",
+    "desc": "朱异的active技能。"
+  },
+  "sk_pas_朱异": {
+    "id": "sk_pas_朱异",
+    "name": "武略",
+    "type": "passive",
+    "owner": "朱异",
+    "rarity": "generic",
+    "desc": "朱异的passive技能。"
+  },
+  "sk_act_丁封": {
+    "id": "sk_act_丁封",
+    "name": "破军",
+    "type": "active",
+    "owner": "丁封",
+    "rarity": "generic",
+    "desc": "丁封的active技能。"
+  },
+  "sk_pas_丁封": {
+    "id": "sk_pas_丁封",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "丁封",
+    "rarity": "generic",
+    "desc": "丁封的passive技能。"
+  },
+  "sk_act_孙冀": {
+    "id": "sk_act_孙冀",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "孙冀",
+    "rarity": "generic",
+    "desc": "孙冀的active技能。"
+  },
+  "sk_pas_孙冀": {
+    "id": "sk_pas_孙冀",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "孙冀",
+    "rarity": "generic",
+    "desc": "孙冀的passive技能。"
+  },
+  "sk_act_滕胤": {
+    "id": "sk_act_滕胤",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "滕胤",
+    "rarity": "generic",
+    "desc": "滕胤的active技能。"
+  },
+  "sk_pas_滕胤": {
+    "id": "sk_pas_滕胤",
+    "name": "神算",
+    "type": "passive",
+    "owner": "滕胤",
+    "rarity": "generic",
+    "desc": "滕胤的passive技能。"
+  },
+  "sk_act_吕据": {
+    "id": "sk_act_吕据",
+    "name": "突袭",
+    "type": "active",
+    "owner": "吕据",
+    "rarity": "generic",
+    "desc": "吕据的active技能。"
+  },
+  "sk_pas_吕据": {
+    "id": "sk_pas_吕据",
+    "name": "武略",
+    "type": "passive",
+    "owner": "吕据",
+    "rarity": "generic",
+    "desc": "吕据的passive技能。"
+  },
+  "sk_act_留平": {
+    "id": "sk_act_留平",
+    "name": "突袭",
+    "type": "active",
+    "owner": "留平",
+    "rarity": "generic",
+    "desc": "留平的active技能。"
+  },
+  "sk_pas_留平": {
+    "id": "sk_pas_留平",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "留平",
+    "rarity": "generic",
+    "desc": "留平的passive技能。"
+  },
+  "sk_act_陆景": {
+    "id": "sk_act_陆景",
+    "name": "横扫",
+    "type": "active",
+    "owner": "陆景",
+    "rarity": "generic",
+    "desc": "陆景的active技能。"
+  },
+  "sk_pas_陆景": {
+    "id": "sk_pas_陆景",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "陆景",
+    "rarity": "generic",
+    "desc": "陆景的passive技能。"
+  },
+  "sk_act_盛曼": {
+    "id": "sk_act_盛曼",
+    "name": "突袭",
+    "type": "active",
+    "owner": "盛曼",
+    "rarity": "generic",
+    "desc": "盛曼的active技能。"
+  },
+  "sk_pas_盛曼": {
+    "id": "sk_pas_盛曼",
+    "name": "武略",
+    "type": "passive",
+    "owner": "盛曼",
+    "rarity": "generic",
+    "desc": "盛曼的passive技能。"
+  },
+  "sk_act_施绩": {
+    "id": "sk_act_施绩",
+    "name": "号令",
+    "type": "active",
+    "owner": "施绩",
+    "rarity": "generic",
+    "desc": "施绩的active技能。"
+  },
+  "sk_pas_施绩": {
+    "id": "sk_pas_施绩",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "施绩",
+    "rarity": "generic",
+    "desc": "施绩的passive技能。"
+  },
+  "sk_act_徐详": {
+    "id": "sk_act_徐详",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "徐详",
+    "rarity": "generic",
+    "desc": "徐详的active技能。"
+  },
+  "sk_pas_徐详": {
+    "id": "sk_pas_徐详",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "徐详",
+    "rarity": "generic",
+    "desc": "徐详的passive技能。"
+  },
+  "sk_act_袁谭": {
+    "id": "sk_act_袁谭",
+    "name": "破军",
+    "type": "active",
+    "owner": "袁谭",
+    "rarity": "generic",
+    "desc": "袁谭的active技能。"
+  },
+  "sk_pas_袁谭": {
+    "id": "sk_pas_袁谭",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "袁谭",
+    "rarity": "generic",
+    "desc": "袁谭的passive技能。"
+  },
+  "sk_act_袁尚": {
+    "id": "sk_act_袁尚",
+    "name": "破军",
+    "type": "active",
+    "owner": "袁尚",
+    "rarity": "generic",
+    "desc": "袁尚的active技能。"
+  },
+  "sk_pas_袁尚": {
+    "id": "sk_pas_袁尚",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "袁尚",
+    "rarity": "generic",
+    "desc": "袁尚的passive技能。"
+  },
+  "sk_act_袁熙": {
+    "id": "sk_act_袁熙",
+    "name": "横扫",
+    "type": "active",
+    "owner": "袁熙",
+    "rarity": "generic",
+    "desc": "袁熙的active技能。"
+  },
+  "sk_pas_袁熙": {
+    "id": "sk_pas_袁熙",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "袁熙",
+    "rarity": "generic",
+    "desc": "袁熙的passive技能。"
+  },
+  "sk_act_高干": {
+    "id": "sk_act_高干",
+    "name": "斩将",
+    "type": "active",
+    "owner": "高干",
+    "rarity": "generic",
+    "desc": "高干的active技能。"
+  },
+  "sk_pas_高干": {
+    "id": "sk_pas_高干",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "高干",
+    "rarity": "generic",
+    "desc": "高干的passive技能。"
+  },
+  "sk_act_郭图": {
+    "id": "sk_act_郭图",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "郭图",
+    "rarity": "generic",
+    "desc": "郭图的active技能。"
+  },
+  "sk_pas_郭图": {
+    "id": "sk_pas_郭图",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "郭图",
+    "rarity": "generic",
+    "desc": "郭图的passive技能。"
+  },
+  "sk_act_辛评": {
+    "id": "sk_act_辛评",
+    "name": "火计",
+    "type": "active",
+    "owner": "辛评",
+    "rarity": "generic",
+    "desc": "辛评的active技能。"
+  },
+  "sk_pas_辛评": {
+    "id": "sk_pas_辛评",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "辛评",
+    "rarity": "generic",
+    "desc": "辛评的passive技能。"
+  },
+  "sk_act_苏由": {
+    "id": "sk_act_苏由",
+    "name": "破军",
+    "type": "active",
+    "owner": "苏由",
+    "rarity": "generic",
+    "desc": "苏由的active技能。"
+  },
+  "sk_pas_苏由": {
+    "id": "sk_pas_苏由",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "苏由",
+    "rarity": "generic",
+    "desc": "苏由的passive技能。"
+  },
+  "sk_act_岑璧": {
+    "id": "sk_act_岑璧",
+    "name": "力战",
+    "type": "active",
+    "owner": "岑璧",
+    "rarity": "generic",
+    "desc": "岑璧的active技能。"
+  },
+  "sk_pas_岑璧": {
+    "id": "sk_pas_岑璧",
+    "name": "武略",
+    "type": "passive",
+    "owner": "岑璧",
+    "rarity": "generic",
+    "desc": "岑璧的passive技能。"
+  },
+  "sk_act_张卫": {
+    "id": "sk_act_张卫",
+    "name": "破军",
+    "type": "active",
+    "owner": "张卫",
+    "rarity": "generic",
+    "desc": "张卫的active技能。"
+  },
+  "sk_pas_张卫": {
+    "id": "sk_pas_张卫",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "张卫",
+    "rarity": "generic",
+    "desc": "张卫的passive技能。"
+  },
+  "sk_act_杨昂": {
+    "id": "sk_act_杨昂",
+    "name": "斩将",
+    "type": "active",
+    "owner": "杨昂",
+    "rarity": "generic",
+    "desc": "杨昂的active技能。"
+  },
+  "sk_pas_杨昂": {
+    "id": "sk_pas_杨昂",
+    "name": "武略",
+    "type": "passive",
+    "owner": "杨昂",
+    "rarity": "generic",
+    "desc": "杨昂的passive技能。"
+  },
+  "sk_act_钱逐日": {
+    "id": "sk_act_钱逐日",
+    "name": "连环",
+    "type": "active",
+    "owner": "钱逐日",
+    "rarity": "exclusive",
+    "desc": "钱逐日的active技能。"
+  },
+  "sk_pas_钱逐日": {
+    "id": "sk_pas_钱逐日",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "钱逐日",
+    "rarity": "exclusive",
+    "desc": "钱逐日的passive技能。"
+  },
+  "sk_act_孙星河": {
+    "id": "sk_act_孙星河",
+    "name": "疾风",
+    "type": "active",
+    "owner": "孙星河",
+    "rarity": "exclusive",
+    "desc": "孙星河的active技能。"
+  },
+  "sk_pas_孙星河": {
+    "id": "sk_pas_孙星河",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "孙星河",
+    "rarity": "exclusive",
+    "desc": "孙星河的passive技能。"
+  },
+  "sk_act_李刀圣": {
+    "id": "sk_act_李刀圣",
+    "name": "破军",
+    "type": "active",
+    "owner": "李刀圣",
+    "rarity": "exclusive",
+    "desc": "李刀圣的active技能。"
+  },
+  "sk_pas_李刀圣": {
+    "id": "sk_pas_李刀圣",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "李刀圣",
+    "rarity": "exclusive",
+    "desc": "李刀圣的passive技能。"
+  },
+  "sk_act_周豹骑": {
+    "id": "sk_act_周豹骑",
+    "name": "威压",
+    "type": "active",
+    "owner": "周豹骑",
+    "rarity": "exclusive",
+    "desc": "周豹骑的active技能。"
+  },
+  "sk_pas_周豹骑": {
+    "id": "sk_pas_周豹骑",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "周豹骑",
+    "rarity": "exclusive",
+    "desc": "周豹骑的passive技能。"
+  },
+  "sk_act_吴北望": {
+    "id": "sk_act_吴北望",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "吴北望",
+    "rarity": "exclusive",
+    "desc": "吴北望的active技能。"
+  },
+  "sk_pas_吴北望": {
+    "id": "sk_pas_吴北望",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "吴北望",
+    "rarity": "exclusive",
+    "desc": "吴北望的passive技能。"
+  },
+  "sk_act_郑无双": {
+    "id": "sk_act_郑无双",
+    "name": "火计",
+    "type": "active",
+    "owner": "郑无双",
+    "rarity": "exclusive",
+    "desc": "郑无双的active技能。"
+  },
+  "sk_pas_郑无双": {
+    "id": "sk_pas_郑无双",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "郑无双",
+    "rarity": "exclusive",
+    "desc": "郑无双的passive技能。"
+  },
+  "sk_act_王踏雪": {
+    "id": "sk_act_王踏雪",
+    "name": "斩将",
+    "type": "active",
+    "owner": "王踏雪",
+    "rarity": "exclusive",
+    "desc": "王踏雪的active技能。"
+  },
+  "sk_pas_王踏雪": {
+    "id": "sk_pas_王踏雪",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "王踏雪",
+    "rarity": "exclusive",
+    "desc": "王踏雪的passive技能。"
+  },
+  "sk_act_冯苍岚": {
+    "id": "sk_act_冯苍岚",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "冯苍岚",
+    "rarity": "exclusive",
+    "desc": "冯苍岚的active技能。"
+  },
+  "sk_pas_冯苍岚": {
+    "id": "sk_pas_冯苍岚",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "冯苍岚",
+    "rarity": "exclusive",
+    "desc": "冯苍岚的passive技能。"
+  },
+  "sk_act_陈策士": {
+    "id": "sk_act_陈策士",
+    "name": "先守",
+    "type": "active",
+    "owner": "陈策士",
+    "rarity": "exclusive",
+    "desc": "陈策士的active技能。"
+  },
+  "sk_pas_陈策士": {
+    "id": "sk_pas_陈策士",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "陈策士",
+    "rarity": "exclusive",
+    "desc": "陈策士的passive技能。"
+  },
+  "sk_act_褚铁衣": {
+    "id": "sk_act_褚铁衣",
+    "name": "突袭",
+    "type": "active",
+    "owner": "褚铁衣",
+    "rarity": "exclusive",
+    "desc": "褚铁衣的active技能。"
+  },
+  "sk_pas_褚铁衣": {
+    "id": "sk_pas_褚铁衣",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "褚铁衣",
+    "rarity": "exclusive",
+    "desc": "褚铁衣的passive技能。"
+  },
+  "sk_act_卫东渡": {
+    "id": "sk_act_卫东渡",
+    "name": "威压",
+    "type": "active",
+    "owner": "卫东渡",
+    "rarity": "exclusive",
+    "desc": "卫东渡的active技能。"
+  },
+  "sk_pas_卫东渡": {
+    "id": "sk_pas_卫东渡",
+    "name": "守成",
+    "type": "passive",
+    "owner": "卫东渡",
+    "rarity": "exclusive",
+    "desc": "卫东渡的passive技能。"
+  },
+  "sk_act_蒋青锋": {
+    "id": "sk_act_蒋青锋",
+    "name": "横扫",
+    "type": "active",
+    "owner": "蒋青锋",
+    "rarity": "exclusive",
+    "desc": "蒋青锋的active技能。"
+  },
+  "sk_pas_蒋青锋": {
+    "id": "sk_pas_蒋青锋",
+    "name": "武略",
+    "type": "passive",
+    "owner": "蒋青锋",
+    "rarity": "exclusive",
+    "desc": "蒋青锋的passive技能。"
+  },
+  "sk_act_沈裂地": {
+    "id": "sk_act_沈裂地",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "沈裂地",
+    "rarity": "exclusive",
+    "desc": "沈裂地的active技能。"
+  },
+  "sk_pas_沈裂地": {
+    "id": "sk_pas_沈裂地",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "沈裂地",
+    "rarity": "exclusive",
+    "desc": "沈裂地的passive技能。"
+  },
+  "sk_act_韩玄冰": {
+    "id": "sk_act_韩玄冰",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "韩玄冰",
+    "rarity": "exclusive",
+    "desc": "韩玄冰的active技能。"
+  },
+  "sk_pas_韩玄冰": {
+    "id": "sk_pas_韩玄冰",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "韩玄冰",
+    "rarity": "exclusive",
+    "desc": "韩玄冰的passive技能。"
+  },
+  "sk_act_杨虎啸": {
+    "id": "sk_act_杨虎啸",
+    "name": "火计",
+    "type": "active",
+    "owner": "杨虎啸",
+    "rarity": "exclusive",
+    "desc": "杨虎啸的active技能。"
+  },
+  "sk_pas_杨虎啸": {
+    "id": "sk_pas_杨虎啸",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "杨虎啸",
+    "rarity": "exclusive",
+    "desc": "杨虎啸的passive技能。"
+  },
+  "sk_act_朱锦帆": {
+    "id": "sk_act_朱锦帆",
+    "name": "疾风",
+    "type": "active",
+    "owner": "朱锦帆",
+    "rarity": "exclusive",
+    "desc": "朱锦帆的active技能。"
+  },
+  "sk_pas_朱锦帆": {
+    "id": "sk_pas_朱锦帆",
+    "name": "强运",
+    "type": "passive",
+    "owner": "朱锦帆",
+    "rarity": "exclusive",
+    "desc": "朱锦帆的passive技能。"
+  },
+  "sk_act_秦中军": {
+    "id": "sk_act_秦中军",
+    "name": "力战",
+    "type": "active",
+    "owner": "秦中军",
+    "rarity": "exclusive",
+    "desc": "秦中军的active技能。"
+  },
+  "sk_pas_秦中军": {
+    "id": "sk_pas_秦中军",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "秦中军",
+    "rarity": "exclusive",
+    "desc": "秦中军的passive技能。"
+  },
+  "sk_act_尤天罡": {
+    "id": "sk_act_尤天罡",
+    "name": "激励",
+    "type": "active",
+    "owner": "尤天罡",
+    "rarity": "exclusive",
+    "desc": "尤天罡的active技能。"
+  },
+  "sk_pas_尤天罡": {
+    "id": "sk_pas_尤天罡",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "尤天罡",
+    "rarity": "exclusive",
+    "desc": "尤天罡的passive技能。"
+  },
+  "sk_act_许断岳": {
+    "id": "sk_act_许断岳",
+    "name": "破军",
+    "type": "active",
+    "owner": "许断岳",
+    "rarity": "exclusive",
+    "desc": "许断岳的active技能。"
+  },
+  "sk_pas_许断岳": {
+    "id": "sk_pas_许断岳",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "许断岳",
+    "rarity": "exclusive",
+    "desc": "许断岳的passive技能。"
+  },
+  "sk_act_何枪神": {
+    "id": "sk_act_何枪神",
+    "name": "火计",
+    "type": "active",
+    "owner": "何枪神",
+    "rarity": "exclusive",
+    "desc": "何枪神的active技能。"
+  },
+  "sk_pas_何枪神": {
+    "id": "sk_pas_何枪神",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "何枪神",
+    "rarity": "exclusive",
+    "desc": "何枪神的passive技能。"
+  },
+  "sk_act_吕鹰扬": {
+    "id": "sk_act_吕鹰扬",
+    "name": "突袭",
+    "type": "active",
+    "owner": "吕鹰扬",
+    "rarity": "exclusive",
+    "desc": "吕鹰扬的active技能。"
+  },
+  "sk_pas_吕鹰扬": {
+    "id": "sk_pas_吕鹰扬",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "吕鹰扬",
+    "rarity": "exclusive",
+    "desc": "吕鹰扬的passive技能。"
+  },
+  "sk_act_施青囊": {
+    "id": "sk_act_施青囊",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "施青囊",
+    "rarity": "exclusive",
+    "desc": "施青囊的active技能。"
+  },
+  "sk_pas_施青囊": {
+    "id": "sk_pas_施青囊",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "施青囊",
+    "rarity": "exclusive",
+    "desc": "施青囊的passive技能。"
+  },
+  "sk_act_张破阵": {
+    "id": "sk_act_张破阵",
+    "name": "疾风",
+    "type": "active",
+    "owner": "张破阵",
+    "rarity": "exclusive",
+    "desc": "张破阵的active技能。"
+  },
+  "sk_pas_张破阵": {
+    "id": "sk_pas_张破阵",
+    "name": "强运",
+    "type": "passive",
+    "owner": "张破阵",
+    "rarity": "exclusive",
+    "desc": "张破阵的passive技能。"
+  },
+  "sk_act_孔惊雷": {
+    "id": "sk_act_孔惊雷",
+    "name": "突袭",
+    "type": "active",
+    "owner": "孔惊雷",
+    "rarity": "exclusive",
+    "desc": "孔惊雷的active技能。"
+  },
+  "sk_pas_孔惊雷": {
+    "id": "sk_pas_孔惊雷",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "孔惊雷",
+    "rarity": "exclusive",
+    "desc": "孔惊雷的passive技能。"
+  },
+  "sk_act_曹墨羽": {
+    "id": "sk_act_曹墨羽",
+    "name": "援军",
+    "type": "active",
+    "owner": "曹墨羽",
+    "rarity": "exclusive",
+    "desc": "曹墨羽的active技能。"
+  },
+  "sk_pas_曹墨羽": {
+    "id": "sk_pas_曹墨羽",
+    "name": "守成",
+    "type": "passive",
+    "owner": "曹墨羽",
+    "rarity": "exclusive",
+    "desc": "曹墨羽的passive技能。"
+  },
+  "sk_act_严剑仙": {
+    "id": "sk_act_严剑仙",
+    "name": "突袭",
+    "type": "active",
+    "owner": "严剑仙",
+    "rarity": "exclusive",
+    "desc": "严剑仙的active技能。"
+  },
+  "sk_pas_严剑仙": {
+    "id": "sk_pas_严剑仙",
+    "name": "武略",
+    "type": "passive",
+    "owner": "严剑仙",
+    "rarity": "exclusive",
+    "desc": "严剑仙的passive技能。"
+  },
+  "sk_act_华狼牙": {
+    "id": "sk_act_华狼牙",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "华狼牙",
+    "rarity": "exclusive",
+    "desc": "华狼牙的active技能。"
+  },
+  "sk_pas_华狼牙": {
+    "id": "sk_pas_华狼牙",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "华狼牙",
+    "rarity": "exclusive",
+    "desc": "华狼牙的passive技能。"
+  },
+  "sk_act_金南征": {
+    "id": "sk_act_金南征",
+    "name": "力战",
+    "type": "active",
+    "owner": "金南征",
+    "rarity": "exclusive",
+    "desc": "金南征的active技能。"
+  },
+  "sk_pas_金南征": {
+    "id": "sk_pas_金南征",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "金南征",
+    "rarity": "exclusive",
+    "desc": "金南征的passive技能。"
+  },
+  "sk_act_魏孤城": {
+    "id": "sk_act_魏孤城",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "魏孤城",
+    "rarity": "exclusive",
+    "desc": "魏孤城的active技能。"
+  },
+  "sk_pas_魏孤城": {
+    "id": "sk_pas_魏孤城",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "魏孤城",
+    "rarity": "exclusive",
+    "desc": "魏孤城的passive技能。"
+  },
+  "sk_act_陶焚天": {
+    "id": "sk_act_陶焚天",
+    "name": "奇策",
+    "type": "active",
+    "owner": "陶焚天",
+    "rarity": "exclusive",
+    "desc": "陶焚天的active技能。"
+  },
+  "sk_pas_陶焚天": {
+    "id": "sk_pas_陶焚天",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "陶焚天",
+    "rarity": "exclusive",
+    "desc": "陶焚天的passive技能。"
+  },
+  "sk_act_姜赤霄": {
+    "id": "sk_act_姜赤霄",
+    "name": "斩将",
+    "type": "active",
+    "owner": "姜赤霄",
+    "rarity": "exclusive",
+    "desc": "姜赤霄的active技能。"
+  },
+  "sk_pas_姜赤霄": {
+    "id": "sk_pas_姜赤霄",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "姜赤霄",
+    "rarity": "exclusive",
+    "desc": "姜赤霄的passive技能。"
+  },
+  "sk_act_赵鬼谋": {
+    "id": "sk_act_赵鬼谋",
+    "name": "激励",
+    "type": "active",
+    "owner": "赵鬼谋",
+    "rarity": "exclusive",
+    "desc": "赵鬼谋的active技能。"
+  },
+  "sk_pas_赵鬼谋": {
+    "id": "sk_pas_赵鬼谋",
+    "name": "守成",
+    "type": "passive",
+    "owner": "赵鬼谋",
+    "rarity": "exclusive",
+    "desc": "赵鬼谋的passive技能。"
+  },
+  "sk_act_钱银甲": {
+    "id": "sk_act_钱银甲",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "钱银甲",
+    "rarity": "exclusive",
+    "desc": "钱银甲的active技能。"
+  },
+  "sk_pas_钱银甲": {
+    "id": "sk_pas_钱银甲",
+    "name": "武略",
+    "type": "passive",
+    "owner": "钱银甲",
+    "rarity": "exclusive",
+    "desc": "钱银甲的passive技能。"
+  },
+  "sk_act_孙西凉": {
+    "id": "sk_act_孙西凉",
+    "name": "妙算",
+    "type": "active",
+    "owner": "孙西凉",
+    "rarity": "exclusive",
+    "desc": "孙西凉的active技能。"
+  },
+  "sk_pas_孙西凉": {
+    "id": "sk_pas_孙西凉",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "孙西凉",
+    "rarity": "exclusive",
+    "desc": "孙西凉的passive技能。"
+  },
+  "sk_act_李寒江": {
+    "id": "sk_act_李寒江",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "李寒江",
+    "rarity": "exclusive",
+    "desc": "李寒江的active技能。"
+  },
+  "sk_pas_李寒江": {
+    "id": "sk_pas_李寒江",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "李寒江",
+    "rarity": "exclusive",
+    "desc": "李寒江的passive技能。"
+  },
+  "sk_act_周追风": {
+    "id": "sk_act_周追风",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "周追风",
+    "rarity": "generic",
+    "desc": "周追风的active技能。"
+  },
+  "sk_pas_周追风": {
+    "id": "sk_pas_周追风",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "周追风",
+    "rarity": "generic",
+    "desc": "周追风的passive技能。"
+  },
+  "sk_act_吴紫电": {
+    "id": "sk_act_吴紫电",
+    "name": "疾风",
+    "type": "active",
+    "owner": "吴紫电",
+    "rarity": "generic",
+    "desc": "吴紫电的active技能。"
+  },
+  "sk_pas_吴紫电": {
+    "id": "sk_pas_吴紫电",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "吴紫电",
+    "rarity": "generic",
+    "desc": "吴紫电的passive技能。"
+  },
+  "sk_act_郑龙吟": {
+    "id": "sk_act_郑龙吟",
+    "name": "破军",
+    "type": "active",
+    "owner": "郑龙吟",
+    "rarity": "generic",
+    "desc": "郑龙吟的active技能。"
+  },
+  "sk_pas_郑龙吟": {
+    "id": "sk_pas_郑龙吟",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "郑龙吟",
+    "rarity": "generic",
+    "desc": "郑龙吟的passive技能。"
+  },
+  "sk_act_王白袍": {
+    "id": "sk_act_王白袍",
+    "name": "援军",
+    "type": "active",
+    "owner": "王白袍",
+    "rarity": "generic",
+    "desc": "王白袍的active技能。"
+  },
+  "sk_pas_王白袍": {
+    "id": "sk_pas_王白袍",
+    "name": "威望",
+    "type": "passive",
+    "owner": "王白袍",
+    "rarity": "generic",
+    "desc": "王白袍的passive技能。"
+  },
+  "sk_act_冯凌云": {
+    "id": "sk_act_冯凌云",
+    "name": "破军",
+    "type": "active",
+    "owner": "冯凌云",
+    "rarity": "generic",
+    "desc": "冯凌云的active技能。"
+  },
+  "sk_pas_冯凌云": {
+    "id": "sk_pas_冯凌云",
+    "name": "武略",
+    "type": "passive",
+    "owner": "冯凌云",
+    "rarity": "generic",
+    "desc": "冯凌云的passive技能。"
+  },
+  "sk_act_陈逐日": {
+    "id": "sk_act_陈逐日",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "陈逐日",
+    "rarity": "generic",
+    "desc": "陈逐日的active技能。"
+  },
+  "sk_pas_陈逐日": {
+    "id": "sk_pas_陈逐日",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "陈逐日",
+    "rarity": "generic",
+    "desc": "陈逐日的passive技能。"
+  },
+  "sk_act_褚星河": {
+    "id": "sk_act_褚星河",
+    "name": "破军",
+    "type": "active",
+    "owner": "褚星河",
+    "rarity": "generic",
+    "desc": "褚星河的active技能。"
+  },
+  "sk_pas_褚星河": {
+    "id": "sk_pas_褚星河",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "褚星河",
+    "rarity": "generic",
+    "desc": "褚星河的passive技能。"
+  },
+  "sk_act_卫刀圣": {
+    "id": "sk_act_卫刀圣",
+    "name": "连环",
+    "type": "active",
+    "owner": "卫刀圣",
+    "rarity": "generic",
+    "desc": "卫刀圣的active技能。"
+  },
+  "sk_pas_卫刀圣": {
+    "id": "sk_pas_卫刀圣",
+    "name": "神算",
+    "type": "passive",
+    "owner": "卫刀圣",
+    "rarity": "generic",
+    "desc": "卫刀圣的passive技能。"
+  },
+  "sk_act_蒋豹骑": {
+    "id": "sk_act_蒋豹骑",
+    "name": "均衡",
+    "type": "active",
+    "owner": "蒋豹骑",
+    "rarity": "generic",
+    "desc": "蒋豹骑的active技能。"
+  },
+  "sk_pas_蒋豹骑": {
+    "id": "sk_pas_蒋豹骑",
+    "name": "强运",
+    "type": "passive",
+    "owner": "蒋豹骑",
+    "rarity": "generic",
+    "desc": "蒋豹骑的passive技能。"
+  },
+  "sk_act_沈北望": {
+    "id": "sk_act_沈北望",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "沈北望",
+    "rarity": "generic",
+    "desc": "沈北望的active技能。"
+  },
+  "sk_pas_沈北望": {
+    "id": "sk_pas_沈北望",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "沈北望",
+    "rarity": "generic",
+    "desc": "沈北望的passive技能。"
+  },
+  "sk_act_韩无双": {
+    "id": "sk_act_韩无双",
+    "name": "激励",
+    "type": "active",
+    "owner": "韩无双",
+    "rarity": "generic",
+    "desc": "韩无双的active技能。"
+  },
+  "sk_pas_韩无双": {
+    "id": "sk_pas_韩无双",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "韩无双",
+    "rarity": "generic",
+    "desc": "韩无双的passive技能。"
+  },
+  "sk_act_杨踏雪": {
+    "id": "sk_act_杨踏雪",
+    "name": "突袭",
+    "type": "active",
+    "owner": "杨踏雪",
+    "rarity": "generic",
+    "desc": "杨踏雪的active技能。"
+  },
+  "sk_pas_杨踏雪": {
+    "id": "sk_pas_杨踏雪",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "杨踏雪",
+    "rarity": "generic",
+    "desc": "杨踏雪的passive技能。"
+  },
+  "sk_act_朱苍岚": {
+    "id": "sk_act_朱苍岚",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "朱苍岚",
+    "rarity": "generic",
+    "desc": "朱苍岚的active技能。"
+  },
+  "sk_pas_朱苍岚": {
+    "id": "sk_pas_朱苍岚",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "朱苍岚",
+    "rarity": "generic",
+    "desc": "朱苍岚的passive技能。"
+  },
+  "sk_act_秦策士": {
+    "id": "sk_act_秦策士",
+    "name": "斩将",
+    "type": "active",
+    "owner": "秦策士",
+    "rarity": "generic",
+    "desc": "秦策士的active技能。"
+  },
+  "sk_pas_秦策士": {
+    "id": "sk_pas_秦策士",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "秦策士",
+    "rarity": "generic",
+    "desc": "秦策士的passive技能。"
+  },
+  "sk_act_尤铁衣": {
+    "id": "sk_act_尤铁衣",
+    "name": "妙算",
+    "type": "active",
+    "owner": "尤铁衣",
+    "rarity": "generic",
+    "desc": "尤铁衣的active技能。"
+  },
+  "sk_pas_尤铁衣": {
+    "id": "sk_pas_尤铁衣",
+    "name": "神算",
+    "type": "passive",
+    "owner": "尤铁衣",
+    "rarity": "generic",
+    "desc": "尤铁衣的passive技能。"
+  },
+  "sk_act_许东渡": {
+    "id": "sk_act_许东渡",
+    "name": "均衡",
+    "type": "active",
+    "owner": "许东渡",
+    "rarity": "generic",
+    "desc": "许东渡的active技能。"
+  },
+  "sk_pas_许东渡": {
+    "id": "sk_pas_许东渡",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "许东渡",
+    "rarity": "generic",
+    "desc": "许东渡的passive技能。"
+  },
+  "sk_act_何青锋": {
+    "id": "sk_act_何青锋",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "何青锋",
+    "rarity": "generic",
+    "desc": "何青锋的active技能。"
+  },
+  "sk_pas_何青锋": {
+    "id": "sk_pas_何青锋",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "何青锋",
+    "rarity": "generic",
+    "desc": "何青锋的passive技能。"
+  },
+  "sk_act_吕裂地": {
+    "id": "sk_act_吕裂地",
+    "name": "威压",
+    "type": "active",
+    "owner": "吕裂地",
+    "rarity": "generic",
+    "desc": "吕裂地的active技能。"
+  },
+  "sk_pas_吕裂地": {
+    "id": "sk_pas_吕裂地",
+    "name": "威望",
+    "type": "passive",
+    "owner": "吕裂地",
+    "rarity": "generic",
+    "desc": "吕裂地的passive技能。"
+  },
+  "sk_act_施玄冰": {
+    "id": "sk_act_施玄冰",
+    "name": "突袭",
+    "type": "active",
+    "owner": "施玄冰",
+    "rarity": "generic",
+    "desc": "施玄冰的active技能。"
+  },
+  "sk_pas_施玄冰": {
+    "id": "sk_pas_施玄冰",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "施玄冰",
+    "rarity": "generic",
+    "desc": "施玄冰的passive技能。"
+  },
+  "sk_act_张虎啸": {
+    "id": "sk_act_张虎啸",
+    "name": "连环",
+    "type": "active",
+    "owner": "张虎啸",
+    "rarity": "generic",
+    "desc": "张虎啸的active技能。"
+  },
+  "sk_pas_张虎啸": {
+    "id": "sk_pas_张虎啸",
+    "name": "神算",
+    "type": "passive",
+    "owner": "张虎啸",
+    "rarity": "generic",
+    "desc": "张虎啸的passive技能。"
+  },
+  "sk_act_孔锦帆": {
+    "id": "sk_act_孔锦帆",
+    "name": "横扫",
+    "type": "active",
+    "owner": "孔锦帆",
+    "rarity": "generic",
+    "desc": "孔锦帆的active技能。"
+  },
+  "sk_pas_孔锦帆": {
+    "id": "sk_pas_孔锦帆",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "孔锦帆",
+    "rarity": "generic",
+    "desc": "孔锦帆的passive技能。"
+  },
+  "sk_act_曹中军": {
+    "id": "sk_act_曹中军",
+    "name": "妙算",
+    "type": "active",
+    "owner": "曹中军",
+    "rarity": "generic",
+    "desc": "曹中军的active技能。"
+  },
+  "sk_pas_曹中军": {
+    "id": "sk_pas_曹中军",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "曹中军",
+    "rarity": "generic",
+    "desc": "曹中军的passive技能。"
+  },
+  "sk_act_严天罡": {
+    "id": "sk_act_严天罡",
+    "name": "均衡",
+    "type": "active",
+    "owner": "严天罡",
+    "rarity": "generic",
+    "desc": "严天罡的active技能。"
+  },
+  "sk_pas_严天罡": {
+    "id": "sk_pas_严天罡",
+    "name": "强运",
+    "type": "passive",
+    "owner": "严天罡",
+    "rarity": "generic",
+    "desc": "严天罡的passive技能。"
+  },
+  "sk_act_华断岳": {
+    "id": "sk_act_华断岳",
+    "name": "突袭",
+    "type": "active",
+    "owner": "华断岳",
+    "rarity": "generic",
+    "desc": "华断岳的active技能。"
+  },
+  "sk_pas_华断岳": {
+    "id": "sk_pas_华断岳",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "华断岳",
+    "rarity": "generic",
+    "desc": "华断岳的passive技能。"
+  },
+  "sk_act_金枪神": {
+    "id": "sk_act_金枪神",
+    "name": "威压",
+    "type": "active",
+    "owner": "金枪神",
+    "rarity": "generic",
+    "desc": "金枪神的active技能。"
+  },
+  "sk_pas_金枪神": {
+    "id": "sk_pas_金枪神",
+    "name": "守成",
+    "type": "passive",
+    "owner": "金枪神",
+    "rarity": "generic",
+    "desc": "金枪神的passive技能。"
+  },
+  "sk_act_魏鹰扬": {
+    "id": "sk_act_魏鹰扬",
+    "name": "突袭",
+    "type": "active",
+    "owner": "魏鹰扬",
+    "rarity": "generic",
+    "desc": "魏鹰扬的active技能。"
+  },
+  "sk_pas_魏鹰扬": {
+    "id": "sk_pas_魏鹰扬",
+    "name": "武略",
+    "type": "passive",
+    "owner": "魏鹰扬",
+    "rarity": "generic",
+    "desc": "魏鹰扬的passive技能。"
+  },
+  "sk_act_陶青囊": {
+    "id": "sk_act_陶青囊",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "陶青囊",
+    "rarity": "generic",
+    "desc": "陶青囊的active技能。"
+  },
+  "sk_pas_陶青囊": {
+    "id": "sk_pas_陶青囊",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "陶青囊",
+    "rarity": "generic",
+    "desc": "陶青囊的passive技能。"
+  },
+  "sk_act_姜破阵": {
+    "id": "sk_act_姜破阵",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "姜破阵",
+    "rarity": "generic",
+    "desc": "姜破阵的active技能。"
+  },
+  "sk_pas_姜破阵": {
+    "id": "sk_pas_姜破阵",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "姜破阵",
+    "rarity": "generic",
+    "desc": "姜破阵的passive技能。"
+  },
+  "sk_act_赵惊雷": {
+    "id": "sk_act_赵惊雷",
+    "name": "妙算",
+    "type": "active",
+    "owner": "赵惊雷",
+    "rarity": "generic",
+    "desc": "赵惊雷的active技能。"
+  },
+  "sk_pas_赵惊雷": {
+    "id": "sk_pas_赵惊雷",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "赵惊雷",
+    "rarity": "generic",
+    "desc": "赵惊雷的passive技能。"
+  },
+  "sk_act_钱墨羽": {
+    "id": "sk_act_钱墨羽",
+    "name": "应变",
+    "type": "active",
+    "owner": "钱墨羽",
+    "rarity": "generic",
+    "desc": "钱墨羽的active技能。"
+  },
+  "sk_pas_钱墨羽": {
+    "id": "sk_pas_钱墨羽",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "钱墨羽",
+    "rarity": "generic",
+    "desc": "钱墨羽的passive技能。"
+  },
+  "sk_act_孙剑仙": {
+    "id": "sk_act_孙剑仙",
+    "name": "突袭",
+    "type": "active",
+    "owner": "孙剑仙",
+    "rarity": "generic",
+    "desc": "孙剑仙的active技能。"
+  },
+  "sk_pas_孙剑仙": {
+    "id": "sk_pas_孙剑仙",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "孙剑仙",
+    "rarity": "generic",
+    "desc": "孙剑仙的passive技能。"
+  },
+  "sk_act_李狼牙": {
+    "id": "sk_act_李狼牙",
+    "name": "威压",
+    "type": "active",
+    "owner": "李狼牙",
+    "rarity": "generic",
+    "desc": "李狼牙的active技能。"
+  },
+  "sk_pas_李狼牙": {
+    "id": "sk_pas_李狼牙",
+    "name": "守成",
+    "type": "passive",
+    "owner": "李狼牙",
+    "rarity": "generic",
+    "desc": "李狼牙的passive技能。"
+  },
+  "sk_act_周南征": {
+    "id": "sk_act_周南征",
+    "name": "突袭",
+    "type": "active",
+    "owner": "周南征",
+    "rarity": "generic",
+    "desc": "周南征的active技能。"
+  },
+  "sk_pas_周南征": {
+    "id": "sk_pas_周南征",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "周南征",
+    "rarity": "generic",
+    "desc": "周南征的passive技能。"
+  },
+  "sk_act_吴孤城": {
+    "id": "sk_act_吴孤城",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "吴孤城",
+    "rarity": "generic",
+    "desc": "吴孤城的active技能。"
+  },
+  "sk_pas_吴孤城": {
+    "id": "sk_pas_吴孤城",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "吴孤城",
+    "rarity": "generic",
+    "desc": "吴孤城的passive技能。"
+  },
+  "sk_act_郑焚天": {
+    "id": "sk_act_郑焚天",
+    "name": "突袭",
+    "type": "active",
+    "owner": "郑焚天",
+    "rarity": "generic",
+    "desc": "郑焚天的active技能。"
+  },
+  "sk_pas_郑焚天": {
+    "id": "sk_pas_郑焚天",
+    "name": "武略",
+    "type": "passive",
+    "owner": "郑焚天",
+    "rarity": "generic",
+    "desc": "郑焚天的passive技能。"
+  },
+  "sk_act_王赤霄": {
+    "id": "sk_act_王赤霄",
+    "name": "妙算",
+    "type": "active",
+    "owner": "王赤霄",
+    "rarity": "generic",
+    "desc": "王赤霄的active技能。"
+  },
+  "sk_pas_王赤霄": {
+    "id": "sk_pas_王赤霄",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "王赤霄",
+    "rarity": "generic",
+    "desc": "王赤霄的passive技能。"
+  },
+  "sk_act_冯鬼谋": {
+    "id": "sk_act_冯鬼谋",
+    "name": "奇策",
+    "type": "active",
+    "owner": "冯鬼谋",
+    "rarity": "generic",
+    "desc": "冯鬼谋的active技能。"
+  },
+  "sk_pas_冯鬼谋": {
+    "id": "sk_pas_冯鬼谋",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "冯鬼谋",
+    "rarity": "generic",
+    "desc": "冯鬼谋的passive技能。"
+  },
+  "sk_act_陈银甲": {
+    "id": "sk_act_陈银甲",
+    "name": "突袭",
+    "type": "active",
+    "owner": "陈银甲",
+    "rarity": "generic",
+    "desc": "陈银甲的active技能。"
+  },
+  "sk_pas_陈银甲": {
+    "id": "sk_pas_陈银甲",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "陈银甲",
+    "rarity": "generic",
+    "desc": "陈银甲的passive技能。"
+  },
+  "sk_act_褚西凉": {
+    "id": "sk_act_褚西凉",
+    "name": "御敌",
+    "type": "active",
+    "owner": "褚西凉",
+    "rarity": "generic",
+    "desc": "褚西凉的active技能。"
+  },
+  "sk_pas_褚西凉": {
+    "id": "sk_pas_褚西凉",
+    "name": "威望",
+    "type": "passive",
+    "owner": "褚西凉",
+    "rarity": "generic",
+    "desc": "褚西凉的passive技能。"
+  },
+  "sk_act_卫寒江": {
+    "id": "sk_act_卫寒江",
+    "name": "横扫",
+    "type": "active",
+    "owner": "卫寒江",
+    "rarity": "generic",
+    "desc": "卫寒江的active技能。"
+  },
+  "sk_pas_卫寒江": {
+    "id": "sk_pas_卫寒江",
+    "name": "武略",
+    "type": "passive",
+    "owner": "卫寒江",
+    "rarity": "generic",
+    "desc": "卫寒江的passive技能。"
+  },
+  "sk_act_蒋追风": {
+    "id": "sk_act_蒋追风",
+    "name": "火计",
+    "type": "active",
+    "owner": "蒋追风",
+    "rarity": "generic",
+    "desc": "蒋追风的active技能。"
+  },
+  "sk_pas_蒋追风": {
+    "id": "sk_pas_蒋追风",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "蒋追风",
+    "rarity": "generic",
+    "desc": "蒋追风的passive技能。"
+  },
+  "sk_act_沈紫电": {
+    "id": "sk_act_沈紫电",
+    "name": "横扫",
+    "type": "active",
+    "owner": "沈紫电",
+    "rarity": "generic",
+    "desc": "沈紫电的active技能。"
+  },
+  "sk_pas_沈紫电": {
+    "id": "sk_pas_沈紫电",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "沈紫电",
+    "rarity": "generic",
+    "desc": "沈紫电的passive技能。"
+  },
+  "sk_act_韩龙吟": {
+    "id": "sk_act_韩龙吟",
+    "name": "锦囊",
+    "type": "active",
+    "owner": "韩龙吟",
+    "rarity": "generic",
+    "desc": "韩龙吟的active技能。"
+  },
+  "sk_pas_韩龙吟": {
+    "id": "sk_pas_韩龙吟",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "韩龙吟",
+    "rarity": "generic",
+    "desc": "韩龙吟的passive技能。"
+  },
+  "sk_act_杨白袍": {
+    "id": "sk_act_杨白袍",
+    "name": "应变",
+    "type": "active",
+    "owner": "杨白袍",
+    "rarity": "generic",
+    "desc": "杨白袍的active技能。"
+  },
+  "sk_pas_杨白袍": {
+    "id": "sk_pas_杨白袍",
+    "name": "强运",
+    "type": "passive",
+    "owner": "杨白袍",
+    "rarity": "generic",
+    "desc": "杨白袍的passive技能。"
+  },
+  "sk_act_朱凌云": {
+    "id": "sk_act_朱凌云",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "朱凌云",
+    "rarity": "generic",
+    "desc": "朱凌云的active技能。"
+  },
+  "sk_pas_朱凌云": {
+    "id": "sk_pas_朱凌云",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "朱凌云",
+    "rarity": "generic",
+    "desc": "朱凌云的passive技能。"
+  },
+  "sk_act_秦逐日": {
+    "id": "sk_act_秦逐日",
+    "name": "激励",
+    "type": "active",
+    "owner": "秦逐日",
+    "rarity": "generic",
+    "desc": "秦逐日的active技能。"
+  },
+  "sk_pas_秦逐日": {
+    "id": "sk_pas_秦逐日",
+    "name": "守成",
+    "type": "passive",
+    "owner": "秦逐日",
+    "rarity": "generic",
+    "desc": "秦逐日的passive技能。"
+  },
+  "sk_act_尤星河": {
+    "id": "sk_act_尤星河",
+    "name": "突袭",
+    "type": "active",
+    "owner": "尤星河",
+    "rarity": "generic",
+    "desc": "尤星河的active技能。"
+  },
+  "sk_pas_尤星河": {
+    "id": "sk_pas_尤星河",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "尤星河",
+    "rarity": "generic",
+    "desc": "尤星河的passive技能。"
+  },
+  "sk_act_许刀圣": {
+    "id": "sk_act_许刀圣",
+    "name": "火计",
+    "type": "active",
+    "owner": "许刀圣",
+    "rarity": "generic",
+    "desc": "许刀圣的active技能。"
+  },
+  "sk_pas_许刀圣": {
+    "id": "sk_pas_许刀圣",
+    "name": "神算",
+    "type": "passive",
+    "owner": "许刀圣",
+    "rarity": "generic",
+    "desc": "许刀圣的passive技能。"
+  },
+  "sk_act_何豹骑": {
+    "id": "sk_act_何豹骑",
+    "name": "力战",
+    "type": "active",
+    "owner": "何豹骑",
+    "rarity": "generic",
+    "desc": "何豹骑的active技能。"
+  },
+  "sk_pas_何豹骑": {
+    "id": "sk_pas_何豹骑",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "何豹骑",
+    "rarity": "generic",
+    "desc": "何豹骑的passive技能。"
+  },
+  "sk_act_吕北望": {
+    "id": "sk_act_吕北望",
+    "name": "火计",
+    "type": "active",
+    "owner": "吕北望",
+    "rarity": "generic",
+    "desc": "吕北望的active技能。"
+  },
+  "sk_pas_吕北望": {
+    "id": "sk_pas_吕北望",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "吕北望",
+    "rarity": "generic",
+    "desc": "吕北望的passive技能。"
+  },
+  "sk_act_施无双": {
+    "id": "sk_act_施无双",
+    "name": "均衡",
+    "type": "active",
+    "owner": "施无双",
+    "rarity": "generic",
+    "desc": "施无双的active技能。"
+  },
+  "sk_pas_施无双": {
+    "id": "sk_pas_施无双",
+    "name": "强运",
+    "type": "passive",
+    "owner": "施无双",
+    "rarity": "generic",
+    "desc": "施无双的passive技能。"
+  },
+  "sk_act_张踏雪": {
+    "id": "sk_act_张踏雪",
+    "name": "横扫",
+    "type": "active",
+    "owner": "张踏雪",
+    "rarity": "generic",
+    "desc": "张踏雪的active技能。"
+  },
+  "sk_pas_张踏雪": {
+    "id": "sk_pas_张踏雪",
+    "name": "武略",
+    "type": "passive",
+    "owner": "张踏雪",
+    "rarity": "generic",
+    "desc": "张踏雪的passive技能。"
+  },
+  "sk_act_孔苍岚": {
+    "id": "sk_act_孔苍岚",
+    "name": "援军",
+    "type": "active",
+    "owner": "孔苍岚",
+    "rarity": "generic",
+    "desc": "孔苍岚的active技能。"
+  },
+  "sk_pas_孔苍岚": {
+    "id": "sk_pas_孔苍岚",
+    "name": "御众",
+    "type": "passive",
+    "owner": "孔苍岚",
+    "rarity": "generic",
+    "desc": "孔苍岚的passive技能。"
+  },
+  "sk_act_曹策士": {
+    "id": "sk_act_曹策士",
+    "name": "突袭",
+    "type": "active",
+    "owner": "曹策士",
+    "rarity": "generic",
+    "desc": "曹策士的active技能。"
+  },
+  "sk_pas_曹策士": {
+    "id": "sk_pas_曹策士",
+    "name": "武略",
+    "type": "passive",
+    "owner": "曹策士",
+    "rarity": "generic",
+    "desc": "曹策士的passive技能。"
+  },
+  "sk_act_严铁衣": {
+    "id": "sk_act_严铁衣",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "严铁衣",
+    "rarity": "generic",
+    "desc": "严铁衣的active技能。"
+  },
+  "sk_pas_严铁衣": {
+    "id": "sk_pas_严铁衣",
+    "name": "神算",
+    "type": "passive",
+    "owner": "严铁衣",
+    "rarity": "generic",
+    "desc": "严铁衣的passive技能。"
+  },
+  "sk_act_华东渡": {
+    "id": "sk_act_华东渡",
+    "name": "力战",
+    "type": "active",
+    "owner": "华东渡",
+    "rarity": "generic",
+    "desc": "华东渡的active技能。"
+  },
+  "sk_pas_华东渡": {
+    "id": "sk_pas_华东渡",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "华东渡",
+    "rarity": "generic",
+    "desc": "华东渡的passive技能。"
+  },
+  "sk_act_金青锋": {
+    "id": "sk_act_金青锋",
+    "name": "扇舞",
+    "type": "active",
+    "owner": "金青锋",
+    "rarity": "generic",
+    "desc": "金青锋的active技能。"
+  },
+  "sk_pas_金青锋": {
+    "id": "sk_pas_金青锋",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "金青锋",
+    "rarity": "generic",
+    "desc": "金青锋的passive技能。"
+  },
+  "sk_act_魏裂地": {
+    "id": "sk_act_魏裂地",
+    "name": "疾风",
+    "type": "active",
+    "owner": "魏裂地",
+    "rarity": "generic",
+    "desc": "魏裂地的active技能。"
+  },
+  "sk_pas_魏裂地": {
+    "id": "sk_pas_魏裂地",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "魏裂地",
+    "rarity": "generic",
+    "desc": "魏裂地的passive技能。"
+  },
+  "sk_act_陶玄冰": {
+    "id": "sk_act_陶玄冰",
+    "name": "突袭",
+    "type": "active",
+    "owner": "陶玄冰",
+    "rarity": "generic",
+    "desc": "陶玄冰的active技能。"
+  },
+  "sk_pas_陶玄冰": {
+    "id": "sk_pas_陶玄冰",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "陶玄冰",
+    "rarity": "generic",
+    "desc": "陶玄冰的passive技能。"
+  },
+  "sk_act_姜虎啸": {
+    "id": "sk_act_姜虎啸",
+    "name": "援军",
+    "type": "active",
+    "owner": "姜虎啸",
+    "rarity": "generic",
+    "desc": "姜虎啸的active技能。"
+  },
+  "sk_pas_姜虎啸": {
+    "id": "sk_pas_姜虎啸",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "姜虎啸",
+    "rarity": "generic",
+    "desc": "姜虎啸的passive技能。"
+  },
+  "sk_act_赵锦帆": {
+    "id": "sk_act_赵锦帆",
+    "name": "破军",
+    "type": "active",
+    "owner": "赵锦帆",
+    "rarity": "generic",
+    "desc": "赵锦帆的active技能。"
+  },
+  "sk_pas_赵锦帆": {
+    "id": "sk_pas_赵锦帆",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "赵锦帆",
+    "rarity": "generic",
+    "desc": "赵锦帆的passive技能。"
+  },
+  "sk_act_钱中军": {
+    "id": "sk_act_钱中军",
+    "name": "火计",
+    "type": "active",
+    "owner": "钱中军",
+    "rarity": "generic",
+    "desc": "钱中军的active技能。"
+  },
+  "sk_pas_钱中军": {
+    "id": "sk_pas_钱中军",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "钱中军",
+    "rarity": "generic",
+    "desc": "钱中军的passive技能。"
+  },
+  "sk_act_孙天罡": {
+    "id": "sk_act_孙天罡",
+    "name": "斩将",
+    "type": "active",
+    "owner": "孙天罡",
+    "rarity": "generic",
+    "desc": "孙天罡的active技能。"
+  },
+  "sk_pas_孙天罡": {
+    "id": "sk_pas_孙天罡",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "孙天罡",
+    "rarity": "generic",
+    "desc": "孙天罡的passive技能。"
+  },
+  "sk_act_李断岳": {
+    "id": "sk_act_李断岳",
+    "name": "连环",
+    "type": "active",
+    "owner": "李断岳",
+    "rarity": "generic",
+    "desc": "李断岳的active技能。"
+  },
+  "sk_pas_李断岳": {
+    "id": "sk_pas_李断岳",
+    "name": "洞察",
+    "type": "passive",
+    "owner": "李断岳",
+    "rarity": "generic",
+    "desc": "李断岳的passive技能。"
+  },
+  "sk_act_周枪神": {
+    "id": "sk_act_周枪神",
+    "name": "奇策",
+    "type": "active",
+    "owner": "周枪神",
+    "rarity": "generic",
+    "desc": "周枪神的active技能。"
+  },
+  "sk_pas_周枪神": {
+    "id": "sk_pas_周枪神",
+    "name": "韧性",
+    "type": "passive",
+    "owner": "周枪神",
+    "rarity": "generic",
+    "desc": "周枪神的passive技能。"
+  },
+  "sk_act_吴鹰扬": {
+    "id": "sk_act_吴鹰扬",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "吴鹰扬",
+    "rarity": "generic",
+    "desc": "吴鹰扬的active技能。"
+  },
+  "sk_pas_吴鹰扬": {
+    "id": "sk_pas_吴鹰扬",
+    "name": "骁勇",
+    "type": "passive",
+    "owner": "吴鹰扬",
+    "rarity": "generic",
+    "desc": "吴鹰扬的passive技能。"
+  },
+  "sk_act_郑青囊": {
+    "id": "sk_act_郑青囊",
+    "name": "激励",
+    "type": "active",
+    "owner": "郑青囊",
+    "rarity": "generic",
+    "desc": "郑青囊的active技能。"
+  },
+  "sk_pas_郑青囊": {
+    "id": "sk_pas_郑青囊",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "郑青囊",
+    "rarity": "generic",
+    "desc": "郑青囊的passive技能。"
+  },
+  "sk_act_王破阵": {
+    "id": "sk_act_王破阵",
+    "name": "斩将",
+    "type": "active",
+    "owner": "王破阵",
+    "rarity": "generic",
+    "desc": "王破阵的active技能。"
+  },
+  "sk_pas_王破阵": {
+    "id": "sk_pas_王破阵",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "王破阵",
+    "rarity": "generic",
+    "desc": "王破阵的passive技能。"
+  },
+  "sk_act_冯惊雷": {
+    "id": "sk_act_冯惊雷",
+    "name": "火计",
+    "type": "active",
+    "owner": "冯惊雷",
+    "rarity": "generic",
+    "desc": "冯惊雷的active技能。"
+  },
+  "sk_pas_冯惊雷": {
+    "id": "sk_pas_冯惊雷",
+    "name": "神算",
+    "type": "passive",
+    "owner": "冯惊雷",
+    "rarity": "generic",
+    "desc": "冯惊雷的passive技能。"
+  },
+  "sk_act_陈墨羽": {
+    "id": "sk_act_陈墨羽",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "陈墨羽",
+    "rarity": "generic",
+    "desc": "陈墨羽的active技能。"
+  },
+  "sk_pas_陈墨羽": {
+    "id": "sk_pas_陈墨羽",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "陈墨羽",
+    "rarity": "generic",
+    "desc": "陈墨羽的passive技能。"
+  },
+  "sk_act_褚剑仙": {
+    "id": "sk_act_褚剑仙",
+    "name": "火计",
+    "type": "active",
+    "owner": "褚剑仙",
+    "rarity": "generic",
+    "desc": "褚剑仙的active技能。"
+  },
+  "sk_pas_褚剑仙": {
+    "id": "sk_pas_褚剑仙",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "褚剑仙",
+    "rarity": "generic",
+    "desc": "褚剑仙的passive技能。"
+  },
+  "sk_act_卫狼牙": {
+    "id": "sk_act_卫狼牙",
+    "name": "先守",
+    "type": "active",
+    "owner": "卫狼牙",
+    "rarity": "generic",
+    "desc": "卫狼牙的active技能。"
+  },
+  "sk_pas_卫狼牙": {
+    "id": "sk_pas_卫狼牙",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "卫狼牙",
+    "rarity": "generic",
+    "desc": "卫狼牙的passive技能。"
+  },
+  "sk_act_蒋南征": {
+    "id": "sk_act_蒋南征",
+    "name": "横扫",
+    "type": "active",
+    "owner": "蒋南征",
+    "rarity": "generic",
+    "desc": "蒋南征的active技能。"
+  },
+  "sk_pas_蒋南征": {
+    "id": "sk_pas_蒋南征",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "蒋南征",
+    "rarity": "generic",
+    "desc": "蒋南征的passive技能。"
+  },
+  "sk_act_沈孤城": {
+    "id": "sk_act_沈孤城",
+    "name": "统御",
+    "type": "active",
+    "owner": "沈孤城",
+    "rarity": "generic",
+    "desc": "沈孤城的active技能。"
+  },
+  "sk_pas_沈孤城": {
+    "id": "sk_pas_沈孤城",
+    "name": "御众",
+    "type": "passive",
+    "owner": "沈孤城",
+    "rarity": "generic",
+    "desc": "沈孤城的passive技能。"
+  },
+  "sk_act_韩焚天": {
+    "id": "sk_act_韩焚天",
+    "name": "力战",
+    "type": "active",
+    "owner": "韩焚天",
+    "rarity": "generic",
+    "desc": "韩焚天的active技能。"
+  },
+  "sk_pas_韩焚天": {
+    "id": "sk_pas_韩焚天",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "韩焚天",
+    "rarity": "generic",
+    "desc": "韩焚天的passive技能。"
+  },
+  "sk_act_杨赤霄": {
+    "id": "sk_act_杨赤霄",
+    "name": "连环",
+    "type": "active",
+    "owner": "杨赤霄",
+    "rarity": "generic",
+    "desc": "杨赤霄的active技能。"
+  },
+  "sk_pas_杨赤霄": {
+    "id": "sk_pas_杨赤霄",
+    "name": "神算",
+    "type": "passive",
+    "owner": "杨赤霄",
+    "rarity": "generic",
+    "desc": "杨赤霄的passive技能。"
+  },
+  "sk_act_朱鬼谋": {
+    "id": "sk_act_朱鬼谋",
+    "name": "陷阵",
+    "type": "active",
+    "owner": "朱鬼谋",
+    "rarity": "generic",
+    "desc": "朱鬼谋的active技能。"
+  },
+  "sk_pas_朱鬼谋": {
+    "id": "sk_pas_朱鬼谋",
+    "name": "铁骨",
+    "type": "passive",
+    "owner": "朱鬼谋",
+    "rarity": "generic",
+    "desc": "朱鬼谋的passive技能。"
+  },
+  "sk_act_秦银甲": {
+    "id": "sk_act_秦银甲",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "秦银甲",
+    "rarity": "generic",
+    "desc": "秦银甲的active技能。"
+  },
+  "sk_pas_秦银甲": {
+    "id": "sk_pas_秦银甲",
+    "name": "神算",
+    "type": "passive",
+    "owner": "秦银甲",
+    "rarity": "generic",
+    "desc": "秦银甲的passive技能。"
+  },
+  "sk_act_尤西凉": {
+    "id": "sk_act_尤西凉",
+    "name": "先守",
+    "type": "active",
+    "owner": "尤西凉",
+    "rarity": "generic",
+    "desc": "尤西凉的active技能。"
+  },
+  "sk_pas_尤西凉": {
+    "id": "sk_pas_尤西凉",
+    "name": "稳健",
+    "type": "passive",
+    "owner": "尤西凉",
+    "rarity": "generic",
+    "desc": "尤西凉的passive技能。"
+  },
+  "sk_act_许寒江": {
+    "id": "sk_act_许寒江",
+    "name": "突袭",
+    "type": "active",
+    "owner": "许寒江",
+    "rarity": "generic",
+    "desc": "许寒江的active技能。"
+  },
+  "sk_pas_许寒江": {
+    "id": "sk_pas_许寒江",
+    "name": "武略",
+    "type": "passive",
+    "owner": "许寒江",
+    "rarity": "generic",
+    "desc": "许寒江的passive技能。"
+  },
+  "sk_act_何追风": {
+    "id": "sk_act_何追风",
+    "name": "威压",
+    "type": "active",
+    "owner": "何追风",
+    "rarity": "generic",
+    "desc": "何追风的active技能。"
+  },
+  "sk_pas_何追风": {
+    "id": "sk_pas_何追风",
+    "name": "仁德",
+    "type": "passive",
+    "owner": "何追风",
+    "rarity": "generic",
+    "desc": "何追风的passive技能。"
+  },
+  "sk_act_吕紫电": {
+    "id": "sk_act_吕紫电",
+    "name": "破军",
+    "type": "active",
+    "owner": "吕紫电",
+    "rarity": "generic",
+    "desc": "吕紫电的active技能。"
+  },
+  "sk_pas_吕紫电": {
+    "id": "sk_pas_吕紫电",
+    "name": "武略",
+    "type": "passive",
+    "owner": "吕紫电",
+    "rarity": "generic",
+    "desc": "吕紫电的passive技能。"
+  },
+  "sk_act_施龙吟": {
+    "id": "sk_act_施龙吟",
+    "name": "连环",
+    "type": "active",
+    "owner": "施龙吟",
+    "rarity": "generic",
+    "desc": "施龙吟的active技能。"
+  },
+  "sk_pas_施龙吟": {
+    "id": "sk_pas_施龙吟",
+    "name": "洞烛",
+    "type": "passive",
+    "owner": "施龙吟",
+    "rarity": "generic",
+    "desc": "施龙吟的passive技能。"
+  },
+  "sk_act_张白袍": {
+    "id": "sk_act_张白袍",
+    "name": "横扫",
+    "type": "active",
+    "owner": "张白袍",
+    "rarity": "generic",
+    "desc": "张白袍的active技能。"
+  },
+  "sk_pas_张白袍": {
+    "id": "sk_pas_张白袍",
+    "name": "悍勇",
+    "type": "passive",
+    "owner": "张白袍",
+    "rarity": "generic",
+    "desc": "张白袍的passive技能。"
+  },
+  "sk_act_孔凌云": {
+    "id": "sk_act_孔凌云",
+    "name": "筹谋",
+    "type": "active",
+    "owner": "孔凌云",
+    "rarity": "generic",
+    "desc": "孔凌云的active技能。"
+  },
+  "sk_pas_孔凌云": {
+    "id": "sk_pas_孔凌云",
+    "name": "明哲",
+    "type": "passive",
+    "owner": "孔凌云",
+    "rarity": "generic",
+    "desc": "孔凌云的passive技能。"
+  }
+}

@@ -1,0 +1,9 @@
+[
+  {"id": "a_sign7", "name": "勤勉之主", "desc": "累计签到 7 天", "event": "signin", "target": 7, "reward": {"diamond": 20}},
+  {"id": "a_collect50", "name": "收藏家", "desc": "收集 50 名武将", "event": "general_obtain", "target": 50, "reward": {"diamond": 100}},
+  {"id": "a_collect150", "name": "将星云集", "desc": "收集 150 名武将", "event": "general_obtain", "target": 150, "reward": {"diamond": 400}},
+  {"id": "a_battle100", "name": "百战之身", "desc": "累计对战 100 次", "event": "battle", "target": 100, "reward": {"gold": 5000}},
+  {"id": "a_dungeon_all", "name": "横扫三国", "desc": "通关全部副本", "event": "dungeon_clear", "target": 24, "reward": {"diamond": 300}},
+  {"id": "a_gacha100", "name": "招募狂人", "desc": "累计招募 100 次", "event": "gacha", "target": 100, "reward": {"diamond": 150}},
+  {"id": "a_donor", "name": "慷慨解囊", "desc": "势力捐献 50 次", "event": "donate", "target": 50, "reward": {"merit": 500}}
+]

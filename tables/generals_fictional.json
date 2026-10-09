@@ -1,0 +1,2410 @@
+{
+  "ssr": [
+    {
+      "id": "钱逐日",
+      "name": "钱逐日",
+      "faction": "shu",
+      "rarity": "ssr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_钱逐日",
+        "passive": "sk_pas_钱逐日"
+      },
+      "force": 44,
+      "intellect": 86,
+      "vitality": 59,
+      "charisma": 60,
+      "eloquence": 79,
+      "speed": 59
+    },
+    {
+      "id": "孙星河",
+      "name": "孙星河",
+      "faction": "wu",
+      "rarity": "ssr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_孙星河",
+        "passive": "sk_pas_孙星河"
+      },
+      "force": 84,
+      "intellect": 94,
+      "vitality": 70,
+      "charisma": 73,
+      "eloquence": 82,
+      "speed": 71
+    },
+    {
+      "id": "李刀圣",
+      "name": "李刀圣",
+      "faction": "qun",
+      "rarity": "ssr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_李刀圣",
+        "passive": "sk_pas_李刀圣"
+      },
+      "force": 87,
+      "intellect": 48,
+      "vitality": 84,
+      "charisma": 62,
+      "eloquence": 32,
+      "speed": 78
+    },
+    {
+      "id": "周豹骑",
+      "name": "周豹骑",
+      "faction": "wei",
+      "rarity": "ssr",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_周豹骑",
+        "passive": "sk_pas_周豹骑"
+      },
+      "force": 71,
+      "intellect": 78,
+      "vitality": 73,
+      "charisma": 90,
+      "eloquence": 89,
+      "speed": 73
+    },
+    {
+      "id": "吴北望",
+      "name": "吴北望",
+      "faction": "shu",
+      "rarity": "ssr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_吴北望",
+        "passive": "sk_pas_吴北望"
+      },
+      "force": 100,
+      "intellect": 50,
+      "vitality": 99,
+      "charisma": 46,
+      "eloquence": 48,
+      "speed": 91
+    },
+    {
+      "id": "郑无双",
+      "name": "郑无双",
+      "faction": "wu",
+      "rarity": "ssr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_郑无双",
+        "passive": "sk_pas_郑无双"
+      },
+      "force": 47,
+      "intellect": 87,
+      "vitality": 56,
+      "charisma": 82,
+      "eloquence": 81,
+      "speed": 78
+    },
+    {
+      "id": "王踏雪",
+      "name": "王踏雪",
+      "faction": "qun",
+      "rarity": "ssr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_王踏雪",
+        "passive": "sk_pas_王踏雪"
+      },
+      "force": 100,
+      "intellect": 51,
+      "vitality": 86,
+      "charisma": 63,
+      "eloquence": 38,
+      "speed": 91
+    },
+    {
+      "id": "冯苍岚",
+      "name": "冯苍岚",
+      "faction": "wei",
+      "rarity": "ssr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_冯苍岚",
+        "passive": "sk_pas_冯苍岚"
+      },
+      "force": 53,
+      "intellect": 99,
+      "vitality": 68,
+      "charisma": 83,
+      "eloquence": 77,
+      "speed": 72
+    },
+    {
+      "id": "陈策士",
+      "name": "陈策士",
+      "faction": "shu",
+      "rarity": "ssr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_陈策士",
+        "passive": "sk_pas_陈策士"
+      },
+      "force": 96,
+      "intellect": 73,
+      "vitality": 89,
+      "charisma": 90,
+      "eloquence": 89,
+      "speed": 92
+    },
+    {
+      "id": "褚铁衣",
+      "name": "褚铁衣",
+      "faction": "wu",
+      "rarity": "ssr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_褚铁衣",
+        "passive": "sk_pas_褚铁衣"
+      },
+      "force": 98,
+      "intellect": 61,
+      "vitality": 89,
+      "charisma": 46,
+      "eloquence": 52,
+      "speed": 88
+    }
+  ],
+  "sr": [
+    {
+      "id": "卫东渡",
+      "name": "卫东渡",
+      "faction": "qun",
+      "rarity": "sr",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_卫东渡",
+        "passive": "sk_pas_卫东渡"
+      },
+      "force": 52,
+      "intellect": 73,
+      "vitality": 81,
+      "charisma": 82,
+      "eloquence": 84,
+      "speed": 66
+    },
+    {
+      "id": "蒋青锋",
+      "name": "蒋青锋",
+      "faction": "wei",
+      "rarity": "sr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_蒋青锋",
+        "passive": "sk_pas_蒋青锋"
+      },
+      "force": 81,
+      "intellect": 35,
+      "vitality": 88,
+      "charisma": 50,
+      "eloquence": 28,
+      "speed": 62
+    },
+    {
+      "id": "沈裂地",
+      "name": "沈裂地",
+      "faction": "shu",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_沈裂地",
+        "passive": "sk_pas_沈裂地"
+      },
+      "force": 43,
+      "intellect": 97,
+      "vitality": 47,
+      "charisma": 62,
+      "eloquence": 69,
+      "speed": 57
+    },
+    {
+      "id": "韩玄冰",
+      "name": "韩玄冰",
+      "faction": "wu",
+      "rarity": "sr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_韩玄冰",
+        "passive": "sk_pas_韩玄冰"
+      },
+      "force": 98,
+      "intellect": 42,
+      "vitality": 79,
+      "charisma": 63,
+      "eloquence": 29,
+      "speed": 81
+    },
+    {
+      "id": "杨虎啸",
+      "name": "杨虎啸",
+      "faction": "qun",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_杨虎啸",
+        "passive": "sk_pas_杨虎啸"
+      },
+      "force": 53,
+      "intellect": 78,
+      "vitality": 61,
+      "charisma": 64,
+      "eloquence": 84,
+      "speed": 53
+    },
+    {
+      "id": "朱锦帆",
+      "name": "朱锦帆",
+      "faction": "wei",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_朱锦帆",
+        "passive": "sk_pas_朱锦帆"
+      },
+      "force": 75,
+      "intellect": 66,
+      "vitality": 71,
+      "charisma": 69,
+      "eloquence": 74,
+      "speed": 63
+    },
+    {
+      "id": "秦中军",
+      "name": "秦中军",
+      "faction": "shu",
+      "rarity": "sr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_秦中军",
+        "passive": "sk_pas_秦中军"
+      },
+      "force": 91,
+      "intellect": 35,
+      "vitality": 72,
+      "charisma": 61,
+      "eloquence": 40,
+      "speed": 80
+    },
+    {
+      "id": "尤天罡",
+      "name": "尤天罡",
+      "faction": "wu",
+      "rarity": "sr",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_尤天罡",
+        "passive": "sk_pas_尤天罡"
+      },
+      "force": 75,
+      "intellect": 73,
+      "vitality": 73,
+      "charisma": 86,
+      "eloquence": 92,
+      "speed": 57
+    },
+    {
+      "id": "许断岳",
+      "name": "许断岳",
+      "faction": "qun",
+      "rarity": "sr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_许断岳",
+        "passive": "sk_pas_许断岳"
+      },
+      "force": 82,
+      "intellect": 49,
+      "vitality": 70,
+      "charisma": 58,
+      "eloquence": 39,
+      "speed": 77
+    },
+    {
+      "id": "何枪神",
+      "name": "何枪神",
+      "faction": "wei",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_何枪神",
+        "passive": "sk_pas_何枪神"
+      },
+      "force": 46,
+      "intellect": 79,
+      "vitality": 52,
+      "charisma": 53,
+      "eloquence": 73,
+      "speed": 75
+    },
+    {
+      "id": "吕鹰扬",
+      "name": "吕鹰扬",
+      "faction": "shu",
+      "rarity": "sr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_吕鹰扬",
+        "passive": "sk_pas_吕鹰扬"
+      },
+      "force": 87,
+      "intellect": 52,
+      "vitality": 71,
+      "charisma": 50,
+      "eloquence": 37,
+      "speed": 83
+    },
+    {
+      "id": "施青囊",
+      "name": "施青囊",
+      "faction": "wu",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_施青囊",
+        "passive": "sk_pas_施青囊"
+      },
+      "force": 50,
+      "intellect": 82,
+      "vitality": 49,
+      "charisma": 72,
+      "eloquence": 79,
+      "speed": 67
+    },
+    {
+      "id": "张破阵",
+      "name": "张破阵",
+      "faction": "qun",
+      "rarity": "sr",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_张破阵",
+        "passive": "sk_pas_张破阵"
+      },
+      "force": 65,
+      "intellect": 81,
+      "vitality": 71,
+      "charisma": 82,
+      "eloquence": 60,
+      "speed": 75
+    },
+    {
+      "id": "孔惊雷",
+      "name": "孔惊雷",
+      "faction": "wei",
+      "rarity": "sr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_孔惊雷",
+        "passive": "sk_pas_孔惊雷"
+      },
+      "force": 100,
+      "intellect": 41,
+      "vitality": 76,
+      "charisma": 46,
+      "eloquence": 40,
+      "speed": 68
+    },
+    {
+      "id": "曹墨羽",
+      "name": "曹墨羽",
+      "faction": "shu",
+      "rarity": "sr",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_曹墨羽",
+        "passive": "sk_pas_曹墨羽"
+      },
+      "force": 75,
+      "intellect": 69,
+      "vitality": 58,
+      "charisma": 96,
+      "eloquence": 79,
+      "speed": 60
+    },
+    {
+      "id": "严剑仙",
+      "name": "严剑仙",
+      "faction": "wu",
+      "rarity": "sr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_严剑仙",
+        "passive": "sk_pas_严剑仙"
+      },
+      "force": 89,
+      "intellect": 58,
+      "vitality": 79,
+      "charisma": 55,
+      "eloquence": 32,
+      "speed": 85
+    },
+    {
+      "id": "华狼牙",
+      "name": "华狼牙",
+      "faction": "qun",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_华狼牙",
+        "passive": "sk_pas_华狼牙"
+      },
+      "force": 50,
+      "intellect": 77,
+      "vitality": 56,
+      "charisma": 64,
+      "eloquence": 89,
+      "speed": 69
+    },
+    {
+      "id": "金南征",
+      "name": "金南征",
+      "faction": "wei",
+      "rarity": "sr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_金南征",
+        "passive": "sk_pas_金南征"
+      },
+      "force": 76,
+      "intellect": 43,
+      "vitality": 88,
+      "charisma": 41,
+      "eloquence": 29,
+      "speed": 61
+    },
+    {
+      "id": "魏孤城",
+      "name": "魏孤城",
+      "faction": "shu",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_魏孤城",
+        "passive": "sk_pas_魏孤城"
+      },
+      "force": 56,
+      "intellect": 85,
+      "vitality": 54,
+      "charisma": 70,
+      "eloquence": 79,
+      "speed": 65
+    },
+    {
+      "id": "陶焚天",
+      "name": "陶焚天",
+      "faction": "wu",
+      "rarity": "sr",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_陶焚天",
+        "passive": "sk_pas_陶焚天"
+      },
+      "force": 86,
+      "intellect": 81,
+      "vitality": 65,
+      "charisma": 61,
+      "eloquence": 66,
+      "speed": 68
+    },
+    {
+      "id": "姜赤霄",
+      "name": "姜赤霄",
+      "faction": "qun",
+      "rarity": "sr",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_姜赤霄",
+        "passive": "sk_pas_姜赤霄"
+      },
+      "force": 83,
+      "intellect": 34,
+      "vitality": 80,
+      "charisma": 42,
+      "eloquence": 31,
+      "speed": 78
+    },
+    {
+      "id": "赵鬼谋",
+      "name": "赵鬼谋",
+      "faction": "wei",
+      "rarity": "sr",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_赵鬼谋",
+        "passive": "sk_pas_赵鬼谋"
+      },
+      "force": 60,
+      "intellect": 71,
+      "vitality": 67,
+      "charisma": 95,
+      "eloquence": 92,
+      "speed": 66
+    },
+    {
+      "id": "钱银甲",
+      "name": "钱银甲",
+      "faction": "shu",
+      "rarity": "sr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_钱银甲",
+        "passive": "sk_pas_钱银甲"
+      },
+      "force": 76,
+      "intellect": 52,
+      "vitality": 73,
+      "charisma": 42,
+      "eloquence": 30,
+      "speed": 84
+    },
+    {
+      "id": "孙西凉",
+      "name": "孙西凉",
+      "faction": "wu",
+      "rarity": "sr",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_孙西凉",
+        "passive": "sk_pas_孙西凉"
+      },
+      "force": 39,
+      "intellect": 97,
+      "vitality": 45,
+      "charisma": 53,
+      "eloquence": 68,
+      "speed": 71
+    },
+    {
+      "id": "李寒江",
+      "name": "李寒江",
+      "faction": "qun",
+      "rarity": "sr",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·专属技能武将。",
+      "skill": {
+        "active": "sk_act_李寒江",
+        "passive": "sk_pas_李寒江"
+      },
+      "force": 93,
+      "intellect": 46,
+      "vitality": 68,
+      "charisma": 45,
+      "eloquence": 40,
+      "speed": 68
+    }
+  ],
+  "r": [
+    {
+      "id": "周追风",
+      "name": "周追风",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_周追风",
+        "passive": "sk_pas_周追风"
+      },
+      "force": 43,
+      "intellect": 78,
+      "vitality": 47,
+      "charisma": 65,
+      "eloquence": 66,
+      "speed": 47
+    },
+    {
+      "id": "吴紫电",
+      "name": "吴紫电",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吴紫电",
+        "passive": "sk_pas_吴紫电"
+      },
+      "force": 59,
+      "intellect": 69,
+      "vitality": 64,
+      "charisma": 59,
+      "eloquence": 68,
+      "speed": 76
+    },
+    {
+      "id": "郑龙吟",
+      "name": "郑龙吟",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_郑龙吟",
+        "passive": "sk_pas_郑龙吟"
+      },
+      "force": 83,
+      "intellect": 30,
+      "vitality": 63,
+      "charisma": 57,
+      "eloquence": 41,
+      "speed": 70
+    },
+    {
+      "id": "王白袍",
+      "name": "王白袍",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王白袍",
+        "passive": "sk_pas_王白袍"
+      },
+      "force": 71,
+      "intellect": 68,
+      "vitality": 68,
+      "charisma": 87,
+      "eloquence": 72,
+      "speed": 61
+    },
+    {
+      "id": "冯凌云",
+      "name": "冯凌云",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_冯凌云",
+        "passive": "sk_pas_冯凌云"
+      },
+      "force": 74,
+      "intellect": 33,
+      "vitality": 78,
+      "charisma": 43,
+      "eloquence": 44,
+      "speed": 67
+    },
+    {
+      "id": "陈逐日",
+      "name": "陈逐日",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陈逐日",
+        "passive": "sk_pas_陈逐日"
+      },
+      "force": 36,
+      "intellect": 83,
+      "vitality": 59,
+      "charisma": 54,
+      "eloquence": 74,
+      "speed": 65
+    },
+    {
+      "id": "褚星河",
+      "name": "褚星河",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_褚星河",
+        "passive": "sk_pas_褚星河"
+      },
+      "force": 78,
+      "intellect": 30,
+      "vitality": 76,
+      "charisma": 48,
+      "eloquence": 26,
+      "speed": 79
+    },
+    {
+      "id": "卫刀圣",
+      "name": "卫刀圣",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_卫刀圣",
+        "passive": "sk_pas_卫刀圣"
+      },
+      "force": 35,
+      "intellect": 78,
+      "vitality": 40,
+      "charisma": 58,
+      "eloquence": 82,
+      "speed": 60
+    },
+    {
+      "id": "蒋豹骑",
+      "name": "蒋豹骑",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_蒋豹骑",
+        "passive": "sk_pas_蒋豹骑"
+      },
+      "force": 56,
+      "intellect": 71,
+      "vitality": 59,
+      "charisma": 64,
+      "eloquence": 71,
+      "speed": 72
+    },
+    {
+      "id": "沈北望",
+      "name": "沈北望",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_沈北望",
+        "passive": "sk_pas_沈北望"
+      },
+      "force": 72,
+      "intellect": 32,
+      "vitality": 63,
+      "charisma": 54,
+      "eloquence": 43,
+      "speed": 64
+    },
+    {
+      "id": "韩无双",
+      "name": "韩无双",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_韩无双",
+        "passive": "sk_pas_韩无双"
+      },
+      "force": 61,
+      "intellect": 59,
+      "vitality": 54,
+      "charisma": 75,
+      "eloquence": 75,
+      "speed": 59
+    },
+    {
+      "id": "杨踏雪",
+      "name": "杨踏雪",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_杨踏雪",
+        "passive": "sk_pas_杨踏雪"
+      },
+      "force": 82,
+      "intellect": 49,
+      "vitality": 60,
+      "charisma": 46,
+      "eloquence": 31,
+      "speed": 75
+    },
+    {
+      "id": "朱苍岚",
+      "name": "朱苍岚",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_朱苍岚",
+        "passive": "sk_pas_朱苍岚"
+      },
+      "force": 52,
+      "intellect": 69,
+      "vitality": 46,
+      "charisma": 69,
+      "eloquence": 71,
+      "speed": 63
+    },
+    {
+      "id": "秦策士",
+      "name": "秦策士",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_秦策士",
+        "passive": "sk_pas_秦策士"
+      },
+      "force": 68,
+      "intellect": 38,
+      "vitality": 83,
+      "charisma": 49,
+      "eloquence": 20,
+      "speed": 70
+    },
+    {
+      "id": "尤铁衣",
+      "name": "尤铁衣",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_尤铁衣",
+        "passive": "sk_pas_尤铁衣"
+      },
+      "force": 45,
+      "intellect": 88,
+      "vitality": 51,
+      "charisma": 53,
+      "eloquence": 78,
+      "speed": 67
+    },
+    {
+      "id": "许东渡",
+      "name": "许东渡",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_许东渡",
+        "passive": "sk_pas_许东渡"
+      },
+      "force": 67,
+      "intellect": 57,
+      "vitality": 70,
+      "charisma": 72,
+      "eloquence": 57,
+      "speed": 65
+    },
+    {
+      "id": "何青锋",
+      "name": "何青锋",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_何青锋",
+        "passive": "sk_pas_何青锋"
+      },
+      "force": 86,
+      "intellect": 49,
+      "vitality": 78,
+      "charisma": 58,
+      "eloquence": 35,
+      "speed": 71
+    },
+    {
+      "id": "吕裂地",
+      "name": "吕裂地",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吕裂地",
+        "passive": "sk_pas_吕裂地"
+      },
+      "force": 54,
+      "intellect": 77,
+      "vitality": 52,
+      "charisma": 65,
+      "eloquence": 84,
+      "speed": 45
+    },
+    {
+      "id": "施玄冰",
+      "name": "施玄冰",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_施玄冰",
+        "passive": "sk_pas_施玄冰"
+      },
+      "force": 79,
+      "intellect": 34,
+      "vitality": 65,
+      "charisma": 41,
+      "eloquence": 29,
+      "speed": 67
+    },
+    {
+      "id": "张虎啸",
+      "name": "张虎啸",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张虎啸",
+        "passive": "sk_pas_张虎啸"
+      },
+      "force": 48,
+      "intellect": 90,
+      "vitality": 50,
+      "charisma": 48,
+      "eloquence": 77,
+      "speed": 50
+    },
+    {
+      "id": "孔锦帆",
+      "name": "孔锦帆",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孔锦帆",
+        "passive": "sk_pas_孔锦帆"
+      },
+      "force": 77,
+      "intellect": 33,
+      "vitality": 75,
+      "charisma": 59,
+      "eloquence": 25,
+      "speed": 58
+    },
+    {
+      "id": "曹中军",
+      "name": "曹中军",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_曹中军",
+        "passive": "sk_pas_曹中军"
+      },
+      "force": 41,
+      "intellect": 74,
+      "vitality": 59,
+      "charisma": 68,
+      "eloquence": 72,
+      "speed": 46
+    },
+    {
+      "id": "严天罡",
+      "name": "严天罡",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_严天罡",
+        "passive": "sk_pas_严天罡"
+      },
+      "force": 66,
+      "intellect": 61,
+      "vitality": 57,
+      "charisma": 55,
+      "eloquence": 72,
+      "speed": 66
+    },
+    {
+      "id": "华断岳",
+      "name": "华断岳",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_华断岳",
+        "passive": "sk_pas_华断岳"
+      },
+      "force": 78,
+      "intellect": 53,
+      "vitality": 79,
+      "charisma": 52,
+      "eloquence": 30,
+      "speed": 77
+    },
+    {
+      "id": "金枪神",
+      "name": "金枪神",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_金枪神",
+        "passive": "sk_pas_金枪神"
+      },
+      "force": 62,
+      "intellect": 56,
+      "vitality": 75,
+      "charisma": 74,
+      "eloquence": 83,
+      "speed": 62
+    },
+    {
+      "id": "魏鹰扬",
+      "name": "魏鹰扬",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_魏鹰扬",
+        "passive": "sk_pas_魏鹰扬"
+      },
+      "force": 80,
+      "intellect": 53,
+      "vitality": 75,
+      "charisma": 49,
+      "eloquence": 21,
+      "speed": 75
+    },
+    {
+      "id": "陶青囊",
+      "name": "陶青囊",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陶青囊",
+        "passive": "sk_pas_陶青囊"
+      },
+      "force": 52,
+      "intellect": 73,
+      "vitality": 43,
+      "charisma": 69,
+      "eloquence": 79,
+      "speed": 65
+    },
+    {
+      "id": "姜破阵",
+      "name": "姜破阵",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_姜破阵",
+        "passive": "sk_pas_姜破阵"
+      },
+      "force": 89,
+      "intellect": 46,
+      "vitality": 74,
+      "charisma": 36,
+      "eloquence": 38,
+      "speed": 65
+    },
+    {
+      "id": "赵惊雷",
+      "name": "赵惊雷",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_赵惊雷",
+        "passive": "sk_pas_赵惊雷"
+      },
+      "force": 44,
+      "intellect": 78,
+      "vitality": 55,
+      "charisma": 56,
+      "eloquence": 73,
+      "speed": 60
+    },
+    {
+      "id": "钱墨羽",
+      "name": "钱墨羽",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_钱墨羽",
+        "passive": "sk_pas_钱墨羽"
+      },
+      "force": 63,
+      "intellect": 56,
+      "vitality": 72,
+      "charisma": 56,
+      "eloquence": 68,
+      "speed": 58
+    },
+    {
+      "id": "孙剑仙",
+      "name": "孙剑仙",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙剑仙",
+        "passive": "sk_pas_孙剑仙"
+      },
+      "force": 73,
+      "intellect": 33,
+      "vitality": 63,
+      "charisma": 37,
+      "eloquence": 42,
+      "speed": 64
+    },
+    {
+      "id": "李狼牙",
+      "name": "李狼牙",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_李狼牙",
+        "passive": "sk_pas_李狼牙"
+      },
+      "force": 58,
+      "intellect": 56,
+      "vitality": 61,
+      "charisma": 82,
+      "eloquence": 64,
+      "speed": 64
+    },
+    {
+      "id": "周南征",
+      "name": "周南征",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_周南征",
+        "passive": "sk_pas_周南征"
+      },
+      "force": 82,
+      "intellect": 44,
+      "vitality": 64,
+      "charisma": 57,
+      "eloquence": 28,
+      "speed": 68
+    },
+    {
+      "id": "吴孤城",
+      "name": "吴孤城",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吴孤城",
+        "passive": "sk_pas_吴孤城"
+      },
+      "force": 35,
+      "intellect": 72,
+      "vitality": 41,
+      "charisma": 60,
+      "eloquence": 76,
+      "speed": 55
+    },
+    {
+      "id": "郑焚天",
+      "name": "郑焚天",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_郑焚天",
+        "passive": "sk_pas_郑焚天"
+      },
+      "force": 85,
+      "intellect": 42,
+      "vitality": 67,
+      "charisma": 54,
+      "eloquence": 40,
+      "speed": 78
+    },
+    {
+      "id": "王赤霄",
+      "name": "王赤霄",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王赤霄",
+        "passive": "sk_pas_王赤霄"
+      },
+      "force": 33,
+      "intellect": 72,
+      "vitality": 59,
+      "charisma": 53,
+      "eloquence": 64,
+      "speed": 49
+    },
+    {
+      "id": "冯鬼谋",
+      "name": "冯鬼谋",
+      "faction": "wei",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_冯鬼谋",
+        "passive": "sk_pas_冯鬼谋"
+      },
+      "force": 60,
+      "intellect": 70,
+      "vitality": 78,
+      "charisma": 55,
+      "eloquence": 66,
+      "speed": 67
+    },
+    {
+      "id": "陈银甲",
+      "name": "陈银甲",
+      "faction": "shu",
+      "rarity": "r",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陈银甲",
+        "passive": "sk_pas_陈银甲"
+      },
+      "force": 80,
+      "intellect": 51,
+      "vitality": 63,
+      "charisma": 57,
+      "eloquence": 38,
+      "speed": 65
+    },
+    {
+      "id": "褚西凉",
+      "name": "褚西凉",
+      "faction": "wu",
+      "rarity": "r",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_褚西凉",
+        "passive": "sk_pas_褚西凉"
+      },
+      "force": 51,
+      "intellect": 72,
+      "vitality": 61,
+      "charisma": 68,
+      "eloquence": 82,
+      "speed": 42
+    },
+    {
+      "id": "卫寒江",
+      "name": "卫寒江",
+      "faction": "qun",
+      "rarity": "r",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_卫寒江",
+        "passive": "sk_pas_卫寒江"
+      },
+      "force": 90,
+      "intellect": 53,
+      "vitality": 65,
+      "charisma": 48,
+      "eloquence": 34,
+      "speed": 73
+    }
+  ],
+  "n": [
+    {
+      "id": "蒋追风",
+      "name": "蒋追风",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_蒋追风",
+        "passive": "sk_pas_蒋追风"
+      },
+      "force": 47,
+      "intellect": 81,
+      "vitality": 55,
+      "charisma": 62,
+      "eloquence": 74,
+      "speed": 39
+    },
+    {
+      "id": "沈紫电",
+      "name": "沈紫电",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_沈紫电",
+        "passive": "sk_pas_沈紫电"
+      },
+      "force": 80,
+      "intellect": 32,
+      "vitality": 68,
+      "charisma": 43,
+      "eloquence": 17,
+      "speed": 66
+    },
+    {
+      "id": "韩龙吟",
+      "name": "韩龙吟",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_韩龙吟",
+        "passive": "sk_pas_韩龙吟"
+      },
+      "force": 47,
+      "intellect": 63,
+      "vitality": 48,
+      "charisma": 41,
+      "eloquence": 66,
+      "speed": 52
+    },
+    {
+      "id": "杨白袍",
+      "name": "杨白袍",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_杨白袍",
+        "passive": "sk_pas_杨白袍"
+      },
+      "force": 74,
+      "intellect": 71,
+      "vitality": 49,
+      "charisma": 52,
+      "eloquence": 64,
+      "speed": 70
+    },
+    {
+      "id": "朱凌云",
+      "name": "朱凌云",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_朱凌云",
+        "passive": "sk_pas_朱凌云"
+      },
+      "force": 61,
+      "intellect": 46,
+      "vitality": 69,
+      "charisma": 40,
+      "eloquence": 30,
+      "speed": 66
+    },
+    {
+      "id": "秦逐日",
+      "name": "秦逐日",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_秦逐日",
+        "passive": "sk_pas_秦逐日"
+      },
+      "force": 52,
+      "intellect": 56,
+      "vitality": 60,
+      "charisma": 74,
+      "eloquence": 76,
+      "speed": 55
+    },
+    {
+      "id": "尤星河",
+      "name": "尤星河",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_尤星河",
+        "passive": "sk_pas_尤星河"
+      },
+      "force": 73,
+      "intellect": 45,
+      "vitality": 66,
+      "charisma": 32,
+      "eloquence": 19,
+      "speed": 63
+    },
+    {
+      "id": "许刀圣",
+      "name": "许刀圣",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_许刀圣",
+        "passive": "sk_pas_许刀圣"
+      },
+      "force": 28,
+      "intellect": 66,
+      "vitality": 53,
+      "charisma": 48,
+      "eloquence": 55,
+      "speed": 46
+    },
+    {
+      "id": "何豹骑",
+      "name": "何豹骑",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_何豹骑",
+        "passive": "sk_pas_何豹骑"
+      },
+      "force": 73,
+      "intellect": 32,
+      "vitality": 77,
+      "charisma": 44,
+      "eloquence": 37,
+      "speed": 70
+    },
+    {
+      "id": "吕北望",
+      "name": "吕北望",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吕北望",
+        "passive": "sk_pas_吕北望"
+      },
+      "force": 51,
+      "intellect": 65,
+      "vitality": 36,
+      "charisma": 52,
+      "eloquence": 61,
+      "speed": 49
+    },
+    {
+      "id": "施无双",
+      "name": "施无双",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_施无双",
+        "passive": "sk_pas_施无双"
+      },
+      "force": 50,
+      "intellect": 56,
+      "vitality": 71,
+      "charisma": 50,
+      "eloquence": 49,
+      "speed": 58
+    },
+    {
+      "id": "张踏雪",
+      "name": "张踏雪",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张踏雪",
+        "passive": "sk_pas_张踏雪"
+      },
+      "force": 73,
+      "intellect": 45,
+      "vitality": 62,
+      "charisma": 44,
+      "eloquence": 35,
+      "speed": 56
+    },
+    {
+      "id": "孔苍岚",
+      "name": "孔苍岚",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孔苍岚",
+        "passive": "sk_pas_孔苍岚"
+      },
+      "force": 55,
+      "intellect": 64,
+      "vitality": 61,
+      "charisma": 71,
+      "eloquence": 69,
+      "speed": 47
+    },
+    {
+      "id": "曹策士",
+      "name": "曹策士",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_曹策士",
+        "passive": "sk_pas_曹策士"
+      },
+      "force": 62,
+      "intellect": 26,
+      "vitality": 58,
+      "charisma": 52,
+      "eloquence": 33,
+      "speed": 67
+    },
+    {
+      "id": "严铁衣",
+      "name": "严铁衣",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_严铁衣",
+        "passive": "sk_pas_严铁衣"
+      },
+      "force": 32,
+      "intellect": 83,
+      "vitality": 39,
+      "charisma": 63,
+      "eloquence": 76,
+      "speed": 44
+    },
+    {
+      "id": "华东渡",
+      "name": "华东渡",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_华东渡",
+        "passive": "sk_pas_华东渡"
+      },
+      "force": 83,
+      "intellect": 26,
+      "vitality": 58,
+      "charisma": 41,
+      "eloquence": 36,
+      "speed": 51
+    },
+    {
+      "id": "金青锋",
+      "name": "金青锋",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_金青锋",
+        "passive": "sk_pas_金青锋"
+      },
+      "force": 38,
+      "intellect": 84,
+      "vitality": 43,
+      "charisma": 51,
+      "eloquence": 72,
+      "speed": 61
+    },
+    {
+      "id": "魏裂地",
+      "name": "魏裂地",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_魏裂地",
+        "passive": "sk_pas_魏裂地"
+      },
+      "force": 56,
+      "intellect": 53,
+      "vitality": 64,
+      "charisma": 54,
+      "eloquence": 63,
+      "speed": 47
+    },
+    {
+      "id": "陶玄冰",
+      "name": "陶玄冰",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陶玄冰",
+        "passive": "sk_pas_陶玄冰"
+      },
+      "force": 84,
+      "intellect": 48,
+      "vitality": 66,
+      "charisma": 50,
+      "eloquence": 36,
+      "speed": 68
+    },
+    {
+      "id": "姜虎啸",
+      "name": "姜虎啸",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_姜虎啸",
+        "passive": "sk_pas_姜虎啸"
+      },
+      "force": 63,
+      "intellect": 54,
+      "vitality": 48,
+      "charisma": 61,
+      "eloquence": 65,
+      "speed": 53
+    },
+    {
+      "id": "赵锦帆",
+      "name": "赵锦帆",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_赵锦帆",
+        "passive": "sk_pas_赵锦帆"
+      },
+      "force": 64,
+      "intellect": 45,
+      "vitality": 67,
+      "charisma": 42,
+      "eloquence": 32,
+      "speed": 64
+    },
+    {
+      "id": "钱中军",
+      "name": "钱中军",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_钱中军",
+        "passive": "sk_pas_钱中军"
+      },
+      "force": 47,
+      "intellect": 77,
+      "vitality": 37,
+      "charisma": 56,
+      "eloquence": 54,
+      "speed": 47
+    },
+    {
+      "id": "孙天罡",
+      "name": "孙天罡",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孙天罡",
+        "passive": "sk_pas_孙天罡"
+      },
+      "force": 63,
+      "intellect": 32,
+      "vitality": 69,
+      "charisma": 45,
+      "eloquence": 20,
+      "speed": 65
+    },
+    {
+      "id": "李断岳",
+      "name": "李断岳",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_李断岳",
+        "passive": "sk_pas_李断岳"
+      },
+      "force": 50,
+      "intellect": 68,
+      "vitality": 56,
+      "charisma": 45,
+      "eloquence": 71,
+      "speed": 46
+    },
+    {
+      "id": "周枪神",
+      "name": "周枪神",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_周枪神",
+        "passive": "sk_pas_周枪神"
+      },
+      "force": 66,
+      "intellect": 69,
+      "vitality": 55,
+      "charisma": 66,
+      "eloquence": 46,
+      "speed": 58
+    },
+    {
+      "id": "吴鹰扬",
+      "name": "吴鹰扬",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吴鹰扬",
+        "passive": "sk_pas_吴鹰扬"
+      },
+      "force": 77,
+      "intellect": 33,
+      "vitality": 67,
+      "charisma": 51,
+      "eloquence": 38,
+      "speed": 65
+    },
+    {
+      "id": "郑青囊",
+      "name": "郑青囊",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_郑青囊",
+        "passive": "sk_pas_郑青囊"
+      },
+      "force": 59,
+      "intellect": 69,
+      "vitality": 60,
+      "charisma": 71,
+      "eloquence": 74,
+      "speed": 43
+    },
+    {
+      "id": "王破阵",
+      "name": "王破阵",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_王破阵",
+        "passive": "sk_pas_王破阵"
+      },
+      "force": 60,
+      "intellect": 32,
+      "vitality": 69,
+      "charisma": 42,
+      "eloquence": 31,
+      "speed": 55
+    },
+    {
+      "id": "冯惊雷",
+      "name": "冯惊雷",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_冯惊雷",
+        "passive": "sk_pas_冯惊雷"
+      },
+      "force": 36,
+      "intellect": 81,
+      "vitality": 47,
+      "charisma": 61,
+      "eloquence": 64,
+      "speed": 40
+    },
+    {
+      "id": "陈墨羽",
+      "name": "陈墨羽",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_陈墨羽",
+        "passive": "sk_pas_陈墨羽"
+      },
+      "force": 77,
+      "intellect": 37,
+      "vitality": 75,
+      "charisma": 30,
+      "eloquence": 26,
+      "speed": 60
+    },
+    {
+      "id": "褚剑仙",
+      "name": "褚剑仙",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_褚剑仙",
+        "passive": "sk_pas_褚剑仙"
+      },
+      "force": 39,
+      "intellect": 60,
+      "vitality": 47,
+      "charisma": 47,
+      "eloquence": 77,
+      "speed": 47
+    },
+    {
+      "id": "卫狼牙",
+      "name": "卫狼牙",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_卫狼牙",
+        "passive": "sk_pas_卫狼牙"
+      },
+      "force": 64,
+      "intellect": 68,
+      "vitality": 71,
+      "charisma": 60,
+      "eloquence": 52,
+      "speed": 49
+    },
+    {
+      "id": "蒋南征",
+      "name": "蒋南征",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_蒋南征",
+        "passive": "sk_pas_蒋南征"
+      },
+      "force": 73,
+      "intellect": 41,
+      "vitality": 67,
+      "charisma": 30,
+      "eloquence": 29,
+      "speed": 69
+    },
+    {
+      "id": "沈孤城",
+      "name": "沈孤城",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_沈孤城",
+        "passive": "sk_pas_沈孤城"
+      },
+      "force": 55,
+      "intellect": 62,
+      "vitality": 65,
+      "charisma": 60,
+      "eloquence": 76,
+      "speed": 39
+    },
+    {
+      "id": "韩焚天",
+      "name": "韩焚天",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "cavalry",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_韩焚天",
+        "passive": "sk_pas_韩焚天"
+      },
+      "force": 66,
+      "intellect": 42,
+      "vitality": 54,
+      "charisma": 48,
+      "eloquence": 20,
+      "speed": 52
+    },
+    {
+      "id": "杨赤霄",
+      "name": "杨赤霄",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_杨赤霄",
+        "passive": "sk_pas_杨赤霄"
+      },
+      "force": 44,
+      "intellect": 79,
+      "vitality": 41,
+      "charisma": 44,
+      "eloquence": 63,
+      "speed": 59
+    },
+    {
+      "id": "朱鬼谋",
+      "name": "朱鬼谋",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_朱鬼谋",
+        "passive": "sk_pas_朱鬼谋"
+      },
+      "force": 77,
+      "intellect": 43,
+      "vitality": 70,
+      "charisma": 30,
+      "eloquence": 30,
+      "speed": 51
+    },
+    {
+      "id": "秦银甲",
+      "name": "秦银甲",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_秦银甲",
+        "passive": "sk_pas_秦银甲"
+      },
+      "force": 39,
+      "intellect": 77,
+      "vitality": 50,
+      "charisma": 45,
+      "eloquence": 75,
+      "speed": 57
+    },
+    {
+      "id": "尤西凉",
+      "name": "尤西凉",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_尤西凉",
+        "passive": "sk_pas_尤西凉"
+      },
+      "force": 65,
+      "intellect": 63,
+      "vitality": 64,
+      "charisma": 63,
+      "eloquence": 45,
+      "speed": 50
+    },
+    {
+      "id": "许寒江",
+      "name": "许寒江",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_许寒江",
+        "passive": "sk_pas_许寒江"
+      },
+      "force": 78,
+      "intellect": 38,
+      "vitality": 56,
+      "charisma": 51,
+      "eloquence": 40,
+      "speed": 72
+    },
+    {
+      "id": "何追风",
+      "name": "何追风",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "infantry",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_何追风",
+        "passive": "sk_pas_何追风"
+      },
+      "force": 63,
+      "intellect": 65,
+      "vitality": 48,
+      "charisma": 58,
+      "eloquence": 55,
+      "speed": 54
+    },
+    {
+      "id": "吕紫电",
+      "name": "吕紫电",
+      "faction": "shu",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "蜀势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_吕紫电",
+        "passive": "sk_pas_吕紫电"
+      },
+      "force": 66,
+      "intellect": 32,
+      "vitality": 61,
+      "charisma": 36,
+      "eloquence": 31,
+      "speed": 49
+    },
+    {
+      "id": "施龙吟",
+      "name": "施龙吟",
+      "faction": "wu",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "吴势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_施龙吟",
+        "passive": "sk_pas_施龙吟"
+      },
+      "force": 40,
+      "intellect": 60,
+      "vitality": 35,
+      "charisma": 42,
+      "eloquence": 53,
+      "speed": 42
+    },
+    {
+      "id": "张白袍",
+      "name": "张白袍",
+      "faction": "qun",
+      "rarity": "n",
+      "troop": "spear",
+      "title": "",
+      "category": "fictional",
+      "desc": "群势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_张白袍",
+        "passive": "sk_pas_张白袍"
+      },
+      "force": 77,
+      "intellect": 44,
+      "vitality": 70,
+      "charisma": 38,
+      "eloquence": 36,
+      "speed": 71
+    },
+    {
+      "id": "孔凌云",
+      "name": "孔凌云",
+      "faction": "wei",
+      "rarity": "n",
+      "troop": "archer",
+      "title": "",
+      "category": "fictional",
+      "desc": "魏势力·通用技能武将。",
+      "skill": {
+        "active": "sk_act_孔凌云",
+        "passive": "sk_pas_孔凌云"
+      },
+      "force": 38,
+      "intellect": 71,
+      "vitality": 35,
+      "charisma": 48,
+      "eloquence": 55,
+      "speed": 47
+    }
+  ]
+}

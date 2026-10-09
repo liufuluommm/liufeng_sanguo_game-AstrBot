@@ -1,0 +1,77 @@
+{
+  "item_gold_bag": {
+    "id": "item_gold_bag",
+    "name": "金币袋",
+    "category": "resource",
+    "rarity": "n",
+    "desc": "打开获得少量金币。",
+    "usable": true,
+    "target": "self",
+    "effects": [{"type": "grant_gold", "params": {"amount": 2000}}]
+  },
+  "item_fragment_pack": {
+    "id": "item_fragment_pack",
+    "name": "将魂碎片包",
+    "category": "resource",
+    "rarity": "r",
+    "desc": "打开获得 3 个通用武将碎片。",
+    "usable": true,
+    "target": "self",
+    "effects": [{"type": "grant_fragment", "params": {"amount": 3}}]
+  },
+  "item_stamina_potion": {
+    "id": "item_stamina_potion",
+    "name": "行动力药水",
+    "category": "consume",
+    "rarity": "n",
+    "desc": "恢复 30 点行动力。",
+    "usable": true,
+    "target": "self",
+    "effects": [{"type": "grant_stamina", "params": {"amount": 30}}]
+  },
+  "item_double_gold_card": {
+    "id": "item_double_gold_card",
+    "name": "金币加倍卡",
+    "category": "buff",
+    "rarity": "sr",
+    "desc": "1 小时内金币收益翻倍。",
+    "usable": true,
+    "target": "self",
+    "effects": [{"type": "buff", "params": {"buff_type": "double_gold", "value": 2.0, "duration": 3600}}]
+  },
+  "item_lucky_box": {
+    "id": "item_lucky_box",
+    "name": "幸运礼盒",
+    "category": "gift",
+    "rarity": "sr",
+    "desc": "随机获得资源或武将碎片，有概率获得 SSR 武将！",
+    "usable": true,
+    "target": "self",
+    "effects": [{
+      "type": "loot_box",
+      "params": {"entries": [
+        {"weight": 60, "effect": {"type": "grant_gold", "params": {"amount": 5000}}},
+        {"weight": 25, "effect": {"type": "grant_fragment", "params": {"amount": 5}}},
+        {"weight": 10, "effect": {"type": "grant_currency", "params": {"currency": "diamond", "amount": 50}}},
+        {"weight": 5, "effect": {"type": "grant_general", "params": {"rarity": "ssr", "category": "any", "count": 1}}}
+      ]}
+    }]
+  },
+  "item_choice_box": {
+    "id": "item_choice_box",
+    "name": "自选礼盒",
+    "category": "gift",
+    "rarity": "sr",
+    "desc": "从金币、碎片、行动力中选择一项。",
+    "usable": true,
+    "target": "self",
+    "effects": [{
+      "type": "choice_box",
+      "params": {"options": [
+        {"label": "金币 x8000", "effect": {"type": "grant_gold", "params": {"amount": 8000}}},
+        {"label": "碎片 x8", "effect": {"type": "grant_fragment", "params": {"amount": 8}}},
+        {"label": "行动力 x60", "effect": {"type": "grant_stamina", "params": {"amount": 60}}}
+      ]}
+    }]
+  }
+}

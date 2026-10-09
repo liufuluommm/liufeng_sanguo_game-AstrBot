@@ -1,0 +1,246 @@
+{
+  "enable": {
+    "description": "是否启用柳弗罗三国演义游戏",
+    "type": "bool",
+    "default": true
+  },
+  "game": {
+    "description": "基础数值",
+    "type": "object",
+    "items": {
+      "initial_gold": {
+        "description": "新玩家初始金币",
+        "type": "int",
+        "default": 1000
+      },
+      "signin_min": {
+        "description": "签到奖励最小值",
+        "type": "int",
+        "default": 100
+      },
+      "signin_max": {
+        "description": "签到奖励最大值",
+        "type": "int",
+        "default": 300
+      },
+      "battle_reward_min": {
+        "description": "对战胜利奖励最小值",
+        "type": "int",
+        "default": 50
+      },
+      "battle_reward_max": {
+        "description": "对战胜利奖励最大值",
+        "type": "int",
+        "default": 150
+      },
+      "battle_variance": {
+        "description": "战斗随机波动幅度(0.1=±10%)",
+        "type": "float",
+        "default": 0.1
+      }
+    }
+  },
+  "gacha": {
+    "description": "招募与抽卡",
+    "type": "object",
+    "items": {
+      "fragment_exchange_cost": {
+        "description": "碎片兑换历史武将所需通用碎片数",
+        "type": "int",
+        "default": 15
+      },
+      "rarity_ssr": {
+        "description": "兑换 SSR 概率",
+        "type": "float",
+        "default": 0.05
+      },
+      "rarity_sr": {
+        "description": "兑换 SR 概率",
+        "type": "float",
+        "default": 0.15
+      },
+      "rarity_r": {
+        "description": "兑换 R 概率",
+        "type": "float",
+        "default": 0.35
+      },
+      "fictional_cost": {
+        "description": "架空武将招募花费(金币/次)",
+        "type": "int",
+        "default": 5000
+      },
+      "fictional_fail_min": {
+        "description": "架空招募失败率下限",
+        "type": "float",
+        "default": 0.25
+      },
+      "fictional_fail_max": {
+        "description": "架空招募失败率上限",
+        "type": "float",
+        "default": 0.3
+      },
+      "custom_cost": {
+        "description": "自定义武将招募花费",
+        "type": "int",
+        "default": 1000
+      },
+      "custom_stat_min": {
+        "description": "自定义武将多维随机下限",
+        "type": "int",
+        "default": 30
+      },
+      "custom_stat_max": {
+        "description": "自定义武将多维随机上限",
+        "type": "int",
+        "default": 100
+      },
+      "dorm_initial_capacity": {
+        "description": "武将宿舍初始容量",
+        "type": "int",
+        "default": 15
+      },
+      "dorm_upgrade_base": {
+        "description": "宿舍首次升级费用(逐级翻倍)",
+        "type": "int",
+        "default": 1500
+      },
+      "dorm_upgrade_gain_min": {
+        "description": "宿舍升级随机增加容量下限",
+        "type": "int",
+        "default": 1
+      },
+      "dorm_upgrade_gain_max": {
+        "description": "宿舍升级随机增加容量上限",
+        "type": "int",
+        "default": 3
+      }
+    }
+  },
+  "dungeon": {
+    "description": "副本",
+    "type": "object",
+    "items": {
+      "fragment_drop_min": {
+        "description": "副本碎片掉率下限",
+        "type": "float",
+        "default": 0.05
+      },
+      "fragment_drop_max": {
+        "description": "副本碎片掉率上限",
+        "type": "float",
+        "default": 0.15
+      }
+    }
+  },
+  "stamina": {
+    "description": "行动力",
+    "type": "object",
+    "items": {
+      "max": {
+        "description": "行动力上限",
+        "type": "int",
+        "default": 120
+      },
+      "recover_interval": {
+        "description": "行动力恢复间隔(秒)",
+        "type": "int",
+        "default": 300
+      },
+      "recover_amount": {
+        "description": "每次恢复行动力数",
+        "type": "int",
+        "default": 1
+      }
+    }
+  },
+  "text_image": {
+    "description": "文转图卡牌",
+    "type": "object",
+    "items": {
+      "enable": {
+        "description": "是否启用文转图卡牌(需 Playwright)",
+        "type": "bool",
+        "default": true
+      },
+      "theme": {
+        "description": "卡牌主题",
+        "type": "string",
+        "default": "dark_gold",
+        "options": ["dark_gold", "red_ink", "light"],
+        "hint": "dark_gold=暗金 / red_ink=朱红 / light=明亮"
+      }
+    }
+  },
+  "system": {
+    "description": "系统",
+    "type": "object",
+    "items": {
+      "enable_scheduler": {
+        "description": "启用定时任务(挂机/结算/活动/推送)",
+        "type": "bool",
+        "default": true
+      },
+      "enable_push": {
+        "description": "启用主动推送",
+        "type": "bool",
+        "default": true
+      },
+      "maintenance": {
+        "description": "维护模式(开启后拒绝玩家指令)",
+        "type": "bool",
+        "default": false
+      },
+      "cooldown_default": {
+        "description": "指令默认冷却(秒)",
+        "type": "float",
+        "default": 1.5
+      },
+      "blocked_push_platforms": {
+        "description": "不支持主动消息、广播时跳过的平台名",
+        "type": "list",
+        "default": ["qq_official", "qqofficial_webhook"],
+        "hint": "平台键，如 qq_official(QQ 官方接口不支持主动消息)"
+      }
+    }
+  },
+  "admin": {
+    "description": "管理",
+    "type": "object",
+    "items": {
+      "super_admins": {
+        "description": "超级管理员 QQ 列表(字符串)",
+        "type": "list",
+        "default": []
+      },
+      "web_admins": {
+        "description": "管理台管理员用户名列表(空=仅需登录)",
+        "type": "list",
+        "default": []
+      }
+    }
+  },
+  "worldboss": {
+    "description": "世界BOSS",
+    "type": "object",
+    "items": {
+      "enable": {"description": "启用世界BOSS", "type": "bool", "default": true},
+      "attack_limit": {"description": "每人讨伐次数", "type": "int", "default": 3},
+      "duration": {"description": "默认持续时间(秒)", "type": "int", "default": 21600}
+    }
+  },
+  "battlepass": {
+    "description": "战令",
+    "type": "object",
+    "items": {
+      "enable": {"description": "启用战令", "type": "bool", "default": true},
+      "exp_per_point": {"description": "每点行为提供的战令经验", "type": "int", "default": 50}
+    }
+  },
+  "events": {
+    "description": "限时活动",
+    "type": "object",
+    "items": {
+      "enable": {"description": "启用限时活动", "type": "bool", "default": true}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "daily": {
+    "name": "每日商店",
+    "reset": "daily",
+    "listings": [
+      {"item": "item_gold_bag", "currency": "gold", "price": 1500, "limit": 5},
+      {"item": "item_stamina_potion", "currency": "gold", "price": 500, "limit": 5},
+      {"item": "item_fragment_pack", "currency": "gold", "price": 2000, "limit": 3}
+    ]
+  },
+  "weekly": {
+    "name": "每周商店",
+    "reset": "weekly",
+    "listings": [
+      {"item": "item_double_gold_card", "currency": "gold", "price": 8000, "limit": 1},
+      {"item": "item_lucky_box", "currency": "gold", "price": 12000, "limit": 2},
+      {"item": "item_fragment_pack", "currency": "gold", "price": 1800, "limit": 10}
+    ]
+  },
+  "black": {
+    "name": "黑市",
+    "reset": "daily",
+    "listings": [
+      {"item": "item_lucky_box", "currency": "gold", "price": 6000, "limit": 1},
+      {"item": "item_choice_box", "currency": "gold", "price": 9000, "limit": 1}
+    ]
+  },
+  "event": {
+    "name": "活动商店",
+    "reset": "permanent",
+    "listings": [
+      {"item": "item_choice_box", "currency": "event_ticket", "price": 10, "limit": 3},
+      {"item": "item_lucky_box", "currency": "event_ticket", "price": 15, "limit": 5}
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "weapon": [
+    {"id": "wp_iron", "name": "铁剑", "slot": "weapon", "rarity": "n", "force": 8, "intellect": 0, "lead": 2},
+    {"id": "wp_qinggang", "name": "青钢剑", "slot": "weapon", "rarity": "r", "force": 15, "intellect": 2, "lead": 4},
+    {"id": "wp_yanyue", "name": "偃月刀", "slot": "weapon", "rarity": "sr", "force": 26, "intellect": 0, "lead": 8},
+    {"id": "wp_fangtian", "name": "方天画戟", "slot": "weapon", "rarity": "ssr", "force": 40, "intellect": 0, "lead": 12},
+    {"id": "wp_zhangba", "name": "丈八蛇矛", "slot": "weapon", "rarity": "sr", "force": 28, "intellect": 0, "lead": 6},
+    {"id": "wp_qinglong", "name": "青龙偃月刀", "slot": "weapon", "rarity": "ssr", "force": 42, "intellect": 2, "lead": 10}
+  ],
+  "armor": [
+    {"id": "ar_cloth", "name": "布甲", "slot": "armor", "rarity": "n", "force": 0, "intellect": 2, "lead": 8},
+    {"id": "ar_leather", "name": "皮甲", "slot": "armor", "rarity": "r", "force": 2, "intellect": 4, "lead": 14},
+    {"id": "ar_chain", "name": "锁子甲", "slot": "armor", "rarity": "sr", "force": 4, "intellect": 6, "lead": 24},
+    {"id": "ar_golden", "name": "金甲", "slot": "armor", "rarity": "ssr", "force": 8, "intellect": 10, "lead": 36},
+    {"id": "ar_eight", "name": "八卦衣", "slot": "armor", "rarity": "sr", "force": 0, "intellect": 16, "lead": 20},
+    {"id": "ar_black", "name": "玄铁重铠", "slot": "armor", "rarity": "ssr", "force": 6, "intellect": 6, "lead": 40}
+  ],
+  "mount": [
+    {"id": "mt_horse", "name": "劣马", "slot": "mount", "rarity": "n", "force": 4, "intellect": 0, "lead": 4},
+    {"id": "mt_warhorse", "name": "战马", "slot": "mount", "rarity": "r", "force": 8, "intellect": 0, "lead": 8},
+    {"id": "mt_dilu", "name": "的卢", "slot": "mount", "rarity": "sr", "force": 14, "intellect": 4, "lead": 16},
+    {"id": "mt_chitu", "name": "赤兔", "slot": "mount", "rarity": "ssr", "force": 24, "intellect": 0, "lead": 24},
+    {"id": "mt_zhuawu", "name": "爪黄飞电", "slot": "mount", "rarity": "sr", "force": 12, "intellect": 8, "lead": 14},
+    {"id": "mt_jueying", "name": "绝影", "slot": "mount", "rarity": "ssr", "force": 20, "intellect": 4, "lead": 28}
+  ],
+  "treasure": [
+    {"id": "tr_yufu", "name": "虎符", "slot": "treasure", "rarity": "n", "force": 2, "intellect": 2, "lead": 6},
+    {"id": "tr_bingfa", "name": "孙子兵法", "slot": "treasure", "rarity": "r", "force": 0, "intellect": 12, "lead": 6},
+    {"id": "tr_mengde", "name": "孟德新书", "slot": "treasure", "rarity": "sr", "force": 2, "intellect": 22, "lead": 8},
+    {"id": "tr_yuxi", "name": "传国玉玺", "slot": "treasure", "rarity": "ssr", "force": 6, "intellect": 12, "lead": 34},
+    {"id": "tr_qimen", "name": "奇门遁甲", "slot": "treasure", "rarity": "sr", "force": 0, "intellect": 20, "lead": 12},
+    {"id": "tr_jiazi", "name": "太平要术", "slot": "treasure", "rarity": "ssr", "force": 0, "intellect": 38, "lead": 6}
+  ]
+}

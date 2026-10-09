@@ -1,0 +1,6 @@
+[
+  {"id": "ev_double_drop", "name": "双倍掉落", "desc": "副本碎片与掉落翻倍", "buff_type": "double_drop", "duration": 7200},
+  {"id": "ev_double_gold", "name": "双倍金币", "desc": "金币收益翻倍", "buff_type": "double_gold", "duration": 7200},
+  {"id": "ev_double_exp", "name": "双倍经验", "desc": "战令经验翻倍", "buff_type": "double_exp", "duration": 7200},
+  {"id": "ev_free_stamina", "name": "免行动力", "desc": "副本挑战不消耗行动力", "buff_type": "free_stamina", "duration": 7200}
+]

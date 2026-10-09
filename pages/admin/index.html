@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>三国演义 · 管理台</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">⚔️ 柳弗罗三国演义 · 管理台</div>
+    <div class="meta"><span id="whoami">管理员</span> · <span id="version">v1.1.0</span></div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-view="dashboard">仪表盘</button>
+    <button class="tab" data-view="players">玩家管理</button>
+    <button class="tab" data-view="generals">武将库</button>
+    <button class="tab" data-view="items">道具工坊</button>
+    <button class="tab" data-view="broadcast">广播推送</button>
+  </nav>
+
+  <main id="view" class="view">
+    <div class="loading">加载中…</div>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
