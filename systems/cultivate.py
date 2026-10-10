@@ -87,19 +87,24 @@ def star_up(player: Dict[str, Any], name: str) -> Dict[str, Any]:
             "fragments_left": player["fragments"]}
 
 
-def skill_up(player: Dict[str, Any], name: str) -> Dict[str, Any]:
+def skill_up(player: Dict[str, Any], name: str, slot: str = "1") -> Dict[str, Any]:
     if not player_mod.has_general(player, name):
         return {"ok": False, "reason": "not_owned"}
     is_custom = name in player.get("custom_generals", {})
     entry = player["custom_generals"][name] if is_custom else player["generals"][name]
-    lv = int(entry.get("skill_lv", 1))
+    if slot not in ("1", "2", "3", "passive"):
+        slot = "1"
+    lvs = entry.setdefault("skill_lvs", {"1": int(entry.get("skill_lv", 1)), "passive": 1})
+    lv = int(lvs.get(slot, 1))
     if lv >= MAX_SKILL:
-        return {"ok": False, "reason": "max", "skill_lv": lv}
+        return {"ok": False, "reason": "max", "skill_lv": lv, "slot": slot}
     cost = skill_up_cost(lv)
     if int(player.get("gold", 0)) < cost:
         return {"ok": False, "reason": "gold", "need": cost, "gold": player.get("gold", 0)}
     player_mod.add_gold(player, -cost)
-    entry["skill_lv"] = lv + 1
+    lvs[slot] = lv + 1
+    if slot == "1":
+        entry["skill_lv"] = lv + 1
     player_mod.save(player)
-    return {"ok": True, "name": name, "skill_lv": entry["skill_lv"],
+    return {"ok": True, "name": name, "slot": slot, "skill_lv": lvs[slot],
             "cost": cost, "gold_left": player["gold"]}

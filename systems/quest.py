@@ -58,6 +58,18 @@ def grant_reward(player: Dict[str, Any], reward: Dict[str, Any]) -> List[str]:
             player.setdefault("wallet", {})
             player["wallet"][key] = int(player["wallet"].get(key, 0)) + value
             logs.append(f"{key}+{value}")
+        elif key == "skill_frag":
+            player.setdefault("wallet", {})
+            player["wallet"]["skill_frag"] = int(player["wallet"].get("skill_frag", 0)) + value
+            logs.append(f"技能书碎片+{value}")
+        elif key == "general" and value:
+            player_mod.add_general(player, str(value))
+            logs.append(f"武将【{value}】")
+        elif key == "generals" and isinstance(value, (list, tuple)):
+            for gname in value:
+                if gname:
+                    player_mod.add_general(player, str(gname))
+                    logs.append(f"武将【{gname}】")
         elif key == "title":
             titles = player.setdefault("titles", [])
             if value not in titles:

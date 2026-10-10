@@ -61,8 +61,29 @@ class Tables:
             self.custom[rarity].append(g)
 
         self.skills: Dict[str, Dict] = _load("skills.json", {})
+        self.skill_effects: List[Dict] = _load("skill_effects.json", [])
+        # 按技能名生成效果并合并（确定性）
+        from . import skillgen
+
+        skillgen.reload()
+        self._skills_full: Dict[str, Dict] = {}
+        for sid, sk in self.skills.items():
+            merged = dict(sk)
+            merged.update(skillgen.generate(sk.get("name", ""), sk.get("type", "active")))
+            self._skills_full[sid] = merged
         self.bonds: List[Dict] = _load("bonds.json", [])
         self.equipments: Dict[str, List[Dict]] = _load("equipments.json", {})
+        # 合并管理台自定义装备蓝图（数据目录 equipments_custom.json）
+        try:
+            cpath = storage.data_root() / "equipments_custom.json"
+            custom_eq = json.loads(cpath.read_text(encoding="utf-8")) if cpath.exists() else {}
+        except (json.JSONDecodeError, OSError):
+            custom_eq = {}
+        if isinstance(custom_eq, dict):
+            for item in custom_eq.values():
+                if isinstance(item, dict) and item.get("id"):
+                    slot = item.get("slot", "weapon")
+                    self.equipments.setdefault(slot, []).append(item)
         self._equip_by_id: Dict[str, Dict] = {}
         for _slot, items in self.equipments.items():
             for item in items:
@@ -106,7 +127,7 @@ class Tables:
         return table.get(rarity, [])
 
     def skill(self, skill_id: str) -> Optional[Dict]:
-        return self.skills.get(skill_id)
+        return self._skills_full.get(skill_id) or self.skills.get(skill_id)
 
     def bonds_for(self, names: List[str]) -> List[Dict]:
         owned = set(names)

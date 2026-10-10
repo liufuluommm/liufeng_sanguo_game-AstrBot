@@ -21,9 +21,77 @@ DURATION = 6 * 3600
 
 def _bosses() -> List[Dict[str, Any]]:
     path = TABLES_DIR / "bosses.json"
-    if not path.exists():
-        return []
-    return json.loads(path.read_text(encoding="utf-8"))
+    out: List[Dict[str, Any]] = []
+    if path.exists():
+        try:
+            for b in json.loads(path.read_text(encoding="utf-8")):
+                row = dict(b)
+                row["source"] = "builtin"
+                out.append(row)
+        except (json.JSONDecodeError, OSError):
+            pass
+    for bid, b in _load_custom_bosses().items():
+        row = dict(b)
+        row.setdefault("id", bid)
+        row["source"] = "custom"
+        out.append(row)
+    return out
+
+
+def _custom_bosses_path() -> Path:
+    return storage.data_root() / "bosses_custom.json"
+
+
+def _load_custom_bosses() -> Dict[str, Any]:
+    p = _custom_bosses_path()
+    if not p.exists():
+        return {}
+    try:
+        d = json.loads(p.read_text(encoding="utf-8"))
+        return d if isinstance(d, dict) else {}
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def _write_custom_bosses(data: Dict[str, Any]) -> None:
+    import os
+    p = _custom_bosses_path()
+    tmp = p.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(tmp, p)
+
+
+def normalize_boss(b: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "id": str(b.get("id", "")).strip(),
+        "name": str(b.get("name", "")).strip(),
+        "hp": max(1, int(b.get("hp", 100000) or 100000)),
+        "atk": max(0, int(b.get("atk", 0) or 0)),
+        "def": max(0, int(b.get("def", 0) or 0)),
+        "reward": {"mail": str((b.get("reward") or {}).get("mail", "世界BOSS奖励"))},
+    }
+
+
+def save_custom_boss(b: Dict[str, Any]) -> Dict[str, Any]:
+    bid = str(b.get("id", "")).strip()
+    name = str(b.get("name", "")).strip()
+    if not bid or not name:
+        return {"ok": False, "reason": "no_id_name"}
+    if any(d["id"] == bid for d in _bosses() if d.get("source") == "builtin"):
+        return {"ok": False, "reason": "builtin_locked"}
+    data = _load_custom_bosses()
+    data[bid] = normalize_boss(b)
+    _write_custom_bosses(data)
+    return {"ok": True, "id": bid}
+
+
+def delete_custom_boss(bid: str) -> Dict[str, Any]:
+    data = _load_custom_bosses()
+    if bid not in data:
+        return {"ok": False, "reason": "not_found"}
+    data.pop(bid, None)
+    _write_custom_bosses(data)
+    return {"ok": True}
 
 
 def _load() -> Dict[str, Any]:
@@ -38,7 +106,7 @@ def _save(data: Dict[str, Any]) -> None:
     storage.save_global(_GLOBAL, data)
 
 
-def spawn(boss_id: str | None = None) -> Dict[str, Any]:
+def spawn(boss_id: str | None = None, duration: int | None = None) -> Dict[str, Any]:
     bosses = _bosses()
     if not bosses:
         return {"ok": False, "reason": "no_boss"}
@@ -48,6 +116,7 @@ def spawn(boss_id: str | None = None) -> Dict[str, Any]:
         boss = random.choice(bosses)
     if boss is None:
         return {"ok": False, "reason": "no_boss"}
+    dur = int(duration) if duration else DURATION
     now = int(time.time())
     data = {
         "active": True,
@@ -55,7 +124,7 @@ def spawn(boss_id: str | None = None) -> Dict[str, Any]:
         "hp": int(boss["hp"]),
         "max_hp": int(boss["hp"]),
         "start_ts": now,
-        "end_ts": now + DURATION,
+        "end_ts": now + dur,
         "participants": {},
         "spawn_seq": int(_load().get("spawn_seq", 0)) + 1,
     }
@@ -135,6 +204,18 @@ def settle() -> Dict[str, Any]:
                            "ts": int(time.time())}
     _save(data)
     return {"ok": True, "participants": len(rows)}
+
+
+def force_close() -> Dict[str, Any]:
+    data = _load()
+    if not data.get("active"):
+        return {"ok": False, "reason": "inactive"}
+    data["active"] = False
+    data["last_result"] = {"boss": (data.get("boss") or {}).get("name", ""),
+                           "participants": len(data.get("participants", {})),
+                           "ts": int(time.time()), "closed": True}
+    _save(data)
+    return {"ok": True}
 
 
 def status() -> str:

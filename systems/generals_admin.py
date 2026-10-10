@@ -8,6 +8,7 @@ from typing import Any, Dict, List
 
 from ..core import storage
 from ..core.utils import ATTR_KEYS
+from . import troops as troops_mod
 from .tables import RARITIES, reload_tables
 
 
@@ -51,7 +52,7 @@ def normalize(general: Dict[str, Any]) -> Dict[str, Any]:
         "title": str(general.get("title", "")).strip(),
         "rarity": rarity if rarity in RARITIES else "n",
         "faction": faction if faction in ("wei", "shu", "wu", "qun", "custom") else "custom",
-        "troop": troop if troop in ("cavalry", "infantry", "archer", "spear") else "infantry",
+        "troop": troop if troops_mod.id_exists(troop) else troops_mod.DEFAULT_ID,
         "category": "custom",
         "desc": str(general.get("desc", "")),
         "skill": {

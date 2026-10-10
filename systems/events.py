@@ -31,12 +31,80 @@ def enabled() -> bool:
 
 def defs() -> List[Dict[str, Any]]:
     path = TABLES_DIR / "events.json"
-    if not path.exists():
-        return []
+    out: List[Dict[str, Any]] = []
+    if path.exists():
+        try:
+            for e in json.loads(path.read_text(encoding="utf-8")):
+                row = dict(e)
+                row["source"] = "builtin"
+                out.append(row)
+        except (json.JSONDecodeError, OSError):
+            pass
+    for eid, d in load_custom().items():
+        row = dict(d)
+        row.setdefault("id", eid)
+        row["source"] = "custom"
+        out.append(row)
+    return out
+
+
+def _custom_path() -> Path:
+    return storage.data_root() / "events_custom.json"
+
+
+def load_custom() -> Dict[str, Any]:
+    p = _custom_path()
+    if not p.exists():
+        return {}
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        d = json.loads(p.read_text(encoding="utf-8"))
+        return d if isinstance(d, dict) else {}
     except (json.JSONDecodeError, OSError):
-        return []
+        return {}
+
+
+def _write_custom(data: Dict[str, Any]) -> None:
+    import os
+    p = _custom_path()
+    tmp = p.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(tmp, p)
+
+
+def normalize_custom(e: Dict[str, Any]) -> Dict[str, Any]:
+    bt = e.get("buff_type", "double_gold")
+    if bt not in BUFF_LABEL:
+        bt = "double_gold"
+    eid = str(e.get("id", "")).strip()
+    return {
+        "id": eid,
+        "name": str(e.get("name", "")).strip(),
+        "desc": str(e.get("desc", "")),
+        "buff_type": bt,
+        "duration": max(60, int(e.get("duration", 7200) or 7200)),
+    }
+
+
+def save_custom(e: Dict[str, Any]) -> Dict[str, Any]:
+    eid = str(e.get("id", "")).strip()
+    name = str(e.get("name", "")).strip()
+    if not eid or not name:
+        return {"ok": False, "reason": "no_id_name"}
+    if any(d["id"] == eid for d in defs() if d.get("source") == "builtin"):
+        return {"ok": False, "reason": "builtin_locked"}
+    data = load_custom()
+    data[eid] = normalize_custom(e)
+    _write_custom(data)
+    return {"ok": True, "id": eid}
+
+
+def delete_custom(eid: str) -> Dict[str, Any]:
+    data = load_custom()
+    if eid not in data:
+        return {"ok": False, "reason": "not_found"}
+    data.pop(eid, None)
+    _write_custom(data)
+    return {"ok": True}
 
 
 def _load_state() -> Dict[str, Any]:

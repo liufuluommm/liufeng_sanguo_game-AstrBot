@@ -26,6 +26,7 @@ def new_player(qq: str, name: str, initial_gold: int = 1000,
             "repute": 0,
             "event_ticket": 0,
             "challenge": 0,
+            "skill_frag": 0,
         },
         "level": 1,
         "exp": 0,
@@ -51,8 +52,21 @@ def new_player(qq: str, name: str, initial_gold: int = 1000,
     }
 
 
+def _migrate_entry_skills(entry: Dict[str, Any]) -> bool:
+    """把旧的 skills={active,passive} 迁移为 {1,passive} 并补 skill_lvs。"""
+    changed = False
+    slots = entry.get("skills")
+    if isinstance(slots, dict) and "active" in slots and "1" not in slots:
+        slots["1"] = slots.pop("active")
+        changed = True
+    if "skill_lvs" not in entry:
+        entry["skill_lvs"] = {"1": int(entry.get("skill_lv", 1)), "passive": 1}
+        changed = True
+    return changed
+
+
 def _migrate(player: Dict[str, Any]) -> Dict[str, Any]:
-    """将旧档自定义武将补全为多维能力。"""
+    """旧档迁移：自定义武将补多维；武将/自定义武将技能槽迁移为多槽。"""
     changed = False
     for entry in player.get("custom_generals", {}).values():
         if "vitality" not in entry:
@@ -64,6 +78,9 @@ def _migrate(player: Dict[str, Any]) -> Dict[str, Any]:
                 changed = True
         entry.setdefault("category", "custom")
         entry.setdefault("title", "")
+        changed = _migrate_entry_skills(entry) or changed
+    for entry in player.get("generals", {}).values():
+        changed = _migrate_entry_skills(entry) or changed
     if changed:
         save(player)
     return player
@@ -101,6 +118,52 @@ def add_gold(player: Dict[str, Any], amount: int) -> None:
 # ---------------------------------------------------------------------------
 
 
+DEFAULT_ACTIVE_NAME = "破阵"
+DEFAULT_PASSIVE_NAME = "铁骨"
+
+
+def _slot_to_name(value: Any) -> str:
+    if not value:
+        return ""
+    if value in tables().skills:
+        return tables().skills[value]["name"]
+    sval = str(value)
+    if sval.startswith("sk_"):
+        return ""
+    return sval
+
+
+def _attach_skills(info: Dict[str, Any]) -> None:
+    from . import skillgen
+
+    slots = info.get("skills") or {}
+    tbl = info.get("skill") or {}
+    # 主动：王者式 1/2/3 槽（兼容旧的 active）
+    active_names: List[str] = []
+    for s in ("1", "2", "3"):
+        nm = _slot_to_name(slots.get(s))
+        if nm:
+            active_names.append(nm)
+    if not active_names:
+        legacy = _slot_to_name(slots.get("active")) or _slot_to_name(tbl.get("active"))
+        active_names = [legacy or DEFAULT_ACTIVE_NAME]
+    passive_name = _slot_to_name(slots.get("passive")) or _slot_to_name(tbl.get("passive")) or DEFAULT_PASSIVE_NAME
+
+    info["skill_slots"] = {
+        "passive": [dict(skillgen.generate(passive_name, "passive"), name=passive_name, type="passive")],
+        "active": [dict(skillgen.generate(n, "active"), name=n, type="active") for n in active_names],
+    }
+    info["skill_name"] = active_names[0]
+    info["skill_active"] = info["skill_slots"]["active"][0]
+    info["skill_passive"] = info["skill_slots"]["passive"][0]
+    lvs = info.get("skill_lvs")
+    if isinstance(lvs, dict) and lvs:
+        info["skill_lv"] = int(lvs.get("1", 1))
+    else:
+        info["skill_lv"] = int(info.get("skill_lv", 1))
+    info["skill_lvs"] = lvs if isinstance(lvs, dict) else {"1": info["skill_lv"], "passive": 1}
+
+
 def general_info(player: Dict[str, Any], name: str) -> Optional[Dict[str, Any]]:
     """合并静态表与玩家持有信息，返回完整武将 dict。"""
     data = tables().get(name)
@@ -109,18 +172,12 @@ def general_info(player: Dict[str, Any], name: str) -> Optional[Dict[str, Any]]:
         if custom is None:
             return None
         info = dict(custom, id=name, name=name, category="custom", rarity="custom")
-        info.setdefault("skill_name", "")
-        return info
-    owned = player.get("generals", {}).get(name)
-    info = dict(data)
-    if owned:
-        info.update(owned)
-    # 接入技能名：供战斗中的主动技能触发使用
-    if not info.get("skill_name"):
-        skill = info.get("skill") or {}
-        skill_def = tables().skill(skill.get("active"))
-        if skill_def:
-            info["skill_name"] = skill_def.get("name", "")
+    else:
+        owned = player.get("generals", {}).get(name)
+        info = dict(data)
+        if owned:
+            info.update(owned)
+    _attach_skills(info)
     return info
 
 

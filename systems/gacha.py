@@ -8,6 +8,7 @@ from typing import Any, Dict
 from ..core.utils import base_power, weighted_choice
 
 from . import player as player_mod
+from . import troops as troops_mod
 from .tables import tables
 
 
@@ -111,7 +112,7 @@ def recruit_custom(player: Dict[str, Any], name: str, cost: int,
         "rarity": "custom",
         "category": "custom",
         "title": "",
-        "troop": rng.choice(["cavalry", "infantry", "archer", "spear"]),
+        "troop": troops_mod.random_basic(rng),
         "level": 1,
         "star": 1,
         "exp": 0,
@@ -128,6 +129,7 @@ def recruit_custom(player: Dict[str, Any], name: str, cost: int,
         "type": "custom",
         "general": name,
         "stats": stats,
+        "troop": data["troop"],
         "power": base_power(stats),
         "gold_left": player["gold"],
         "cost": cost,

@@ -43,7 +43,23 @@ def all_items() -> Dict[str, Dict]:
 
 
 def get_item(item_id: str) -> Optional[Dict]:
-    return all_items().get(item_id)
+    it = all_items().get(item_id)
+    if it is not None:
+        return it
+    # 技能书：动态道具（skillbook_<技能名>）
+    if isinstance(item_id, str) and item_id.startswith("skillbook_"):
+        name = item_id[len("skillbook_"):]
+        return {
+            "id": item_id,
+            "name": f"{name}·技能书",
+            "category": "skillbook",
+            "rarity": "custom",
+            "desc": f"用于学习技能【{name}】。",
+            "usable": False,
+            "target": "general",
+            "effects": [{"type": "learn_skill", "params": {"skill": name}}],
+        }
+    return None
 
 
 def effect_schema() -> Dict[str, Any]:

@@ -12,6 +12,7 @@ BUFF_NAME = {
     "def": "防御加成",
     "hp": "生命加成",
     "free_stamina": "免行动力",
+    "battle_mana": "开局法力",
 }
 
 

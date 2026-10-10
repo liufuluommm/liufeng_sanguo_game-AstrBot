@@ -12,6 +12,7 @@ from ..core.utils import (
     RARITY_LABEL,
     TROOP_LABEL,
 )
+from . import troops as troops_mod
 
 TEMPLATES_DIR = Path(__file__).resolve().parent.parent / "templates"
 
@@ -45,7 +46,7 @@ def general_card_data(player: Dict[str, Any], name: str,
         "rarity_class": rarity if rarity in ("ssr", "sr", "r", "n", "custom") else "n",
         "rarity_label": RARITY_LABEL.get(rarity, rarity.upper()),
         "faction_label": FACTION_LABEL.get(info.get("faction", ""), ""),
-        "troop_label": TROOP_LABEL.get(info.get("troop", ""), ""),
+        "troop_label": troops_mod.label(info.get("troop", "")) or TROOP_LABEL.get(info.get("troop", ""), ""),
         "level": level,
         "star": star,
         "attrs": attrs,
