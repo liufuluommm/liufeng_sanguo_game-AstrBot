@@ -2932,7 +2932,7 @@ class LiuFengSanGuoGame(Star):
                 "max_hp": int(wb.get("max_hp", 0)),
             },
             "jobs": len(self.scheduler.jobs()),
-            "version": "1.2.0",
+            "version": "1.2.1",
             "maintenance": {
                 "on": maintenance.is_on(),
                 "reason": maintenance.reason(),
