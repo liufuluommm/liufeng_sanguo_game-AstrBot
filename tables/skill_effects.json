@@ -1,0 +1,7842 @@
+[
+  {
+    "id": "se_001",
+    "name": "烈击",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 0.9,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_002",
+    "name": "烈斩",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_003",
+    "name": "烈刃",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_004",
+    "name": "烈刺",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_005",
+    "name": "烈劈",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_006",
+    "name": "烈爆",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_007",
+    "name": "烈袭",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_008",
+    "name": "烈军",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.95,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_009",
+    "name": "烈阵",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_010",
+    "name": "烈命",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_011",
+    "name": "破击",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_012",
+    "name": "破斩",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_013",
+    "name": "破刃",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_014",
+    "name": "破刺",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_015",
+    "name": "破劈",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.8,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_016",
+    "name": "破爆",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_017",
+    "name": "破袭",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_018",
+    "name": "破军",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_019",
+    "name": "破阵",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_020",
+    "name": "破命",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_021",
+    "name": "斩击",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_022",
+    "name": "斩斩",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.65,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_023",
+    "name": "斩刃",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_024",
+    "name": "斩刺",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_025",
+    "name": "斩劈",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_026",
+    "name": "斩爆",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_027",
+    "name": "斩袭",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_028",
+    "name": "斩军",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_029",
+    "name": "斩阵",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.5,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_030",
+    "name": "斩命",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_031",
+    "name": "崩击",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_032",
+    "name": "崩斩",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_033",
+    "name": "崩刃",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_034",
+    "name": "崩刺",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_035",
+    "name": "崩劈",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_036",
+    "name": "崩爆",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.35,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_037",
+    "name": "崩袭",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_038",
+    "name": "崩军",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_039",
+    "name": "崩阵",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_040",
+    "name": "崩命",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_041",
+    "name": "穿击",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_042",
+    "name": "穿斩",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_043",
+    "name": "穿刃",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.2,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_044",
+    "name": "穿刺",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_045",
+    "name": "穿劈",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_046",
+    "name": "穿爆",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_047",
+    "name": "穿袭",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_048",
+    "name": "穿军",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_049",
+    "name": "穿阵",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_050",
+    "name": "穿命",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.05,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_051",
+    "name": "疾击",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_052",
+    "name": "疾斩",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_053",
+    "name": "疾刃",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_054",
+    "name": "疾刺",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_055",
+    "name": "疾劈",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_056",
+    "name": "疾爆",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_057",
+    "name": "疾袭",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 0.9,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_058",
+    "name": "疾军",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_059",
+    "name": "疾阵",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_060",
+    "name": "疾命",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_061",
+    "name": "狂击",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_062",
+    "name": "狂斩",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_063",
+    "name": "狂刃",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_064",
+    "name": "狂刺",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.95,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_065",
+    "name": "狂劈",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_066",
+    "name": "狂爆",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_067",
+    "name": "狂袭",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_068",
+    "name": "狂军",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_069",
+    "name": "狂阵",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_070",
+    "name": "狂命",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.65,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_071",
+    "name": "绝击",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.8,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_072",
+    "name": "绝斩",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_073",
+    "name": "绝刃",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 0.9,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_074",
+    "name": "绝刺",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.05,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_075",
+    "name": "绝劈",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.2,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_076",
+    "name": "绝爆",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.35,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_077",
+    "name": "绝袭",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.5,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_078",
+    "name": "绝军",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "speed"
+    },
+    "effects": [
+      {
+        "type": "dmg_true",
+        "params": {
+          "coef": 1.65,
+          "hits": 2
+        }
+      }
+    ],
+    "desc": "对单体敌人造成真实伤害。"
+  },
+  {
+    "id": "se_079",
+    "name": "绝阵",
+    "category": "damage",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "force"
+    },
+    "effects": [
+      {
+        "type": "dmg_physical",
+        "params": {
+          "coef": 1.8,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对单体敌人造成兵刃伤害。"
+  },
+  {
+    "id": "se_080",
+    "name": "绝命",
+    "category": "damage",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "dmg_magic",
+        "params": {
+          "coef": 1.95,
+          "hits": 1
+        }
+      }
+    ],
+    "desc": "对全体敌人造成谋略伤害。"
+  },
+  {
+    "id": "se_081",
+    "name": "定击",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 1 回合。"
+  },
+  {
+    "id": "se_082",
+    "name": "定斩",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 2 回合。"
+  },
+  {
+    "id": "se_083",
+    "name": "定刃",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 1 回合。"
+  },
+  {
+    "id": "se_084",
+    "name": "定刺",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 2 回合。"
+  },
+  {
+    "id": "se_085",
+    "name": "定劈",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 1 回合。"
+  },
+  {
+    "id": "se_086",
+    "name": "定爆",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 2 回合。"
+  },
+  {
+    "id": "se_087",
+    "name": "定袭",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 1 回合。"
+  },
+  {
+    "id": "se_088",
+    "name": "定军",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 2 回合。"
+  },
+  {
+    "id": "se_089",
+    "name": "定阵",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 1 回合。"
+  },
+  {
+    "id": "se_090",
+    "name": "定命",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 2 回合。"
+  },
+  {
+    "id": "se_091",
+    "name": "封击",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 1 回合。"
+  },
+  {
+    "id": "se_092",
+    "name": "封斩",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 2 回合。"
+  },
+  {
+    "id": "se_093",
+    "name": "封刃",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 1 回合。"
+  },
+  {
+    "id": "se_094",
+    "name": "封刺",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 2 回合。"
+  },
+  {
+    "id": "se_095",
+    "name": "封劈",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 1 回合。"
+  },
+  {
+    "id": "se_096",
+    "name": "封爆",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 2 回合。"
+  },
+  {
+    "id": "se_097",
+    "name": "封袭",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 1 回合。"
+  },
+  {
+    "id": "se_098",
+    "name": "封军",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 2 回合。"
+  },
+  {
+    "id": "se_099",
+    "name": "封阵",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 1 回合。"
+  },
+  {
+    "id": "se_100",
+    "name": "封命",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 2 回合。"
+  },
+  {
+    "id": "se_101",
+    "name": "慑击",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 1 回合。"
+  },
+  {
+    "id": "se_102",
+    "name": "慑斩",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 2 回合。"
+  },
+  {
+    "id": "se_103",
+    "name": "慑刃",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 1 回合。"
+  },
+  {
+    "id": "se_104",
+    "name": "慑刺",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 2 回合。"
+  },
+  {
+    "id": "se_105",
+    "name": "慑劈",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 1 回合。"
+  },
+  {
+    "id": "se_106",
+    "name": "慑爆",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 2 回合。"
+  },
+  {
+    "id": "se_107",
+    "name": "慑袭",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 1 回合。"
+  },
+  {
+    "id": "se_108",
+    "name": "慑军",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 2 回合。"
+  },
+  {
+    "id": "se_109",
+    "name": "慑阵",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 1 回合。"
+  },
+  {
+    "id": "se_110",
+    "name": "慑命",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 2 回合。"
+  },
+  {
+    "id": "se_111",
+    "name": "冻击",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 1 回合。"
+  },
+  {
+    "id": "se_112",
+    "name": "冻斩",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 2 回合。"
+  },
+  {
+    "id": "se_113",
+    "name": "冻刃",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 1 回合。"
+  },
+  {
+    "id": "se_114",
+    "name": "冻刺",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 2 回合。"
+  },
+  {
+    "id": "se_115",
+    "name": "冻劈",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 1 回合。"
+  },
+  {
+    "id": "se_116",
+    "name": "冻爆",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 2 回合。"
+  },
+  {
+    "id": "se_117",
+    "name": "冻袭",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 1 回合。"
+  },
+  {
+    "id": "se_118",
+    "name": "冻军",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 2 回合。"
+  },
+  {
+    "id": "se_119",
+    "name": "冻阵",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 1 回合。"
+  },
+  {
+    "id": "se_120",
+    "name": "冻命",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 2 回合。"
+  },
+  {
+    "id": "se_121",
+    "name": "缚击",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 1 回合。"
+  },
+  {
+    "id": "se_122",
+    "name": "缚斩",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 2 回合。"
+  },
+  {
+    "id": "se_123",
+    "name": "缚刃",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 1 回合。"
+  },
+  {
+    "id": "se_124",
+    "name": "缚刺",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 2 回合。"
+  },
+  {
+    "id": "se_125",
+    "name": "缚劈",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 1 回合。"
+  },
+  {
+    "id": "se_126",
+    "name": "缚爆",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "stun",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入眩晕状态 2 回合。"
+  },
+  {
+    "id": "se_127",
+    "name": "缚袭",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "silence",
+          "rounds": 1,
+          "chance": 0.4
+        }
+      }
+    ],
+    "desc": "有概率使目标进入沉默状态 1 回合。"
+  },
+  {
+    "id": "se_128",
+    "name": "缚军",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "freeze",
+          "rounds": 2,
+          "chance": 0.45
+        }
+      }
+    ],
+    "desc": "有概率使目标进入冻结状态 2 回合。"
+  },
+  {
+    "id": "se_129",
+    "name": "缚阵",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "taunt",
+          "rounds": 1,
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "有概率使目标进入嘲讽状态 1 回合。"
+  },
+  {
+    "id": "se_130",
+    "name": "缚命",
+    "category": "control",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "control",
+        "params": {
+          "kind": "disarm",
+          "rounds": 2,
+          "chance": 0.35
+        }
+      }
+    ],
+    "desc": "有概率使目标进入缴械状态 2 回合。"
+  },
+  {
+    "id": "se_131",
+    "name": "振军",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_132",
+    "name": "振身",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_133",
+    "name": "振阵",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "hp",
+          "value": 0.2,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方hp（20%）持续 4 回合。"
+  },
+  {
+    "id": "se_134",
+    "name": "振心",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "speed",
+          "value": 0.25,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方speed（25%）持续 2 回合。"
+  },
+  {
+    "id": "se_135",
+    "name": "振势",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "crit",
+          "value": 0.3,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方crit（30%）持续 3 回合。"
+  },
+  {
+    "id": "se_136",
+    "name": "振威",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "dodge",
+          "value": 0.1,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方dodge（10%）持续 4 回合。"
+  },
+  {
+    "id": "se_137",
+    "name": "振勇",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "lifesteal",
+          "value": 0.15,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方lifesteal（15%）持续 2 回合。"
+  },
+  {
+    "id": "se_138",
+    "name": "振谋",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "shield",
+          "value": 0.2,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方shield（20%）持续 3 回合。"
+  },
+  {
+    "id": "se_139",
+    "name": "振守",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "reflect",
+          "value": 0.25,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方reflect（25%）持续 4 回合。"
+  },
+  {
+    "id": "se_140",
+    "name": "振烈",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "tenacity",
+          "value": 0.3,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方tenacity（30%）持续 2 回合。"
+  },
+  {
+    "id": "se_141",
+    "name": "励军",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方atk（10%）持续 3 回合。"
+  },
+  {
+    "id": "se_142",
+    "name": "励身",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方def（15%）持续 4 回合。"
+  },
+  {
+    "id": "se_143",
+    "name": "励阵",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "hp",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方hp（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_144",
+    "name": "励心",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "speed",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方speed（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_145",
+    "name": "励势",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "crit",
+          "value": 0.3,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方crit（30%）持续 4 回合。"
+  },
+  {
+    "id": "se_146",
+    "name": "励威",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "dodge",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方dodge（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_147",
+    "name": "励勇",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "lifesteal",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方lifesteal（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_148",
+    "name": "励谋",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "shield",
+          "value": 0.2,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方shield（20%）持续 4 回合。"
+  },
+  {
+    "id": "se_149",
+    "name": "励守",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "reflect",
+          "value": 0.25,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方reflect（25%）持续 2 回合。"
+  },
+  {
+    "id": "se_150",
+    "name": "励烈",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "tenacity",
+          "value": 0.3,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方tenacity（30%）持续 3 回合。"
+  },
+  {
+    "id": "se_151",
+    "name": "威军",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方atk（10%）持续 4 回合。"
+  },
+  {
+    "id": "se_152",
+    "name": "威身",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方def（15%）持续 2 回合。"
+  },
+  {
+    "id": "se_153",
+    "name": "威阵",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "hp",
+          "value": 0.2,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方hp（20%）持续 3 回合。"
+  },
+  {
+    "id": "se_154",
+    "name": "威心",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "speed",
+          "value": 0.25,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方speed（25%）持续 4 回合。"
+  },
+  {
+    "id": "se_155",
+    "name": "威势",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "crit",
+          "value": 0.3,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方crit（30%）持续 2 回合。"
+  },
+  {
+    "id": "se_156",
+    "name": "威威",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "dodge",
+          "value": 0.1,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方dodge（10%）持续 3 回合。"
+  },
+  {
+    "id": "se_157",
+    "name": "威勇",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "lifesteal",
+          "value": 0.15,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方lifesteal（15%）持续 4 回合。"
+  },
+  {
+    "id": "se_158",
+    "name": "威谋",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "shield",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方shield（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_159",
+    "name": "威守",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "reflect",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方reflect（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_160",
+    "name": "威烈",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "tenacity",
+          "value": 0.3,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方tenacity（30%）持续 4 回合。"
+  },
+  {
+    "id": "se_161",
+    "name": "勇军",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_162",
+    "name": "勇身",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_163",
+    "name": "勇阵",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "hp",
+          "value": 0.2,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方hp（20%）持续 4 回合。"
+  },
+  {
+    "id": "se_164",
+    "name": "勇心",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "speed",
+          "value": 0.25,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方speed（25%）持续 2 回合。"
+  },
+  {
+    "id": "se_165",
+    "name": "勇势",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "crit",
+          "value": 0.3,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方crit（30%）持续 3 回合。"
+  },
+  {
+    "id": "se_166",
+    "name": "勇威",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "dodge",
+          "value": 0.1,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方dodge（10%）持续 4 回合。"
+  },
+  {
+    "id": "se_167",
+    "name": "勇勇",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "lifesteal",
+          "value": 0.15,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方lifesteal（15%）持续 2 回合。"
+  },
+  {
+    "id": "se_168",
+    "name": "勇谋",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "shield",
+          "value": 0.2,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方shield（20%）持续 3 回合。"
+  },
+  {
+    "id": "se_169",
+    "name": "勇守",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "reflect",
+          "value": 0.25,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方reflect（25%）持续 4 回合。"
+  },
+  {
+    "id": "se_170",
+    "name": "勇烈",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "tenacity",
+          "value": 0.3,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方tenacity（30%）持续 2 回合。"
+  },
+  {
+    "id": "se_171",
+    "name": "固军",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方atk（10%）持续 3 回合。"
+  },
+  {
+    "id": "se_172",
+    "name": "固身",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方def（15%）持续 4 回合。"
+  },
+  {
+    "id": "se_173",
+    "name": "固阵",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "hp",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方hp（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_174",
+    "name": "固心",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "speed",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方speed（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_175",
+    "name": "固势",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "crit",
+          "value": 0.3,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方crit（30%）持续 4 回合。"
+  },
+  {
+    "id": "se_176",
+    "name": "固威",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "dodge",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方dodge（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_177",
+    "name": "固勇",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "lifesteal",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方lifesteal（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_178",
+    "name": "固谋",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "shield",
+          "value": 0.2,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方shield（20%）持续 4 回合。"
+  },
+  {
+    "id": "se_179",
+    "name": "固守",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "reflect",
+          "value": 0.25,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方reflect（25%）持续 2 回合。"
+  },
+  {
+    "id": "se_180",
+    "name": "固烈",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "tenacity",
+          "value": 0.3,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方tenacity（30%）持续 3 回合。"
+  },
+  {
+    "id": "se_181",
+    "name": "守军",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方atk（10%）持续 4 回合。"
+  },
+  {
+    "id": "se_182",
+    "name": "守身",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方def（15%）持续 2 回合。"
+  },
+  {
+    "id": "se_183",
+    "name": "守阵",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "hp",
+          "value": 0.2,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方hp（20%）持续 3 回合。"
+  },
+  {
+    "id": "se_184",
+    "name": "守心",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "speed",
+          "value": 0.25,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方speed（25%）持续 4 回合。"
+  },
+  {
+    "id": "se_185",
+    "name": "守势",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "crit",
+          "value": 0.3,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方crit（30%）持续 2 回合。"
+  },
+  {
+    "id": "se_186",
+    "name": "守威",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "dodge",
+          "value": 0.1,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方dodge（10%）持续 3 回合。"
+  },
+  {
+    "id": "se_187",
+    "name": "守勇",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "lifesteal",
+          "value": 0.15,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方lifesteal（15%）持续 4 回合。"
+  },
+  {
+    "id": "se_188",
+    "name": "守谋",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "shield",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方shield（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_189",
+    "name": "守守",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "reflect",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方reflect（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_190",
+    "name": "守烈",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "tenacity",
+          "value": 0.3,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方tenacity（30%）持续 4 回合。"
+  },
+  {
+    "id": "se_191",
+    "name": "疾军",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_192",
+    "name": "疾身",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_193",
+    "name": "疾阵",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "hp",
+          "value": 0.2,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方hp（20%）持续 4 回合。"
+  },
+  {
+    "id": "se_194",
+    "name": "疾心",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "speed",
+          "value": 0.25,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方speed（25%）持续 2 回合。"
+  },
+  {
+    "id": "se_195",
+    "name": "疾势",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "crit",
+          "value": 0.3,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方crit（30%）持续 3 回合。"
+  },
+  {
+    "id": "se_196",
+    "name": "疾威",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "dodge",
+          "value": 0.1,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方dodge（10%）持续 4 回合。"
+  },
+  {
+    "id": "se_197",
+    "name": "疾勇",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "lifesteal",
+          "value": 0.15,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方lifesteal（15%）持续 2 回合。"
+  },
+  {
+    "id": "se_198",
+    "name": "疾谋",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "shield",
+          "value": 0.2,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "提升己方shield（20%）持续 3 回合。"
+  },
+  {
+    "id": "se_199",
+    "name": "疾守",
+    "category": "buff",
+    "target": "ally_all",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "reflect",
+          "value": 0.25,
+          "rounds": 4
+        }
+      }
+    ],
+    "desc": "提升己方reflect（25%）持续 4 回合。"
+  },
+  {
+    "id": "se_200",
+    "name": "疾烈",
+    "category": "buff",
+    "target": "self",
+    "trigger": "round_start",
+    "chance": 1.0,
+    "cooldown": 3,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "buff",
+        "params": {
+          "attr": "tenacity",
+          "value": 0.3,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "提升己方tenacity（30%）持续 2 回合。"
+  },
+  {
+    "id": "se_201",
+    "name": "弱身",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_202",
+    "name": "弱甲",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_203",
+    "name": "弱速",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.07,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_204",
+    "name": "弱心",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_205",
+    "name": "弱势",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_206",
+    "name": "弱魂",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.05,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_207",
+    "name": "弱武",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_208",
+    "name": "弱谋",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_209",
+    "name": "弱阵",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.08,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_210",
+    "name": "弱军",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_211",
+    "name": "钝身",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_212",
+    "name": "钝甲",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.06,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_213",
+    "name": "钝速",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_214",
+    "name": "钝心",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_215",
+    "name": "钝势",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.09,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_216",
+    "name": "钝魂",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_217",
+    "name": "钝武",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_218",
+    "name": "钝谋",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.07,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_219",
+    "name": "钝阵",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_220",
+    "name": "钝军",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_221",
+    "name": "滞身",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.05,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_222",
+    "name": "滞甲",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_223",
+    "name": "滞速",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_224",
+    "name": "滞心",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.08,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_225",
+    "name": "滞势",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_226",
+    "name": "滞魂",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_227",
+    "name": "滞武",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.06,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_228",
+    "name": "滞谋",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_229",
+    "name": "滞阵",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_230",
+    "name": "滞军",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.09,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_231",
+    "name": "毒身",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_232",
+    "name": "毒甲",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_233",
+    "name": "毒速",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.07,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_234",
+    "name": "毒心",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_235",
+    "name": "毒势",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_236",
+    "name": "毒魂",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.05,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_237",
+    "name": "毒武",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_238",
+    "name": "毒谋",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_239",
+    "name": "毒阵",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.08,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_240",
+    "name": "毒军",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_241",
+    "name": "灼身",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_242",
+    "name": "灼甲",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.06,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_243",
+    "name": "灼速",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_244",
+    "name": "灼心",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_245",
+    "name": "灼势",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.09,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_246",
+    "name": "灼魂",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_247",
+    "name": "灼武",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_248",
+    "name": "灼谋",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.07,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_249",
+    "name": "灼阵",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_250",
+    "name": "灼军",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_251",
+    "name": "血身",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.05,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_252",
+    "name": "血甲",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_253",
+    "name": "血速",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "atk",
+          "value": 0.1,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方atk（10%）持续 2 回合。"
+  },
+  {
+    "id": "se_254",
+    "name": "血心",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.08,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_255",
+    "name": "血势",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_256",
+    "name": "血魂",
+    "category": "debuff",
+    "target": "enemy_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "armor",
+          "value": 0.25,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方armor（25%）持续 3 回合。"
+  },
+  {
+    "id": "se_257",
+    "name": "血武",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.06,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_258",
+    "name": "血谋",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "def",
+          "value": 0.15,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "降低敌方def（15%）持续 3 回合。"
+  },
+  {
+    "id": "se_259",
+    "name": "血阵",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "debuff",
+        "params": {
+          "attr": "speed",
+          "value": 0.2,
+          "rounds": 2
+        }
+      }
+    ],
+    "desc": "降低敌方speed（20%）持续 2 回合。"
+  },
+  {
+    "id": "se_260",
+    "name": "血军",
+    "category": "debuff",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "eloquence"
+    },
+    "effects": [
+      {
+        "type": "dot",
+        "params": {
+          "kind": "bleed",
+          "value": 0.09,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "使目标持续受到流血伤害 3 回合。"
+  },
+  {
+    "id": "se_261",
+    "name": "疗心",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.05,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_262",
+    "name": "疗军",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_263",
+    "name": "疗体",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_264",
+    "name": "疗魂",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.4
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_265",
+    "name": "疗阵",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_266",
+    "name": "疗生",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.07,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_267",
+    "name": "疗命",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_268",
+    "name": "疗盾",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_269",
+    "name": "疗援",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_270",
+    "name": "愈心",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_271",
+    "name": "愈军",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.060000000000000005,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_272",
+    "name": "愈体",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_273",
+    "name": "愈魂",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_274",
+    "name": "愈阵",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_275",
+    "name": "愈生",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.2
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_276",
+    "name": "愈命",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.05,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_277",
+    "name": "愈盾",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_278",
+    "name": "愈援",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_279",
+    "name": "济心",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.2
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_280",
+    "name": "济军",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.4
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_281",
+    "name": "济体",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.07,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_282",
+    "name": "济魂",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_283",
+    "name": "济阵",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_284",
+    "name": "济生",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.4
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_285",
+    "name": "济命",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_286",
+    "name": "济盾",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.060000000000000005,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_287",
+    "name": "济援",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_288",
+    "name": "养心",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_289",
+    "name": "养军",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_290",
+    "name": "养体",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_291",
+    "name": "养魂",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.05,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_292",
+    "name": "养阵",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_293",
+    "name": "养生",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_294",
+    "name": "养命",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_295",
+    "name": "养盾",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.2
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_296",
+    "name": "养援",
+    "category": "heal",
+    "target": "ally_all",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "regen",
+        "params": {
+          "value": 0.07,
+          "rounds": 3
+        }
+      }
+    ],
+    "desc": "为友军附加持续回复。"
+  },
+  {
+    "id": "se_297",
+    "name": "复心",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "cleanse",
+        "params": {}
+      },
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.0
+        }
+      }
+    ],
+    "desc": "净化一名友军并治疗。"
+  },
+  {
+    "id": "se_298",
+    "name": "复军",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "on_kill",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "charisma"
+    },
+    "effects": [
+      {
+        "type": "revive",
+        "params": {
+          "hp": 0.3
+        }
+      }
+    ],
+    "desc": "友军阵亡时概率复活（30% 生命）。"
+  },
+  {
+    "id": "se_299",
+    "name": "复体",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.2
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_300",
+    "name": "复魂",
+    "category": "heal",
+    "target": "ally_single",
+    "trigger": "attack",
+    "chance": 0.35,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "heal",
+        "params": {
+          "coef": 1.4
+        }
+      }
+    ],
+    "desc": "治疗一名友军。"
+  },
+  {
+    "id": "se_301",
+    "name": "连击",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.15
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_302",
+    "name": "连锋",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_303",
+    "name": "连势",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_304",
+    "name": "连阵",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_305",
+    "name": "连军",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_306",
+    "name": "连心",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.2
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_307",
+    "name": "连技",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_308",
+    "name": "连命",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_309",
+    "name": "连威",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_310",
+    "name": "连烈",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_311",
+    "name": "追击",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.25
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_312",
+    "name": "追锋",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_313",
+    "name": "追势",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_314",
+    "name": "追阵",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_315",
+    "name": "追军",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_316",
+    "name": "追心",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_317",
+    "name": "追技",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_318",
+    "name": "追命",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_319",
+    "name": "追威",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_320",
+    "name": "追烈",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_321",
+    "name": "反击",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.15
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_322",
+    "name": "反锋",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_323",
+    "name": "反势",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_324",
+    "name": "反阵",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_325",
+    "name": "反军",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_326",
+    "name": "反心",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.2
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_327",
+    "name": "反技",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_328",
+    "name": "反命",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_329",
+    "name": "反威",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_330",
+    "name": "反烈",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_331",
+    "name": "斩击",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.25
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_332",
+    "name": "斩锋",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_333",
+    "name": "斩势",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_334",
+    "name": "斩阵",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_335",
+    "name": "斩军",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_336",
+    "name": "斩心",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.3
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_337",
+    "name": "斩技",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_338",
+    "name": "斩命",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_339",
+    "name": "斩威",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_340",
+    "name": "斩烈",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_341",
+    "name": "唤击",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.15
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_342",
+    "name": "唤锋",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_343",
+    "name": "唤势",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_344",
+    "name": "唤阵",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_345",
+    "name": "唤军",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  },
+  {
+    "id": "se_346",
+    "name": "唤心",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "combo",
+        "params": {
+          "chance": 0.2
+        }
+      }
+    ],
+    "desc": "普攻后有概率再次攻击。"
+  },
+  {
+    "id": "se_347",
+    "name": "唤技",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "pursuit",
+        "params": {
+          "coef": 0.8
+        }
+      }
+    ],
+    "desc": "击杀后追击下一个敌人。"
+  },
+  {
+    "id": "se_348",
+    "name": "唤命",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "counter",
+        "params": {
+          "coef": 0.7
+        }
+      }
+    ],
+    "desc": "受到攻击时概率反击。"
+  },
+  {
+    "id": "se_349",
+    "name": "唤威",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "execute",
+        "params": {
+          "threshold": 0.25
+        }
+      }
+    ],
+    "desc": "对生命低于 25% 的敌人伤害提升/斩杀。"
+  },
+  {
+    "id": "se_350",
+    "name": "唤烈",
+    "category": "special",
+    "target": "enemy_single",
+    "trigger": "attack",
+    "chance": 0.3,
+    "cooldown": 0,
+    "scale": {
+      "attr": "intellect"
+    },
+    "effects": [
+      {
+        "type": "summon",
+        "params": {
+          "count": 1,
+          "hp": 0.2
+        }
+      }
+    ],
+    "desc": "召唤援军助战。"
+  }
+]

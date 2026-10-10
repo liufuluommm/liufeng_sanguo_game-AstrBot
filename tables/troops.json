@@ -1,0 +1,220 @@
+{
+  "infantry": {
+    "id": "infantry",
+    "name": "步兵",
+    "tier": "basic",
+    "desc": "攻守均衡的基础陆战兵种，克制关系中性。",
+    "counter": [],
+    "effects": [
+      {"name": "坚壁", "items": [
+        {"type": "stat", "attr": "def", "value": 0.15},
+        {"type": "stat", "attr": "reduction", "value": 0.03}
+      ]}
+    ]
+  },
+  "cavalry": {
+    "id": "cavalry",
+    "name": "骑兵",
+    "tier": "basic",
+    "desc": "机动突击的基础兵种，克制弓兵。",
+    "counter": ["archer"],
+    "effects": [
+      {"name": "疾风", "items": [
+        {"type": "stat", "attr": "speed", "value": 0.10},
+        {"type": "stat", "attr": "crit", "value": 0.08}
+      ]}
+    ]
+  },
+  "archer": {
+    "id": "archer",
+    "name": "弓兵",
+    "tier": "basic",
+    "desc": "远程输出的基础兵种，克制枪兵。",
+    "counter": ["spear"],
+    "effects": [
+      {"name": "鹰眼", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.08},
+        {"type": "stat", "attr": "crit", "value": 0.10}
+      ]}
+    ]
+  },
+  "spear": {
+    "id": "spear",
+    "name": "枪兵",
+    "tier": "basic",
+    "desc": "阵列拒马的基础兵种，克制骑兵。",
+    "counter": ["cavalry"],
+    "effects": [
+      {"name": "铁阵", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.10},
+        {"type": "stat", "attr": "def", "value": 0.06}
+      ]}
+    ]
+  },
+  "heavy_infantry": {
+    "id": "heavy_infantry",
+    "name": "重步兵",
+    "tier": "elite",
+    "desc": "披坚执锐的精锐步兵，防御与减伤出众。",
+    "counter": ["cavalry"],
+    "effects": [
+      {"name": "玄甲", "items": [
+        {"type": "stat", "attr": "def", "value": 0.25},
+        {"type": "stat", "attr": "reduction", "value": 0.08},
+        {"type": "stat", "attr": "tenacity", "value": 0.15}
+      ]}
+    ]
+  },
+  "iron_cavalry": {
+    "id": "iron_cavalry",
+    "name": "铁骑",
+    "tier": "elite",
+    "desc": "人马俱甲的精锐骑兵，冲锋陷阵、攻速兼备。",
+    "counter": ["archer", "infantry"],
+    "effects": [
+      {"name": "铁骑", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.15},
+        {"type": "stat", "attr": "speed", "value": 0.12},
+        {"type": "stat", "attr": "crit", "value": 0.10}
+      ]}
+    ]
+  },
+  "heavy_archer": {
+    "id": "heavy_archer",
+    "name": "强弩兵",
+    "tier": "elite",
+    "desc": "强弩劲射的精锐远程，穿透力惊人。",
+    "counter": ["spear", "cavalry"],
+    "effects": [
+      {"name": "强弩", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.15},
+        {"type": "stat", "attr": "crit", "value": 0.12},
+        {"type": "stat", "attr": "pen_flat", "value": 40}
+      ]}
+    ]
+  },
+  "pike": {
+    "id": "pike",
+    "name": "长枪兵",
+    "tier": "elite",
+    "desc": "长枪如林的精锐拒骑，攻防兼备并反伤。",
+    "counter": ["cavalry"],
+    "effects": [
+      {"name": "长枪", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.18},
+        {"type": "stat", "attr": "def", "value": 0.10},
+        {"type": "stat", "attr": "reflect", "value": 0.12}
+      ]}
+    ]
+  },
+  "hubaoqi": {
+    "id": "hubaoqi",
+    "name": "虎豹骑",
+    "tier": "special",
+    "desc": "曹魏宿卫精锐，暴烈强袭、进退如风。",
+    "counter": ["archer", "infantry"],
+    "effects": [
+      {"name": "虎啸", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.20},
+        {"type": "stat", "attr": "speed", "value": 0.15},
+        {"type": "stat", "attr": "crit_dmg", "value": 0.40}
+      ]}
+    ]
+  },
+  "baier": {
+    "id": "baier",
+    "name": "白毦兵",
+    "tier": "special",
+    "desc": "蜀汉白毦劲卒，忠勇死战、坚不可摧。",
+    "counter": [],
+    "effects": [
+      {"name": "白毦", "items": [
+        {"type": "stat", "attr": "reduction", "value": 0.12},
+        {"type": "stat", "attr": "tenacity", "value": 0.20},
+        {"type": "opening", "atom": {"type": "shield", "params": {"value": 0.20, "rounds": 2}}}
+      ]}
+    ]
+  },
+  "xianzhen": {
+    "id": "xianzhen",
+    "name": "陷阵营",
+    "tier": "special",
+    "desc": "吕布麾下陷阵死士，越战越勇、背水一战。",
+    "counter": [],
+    "effects": [
+      {"name": "陷阵", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.22},
+        {"type": "stat", "attr": "lifesteal", "value": 0.15},
+        {"type": "mechanic", "key": "low_hp_atk", "value": 0.50}
+      ]}
+    ]
+  },
+  "jinfan": {
+    "id": "jinfan",
+    "name": "锦帆军",
+    "tier": "special",
+    "desc": "甘宁锦帆百骑，来去如风、先声夺人。",
+    "counter": [],
+    "effects": [
+      {"name": "锦帆", "items": [
+        {"type": "stat", "attr": "speed", "value": 0.18},
+        {"type": "stat", "attr": "dodge", "value": 0.15},
+        {"type": "mechanic", "key": "first_strike", "value": 1}
+      ]}
+    ]
+  },
+  "wudang": {
+    "id": "wudang",
+    "name": "无当飞军",
+    "tier": "special",
+    "desc": "蜀汉南中劲旅，翻山越岭、连绵不绝。",
+    "counter": [],
+    "effects": [
+      {"name": "无当", "items": [
+        {"type": "stat", "attr": "atk", "value": 0.12},
+        {"type": "mechanic", "key": "extra_hit_chance", "value": 0.35}
+      ]}
+    ]
+  },
+  "tengjia": {
+    "id": "tengjia",
+    "name": "藤甲兵",
+    "tier": "special",
+    "desc": "南蛮藤甲劲卒，刀枪不入，唯独畏火。",
+    "counter": [],
+    "effects": [
+      {"name": "藤甲", "items": [
+        {"type": "stat", "attr": "reduction", "value": 0.20},
+        {"type": "mechanic", "key": "magic_vuln", "value": 0.30}
+      ]}
+    ]
+  },
+  "xiangbing": {
+    "id": "xiangbing",
+    "name": "象兵",
+    "tier": "special",
+    "desc": "南中象阵，皮糙肉厚、冲撞践踏。",
+    "counter": [],
+    "effects": [
+      {"name": "象阵", "items": [
+        {"type": "stat", "attr": "hp", "value": 0.25},
+        {"type": "stat", "attr": "def", "value": 0.10},
+        {"type": "mechanic", "key": "knockup_chance", "value": 0.25}
+      ]}
+    ]
+  },
+  "baima": {
+    "id": "baima",
+    "name": "白马义从",
+    "tier": "special",
+    "desc": "公孙瓒白马轻骑，骑射无双、先机制敌。",
+    "counter": ["archer"],
+    "effects": [
+      {"name": "白马", "items": [
+        {"type": "stat", "attr": "speed", "value": 0.20},
+        {"type": "stat", "attr": "crit", "value": 0.08},
+        {"type": "opening", "atom": {"type": "buff", "params": {"attr": "speed", "value": 0.15, "rounds": 2}}}
+      ]}
+    ]
+  }
+}

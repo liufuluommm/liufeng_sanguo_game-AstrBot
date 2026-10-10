@@ -3,6 +3,7 @@
     {"id": "ex_gold_diamond", "from": "gold", "to": "diamond", "cost": 500, "gain": 1, "daily_limit": 50},
     {"id": "ex_soul_repute", "from": "soul", "to": "repute", "cost": 10, "gain": 1, "daily_limit": 100},
     {"id": "ex_diamond_ticket", "from": "diamond", "to": "event_ticket", "cost": 5, "gain": 1, "daily_limit": 100},
-    {"id": "ex_merit_challenge", "from": "merit", "to": "challenge", "cost": 8, "gain": 1, "daily_limit": 20}
+    {"id": "ex_merit_challenge", "from": "merit", "to": "challenge", "cost": 8, "gain": 1, "daily_limit": 20},
+    {"id": "ex_gold_skillfrag", "from": "gold", "to": "skill_frag", "cost": 2000, "gain": 1, "daily_limit": 20}
   ]
 }

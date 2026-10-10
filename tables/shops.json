@@ -5,7 +5,8 @@
     "listings": [
       {"item": "item_gold_bag", "currency": "gold", "price": 1500, "limit": 5},
       {"item": "item_stamina_potion", "currency": "gold", "price": 500, "limit": 5},
-      {"item": "item_fragment_pack", "currency": "gold", "price": 2000, "limit": 3}
+      {"item": "item_fragment_pack", "currency": "gold", "price": 2000, "limit": 3},
+      {"item": "item_mana_potion", "currency": "gold", "price": 2500, "limit": 3}
     ]
   },
   "weekly": {
@@ -14,7 +15,8 @@
     "listings": [
       {"item": "item_double_gold_card", "currency": "gold", "price": 8000, "limit": 1},
       {"item": "item_lucky_box", "currency": "gold", "price": 12000, "limit": 2},
-      {"item": "item_fragment_pack", "currency": "gold", "price": 1800, "limit": 10}
+      {"item": "item_fragment_pack", "currency": "gold", "price": 1800, "limit": 10},
+      {"item": "item_mana_charm", "currency": "gold", "price": 6000, "limit": 2}
     ]
   },
   "black": {

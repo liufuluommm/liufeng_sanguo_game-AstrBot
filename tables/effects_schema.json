@@ -88,5 +88,12 @@
     "params": [
       {"key": "options", "label": "选项", "type": "choice_list", "default": []}
     ]
+  },
+  "learn_skill": {
+    "name": "学习技能",
+    "category": "skill",
+    "params": [
+      {"key": "skill", "label": "技能名", "type": "string", "default": ""}
+    ]
   }
 }

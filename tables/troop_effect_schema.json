@@ -1,0 +1,38 @@
+{
+  "stat": {
+    "name": "属性加成",
+    "fields": [
+      {"key": "attr", "label": "属性", "type": "enum",
+       "options": ["atk", "def", "mag_def", "hp", "speed", "crit", "crit_dmg", "dodge",
+                   "lifesteal", "spellvamp", "reduction", "tenacity", "reflect",
+                   "cdr", "atkspeed", "pen_flat", "mana"],
+       "default": "def"},
+      {"key": "value", "label": "数值(比例/点数)", "type": "float", "min": -1, "max": 3, "default": 0.1}
+    ]
+  },
+  "mechanic": {
+    "name": "特殊机制",
+    "fields": [
+      {"key": "key", "label": "机制", "type": "enum",
+       "options": ["magic_vuln", "extra_hit_chance", "knockup_chance", "first_strike", "low_hp_atk"],
+       "default": "first_strike"},
+      {"key": "value", "label": "数值", "type": "float", "min": 0, "max": 2, "default": 1}
+    ]
+  },
+  "opening": {
+    "name": "开局效果",
+    "fields": [
+      {"key": "atom_type", "label": "类型", "type": "enum",
+       "options": ["shield", "buff", "regen", "heal", "cleanse", "invulnerable", "untargetable"],
+       "default": "shield"},
+      {"key": "attr", "label": "属性(增益)", "type": "enum",
+       "options": ["atk", "def", "mag_def", "hp", "speed", "crit", "crit_dmg", "dodge",
+                   "lifesteal", "spellvamp", "reduction", "tenacity", "reflect",
+                   "cdr", "atkspeed", "pen_flat", "mana"],
+       "default": "atk"},
+      {"key": "value", "label": "数值(比例)", "type": "float", "default": 0.2},
+      {"key": "rounds", "label": "回合", "type": "int", "default": 2},
+      {"key": "base", "label": "基础治疗(治疗)", "type": "int", "default": 60}
+    ]
+  }
+}

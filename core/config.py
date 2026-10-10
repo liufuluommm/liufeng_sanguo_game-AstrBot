@@ -51,6 +51,7 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "system": {
         "enable_scheduler": True,
         "enable_push": True,
+        "enable_broadcast": False,
         "maintenance": False,
         "cooldown_default": 1.5,
         "blocked_push_platforms": ["qq_official", "qqofficial_webhook"],
@@ -70,6 +71,12 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     },
     "events": {
         "enable": True,
+    },
+    "skill": {
+        "enable": True,
+        "default_book_cost": 40,
+        "learn_return_book": False,
+        "learn_reset_level": True,
     },
 }
 

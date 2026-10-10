@@ -73,5 +73,25 @@
         {"label": "行动力 x60", "effect": {"type": "grant_stamina", "params": {"amount": 60}}}
       ]}
     }]
+  },
+  "item_mana_potion": {
+    "id": "item_mana_potion",
+    "name": "法力药水",
+    "category": "buff",
+    "rarity": "r",
+    "desc": "30 分钟内，战斗开场额外获得 30 点法力。",
+    "usable": true,
+    "target": "self",
+    "effects": [{"type": "buff", "params": {"buff_type": "battle_mana", "value": 30, "duration": 1800}}]
+  },
+  "item_mana_charm": {
+    "id": "item_mana_charm",
+    "name": "回气符",
+    "category": "buff",
+    "rarity": "sr",
+    "desc": "30 分钟内，战斗开场额外获得 60 点法力。",
+    "usable": true,
+    "target": "self",
+    "effects": [{"type": "buff", "params": {"buff_type": "battle_mana", "value": 60, "duration": 1800}}]
   }
 }

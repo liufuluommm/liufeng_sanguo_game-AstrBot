@@ -32,6 +32,8 @@ class Job:
     run_count: int = 0
     error_count: int = 0
     next_run: float = 0.0
+    enabled: bool = True
+    label: str = ""
     _task: Optional[asyncio.Task] = field(default=None, repr=False)
 
 
@@ -47,6 +49,7 @@ class Scheduler:
         func: JobFunc,
         interval: int,
         run_immediately: bool = False,
+        label: str = "",
     ) -> None:
         self._jobs[name] = Job(
             name=name,
@@ -54,11 +57,55 @@ class Scheduler:
             interval=max(1, int(interval)),
             run_immediately=run_immediately,
             next_run=time.time() + (0 if run_immediately else interval),
+            label=label or name,
         )
         logger.info(f"[三国] 注册定时任务: {name} 间隔 {interval}s")
 
+    def remove_job(self, name: str) -> bool:
+        job = self._jobs.pop(name, None)
+        return job is not None
+
     def jobs(self) -> Dict[str, Job]:
         return self._jobs
+
+    def set_interval(self, name: str, seconds: int) -> bool:
+        job = self._jobs.get(name)
+        if not job:
+            return False
+        job.interval = max(1, int(seconds))
+        job.next_run = time.time() + job.interval
+        return True
+
+    def set_enabled(self, name: str, enabled: bool) -> bool:
+        job = self._jobs.get(name)
+        if not job:
+            return False
+        job.enabled = bool(enabled)
+        if job.enabled:
+            job.next_run = time.time() + job.interval
+        return True
+
+    def job_info(self, name: str) -> Optional[Dict[str, object]]:
+        job = self._jobs.get(name)
+        if not job:
+            return None
+        return self._info(job)
+
+    @staticmethod
+    def _info(job: "Job") -> Dict[str, object]:
+        return {
+            "name": job.name,
+            "label": job.label or job.name,
+            "interval": job.interval,
+            "enabled": job.enabled,
+            "last_run": job.last_run,
+            "run_count": job.run_count,
+            "error_count": job.error_count,
+            "next_run": job.next_run,
+        }
+
+    def info(self) -> list:
+        return [self._info(j) for j in self._jobs.values()]
 
     async def run_job(self, name: str) -> None:
         job = self._jobs.get(name)
@@ -79,7 +126,7 @@ class Scheduler:
         while self._running:
             now = time.time()
             for job in list(self._jobs.values()):
-                if job.next_run <= now:
+                if job.enabled and job.next_run <= now:
                     await self.run_job(job.name)
             await asyncio.sleep(5)
 

@@ -1,0 +1,138 @@
+{
+  "dmg_physical": {
+    "name": "兵刃伤害",
+    "params": [
+      {"key": "coef", "label": "系数", "type": "float", "min": 0.1, "max": 5, "default": 1.0},
+      {"key": "hits", "label": "次数", "type": "int", "min": 1, "max": 5, "default": 1}
+    ]
+  },
+  "dmg_magic": {
+    "name": "谋略伤害",
+    "params": [
+      {"key": "coef", "label": "系数", "type": "float", "min": 0.1, "max": 5, "default": 1.0},
+      {"key": "hits", "label": "次数", "type": "int", "min": 1, "max": 5, "default": 1}
+    ]
+  },
+  "dmg_true": {
+    "name": "真实伤害",
+    "params": [
+      {"key": "coef", "label": "系数", "type": "float", "min": 0.1, "max": 5, "default": 1.0},
+      {"key": "hits", "label": "次数", "type": "int", "min": 1, "max": 5, "default": 1}
+    ]
+  },
+  "heal": {
+    "name": "治疗",
+    "params": [
+      {"key": "coef", "label": "系数", "type": "float", "min": 0.1, "max": 5, "default": 1.0}
+    ]
+  },
+  "regen": {
+    "name": "持续回复",
+    "params": [
+      {"key": "value", "label": "每回合回复比例", "type": "float", "min": 0.01, "max": 0.5, "default": 0.08},
+      {"key": "rounds", "label": "回合", "type": "int", "min": 1, "max": 5, "default": 3}
+    ]
+  },
+  "buff": {
+    "name": "增益",
+    "params": [
+      {"key": "attr", "label": "属性", "type": "enum",
+       "options": ["atk", "def", "mag_def", "speed", "atkspeed", "crit", "crit_dmg",
+                   "dodge", "lifesteal", "spellvamp", "shield", "reflect", "tenacity", "cdr", "reduction"],
+       "default": "atk"},
+      {"key": "value", "label": "数值(比例)", "type": "float", "min": 0.05, "max": 1, "default": 0.15},
+      {"key": "rounds", "label": "回合", "type": "int", "min": 1, "max": 5, "default": 3}
+    ]
+  },
+  "debuff": {
+    "name": "减益",
+    "params": [
+      {"key": "attr", "label": "属性/效果", "type": "enum",
+       "options": ["atk", "def", "mag_def", "speed", "shred_def", "shred_mag", "weaken", "grievous", "mark"],
+       "default": "atk"},
+      {"key": "value", "label": "数值(比例)", "type": "float", "min": 0.05, "max": 1, "default": 0.15},
+      {"key": "rounds", "label": "回合", "type": "int", "min": 1, "max": 5, "default": 2}
+    ]
+  },
+  "dot": {
+    "name": "持续伤害",
+    "params": [
+      {"key": "kind", "label": "类型", "type": "enum", "options": ["poison", "burn", "bleed"], "default": "poison"},
+      {"key": "value", "label": "每回合比例", "type": "float", "min": 0.01, "max": 0.3, "default": 0.05},
+      {"key": "rounds", "label": "回合", "type": "int", "min": 1, "max": 5, "default": 3}
+    ]
+  },
+  "control": {
+    "name": "控制",
+    "params": [
+      {"key": "kind", "label": "类型", "type": "enum",
+       "options": ["stun", "knockup", "knockback", "frozen", "silence", "taunt",
+                   "disarm", "fear", "blind", "charm", "suppress", "slow"], "default": "stun"},
+      {"key": "chance", "label": "概率", "type": "float", "min": 0.05, "max": 1, "default": 0.4},
+      {"key": "rounds", "label": "回合", "type": "int", "min": 1, "max": 3, "default": 1}
+    ]
+  },
+  "shield": {
+    "name": "护盾",
+    "params": [
+      {"key": "value", "label": "护盾比例", "type": "float", "min": 0.05, "max": 1, "default": 0.15}
+    ]
+  },
+  "cleanse": {
+    "name": "净化",
+    "params": []
+  },
+  "revive": {
+    "name": "复活",
+    "params": [
+      {"key": "hp", "label": "复活生命比例", "type": "float", "min": 0.1, "max": 1, "default": 0.3}
+    ]
+  },
+  "execute": {
+    "name": "斩杀",
+    "params": [
+      {"key": "threshold", "label": "斩杀阈值", "type": "float", "min": 0.05, "max": 0.6, "default": 0.25}
+    ]
+  },
+  "combo": {
+    "name": "连击",
+    "params": [
+      {"key": "chance", "label": "概率", "type": "float", "min": 0.05, "max": 0.8, "default": 0.2}
+    ]
+  },
+  "pursuit": {
+    "name": "追击",
+    "params": [
+      {"key": "coef", "label": "系数", "type": "float", "min": 0.1, "max": 3, "default": 0.8}
+    ]
+  },
+  "counter": {
+    "name": "反击",
+    "params": [
+      {"key": "coef", "label": "系数", "type": "float", "min": 0.1, "max": 3, "default": 0.7}
+    ]
+  },
+  "summon": {
+    "name": "召唤",
+    "params": [
+      {"key": "count", "label": "数量", "type": "int", "min": 1, "max": 3, "default": 1},
+      {"key": "hp", "label": "生命比例", "type": "float", "min": 0.05, "max": 0.5, "default": 0.2}
+    ]
+  },
+  "dispel": {
+    "name": "驱散敌方增益",
+    "params": []
+  },
+  "invulnerable": {
+    "name": "无敌",
+    "params": [
+      {"key": "rounds", "label": "回合", "type": "int", "min": 1, "max": 2, "default": 1}
+    ]
+  },
+  "untargetable": {
+    "name": "不可选中",
+    "params": [
+      {"key": "rounds", "label": "回合", "type": "int", "min": 1, "max": 2, "default": 1}
+    ]
+  }
+}

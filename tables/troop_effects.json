@@ -1,0 +1,1743 @@
+[
+  {
+    "id": "te_001",
+    "name": "玄甲",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atk",
+        "value": 0.06
+      },
+      {
+        "type": "stat",
+        "attr": "dodge",
+        "value": 0.03
+      }
+    ],
+    "desc": "攻击+6%、闪避+3%"
+  },
+  {
+    "id": "te_002",
+    "name": "玄壁",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "hp",
+        "value": 0.13
+      }
+    ],
+    "desc": "生命+13%"
+  },
+  {
+    "id": "te_003",
+    "name": "玄锋",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit_dmg",
+        "value": 0.25
+      }
+    ],
+    "desc": "暴伤+25%"
+  },
+  {
+    "id": "te_004",
+    "name": "玄骑",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "spellvamp",
+        "value": 0.125
+      },
+      {
+        "type": "stat",
+        "attr": "crit",
+        "value": 0.1
+      }
+    ],
+    "desc": "法术吸血+12%、暴击+10%"
+  },
+  {
+    "id": "te_005",
+    "name": "玄弩",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reflect",
+        "value": 0.15
+      }
+    ],
+    "desc": "反伤+15%"
+  },
+  {
+    "id": "te_006",
+    "name": "玄盾",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "pen_flat",
+        "value": 20
+      }
+    ],
+    "desc": "固定穿透+20"
+  },
+  {
+    "id": "te_007",
+    "name": "玄阵",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "def",
+        "value": 0.122
+      },
+      {
+        "type": "stat",
+        "attr": "hp",
+        "value": 0.13
+      }
+    ],
+    "desc": "物防+12%、生命+13%"
+  },
+  {
+    "id": "te_008",
+    "name": "玄军",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "speed",
+        "value": 0.125
+      }
+    ],
+    "desc": "速度+12%"
+  },
+  {
+    "id": "te_009",
+    "name": "玄卫",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "dodge",
+        "value": 0.083
+      }
+    ],
+    "desc": "闪避+8%"
+  },
+  {
+    "id": "te_010",
+    "name": "玄啸",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reduction",
+        "value": 0.12
+      },
+      {
+        "type": "stat",
+        "attr": "def",
+        "value": 0.25
+      }
+    ],
+    "desc": "免伤+12%、物防+25%"
+  },
+  {
+    "id": "te_011",
+    "name": "玄牙",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "cdr",
+        "value": 0.05
+      }
+    ],
+    "desc": "冷却缩减+5%"
+  },
+  {
+    "id": "te_012",
+    "name": "玄翼",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mana",
+        "value": 17
+      }
+    ],
+    "desc": "法力+17"
+  },
+  {
+    "id": "te_013",
+    "name": "玄翎",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mag_def",
+        "value": 0.165
+      },
+      {
+        "type": "stat",
+        "attr": "mana",
+        "value": 25
+      }
+    ],
+    "desc": "法防+16%、法力+25"
+  },
+  {
+    "id": "te_014",
+    "name": "玄铠",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit",
+        "value": 0.1
+      }
+    ],
+    "desc": "暴击+10%"
+  },
+  {
+    "id": "te_015",
+    "name": "玄旌",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "lifesteal",
+        "value": 0.15
+      }
+    ],
+    "desc": "吸血+15%"
+  },
+  {
+    "id": "te_016",
+    "name": "玄戈",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "tenacity",
+        "value": 0.05
+      },
+      {
+        "type": "stat",
+        "attr": "atkspeed",
+        "value": 0.05
+      }
+    ],
+    "desc": "韧性+5%、攻速+5%"
+  },
+  {
+    "id": "te_017",
+    "name": "玄戟",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atkspeed",
+        "value": 0.083
+      }
+    ],
+    "desc": "攻速+8%"
+  },
+  {
+    "id": "te_018",
+    "name": "玄辕",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "def",
+        "value": 0.165
+      }
+    ],
+    "desc": "物防+16%"
+  },
+  {
+    "id": "te_019",
+    "name": "玄辔",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "speed",
+        "value": 0.163
+      },
+      {
+        "type": "stat",
+        "attr": "reflect",
+        "value": 0.125
+      }
+    ],
+    "desc": "速度+16%、反伤+12%"
+  },
+  {
+    "id": "te_020",
+    "name": "玄旗",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "dodge",
+        "value": 0.1
+      }
+    ],
+    "desc": "闪避+10%"
+  },
+  {
+    "id": "te_021",
+    "name": "铁甲",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reduction",
+        "value": 0.03
+      }
+    ],
+    "desc": "免伤+3%"
+  },
+  {
+    "id": "te_022",
+    "name": "铁壁",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "cdr",
+        "value": 0.088
+      },
+      {
+        "type": "stat",
+        "attr": "reduction",
+        "value": 0.052
+      }
+    ],
+    "desc": "冷却缩减+8%、免伤+5%"
+  },
+  {
+    "id": "te_023",
+    "name": "铁锋",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mana",
+        "value": 25
+      }
+    ],
+    "desc": "法力+25"
+  },
+  {
+    "id": "te_024",
+    "name": "铁骑",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mag_def",
+        "value": 0.208
+      }
+    ],
+    "desc": "法防+20%"
+  },
+  {
+    "id": "te_025",
+    "name": "铁弩",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit",
+        "value": 0.12
+      },
+      {
+        "type": "stat",
+        "attr": "lifesteal",
+        "value": 0.15
+      }
+    ],
+    "desc": "暴击+12%、吸血+15%"
+  },
+  {
+    "id": "te_026",
+    "name": "铁盾",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "lifesteal",
+        "value": 0.05
+      }
+    ],
+    "desc": "吸血+5%"
+  },
+  {
+    "id": "te_027",
+    "name": "铁阵",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "tenacity",
+        "value": 0.088
+      }
+    ],
+    "desc": "韧性+8%"
+  },
+  {
+    "id": "te_028",
+    "name": "铁军",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atkspeed",
+        "value": 0.115
+      },
+      {
+        "type": "stat",
+        "attr": "crit_dmg",
+        "value": 0.25
+      }
+    ],
+    "desc": "攻速+11%、暴伤+25%"
+  },
+  {
+    "id": "te_029",
+    "name": "铁卫",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atk",
+        "value": 0.15
+      }
+    ],
+    "desc": "攻击+15%"
+  },
+  {
+    "id": "te_030",
+    "name": "铁啸",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "hp",
+        "value": 0.28
+      }
+    ],
+    "desc": "生命+28%"
+  },
+  {
+    "id": "te_031",
+    "name": "铁牙",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit_dmg",
+        "value": 0.1
+      },
+      {
+        "type": "stat",
+        "attr": "speed",
+        "value": 0.05
+      }
+    ],
+    "desc": "暴伤+10%、速度+5%"
+  },
+  {
+    "id": "te_032",
+    "name": "铁翼",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "spellvamp",
+        "value": 0.075
+      }
+    ],
+    "desc": "法术吸血+7%"
+  },
+  {
+    "id": "te_033",
+    "name": "铁翎",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reflect",
+        "value": 0.1
+      }
+    ],
+    "desc": "反伤+10%"
+  },
+  {
+    "id": "te_034",
+    "name": "铁铠",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "pen_flat",
+        "value": 50
+      },
+      {
+        "type": "stat",
+        "attr": "mag_def",
+        "value": 0.208
+      }
+    ],
+    "desc": "固定穿透+50、法防+20%"
+  },
+  {
+    "id": "te_035",
+    "name": "铁旌",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mag_def",
+        "value": 0.25
+      }
+    ],
+    "desc": "法防+25%"
+  },
+  {
+    "id": "te_036",
+    "name": "铁戈",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit",
+        "value": 0.04
+      }
+    ],
+    "desc": "暴击+4%"
+  },
+  {
+    "id": "te_037",
+    "name": "铁戟",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "lifesteal",
+        "value": 0.075
+      },
+      {
+        "type": "stat",
+        "attr": "atk",
+        "value": 0.09
+      }
+    ],
+    "desc": "吸血+7%、攻击+9%"
+  },
+  {
+    "id": "te_038",
+    "name": "铁辕",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "tenacity",
+        "value": 0.125
+      }
+    ],
+    "desc": "韧性+12%"
+  },
+  {
+    "id": "te_039",
+    "name": "铁辔",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atkspeed",
+        "value": 0.148
+      }
+    ],
+    "desc": "攻速+14%"
+  },
+  {
+    "id": "te_040",
+    "name": "铁旗",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atk",
+        "value": 0.18
+      },
+      {
+        "type": "stat",
+        "attr": "pen_flat",
+        "value": 60
+      }
+    ],
+    "desc": "攻击+18%、固定穿透+60"
+  },
+  {
+    "id": "te_041",
+    "name": "苍甲",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "hp",
+        "value": 0.08
+      }
+    ],
+    "desc": "生命+8%"
+  },
+  {
+    "id": "te_042",
+    "name": "苍壁",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit_dmg",
+        "value": 0.175
+      }
+    ],
+    "desc": "暴伤+17%"
+  },
+  {
+    "id": "te_043",
+    "name": "苍锋",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "spellvamp",
+        "value": 0.1
+      },
+      {
+        "type": "stat",
+        "attr": "cdr",
+        "value": 0.125
+      }
+    ],
+    "desc": "法术吸血+10%、冷却缩减+12%"
+  },
+  {
+    "id": "te_044",
+    "name": "苍骑",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reflect",
+        "value": 0.125
+      }
+    ],
+    "desc": "反伤+12%"
+  },
+  {
+    "id": "te_045",
+    "name": "苍弩",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "pen_flat",
+        "value": 60
+      }
+    ],
+    "desc": "固定穿透+60"
+  },
+  {
+    "id": "te_046",
+    "name": "苍盾",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "def",
+        "value": 0.08
+      },
+      {
+        "type": "stat",
+        "attr": "tenacity",
+        "value": 0.05
+      }
+    ],
+    "desc": "物防+8%、韧性+5%"
+  },
+  {
+    "id": "te_047",
+    "name": "苍阵",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "speed",
+        "value": 0.088
+      }
+    ],
+    "desc": "速度+8%"
+  },
+  {
+    "id": "te_048",
+    "name": "苍军",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "dodge",
+        "value": 0.065
+      }
+    ],
+    "desc": "闪避+6%"
+  },
+  {
+    "id": "te_049",
+    "name": "苍卫",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reduction",
+        "value": 0.098
+      },
+      {
+        "type": "stat",
+        "attr": "spellvamp",
+        "value": 0.125
+      }
+    ],
+    "desc": "免伤+9%、法术吸血+12%"
+  },
+  {
+    "id": "te_050",
+    "name": "苍啸",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "cdr",
+        "value": 0.2
+      }
+    ],
+    "desc": "冷却缩减+20%"
+  },
+  {
+    "id": "te_051",
+    "name": "苍牙",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mana",
+        "value": 10
+      }
+    ],
+    "desc": "法力+10"
+  },
+  {
+    "id": "te_052",
+    "name": "苍翼",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "hp",
+        "value": 0.13
+      },
+      {
+        "type": "stat",
+        "attr": "dodge",
+        "value": 0.048
+      }
+    ],
+    "desc": "生命+13%、闪避+4%"
+  },
+  {
+    "id": "te_053",
+    "name": "苍翎",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit_dmg",
+        "value": 0.25
+      }
+    ],
+    "desc": "暴伤+25%"
+  },
+  {
+    "id": "te_054",
+    "name": "苍铠",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "spellvamp",
+        "value": 0.125
+      }
+    ],
+    "desc": "法术吸血+12%"
+  },
+  {
+    "id": "te_055",
+    "name": "苍旌",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reflect",
+        "value": 0.15
+      },
+      {
+        "type": "stat",
+        "attr": "crit",
+        "value": 0.12
+      }
+    ],
+    "desc": "反伤+15%、暴击+12%"
+  },
+  {
+    "id": "te_056",
+    "name": "苍戈",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "pen_flat",
+        "value": 20
+      }
+    ],
+    "desc": "固定穿透+20"
+  },
+  {
+    "id": "te_057",
+    "name": "苍戟",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "def",
+        "value": 0.122
+      }
+    ],
+    "desc": "物防+12%"
+  },
+  {
+    "id": "te_058",
+    "name": "苍辕",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "speed",
+        "value": 0.125
+      },
+      {
+        "type": "stat",
+        "attr": "hp",
+        "value": 0.18
+      }
+    ],
+    "desc": "速度+12%、生命+18%"
+  },
+  {
+    "id": "te_059",
+    "name": "苍辔",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "dodge",
+        "value": 0.083
+      }
+    ],
+    "desc": "闪避+8%"
+  },
+  {
+    "id": "te_060",
+    "name": "苍旗",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "reduction",
+        "value": 0.12
+      }
+    ],
+    "desc": "免伤+12%"
+  },
+  {
+    "id": "te_061",
+    "name": "赤甲",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "cdr",
+        "value": 0.05
+      },
+      {
+        "type": "stat",
+        "attr": "def",
+        "value": 0.08
+      }
+    ],
+    "desc": "冷却缩减+5%、物防+8%"
+  },
+  {
+    "id": "te_062",
+    "name": "赤壁",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mana",
+        "value": 17
+      }
+    ],
+    "desc": "法力+17"
+  },
+  {
+    "id": "te_063",
+    "name": "赤锋",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "mag_def",
+        "value": 0.165
+      }
+    ],
+    "desc": "法防+16%"
+  },
+  {
+    "id": "te_064",
+    "name": "赤骑",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "crit",
+        "value": 0.1
+      },
+      {
+        "type": "stat",
+        "attr": "mana",
+        "value": 32
+      }
+    ],
+    "desc": "暴击+10%、法力+32"
+  },
+  {
+    "id": "te_065",
+    "name": "赤弩",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "lifesteal",
+        "value": 0.15
+      }
+    ],
+    "desc": "吸血+15%"
+  },
+  {
+    "id": "te_066",
+    "name": "赤盾",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "tenacity",
+        "value": 0.05
+      }
+    ],
+    "desc": "韧性+5%"
+  },
+  {
+    "id": "te_067",
+    "name": "赤阵",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atkspeed",
+        "value": 0.083
+      }
+    ],
+    "desc": "攻速+8%"
+  },
+  {
+    "id": "te_068",
+    "name": "赤军",
+    "tags": [
+      "stat"
+    ],
+    "items": [
+      {
+        "type": "stat",
+        "attr": "atk",
+        "value": 0.12
+      }
+    ],
+    "desc": "攻击+12%"
+  },
+  {
+    "id": "te_069",
+    "name": "赤卫",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "magic_vuln",
+        "value": 0.15
+      }
+    ],
+    "desc": "受谋略伤害提升"
+  },
+  {
+    "id": "te_070",
+    "name": "赤啸",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "extra_hit_chance",
+        "value": 0.25
+      },
+      {
+        "type": "stat",
+        "attr": "crit_dmg",
+        "value": 0.175
+      }
+    ],
+    "desc": "普攻概率追加一击、暴伤+17%"
+  },
+  {
+    "id": "te_071",
+    "name": "赤牙",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "knockup_chance",
+        "value": 0.25
+      }
+    ],
+    "desc": "普攻概率击飞"
+  },
+  {
+    "id": "te_072",
+    "name": "赤翼",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "first_strike",
+        "value": 1
+      },
+      {
+        "type": "stat",
+        "attr": "atkspeed",
+        "value": 0.148
+      }
+    ],
+    "desc": "首回合先手、攻速+14%"
+  },
+  {
+    "id": "te_073",
+    "name": "赤翎",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "low_hp_atk",
+        "value": 0.3
+      }
+    ],
+    "desc": "生命越低攻击越高"
+  },
+  {
+    "id": "te_074",
+    "name": "赤铠",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "magic_vuln",
+        "value": 0.2
+      },
+      {
+        "type": "stat",
+        "attr": "crit",
+        "value": 0.04
+      }
+    ],
+    "desc": "受谋略伤害提升、暴击+4%"
+  },
+  {
+    "id": "te_075",
+    "name": "赤旌",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "extra_hit_chance",
+        "value": 0.2
+      }
+    ],
+    "desc": "普攻概率追加一击"
+  },
+  {
+    "id": "te_076",
+    "name": "赤戈",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "knockup_chance",
+        "value": 0.3
+      },
+      {
+        "type": "stat",
+        "attr": "cdr",
+        "value": 0.125
+      }
+    ],
+    "desc": "普攻概率击飞、冷却缩减+12%"
+  },
+  {
+    "id": "te_077",
+    "name": "赤戟",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "first_strike",
+        "value": 1
+      }
+    ],
+    "desc": "首回合先手"
+  },
+  {
+    "id": "te_078",
+    "name": "赤辕",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "low_hp_atk",
+        "value": 0.4
+      },
+      {
+        "type": "stat",
+        "attr": "speed",
+        "value": 0.2
+      }
+    ],
+    "desc": "生命越低攻击越高、速度+20%"
+  },
+  {
+    "id": "te_079",
+    "name": "赤辔",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "magic_vuln",
+        "value": 0.25
+      }
+    ],
+    "desc": "受谋略伤害提升"
+  },
+  {
+    "id": "te_080",
+    "name": "赤旗",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "extra_hit_chance",
+        "value": 0.3
+      },
+      {
+        "type": "stat",
+        "attr": "reflect",
+        "value": 0.075
+      }
+    ],
+    "desc": "普攻概率追加一击、反伤+7%"
+  },
+  {
+    "id": "te_081",
+    "name": "青甲",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "knockup_chance",
+        "value": 0.15
+      }
+    ],
+    "desc": "普攻概率击飞"
+  },
+  {
+    "id": "te_082",
+    "name": "青壁",
+    "tags": [
+      "mechanic"
+    ],
+    "items": [
+      {
+        "type": "mechanic",
+        "key": "first_strike",
+        "value": 1
+      },
+      {
+        "type": "stat",
+        "attr": "hp",
+        "value": 0.23
+      }
+    ],
+    "desc": "首回合先手、生命+23%"
+  },
+  {
+    "id": "te_083",
+    "name": "青锋",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "shield",
+          "params": {
+            "value": 0.1,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局获得 10% 生命护盾。"
+  },
+  {
+    "id": "te_084",
+    "name": "青骑",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "regen",
+          "params": {
+            "value": 0.06,
+            "rounds": 3
+          }
+        }
+      }
+    ],
+    "desc": "开局持续回复（每回合 6% 生命，3 回合）。"
+  },
+  {
+    "id": "te_085",
+    "name": "青弩",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "buff",
+          "params": {
+            "attr": "speed",
+            "value": 0.125,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局提升速度（12%，2 回合）。"
+  },
+  {
+    "id": "te_086",
+    "name": "青盾",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "shield",
+          "params": {
+            "value": 0.25,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局获得 25% 生命护盾。"
+  },
+  {
+    "id": "te_087",
+    "name": "青阵",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "regen",
+          "params": {
+            "value": 0.06,
+            "rounds": 3
+          }
+        }
+      }
+    ],
+    "desc": "开局持续回复（每回合 6% 生命，3 回合）。"
+  },
+  {
+    "id": "te_088",
+    "name": "青军",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "buff",
+          "params": {
+            "attr": "reduction",
+            "value": 0.03,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局提升免伤（3%，2 回合）。"
+  },
+  {
+    "id": "te_089",
+    "name": "青卫",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "shield",
+          "params": {
+            "value": 0.2,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局获得 20% 生命护盾。"
+  },
+  {
+    "id": "te_090",
+    "name": "青啸",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "regen",
+          "params": {
+            "value": 0.06,
+            "rounds": 3
+          }
+        }
+      }
+    ],
+    "desc": "开局持续回复（每回合 6% 生命，3 回合）。"
+  },
+  {
+    "id": "te_091",
+    "name": "青牙",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "buff",
+          "params": {
+            "attr": "mana",
+            "value": 32,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局提升法力（3200%，2 回合）。"
+  },
+  {
+    "id": "te_092",
+    "name": "青翼",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "shield",
+          "params": {
+            "value": 0.15,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局获得 15% 生命护盾。"
+  },
+  {
+    "id": "te_093",
+    "name": "青翎",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "regen",
+          "params": {
+            "value": 0.06,
+            "rounds": 3
+          }
+        }
+      }
+    ],
+    "desc": "开局持续回复（每回合 6% 生命，3 回合）。"
+  },
+  {
+    "id": "te_094",
+    "name": "青铠",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "buff",
+          "params": {
+            "attr": "crit",
+            "value": 0.06,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局提升暴击（6%，2 回合）。"
+  },
+  {
+    "id": "te_095",
+    "name": "青旌",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "shield",
+          "params": {
+            "value": 0.1,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局获得 10% 生命护盾。"
+  },
+  {
+    "id": "te_096",
+    "name": "青戈",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "regen",
+          "params": {
+            "value": 0.06,
+            "rounds": 3
+          }
+        }
+      }
+    ],
+    "desc": "开局持续回复（每回合 6% 生命，3 回合）。"
+  },
+  {
+    "id": "te_097",
+    "name": "青戟",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "buff",
+          "params": {
+            "attr": "tenacity",
+            "value": 0.2,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局提升韧性（20%，2 回合）。"
+  },
+  {
+    "id": "te_098",
+    "name": "青辕",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "shield",
+          "params": {
+            "value": 0.25,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局获得 25% 生命护盾。"
+  },
+  {
+    "id": "te_099",
+    "name": "青辔",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "regen",
+          "params": {
+            "value": 0.06,
+            "rounds": 3
+          }
+        }
+      }
+    ],
+    "desc": "开局持续回复（每回合 6% 生命，3 回合）。"
+  },
+  {
+    "id": "te_100",
+    "name": "青旗",
+    "tags": [
+      "opening"
+    ],
+    "items": [
+      {
+        "type": "opening",
+        "atom": {
+          "type": "buff",
+          "params": {
+            "attr": "atk",
+            "value": 0.12,
+            "rounds": 2
+          }
+        }
+      }
+    ],
+    "desc": "开局提升攻击（12%，2 回合）。"
+  }
+]

@@ -138,6 +138,18 @@ def delete_player(qq: str) -> bool:
         return False
 
 
+def delete_player_data(qq: str) -> bool:
+    """删除整个玩家目录（player.json + mail.json 等全部子数据）。"""
+    import shutil
+
+    with _LOCK:
+        path = players_dir() / str(qq)
+        if path.exists():
+            shutil.rmtree(path, ignore_errors=True)
+            return True
+        return False
+
+
 def list_players() -> List[str]:
     """返回所有已注册 QQ 号。"""
     root = players_dir()
