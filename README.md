@@ -1,4 +1,4 @@
-# 柳弗罗三国演义 · AstrBot插件
+# 柳弗罗三国演义 · AstrBot插件（v1.2.0）
 
 - 插件名：`liufeng_sanguo_game`
 - 显示名：柳弗罗三国演义
