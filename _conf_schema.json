@@ -185,6 +185,11 @@
         "type": "bool",
         "default": true
       },
+      "enable_broadcast": {
+        "description": "启用广播推送(管理台群发/自定义任务公告；关闭则禁用)",
+        "type": "bool",
+        "default": false
+      },
       "maintenance": {
         "description": "维护模式(开启后拒绝玩家指令)",
         "type": "bool",
@@ -241,6 +246,16 @@
     "type": "object",
     "items": {
       "enable": {"description": "启用限时活动", "type": "bool", "default": true}
+    }
+  },
+  "skill": {
+    "description": "技能系统",
+    "type": "object",
+    "items": {
+      "enable": {"description": "启用技能系统", "type": "bool", "default": true},
+      "default_book_cost": {"description": "默认技能书碎片价(自定义技能未指定时)", "type": "int", "default": 40},
+      "learn_return_book": {"description": "学习技能时是否返还旧技能书", "type": "bool", "default": false},
+      "learn_reset_level": {"description": "学习技能后是否重置技能等级为1", "type": "bool", "default": true}
     }
   }
 }

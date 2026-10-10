@@ -677,13 +677,29 @@ def test_base_power_multidim():
 
 
 def test_general_info_skill_name():
-    from liufeng_sanguo_game.systems import player as pm
+    from liufeng_sanguo_game.systems import player as pm, tables
 
     p = make_player("81001", "技能测试", 0)
     pm.add_general(p, "吕布")
     pm.save(p)
     info = pm.general_info(p, "吕布")
     assert info.get("skill_name"), "技能名应接入战斗"
+    assert info.get("skill_active"), "主动技能定义应接入"
+    assert info.get("skill_active", {}).get("effects"), "主动技能应有效果"
+    assert len(tables.tables().skill_effects) == 350
+
+
+def test_skillgen_deterministic():
+    from liufeng_sanguo_game.systems import skillgen, tables
+
+    skillgen.reload()
+    a = skillgen.generate("火计", "active")
+    b = skillgen.generate("火计", "active")
+    assert a == b
+    assert a.get("category") and a.get("effects")
+    c = skillgen.generate("铁骨", "passive")
+    assert c.get("trigger") == "always"
+    assert len(tables.tables().skill_effects) == 350
 
 
 def test_battle_multidim_runs():

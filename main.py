@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import functools
 import random
 import re
 import sys
@@ -42,6 +43,12 @@ from .systems import dungeon as dungeon_sys
 from .systems import inventory as inventory_sys
 from .systems import items as items_mod
 from .systems import generals_admin as generals_admin_mod
+from .systems import guild_admin as guild_admin_mod
+from .systems import equipment_admin as equipment_admin_mod
+from .systems import auction_admin as auction_admin_mod
+from .systems import job_admin as job_admin_mod
+from .systems import skills as skills_sys
+from .systems import skills_admin as skills_admin_mod
 from .systems import shop as shop_sys
 from .systems import exchange as exchange_sys
 from .systems import auction as auction_sys
@@ -56,6 +63,9 @@ from .systems import worldboss as worldboss_sys
 from .systems import battlepass as battlepass_sys
 from .systems import events as events_sys
 from .systems import player as player_mod
+from .systems import player_admin as player_admin_mod
+from .systems import troops as troops_mod
+from .systems import troops_admin as troops_admin_mod
 from .systems.tables import tables
 
 EMOJI = {
@@ -79,6 +89,12 @@ class LiuFengSanGuoGame(Star):
             pass
         events_sys.set_enabled(self.cfg.get("events.enable", True))
         battlepass_sys.set_enabled(self.cfg.get("battlepass.enable", True))
+        skills_sys.set_options(
+            enable=self.cfg.get("skill.enable", True),
+            default_book_cost=int(self.cfg.get("skill.default_book_cost", 40)),
+            learn_return_book=bool(self.cfg.get("skill.learn_return_book", False)),
+            learn_reset_level=bool(self.cfg.get("skill.learn_reset_level", True)),
+        )
         battle_sys.set_variance(self.cfg.get("game.battle_variance", 0.1))
         dungeon_sys.set_drop_bounds(
             self.cfg.get("dungeon.fragment_drop_min", 0.05),
@@ -162,19 +178,118 @@ class LiuFengSanGuoGame(Star):
             umo = getattr(event, "unified_msg_origin", "")
             if not umo:
                 return
-            platform = ""
-            fn = getattr(event, "get_platform_name", None)
-            if callable(fn):
+
+            def _call(name: str) -> str:
+                fn = getattr(event, name, None)
+                if callable(fn):
+                    try:
+                        return str(fn() or "")
+                    except Exception:  # noqa: BLE001
+                        return ""
+                return ""
+
+            platform = _call("get_platform_name")
+            platform_id = _call("get_platform_id")
+            group_id = _call("get_group_id")
+            mtype = ""
+            mt = getattr(event, "get_message_type", None)
+            if callable(mt):
                 try:
-                    platform = str(fn() or "")
+                    mtv = mt()
+                    mtype = getattr(mtv, "value", str(mtv)) or ""
                 except Exception:  # noqa: BLE001
-                    platform = ""
+                    mtype = ""
+            kind = self._session_kind(mtype, umo)
             sessions = storage.load_global("session_index", {}) or {}
-            if not isinstance(sessions.get(umo), dict):
-                sessions[umo] = {"umo": umo, "platform": platform}
-                storage.save_global("session_index", sessions)
+            entry = sessions.get(umo)
+            if not isinstance(entry, dict):
+                entry = {"umo": umo}
+            entry["platform"] = platform or entry.get("platform", "")
+            entry["platform_id"] = platform_id or entry.get("platform_id", "")
+            entry["msg_type"] = kind
+            entry["group_id"] = group_id or entry.get("group_id", "")
+            entry["ts"] = int(time.time())
+            sessions[umo] = entry
+            storage.save_global("session_index", sessions)
         except Exception:  # noqa: BLE001
             pass
+
+    @staticmethod
+    def _session_kind(mtype: str, umo: str = "") -> str:
+        m = f"{mtype} {umo}".lower()
+        if "groupmessage" in m:
+            return "group"
+        if "friendmessage" in m or "privatemessage" in m:
+            return "friend"
+        return "other"
+
+    def _entry_kind(self, entry: Any) -> str:
+        if isinstance(entry, dict):
+            k = str(entry.get("msg_type", ""))
+            if k:
+                return k
+            umo = str(entry.get("umo", ""))
+            return self._session_kind("", umo)
+        return self._session_kind("", str(entry))
+
+    def _broadcast_enabled(self) -> bool:
+        return bool(self.cfg.get("system.enable_broadcast", False))
+
+    async def _broadcast(self, text: str, target: str = "group") -> Dict[str, Any]:
+        """主动广播：target = group(默认) / private / all。返回统计（含失败原因）。"""
+        result: Dict[str, Any] = {"sent": 0, "failed": 0, "skipped": 0, "total": 0, "errors": []}
+        text = (text or "").strip()
+        if not text:
+            result["hint"] = "内容为空"
+            return result
+        try:
+            from astrbot.api.event import MessageChain
+        except Exception as exc:  # noqa: BLE001
+            result["hint"] = f"消息组件不可用：{exc}"
+            return result
+        sessions = storage.load_global("session_index", {}) or {}
+        for entry in sessions.values():
+            umo = entry.get("umo") if isinstance(entry, dict) else entry
+            if not umo:
+                continue
+            kind = self._entry_kind(entry)
+            if target == "group" and kind != "group":
+                continue
+            if target == "private" and kind != "friend":
+                continue
+            result["total"] += 1
+            if not self._supports_active_message(entry):
+                result["skipped"] += 1
+                continue
+            try:
+                ok = await self.context.send_message(umo, MessageChain().message(text))
+                if ok is False:
+                    result["failed"] += 1
+                    if len(result["errors"]) < 5:
+                        result["errors"].append(f"{umo}: 未找到匹配平台")
+                else:
+                    result["sent"] += 1
+            except Exception as exc:  # noqa: BLE001
+                result["failed"] += 1
+                if len(result["errors"]) < 5:
+                    result["errors"].append(f"{umo}: {exc}")
+        if result["total"] == 0:
+            result["hint"] = ("尚未记录到群会话，请先在目标群发送一次指令（如 /帮助）"
+                              if target == "group" else "暂无匹配会话")
+        return result
+
+    def _session_stats(self) -> Dict[str, int]:
+        sessions = storage.load_global("session_index", {}) or {}
+        group = friend = other = 0
+        for entry in sessions.values():
+            k = self._entry_kind(entry)
+            if k == "group":
+                group += 1
+            elif k == "friend":
+                friend += 1
+            else:
+                other += 1
+        return {"total": len(sessions), "group": group, "friend": friend, "other": other}
 
     def _guard(self, event: AstrMessageEvent, cooldown: Optional[float] = None,
                cmd: str = "") -> Optional[str]:
@@ -183,6 +298,13 @@ class LiuFengSanGuoGame(Star):
             return "⚠️ 三国演义游戏当前已停用。"
         if maintenance.is_on():
             return maintenance.message()
+        try:
+            qq = str(event.get_sender_id())
+        except Exception:  # noqa: BLE001
+            qq = ""
+        if qq and player_admin_mod.is_banned(qq):
+            r = player_admin_mod.ban_reason(qq)
+            return "🚫 你已被封禁，无法使用游戏功能。" + (f"\n原因：{r}" if r else "")
         self._start_scheduler()  # 兜底：确保调度器已启动
         self._track_session(event)
         if not cmd:
@@ -220,10 +342,12 @@ class LiuFengSanGuoGame(Star):
         names = [n for n in player.get("team", []) if player_mod.has_general(player, n)]
         if not names:
             names = [e["name"] for e in player_mod.all_generals_power(player)[:3]]
+        mana_bonus = int(buff_sys.value(player, "battle_mana", 0))
         entries = []
         for name in names[:3]:
             info = player_mod.general_info(player, name)
             if info:
+                info["mana_bonus"] = mana_bonus
                 entries.append({
                     "name": name,
                     "info": info,
@@ -234,17 +358,115 @@ class LiuFengSanGuoGame(Star):
 
     def _duel_entry(self, player: Dict[str, Any]):
         """1v1 出战单将：主将 → 阵容首位 → 战力最高。"""
-        return team.duel_entry(player)
+        entry = team.duel_entry(player)
+        if entry:
+            info = entry.get("info") or {}
+            info["mana_bonus"] = int(buff_sys.value(player, "battle_mana", 0))
+        return entry
 
     # ------------------------------------------------------------------
     # 定时任务
     # ------------------------------------------------------------------
     def _register_jobs(self):
-        self.scheduler.add_job("stamina_recovery", self._job_stamina, 120)
-        self.scheduler.add_job("auction_settle", self._job_auction, 60)
-        self.scheduler.add_job("events_prune", self._job_events, 120)
-        self.scheduler.add_job("worldboss_watch", self._job_worldboss, 300)
-        self.scheduler.add_job("housekeeping", self._job_housekeeping, 3600)
+        self.scheduler.add_job("stamina_recovery", self._job_stamina, 120, label="行动力恢复")
+        self.scheduler.add_job("auction_settle", self._job_auction, 60, label="拍卖行结算")
+        self.scheduler.add_job("events_prune", self._job_events, 120, label="活动巡检")
+        self.scheduler.add_job("worldboss_watch", self._job_worldboss, 300, label="世界BOSS巡检")
+        self.scheduler.add_job("housekeeping", self._job_housekeeping, 3600, label="系统巡检")
+        self._register_custom_jobs()
+
+    def _register_custom_jobs(self):
+        for job in job_admin_mod.list_custom():
+            name = "custom:" + str(job.get("id"))
+            func = functools.partial(self._run_custom_job, job.get("action"), job.get("params") or {})
+            self.scheduler.add_job(name, func, int(job.get("interval", 3600)),
+                                   label=str(job.get("label", name)))
+            self.scheduler.set_enabled(name, bool(job.get("enabled", True)))
+
+    def _reload_custom_jobs(self):
+        # 先移除旧的自定义任务，再按最新配置注册
+        for name in list(self.scheduler.jobs().keys()):
+            if str(name).startswith("custom:"):
+                self.scheduler.remove_job(name)
+        self._register_custom_jobs()
+
+    async def _run_custom_job(self, action: str, params: Dict[str, Any]):
+        params = params or {}
+        try:
+            if action == "broadcast":
+                if not self._broadcast_enabled():
+                    logger.info("[三国] 广播推送已禁用，跳过自定义任务公告")
+                else:
+                    await self._do_broadcast(str(params.get("text", "")), str(params.get("target", "group") or "group"))
+            elif action == "mail_all":
+                self._do_mail_all(params)
+            elif action == "worldboss_spawn":
+                worldboss_sys.spawn(params.get("boss_id") or None,
+                                    int(params.get("duration", 0) or 0) or None)
+            elif action == "worldboss_settle":
+                worldboss_sys.settle()
+            elif action == "worldboss_watch":
+                worldboss_sys.current()
+            elif action == "auction_settle":
+                auction_sys.settle()
+            elif action == "events_open":
+                events_sys.open_event(str(params.get("event_id", "")),
+                                      int(params.get("duration", 0) or 0) or None)
+            elif action == "events_close":
+                events_sys.close_event(str(params.get("event_id", "")))
+            elif action == "events_prune":
+                events_sys.prune()
+            elif action == "stamina_recovery":
+                await self._job_stamina()
+            elif action == "reload_data":
+                self._reload_all_tables()
+            elif action == "housekeeping":
+                logger.info("[三国] 自定义任务·系统巡检完成")
+        except Exception as exc:  # noqa: BLE001
+            logger.warning(f"[三国] 自定义定时任务 {action} 执行失败: {exc}")
+
+    async def _do_broadcast(self, text: str, target: str = "group") -> int:
+        res = await self._broadcast(text, target or "group")
+        return int(res.get("sent", 0))
+
+    def _do_mail_all(self, params: Dict[str, Any]) -> int:
+        title = str(params.get("title", "系统奖励"))[:40] or "系统奖励"
+        body = str(params.get("body", ""))
+        reward: Dict[str, Any] = {}
+        for k in ("gold", "diamond", "merit", "soul", "repute", "event_ticket",
+                  "challenge", "skill_frag", "fragments", "stamina"):
+            try:
+                v = int(params.get(k, 0) or 0)
+            except (TypeError, ValueError):
+                v = 0
+            if v:
+                reward[k] = v
+        items = params.get("items")
+        if isinstance(items, dict) and items:
+            reward["items"] = {str(k): int(v) for k, v in items.items()}
+        gens = str(params.get("generals", "")).replace("，", ",")
+        names = [n.strip() for n in gens.split(",") if n.strip()]
+        if names:
+            reward["generals"] = names
+        count = 0
+        for qq in storage.list_players():
+            mail_sys.send(qq, title, body, reward)
+            count += 1
+        return count
+
+    def _reload_all_tables(self):
+        try:
+            from .systems import skillgen as skillgen_mod
+            from .systems import shop as shop_mod
+            from .systems import tables as tables_mod
+
+            tables_mod.reload_tables()
+            skillgen_mod.reload()
+            troops_mod.reload()
+            items_mod.reload_items()
+            shop_mod.load_shops()
+        except Exception as exc:  # noqa: BLE001
+            logger.warning(f"[三国] 重载数据表失败: {exc}")
 
     async def _job_stamina(self):
         max_st = int(self.cfg.get("stamina.max", 120))
@@ -350,7 +572,7 @@ class LiuFengSanGuoGame(Star):
             f"【基础】/注册 /签到 /帮助 /商城\n"
             f"【招募】/兑换(碎片) /架空招募 /架空十连 /碎片\n"
             f"         自由武将招募 <名字>(无前缀)\n"
-            f"【武将】/武将 /培养 /升星 /技能 /图鉴 /合成 /遣散\n"
+            f"【武将】/武将 /培养 /升星 /技能 /技能店 /兑换技能书 /学技能 /图鉴 /合成 /遣散\n"
             f"【建筑】/宿舍 /宿舍升级\n"
             f"【战斗】/阵容 /上阵 /下阵 /主将 /对战 @玩家 /切磋 @玩家 /副本 /挑战 /排行\n"
             f"【装备】/装备 /锻造 /穿戴 /强化\n"
@@ -554,7 +776,9 @@ class LiuFengSanGuoGame(Star):
         self._progress(player, "general_obtain")
         yield event.plain_result(
             f"🎉 自定义武将【{name}】加入！\n{sep()}\n"
-            f"⚔️武力 {s['force']}  📖智力 {s['intellect']}  👑统帅 {s['lead']}\n"
+            f"兵种：{troops_mod.label(res.get('troop', ''))}\n"
+            f"⚔️武 {s['force']} 智 {s['intellect']} 体 {s['vitality']} "
+            f"魅 {s['charisma']} 辩 {s['eloquence']} 速 {s['speed']}\n"
             f"💪战力 {res['power']}\n"
             f"🏠 名额：{res['custom_count']}/{res['capacity']}\n"
             f"💰 剩余金币：{res['gold_left']}"
@@ -812,8 +1036,8 @@ class LiuFengSanGuoGame(Star):
         )
 
     @filter.command("技能")
-    async def skill_cmd(self, event: AstrMessageEvent, name: str = ""):
-        """升级武将技能：/技能 <武将>"""
+    async def skill_cmd(self, event: AstrMessageEvent, name: str = "", slot: str = "1"):
+        """升级武将技能：/技能 <武将> [技能槽1/2/3/passive]"""
         guard = self._guard(event, cooldown=1)
         if guard is not None:
             if guard:
@@ -825,20 +1049,114 @@ class LiuFengSanGuoGame(Star):
             yield event.plain_result("⚠️ 你还没有注册！发送 /注册。")
             return
         if not name:
-            yield event.plain_result("⚠️ 用法：/技能 <武将名>")
+            yield event.plain_result("⚠️ 用法：/技能 <武将名> [技能槽 1|2|3|passive]")
             return
-        res = cultivate.skill_up(player, name)
+        slot = slot if slot in ("1", "2", "3", "passive") else "1"
+        res = cultivate.skill_up(player, name, slot)
         if not res["ok"]:
             if res["reason"] == "not_owned":
                 yield event.plain_result(f"⚠️ 你没有武将「{name}」。")
             elif res["reason"] == "max":
-                yield event.plain_result(f"⚠️ 【{name}】技能已满级。")
+                yield event.plain_result(f"⚠️ 【{name}】该技能已满级。")
             else:
                 yield event.plain_result(f"⚠️ 金币不足！需要 {res['need']}。")
             return
+        label = {"1": "技能1", "2": "技能2", "3": "技能3", "passive": "被动"}.get(res["slot"], res["slot"])
         yield event.plain_result(
-            f"📖 【{name}】技能升级 → Lv.{res['skill_lv']}\n"
+            f"📖 【{name}】{label}升级 → Lv.{res['skill_lv']}\n"
             f"💰 花费 {res['cost']}，剩余 {res['gold_left']}"
+        )
+
+    @filter.command("技能店")
+    async def skill_shop(self, event: AstrMessageEvent, kind: str = ""):
+        """查看技能书店（用技能书碎片兑换）：/技能店 [主动|被动]"""
+        guard = self._guard(event)
+        if guard is not None:
+            if guard:
+                yield event.plain_result(guard)
+            return
+        if not skills_sys.enabled():
+            yield event.plain_result("⚠️ 技能系统已关闭。")
+            return
+        qq, _ = self._sender(event)
+        player = player_mod.load(qq)
+        if not player:
+            yield event.plain_result("⚠️ 你还没有注册！发送 /注册。")
+            return
+        lst = skills_sys.distinct_skills()
+        if kind in ("主动", "active"):
+            lst = [s for s in lst if s["type"] == "active"]
+        elif kind in ("被动", "passive"):
+            lst = [s for s in lst if s["type"] == "passive"]
+        frag = int(player.get("wallet", {}).get("skill_frag", 0))
+        lines = [f"📚 技能书店（技能书碎片：{frag}）",
+                 "发送 /兑换技能书 <技能名>", sep()]
+        for s in lst[:40]:
+            lines.append(f"{'主动' if s['type']=='active' else '被动'}·{s['name']}（{s['category']}） {s['cost']}碎片")
+        if len(lst) > 40:
+            lines.append(f"… 共 {len(lst)} 项")
+        yield event.plain_result("\n".join(lines))
+
+    @filter.command("兑换技能书")
+    async def exchange_skillbook(self, event: AstrMessageEvent, name: str = ""):
+        """用技能书碎片兑换技能书：/兑换技能书 <技能名>"""
+        guard = self._guard(event, cooldown=1)
+        if guard is not None:
+            if guard:
+                yield event.plain_result(guard)
+            return
+        if not skills_sys.enabled():
+            yield event.plain_result("⚠️ 技能系统已关闭。")
+            return
+        qq, _ = self._sender(event)
+        player = player_mod.load(qq)
+        if not player:
+            yield event.plain_result("⚠️ 你还没有注册！发送 /注册。")
+            return
+        if not name:
+            yield event.plain_result("⚠️ 用法：/兑换技能书 <技能名>（/技能店 查看）")
+            return
+        res = skills_sys.exchange(player, name)
+        if not res["ok"]:
+            if res["reason"] == "no_skill":
+                yield event.plain_result(f"⚠️ 没有技能「{name}」。")
+            else:
+                yield event.plain_result(f"⚠️ 技能书碎片不足！需要 {res['need']}，你有 {res['have']}。")
+            return
+        yield event.plain_result(
+            f"📚 兑换【{res['name']}·技能书】成功\n🧩 消耗 {res['cost']} 技能书碎片，剩余 {res['frag_left']}"
+        )
+
+    @filter.command("学技能")
+    async def learn_skill_cmd(self, event: AstrMessageEvent, general: str = "", skill: str = ""):
+        """给武将学习技能（消耗技能书）：/学技能 <武将> <技能名>"""
+        guard = self._guard(event, cooldown=1)
+        if guard is not None:
+            if guard:
+                yield event.plain_result(guard)
+            return
+        if not skills_sys.enabled():
+            yield event.plain_result("⚠️ 技能系统已关闭。")
+            return
+        qq, _ = self._sender(event)
+        player = player_mod.load(qq)
+        if not player:
+            yield event.plain_result("⚠️ 你还没有注册！发送 /注册。")
+            return
+        if not general or not skill:
+            yield event.plain_result("⚠️ 用法：/学技能 <武将> <技能名>（技能书在 /技能店 兑换）")
+            return
+        res = skills_sys.learn(player, general, skill)
+        if not res["ok"]:
+            reasons = {"not_owned": f"你没有武将「{general}」。",
+                       "no_skill": f"没有技能「{skill}」。",
+                       "no_book": f"需要一个【{res.get('need')}·技能书】（发送 /兑换技能书 {res.get('need')}）。"}
+            yield event.plain_result("⚠️ " + reasons.get(res["reason"], "学习失败。"))
+            return
+        slot = {"1": "技能1", "2": "技能2", "3": "技能3", "passive": "被动"}.get(res["slot"], res["slot"])
+        old = f"（替换原{slot}：{res['old']}）" if res.get("old") else ""
+        yield event.plain_result(
+            f"✅ 【{general}】学习{slot}【{res['skill']}】成功{old}\n技能等级已重置为 Lv.1"
         )
 
     @filter.command("图鉴")
@@ -946,7 +1264,7 @@ class LiuFengSanGuoGame(Star):
             mark = "👑主将 " if n == leader else ""
             lines.append(
                 f"{i}. {mark}【{n}】{RARITY_LABEL.get(info.get('rarity', ''), '')} "
-                f"{TROOP_LABEL.get(info.get('troop', ''), '')} "
+                f"{troops_mod.label(info.get('troop', ''))} "
                 f"Lv.{info.get('level', 1)} ★{info.get('star', 1)} 战力{player_mod.general_power_of(player, n)}"
             )
         lines.append(sep())
@@ -2503,11 +2821,47 @@ class LiuFengSanGuoGame(Star):
             ("admin/stats", self._api_stats, ["GET"], "游戏统计"),
             ("admin/players", self._api_players, ["GET"], "玩家列表"),
             ("admin/player/<qq>", self._api_player, ["GET"], "玩家详情"),
+            ("admin/player-general", self._api_player_general, ["POST"], "保存玩家武将"),
+            ("admin/player-general/delete", self._api_player_general_delete, ["POST"], "删除玩家武将"),
+            ("admin/player/profile", self._api_player_profile, ["POST"], "修改玩家资料"),
+            ("admin/player/currency", self._api_player_currency, ["POST"], "修改玩家货币"),
+            ("admin/player/give", self._api_player_give, ["POST"], "邮件发放奖励"),
+            ("admin/player/clear", self._api_player_clear, ["POST"], "清空玩家数据"),
+            ("admin/player/items", self._api_player_items, ["POST"], "移除玩家道具"),
+            ("admin/player/ban", self._api_player_ban, ["POST"], "封禁/解封玩家"),
+            ("admin/player/delete", self._api_player_delete, ["POST"], "删除玩家"),
             ("admin/generals", self._api_generals, ["GET", "POST"], "武将库/保存"),
             ("admin/generals/delete", self._api_generals_delete, ["POST"], "删除武将"),
             ("admin/generals/options", self._api_generals_options, ["GET"], "武将选项"),
+            ("admin/troops", self._api_troops, ["GET", "POST"], "兵种库/保存"),
+            ("admin/troops/delete", self._api_troops_delete, ["POST"], "删除兵种"),
+            ("admin/troop-effects", self._api_troop_effects, ["GET", "POST"], "兵种效果库/保存"),
+            ("admin/troop-effects/delete", self._api_troop_effects_delete, ["POST"], "删除兵种效果"),
+            ("admin/guilds", self._api_guilds, ["GET"], "军团列表/详情"),
+            ("admin/guilds/action", self._api_guilds_action, ["POST"], "军团操作"),
+            ("admin/equipments", self._api_equipments, ["GET", "POST"], "装备库/保存"),
+            ("admin/equipments/delete", self._api_equipments_delete, ["POST"], "删除装备"),
+            ("admin/player-equipment", self._api_player_equipment, ["GET", "POST"], "玩家装备"),
+            ("admin/auctions", self._api_auctions, ["GET"], "拍卖行列表"),
+            ("admin/auctions/action", self._api_auctions_action, ["POST"], "拍卖行操作"),
+            ("admin/events", self._api_events, ["GET"], "活动列表"),
+            ("admin/events/action", self._api_events_action, ["POST"], "活动操作"),
+            ("admin/events/defs", self._api_events_defs, ["POST"], "保存活动定义"),
+            ("admin/events/defs/delete", self._api_events_defs_delete, ["POST"], "删除活动定义"),
+            ("admin/jobs", self._api_jobs, ["GET"], "定时任务列表"),
+            ("admin/jobs/save", self._api_jobs_save, ["POST"], "保存自定义定时任务"),
+            ("admin/jobs/delete", self._api_jobs_delete, ["POST"], "删除自定义定时任务"),
+            ("admin/jobs/action", self._api_jobs_action, ["POST"], "定时任务操作"),
+            ("admin/worldboss", self._api_worldboss, ["GET"], "世界BOSS"),
+            ("admin/worldboss/action", self._api_worldboss_action, ["POST"], "世界BOSS操作"),
+            ("admin/worldboss/defs", self._api_worldboss_defs, ["POST"], "保存BOSS定义"),
+            ("admin/worldboss/defs/delete", self._api_worldboss_defs_delete, ["POST"], "删除BOSS定义"),
+            ("admin/skills", self._api_skills, ["GET", "POST"], "技能库/保存"),
+            ("admin/skills/delete", self._api_skills_delete, ["POST"], "删除技能"),
+            ("admin/skill-effects", self._api_skill_effects, ["GET"], "技能效果库"),
             ("admin/config", self._api_config, ["GET"], "读取配置"),
-            ("admin/broadcast", self._api_broadcast, ["POST"], "广播推送"),
+            ("admin/maintenance", self._api_maintenance, ["POST"], "维护模式开关"),
+            ("admin/broadcast", self._api_broadcast, ["GET", "POST"], "广播推送"),
             ("admin/items", self._api_items, ["GET", "POST"], "道具列表/保存"),
             ("admin/items/delete", self._api_item_delete, ["POST"], "删除道具"),
             ("admin/effects/schema", self._api_effects_schema, ["GET"], "效果schema"),
@@ -2523,33 +2877,101 @@ class LiuFengSanGuoGame(Star):
 
     async def _api_stats(self):
         from astrbot.api.web import error_response, json_response
+        from .core.utils import today_str
 
         if not self._admin_allowed():
             return error_response("forbidden", status_code=403)
-        players = storage.list_players()
+        today = today_str()
+        players = 0
+        sign_today = 0
+        total_gold = 0
+        custom_generals = 0
+        for _qq, data in storage.iter_players():
+            players += 1
+            if str(data.get("sign_date", "")) == today:
+                sign_today += 1
+            try:
+                total_gold += int(data.get("gold", 0))
+            except (TypeError, ValueError):
+                pass
+            custom_generals += len(data.get("custom_generals", {}) or {})
+        wb = worldboss_sys.current() or {}
+        try:
+            guilds = len(guild_sys.top(10 ** 9))
+        except Exception:  # noqa: BLE001
+            guilds = 0
+        try:
+            auction = len(auction_sys.list_active(10 ** 9))
+        except Exception:  # noqa: BLE001
+            auction = 0
+        mnt = storage.load_global("maintenance", {}) or {}
         return json_response({
-            "players": len(players),
+            "players": players,
+            "sign_today": sign_today,
+            "total_gold": total_gold,
+            "custom_generals": custom_generals,
             "generals": len(tables().all_names()),
+            "troops": len(troops_mod.all_troops()),
+            "troop_effects": len(troops_mod.effect_library()),
+            "skills": len(skills_sys.distinct_skills()),
             "items": len(items_mod.all_items()),
-            "version": "1.1.0",
-            "maintenance": maintenance.is_on(),
+            "equipment": len(tables().all_equipment()),
+            "guilds": guilds,
+            "auction": auction,
+            "active_events": len(events_sys.active_events()),
+            "worldboss": {
+                "active": bool(wb.get("active")),
+                "name": (wb.get("boss") or {}).get("name", ""),
+                "hp": int(wb.get("hp", 0)),
+                "max_hp": int(wb.get("max_hp", 0)),
+            },
+            "jobs": len(self.scheduler.jobs()),
+            "version": "1.2.0",
+            "maintenance": {
+                "on": maintenance.is_on(),
+                "reason": maintenance.reason(),
+                "ts": int(mnt.get("ts", 0)),
+            },
         })
 
-    async def _api_players(self):
-        from astrbot.api.web import error_response, json_response
+    async def _api_maintenance(self):
+        from astrbot.api.web import error_response, json_response, request
 
         if not self._admin_allowed():
             return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        on = bool(payload.get("on", False))
+        reason = str(payload.get("reason", "")).strip()
+        maintenance.set_on(on, reason)
+        audit.log("web:" + str(getattr(request, "username", "")), "maintenance",
+                  "on" if on else "off")
+        return json_response({"on": maintenance.is_on(), "reason": maintenance.reason()})
+
+    async def _api_players(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        try:
+            q = str(request.query.get("q", "") or "").strip()
+        except Exception:  # noqa: BLE001
+            q = ""
         rows = []
         for qq, data in storage.iter_players():
+            name = str(data.get("name", qq))
+            if q and q not in name and q not in str(qq):
+                continue
             rows.append({
                 "qq": qq,
-                "name": data.get("name", qq),
+                "name": name,
                 "gold": data.get("gold", 0),
                 "fragments": data.get("fragments", 0),
                 "generals": len(player_mod.owned_names(data)),
+                "custom": len(data.get("custom_generals", {}) or {}),
+                "level": data.get("level", 1),
                 "power": player_mod.total_power(data),
                 "faction": data.get("faction", ""),
+                "banned": player_admin_mod.is_banned(qq),
                 "win": data.get("win", 0),
                 "lose": data.get("lose", 0),
             })
@@ -2565,6 +2987,510 @@ class LiuFengSanGuoGame(Star):
         if not data:
             return error_response("player not found", status_code=404)
         return json_response(data)
+
+    async def _api_player_general(self):
+        from astrbot.api.web import error_response, json_response, request
+        from .core.utils import ATTR_KEYS
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        name = str(payload.get("name", "")).strip()
+        if not qq or not name:
+            return error_response("qq/name required", status_code=400)
+        player = player_mod.load(qq)
+        if not player:
+            return error_response("player not found", status_code=404)
+        updated = False
+        if name in (player.get("custom_generals") or {}):
+            cg = player["custom_generals"][name]
+            troop = payload.get("troop")
+            if troop and troops_mod.id_exists(troop):
+                cg["troop"] = troop
+            for k in ATTR_KEYS:
+                if payload.get(k) is not None:
+                    try:
+                        cg[k] = max(1, min(200, int(payload[k])))
+                    except (TypeError, ValueError):
+                        pass
+            for k in ("title", "desc", "faction"):
+                if payload.get(k) is not None:
+                    cg[k] = str(payload[k])
+            for k in ("level", "star"):
+                if payload.get(k) is not None:
+                    try:
+                        cg[k] = max(1, min(10 if k == "star" else 999, int(payload[k])))
+                    except (TypeError, ValueError):
+                        pass
+            updated = True
+        if name in (player.get("generals") or {}):
+            entry = player["generals"][name]
+            for k in ("level", "star", "skill_lv"):
+                if payload.get(k) is not None:
+                    try:
+                        entry[k] = max(1, min(10 if k == "star" else 999, int(payload[k])))
+                    except (TypeError, ValueError):
+                        pass
+            updated = True
+        if not updated:
+            return error_response("general not owned", status_code=404)
+        player_mod.save(player)
+        audit.log("web:" + str(getattr(request, "username", "")), "edit_player_general",
+                  f"{qq}:{name}")
+        return json_response({"saved": True, "name": name})
+
+    async def _api_player_general_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        name = str(payload.get("name", "")).strip()
+        player = player_mod.load(qq)
+        if not player:
+            return error_response("player not found", status_code=404)
+        removed = False
+        customs = player.get("custom_generals") or {}
+        if name in customs:
+            customs.pop(name, None)
+            removed = True
+        owned = player.get("generals") or {}
+        if name in owned:
+            owned.pop(name, None)
+            removed = True
+        if not removed:
+            return error_response("general not owned", status_code=404)
+        if player.get("leader") == name:
+            player["leader"] = ""
+        player["team"] = [n for n in (player.get("team") or []) if n != name]
+        player_mod.save(player)
+        audit.log(self._admin_name(), "delete_player_general", f"{qq}:{name}")
+        return json_response({"deleted": True})
+
+    async def _api_player_items(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        item_id = str(payload.get("item_id", "")).strip()
+        count = int(payload.get("count", 1) or 1)
+        if not qq or not item_id:
+            return error_response("qq/item_id required", status_code=400)
+        player = player_mod.load(qq)
+        if not player:
+            return error_response("player not found", status_code=404)
+        ok = inventory_sys.remove_item(player, item_id, count)
+        if not ok:
+            return error_response("not enough items", status_code=400)
+        player_mod.save(player)
+        audit.log(self._admin_name(), "remove_player_item", f"{qq}:{item_id}x{count}")
+        return json_response({"removed": True})
+
+    def _admin_name(self) -> str:
+        try:
+            from astrbot.api.web import request
+            return "web:" + str(getattr(request, "username", ""))
+        except Exception:  # noqa: BLE001
+            return "web:"
+
+    async def _api_player_profile(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        if not qq:
+            return error_response("qq required", status_code=400)
+        res = player_admin_mod.edit_profile(qq, payload)
+        if not res["ok"]:
+            return error_response(res.get("reason", "failed"), status_code=400)
+        audit.log(self._admin_name(), "edit_player_profile", qq)
+        return json_response({"saved": True})
+
+    async def _api_player_currency(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        res = player_admin_mod.adjust_currency(
+            qq, str(payload.get("currency", "gold")),
+            str(payload.get("mode", "add")), payload.get("amount", 0))
+        if not res["ok"]:
+            return error_response(res.get("reason", "failed"), status_code=400)
+        audit.log(self._admin_name(), "adjust_player_currency",
+                  f"{qq}:{res.get('currency')}={res.get('value')}")
+        return json_response(res)
+
+    async def _api_player_give(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        reward = payload.get("reward", {}) or {}
+        if not isinstance(reward, dict) or not reward:
+            return error_response("empty reward", status_code=400)
+        res = player_admin_mod.give_via_mail(
+            qq, payload.get("title", "系统奖励"), payload.get("body", ""), reward)
+        if not res["ok"]:
+            return error_response(res.get("reason", "failed"), status_code=400)
+        audit.log(self._admin_name(), "give_player_reward", qq)
+        return json_response(res)
+
+    async def _api_player_clear(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        res = player_admin_mod.clear(qq, str(payload.get("target", "")))
+        if not res["ok"]:
+            return error_response(res.get("reason", "failed"), status_code=400)
+        audit.log(self._admin_name(), "clear_player", f"{qq}:{res.get('target')}")
+        return json_response(res)
+
+    async def _api_player_ban(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        if not qq:
+            return error_response("qq required", status_code=400)
+        if payload.get("banned"):
+            res = player_admin_mod.ban(qq, str(payload.get("reason", "")))
+        else:
+            res = player_admin_mod.unban(qq)
+        audit.log(self._admin_name(), "ban_player" if payload.get("banned") else "unban_player", qq)
+        return json_response(res)
+
+    async def _api_player_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        qq = str(payload.get("qq", "")).strip()
+        if not qq:
+            return error_response("qq required", status_code=400)
+        res = player_admin_mod.remove_player(qq)
+        if not res.get("ok"):
+            return error_response(res.get("reason", "failed"), status_code=400)
+        audit.log(self._admin_name(), "delete_player", qq)
+        return json_response(res)
+
+    async def _api_guilds(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        try:
+            gid = str(request.query.get("gid", "") or "")
+        except Exception:  # noqa: BLE001
+            gid = ""
+        if gid:
+            return json_response(guild_admin_mod.detail(gid))
+        return json_response({"guilds": guild_admin_mod.list_guilds()})
+
+    async def _api_guilds_action(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        action = str(payload.get("action", ""))
+        gid = str(payload.get("gid", ""))
+        if action == "rename":
+            res = guild_admin_mod.rename(gid, payload.get("name", ""))
+        elif action == "set":
+            res = guild_admin_mod.set_stats(gid, payload.get("level"), payload.get("fund"), payload.get("exp"))
+        elif action == "dissolve":
+            res = guild_admin_mod.dissolve(gid)
+        elif action == "kick":
+            res = guild_admin_mod.remove_member(gid, str(payload.get("qq", "")))
+        elif action == "leader":
+            res = guild_admin_mod.set_leader(gid, str(payload.get("qq", "")))
+        else:
+            return error_response("bad action", status_code=400)
+        audit.log(self._admin_name(), "guild_" + action, gid)
+        return json_response(res)
+
+    async def _api_equipments(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        if getattr(request, "method", "GET") == "POST":
+            payload = await request.json(default={})
+            res = equipment_admin_mod.save_custom_def(payload)
+            if not res["ok"]:
+                return error_response(res.get("reason", "save failed"), status_code=400)
+            audit.log(self._admin_name(), "save_equipment_def", str(payload.get("id", "")))
+            return json_response(res)
+        return json_response({
+            "defs": equipment_admin_mod.list_defs(),
+            "slots": equipment_admin_mod.SLOT_LABEL,
+            "rarities": list(equipment_admin_mod.RARITIES),
+        })
+
+    async def _api_equipments_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = equipment_admin_mod.delete_custom_def(str(payload.get("id", "")))
+        if not res["ok"]:
+            return error_response("not found or builtin", status_code=404)
+        audit.log(self._admin_name(), "delete_equipment_def", str(payload.get("id", "")))
+        return json_response(res)
+
+    async def _api_player_equipment(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        if getattr(request, "method", "GET") == "POST":
+            payload = await request.json(default={})
+            qq = str(payload.get("qq", ""))
+            action = str(payload.get("action", ""))
+            if action == "give":
+                res = equipment_admin_mod.give(qq, str(payload.get("id", "")), int(payload.get("level", 1) or 1))
+            elif action == "remove":
+                res = equipment_admin_mod.remove(qq, str(payload.get("uid", "")))
+            elif action == "enhance":
+                res = equipment_admin_mod.enhance(qq, str(payload.get("uid", "")), int(payload.get("delta", 1) or 1))
+            elif action == "set_level":
+                res = equipment_admin_mod.set_level(qq, str(payload.get("uid", "")), int(payload.get("level", 1) or 1))
+            elif action == "unequip":
+                res = equipment_admin_mod.unequip(qq, str(payload.get("general", "")), str(payload.get("slot", "")))
+            else:
+                return error_response("bad action", status_code=400)
+            audit.log(self._admin_name(), "player_equipment_" + action, qq)
+            return json_response(res)
+        try:
+            qq = str(request.query.get("qq", "") or "")
+        except Exception:  # noqa: BLE001
+            qq = ""
+        player = player_mod.load(qq) if qq else None
+        return json_response({
+            "equipment": equipment_admin_mod.list_player(qq) if qq else [],
+            "generals": player_mod.owned_names(player) if player else [],
+        })
+
+    async def _api_auctions(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        try:
+            status = str(request.query.get("status", "") or "")
+        except Exception:  # noqa: BLE001
+            status = ""
+        return json_response({"listings": auction_admin_mod.list_all(status or None)})
+
+    async def _api_auctions_action(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        action = str(payload.get("action", ""))
+        lid = str(payload.get("id", ""))
+        if action == "cancel":
+            res = auction_admin_mod.force_cancel(lid)
+        elif action == "settle":
+            res = auction_admin_mod.force_settle(lid)
+        elif action == "remove":
+            res = auction_admin_mod.remove(lid)
+        elif action == "settle-all":
+            res = auction_admin_mod.settle_all()
+        else:
+            return error_response("bad action", status_code=400)
+        audit.log(self._admin_name(), "auction_" + action, lid)
+        return json_response(res)
+
+    async def _api_events(self):
+        from astrbot.api.web import error_response, json_response
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        return json_response({
+            "defs": events_sys.defs(),
+            "active": events_sys.active_events(),
+            "enabled": events_sys.enabled(),
+            "buff_types": events_sys.BUFF_LABEL,
+        })
+
+    async def _api_events_action(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        action = str(payload.get("action", ""))
+        if action == "open":
+            res = events_sys.open_event(str(payload.get("id", "")), payload.get("duration"))
+        elif action == "close":
+            res = events_sys.close_event(str(payload.get("id", "")))
+        elif action == "enable":
+            events_sys.set_enabled(bool(payload.get("enabled", True)))
+            res = {"ok": True, "enabled": events_sys.enabled()}
+        else:
+            return error_response("bad action", status_code=400)
+        audit.log(self._admin_name(), "event_" + action, str(payload.get("id", "")))
+        return json_response(res)
+
+    async def _api_events_defs(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = events_sys.save_custom(payload)
+        if not res["ok"]:
+            return error_response(res.get("reason", "save failed"), status_code=400)
+        audit.log(self._admin_name(), "save_event_def", str(payload.get("id", "")))
+        return json_response(res)
+
+    async def _api_events_defs_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = events_sys.delete_custom(str(payload.get("id", "")))
+        if not res["ok"]:
+            return error_response("not found", status_code=404)
+        audit.log(self._admin_name(), "delete_event_def", str(payload.get("id", "")))
+        return json_response(res)
+
+    async def _api_jobs(self):
+        from astrbot.api.web import error_response, json_response
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        bosses = [{"id": b["id"], "name": b.get("name", b["id"])} for b in worldboss_sys._bosses()]
+        event_defs = [{"id": e["id"], "name": e.get("name", e["id"])} for e in events_sys.defs()]
+        return json_response({
+            "jobs": self.scheduler.info(),
+            "custom": job_admin_mod.list_custom(),
+            "actions": job_admin_mod.ACTIONS,
+            "options": {"bosses": bosses, "events": event_defs},
+        })
+
+    async def _api_jobs_save(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = job_admin_mod.save_custom_job(payload)
+        if not res["ok"]:
+            return error_response(res.get("reason", "save failed"), status_code=400)
+        self._reload_custom_jobs()
+        audit.log(self._admin_name(), "save_custom_job", str(res.get("id", "")))
+        return json_response(res)
+
+    async def _api_jobs_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = job_admin_mod.delete_custom_job(str(payload.get("id", "")))
+        if not res["ok"]:
+            return error_response("not found", status_code=404)
+        self._reload_custom_jobs()
+        audit.log(self._admin_name(), "delete_custom_job", str(payload.get("id", "")))
+        return json_response(res)
+
+    async def _api_jobs_action(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        action = str(payload.get("action", ""))
+        name = str(payload.get("name", ""))
+        if action == "run":
+            await self.scheduler.run_job(name)
+            res = {"ok": True, "job": self.scheduler.job_info(name)}
+        elif action == "interval":
+            res = {"ok": self.scheduler.set_interval(name, int(payload.get("interval", 60) or 60))}
+        elif action == "pause":
+            res = {"ok": self.scheduler.set_enabled(name, False)}
+        elif action == "resume":
+            res = {"ok": self.scheduler.set_enabled(name, True)}
+        else:
+            return error_response("bad action", status_code=400)
+        audit.log(self._admin_name(), "job_" + action, name)
+        return json_response(res)
+
+    async def _api_worldboss(self):
+        from astrbot.api.web import error_response, json_response
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        cur = worldboss_sys.current() or {}
+        return json_response({
+            "active": bool(cur.get("active")),
+            "current": cur,
+            "ranking": worldboss_sys.ranking(30),
+            "defs": worldboss_sys._bosses(),
+        })
+
+    async def _api_worldboss_action(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        action = str(payload.get("action", ""))
+        if action == "spawn":
+            res = worldboss_sys.spawn(payload.get("boss_id") or None, payload.get("duration"))
+        elif action == "settle":
+            res = worldboss_sys.settle()
+        elif action == "close":
+            res = worldboss_sys.force_close()
+        else:
+            return error_response("bad action", status_code=400)
+        audit.log(self._admin_name(), "worldboss_" + action, str(payload.get("boss_id", "")))
+        return json_response(res)
+
+    async def _api_worldboss_defs(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = worldboss_sys.save_custom_boss(payload)
+        if not res["ok"]:
+            return error_response(res.get("reason", "save failed"), status_code=400)
+        audit.log(self._admin_name(), "save_boss_def", str(payload.get("id", "")))
+        return json_response(res)
+
+    async def _api_worldboss_defs_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = worldboss_sys.delete_custom_boss(str(payload.get("id", "")))
+        if not res["ok"]:
+            return error_response("not found", status_code=404)
+        audit.log(self._admin_name(), "delete_boss_def", str(payload.get("id", "")))
+        return json_response(res)
 
     async def _api_generals(self):
         from astrbot.api.web import error_response, json_response, request
@@ -2606,12 +3532,154 @@ class LiuFengSanGuoGame(Star):
             return error_response("forbidden", status_code=403)
         from .core.utils import ATTR_KEYS, ATTR_LABEL
 
+        skills = skills_sys.distinct_skills()
+        troop_list = troops_mod.all_troops()
         return json_response({
             "rarities": ["ssr", "sr", "r", "n"],
             "factions": ["wei", "shu", "wu", "qun", "custom"],
-            "troops": ["cavalry", "infantry", "archer", "spear"],
+            "troops": [t["id"] for t in troop_list],
+            "troop_labels": {t["id"]: t["name"] for t in troop_list},
+            "troop_tiers": {t["id"]: t.get("tier", "basic") for t in troop_list},
+            "tiers": troops_mod.tiers(),
             "attrs": [{"key": k, "label": ATTR_LABEL.get(k, k)} for k in ATTR_KEYS],
+            "skills": skills,
+            "skill_names": {
+                "active": [s["name"] for s in skills if s["type"] in ("active", "command", "assault", "formation")],
+                "passive": [s["name"] for s in skills if s["type"] == "passive"],
+            },
+            "skill_id_name": {sid: sk.get("name") for sid, sk in tables().skills.items()},
         })
+
+    async def _api_troops(self):
+        from astrbot.api.web import error_response, json_response, request
+        from .systems.tables import TABLES_DIR
+        import json as _json
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        if getattr(request, "method", "GET") == "POST":
+            payload = await request.json(default={})
+            res = troops_admin_mod.save_custom_troop(payload)
+            if not res["ok"]:
+                return error_response(res.get("reason", "save failed"), status_code=400)
+            audit.log("web:" + str(getattr(request, "username", "")), "save_troop",
+                      str(payload.get("id") or payload.get("name", "")))
+            return json_response({"saved": True, "id": res.get("id")})
+        schema_path = TABLES_DIR / "troop_effect_schema.json"
+        try:
+            item_schema = _json.loads(schema_path.read_text(encoding="utf-8")) if schema_path.exists() else {}
+        except (ValueError, OSError):
+            item_schema = {}
+        return json_response({
+            "builtin": troops_mod.builtin_troops(),
+            "custom": troops_mod.custom_troops(),
+            "effects_library": troops_mod.effect_library(),
+            "item_schema": item_schema,
+            "tiers": troops_mod.tiers(),
+            "all_ids": troops_mod.all_ids(),
+        })
+
+    async def _api_troops_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = troops_admin_mod.delete_custom_troop(str(payload.get("id", "")))
+        if not res["ok"]:
+            return error_response("not found or builtin locked", status_code=404)
+        audit.log("web:" + str(getattr(request, "username", "")), "delete_troop",
+                  str(payload.get("id", "")))
+        return json_response({"deleted": True})
+
+    async def _api_troop_effects(self):
+        from astrbot.api.web import error_response, json_response, request
+        from .systems.tables import TABLES_DIR
+        import json as _json
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        if getattr(request, "method", "GET") == "POST":
+            payload = await request.json(default={})
+            res = troops_admin_mod.save_custom_effect(payload)
+            if not res["ok"]:
+                return error_response(res.get("reason", "save failed"), status_code=400)
+            audit.log("web:" + str(getattr(request, "username", "")), "save_troop_effect",
+                      str(payload.get("name", "")))
+            return json_response({"saved": True, "id": res.get("id")})
+        schema_path = TABLES_DIR / "troop_effect_schema.json"
+        try:
+            item_schema = _json.loads(schema_path.read_text(encoding="utf-8")) if schema_path.exists() else {}
+        except (ValueError, OSError):
+            item_schema = {}
+        return json_response({
+            "effects": troops_mod.effect_library(),
+            "builtin": [e for e in troops_mod.effect_library() if e.get("source") == "builtin"],
+            "custom": troops_mod.custom_effects(),
+            "item_schema": item_schema,
+        })
+
+    async def _api_troop_effects_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        res = troops_admin_mod.delete_custom_effect(str(payload.get("id", "")))
+        if not res["ok"]:
+            return error_response("not found", status_code=404)
+        audit.log("web:" + str(getattr(request, "username", "")), "delete_troop_effect",
+                  str(payload.get("id", "")))
+        return json_response({"deleted": True})
+
+    async def _api_skills(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        if getattr(request, "method", "GET") == "POST":
+            payload = await request.json(default={})
+            res = skills_admin_mod.save_custom_skill(payload)
+            if not res["ok"]:
+                return error_response(res.get("reason", "save failed"), status_code=400)
+            audit.log("web:" + str(getattr(request, "username", "")), "save_skill",
+                      str(payload.get("name", "")))
+            return json_response({"saved": True, "name": payload.get("name")})
+        return json_response({"skills": skills_sys.distinct_skills(),
+                              "custom": skills_admin_mod.list_custom()})
+
+    async def _api_skills_delete(self):
+        from astrbot.api.web import error_response, json_response, request
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        payload = await request.json(default={})
+        name = str(payload.get("name", ""))
+        res = skills_admin_mod.delete_custom_skill(name)
+        if not res["ok"]:
+            return error_response("not found or not custom", status_code=404)
+        audit.log("web:" + str(getattr(request, "username", "")), "delete_skill", name)
+        return json_response({"deleted": True})
+
+    async def _api_skill_effects(self):
+        from astrbot.api.web import error_response, json_response
+        from .systems.tables import TABLES_DIR, tables as _t
+        import json as _json
+
+        if not self._admin_allowed():
+            return error_response("forbidden", status_code=403)
+        schema_path = TABLES_DIR / "skill_effect_schema.json"
+        try:
+            param_schema = _json.loads(schema_path.read_text(encoding="utf-8")) if schema_path.exists() else {}
+        except (ValueError, OSError):
+            param_schema = {}
+        return json_response({"effects": _t().skill_effects,
+                              "param_schema": param_schema,
+                              "types": ["active", "passive", "command", "assault", "formation"],
+                              "categories": ["damage", "control", "buff", "debuff", "heal", "special"],
+                              "targets": ["self", "ally_single", "ally_all", "lowest_hp_ally",
+                                          "enemy_single", "enemy_all", "lowest_hp_enemy", "random_enemy"],
+                              "triggers": ["attack", "when_attacked", "round_start", "on_kill", "hp_below", "always"]})
 
     async def _api_config(self):
         from astrbot.api.web import error_response, json_response
@@ -2660,29 +3728,21 @@ class LiuFengSanGuoGame(Star):
 
         if not self._admin_allowed():
             return error_response("forbidden", status_code=403)
+        enabled = self._broadcast_enabled()
+        if getattr(request, "method", "GET") != "POST":
+            return json_response({"disabled": not enabled, "sessions": self._session_stats()})
+        if not enabled:
+            return error_response("broadcast disabled", status_code=403)
         payload = await request.json(default={})
         text = str(payload.get("text", "")).strip()
         if not text:
             return error_response("text required", status_code=400)
-        sent = 0
-        try:
-            from astrbot.api.event import MessageChain
-
-            sessions = storage.load_global("session_index", {}) or {}
-            for entry in sessions.values():
-                if not self._supports_active_message(entry):
-                    continue
-                umo = entry.get("umo") if isinstance(entry, dict) else entry
-                if not umo:
-                    continue
-                try:
-                    await self.context.send_message(umo, MessageChain().message(text))
-                    sent += 1
-                except Exception:  # noqa: BLE001
-                    continue
-        except Exception as exc:  # noqa: BLE001
-            logger.warning(f"[三国] 广播失败: {exc}")
-        return json_response({"sent": sent})
+        target = str(payload.get("target", "group") or "group")
+        if target not in ("group", "private", "all"):
+            target = "group"
+        res = await self._broadcast(text, target)
+        audit.log(self._admin_name(), "broadcast", f"{target} sent={res.get('sent')}")
+        return json_response(res)
 
     def _supports_active_message(self, entry: Any) -> bool:
         """按平台能力过滤：QQ 官方接口不支持主动消息，默认跳过。"""

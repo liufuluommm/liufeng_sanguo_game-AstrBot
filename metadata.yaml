@@ -18,7 +18,7 @@ desc: |
 
   收集历代名将，一统三国！插件自带 WebUI 管理台与 GM 工具。
 
-version: 1.1.0
+version: 1.2.0
 author: 柳弗罗
 astrbot_version: ">=4.17.0"
 support_platforms:

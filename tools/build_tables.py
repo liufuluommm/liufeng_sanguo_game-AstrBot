@@ -63,12 +63,57 @@ OVERRIDES6 = {
     "高顺": (88, 66, 88, 62, 46, 74), "陈宫": (48, 92, 64, 78, 86, 62),
     "公孙瓒": (85, 62, 84, 70, 60, 88),
 }
-ROLE_TROOP = {
-    "w": ["cavalry", "spear"],
-    "s": ["archer"],
-    "l": ["infantry"],
-    "b": ["cavalry", "infantry", "spear", "archer"],
+BASIC_TROOPS = ["infantry", "cavalry", "archer", "spear"]
+# 角色 -> 基础兵种默认（未精配的历史/冷门武将）
+ROLE_TROOP_DEFAULT = {
+    "w": "cavalry",   # 猛将
+    "s": "archer",    # 谋士
+    "l": "infantry",  # 君主
+    "b": "spear",     # 均衡
 }
+# 名将史实兵种精配（兵种 id 见 tables/troops.json）
+HISTORICAL_TROOP = {
+    # 魏
+    "曹操": "infantry", "司马懿": "archer", "郭嘉": "archer", "张辽": "iron_cavalry",
+    "张郃": "pike", "许褚": "heavy_infantry", "夏侯惇": "spear", "夏侯渊": "heavy_archer",
+    "曹仁": "heavy_infantry", "典韦": "heavy_infantry", "荀彧": "archer", "荀攸": "archer",
+    "庞德": "cavalry", "徐晃": "heavy_infantry", "于禁": "spear", "曹洪": "heavy_infantry",
+    "乐进": "spear", "曹纯": "hubaoqi", "李典": "infantry", "程昱": "archer",
+    "满宠": "archer", "文聘": "heavy_infantry", "邓艾": "infantry", "钟会": "archer",
+    "曹彰": "iron_cavalry", "郭淮": "pike", "郝昭": "pike", "王双": "cavalry",
+    "夏侯尚": "cavalry", "曹真": "infantry", "曹休": "cavalry", "陈群": "archer",
+    # 蜀
+    "关羽": "iron_cavalry", "赵云": "pike", "诸葛亮": "archer", "张飞": "spear",
+    "马超": "iron_cavalry", "黄忠": "heavy_archer", "姜维": "pike", "魏延": "cavalry",
+    "庞统": "archer", "法正": "archer", "黄月英": "archer", "关平": "pike",
+    "马岱": "cavalry", "徐庶": "archer", "王平": "wudang", "张嶷": "xiangbing",
+    "关兴": "pike", "张苞": "spear", "廖化": "cavalry", "严颜": "heavy_infantry",
+    "周仓": "heavy_infantry", "马良": "archer", "蒋琬": "infantry", "费祎": "archer",
+    # 吴
+    "周瑜": "archer", "陆逊": "archer", "孙策": "cavalry", "孙坚": "cavalry",
+    "甘宁": "jinfan", "太史慈": "heavy_archer", "吕蒙": "pike", "鲁肃": "archer",
+    "黄盖": "infantry", "孙尚香": "heavy_archer", "周泰": "heavy_infantry",
+    "程普": "heavy_infantry", "凌统": "cavalry", "韩当": "cavalry",
+    "徐盛": "heavy_infantry", "丁奉": "pike", "朱然": "archer", "朱桓": "cavalry",
+    # 群
+    "吕布": "iron_cavalry", "董卓": "heavy_infantry", "张角": "archer",
+    "华雄": "cavalry", "颜良": "cavalry", "文丑": "cavalry", "高顺": "xianzhen",
+    "陈宫": "archer", "公孙瓒": "baima", "袁术": "infantry", "刘表": "infantry",
+    "马腾": "iron_cavalry", "韩遂": "cavalry", "张绣": "cavalry", "孔融": "archer",
+    # 冷门
+    "陈到": "baier", "李恢": "tengjia", "张燕": "cavalry", "臧霸": "heavy_infantry",
+    "田豫": "cavalry", "牵招": "cavalry", "霍峻": "heavy_infantry", "罗宪": "heavy_infantry",
+    "吕岱": "infantry", "留赞": "heavy_infantry", "钟离牧": "cavalry",
+}
+
+
+def pick_troop(name: str, role: str, randomize: bool = False) -> str:
+    if name in HISTORICAL_TROOP:
+        return HISTORICAL_TROOP[name]
+    if randomize:
+        # 用按名播种的独立随机源，避免扰动主随机序列（属性生成保持一致）
+        return random.Random(h(name, "troop")).choice(BASIC_TROOPS)
+    return ROLE_TROOP_DEFAULT.get(role, "infantry")
 ROLE_ACTIVE = {
     "w": ["力战", "破军", "突袭", "斩将", "横扫", "陷阵"],
     "s": ["火计", "锦囊", "连环", "妙算", "扇舞", "筹谋"],
@@ -107,7 +152,7 @@ def roll_stats(name: str, role: str, rarity: str, randomize: bool = False):
 
 def build_general(name, faction, role, rarity, category, exclusive=False, randomize=False):
     stats = roll_stats(name, role, rarity, randomize=randomize)
-    troop = ROLE_TROOP[role][h(name, "troop") % len(ROLE_TROOP[role])]
+    troop = pick_troop(name, role, randomize=randomize)
     active_name = ROLE_ACTIVE[role][h(name, "act") % len(ROLE_ACTIVE[role])]
     passive_name = ROLE_PASSIVE[role][h(name, "pasv") % len(ROLE_PASSIVE[role])]
     skill = {
