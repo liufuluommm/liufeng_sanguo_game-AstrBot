@@ -3,7 +3,6 @@
 import pytest
 
 from liufeng_sanguo_game.core import storage
-from liufeng_sanguo_game.core.scheduler import Scheduler
 from liufeng_sanguo_game.systems import job_admin
 
 
@@ -60,6 +59,9 @@ def test_custom_job_crud():
 
 
 def test_scheduler_label_and_remove():
+    pytest.importorskip("astrbot.api")
+    from liufeng_sanguo_game.core.scheduler import Scheduler
+
     s = Scheduler()
     s.add_job("builtin_x", lambda: None, 60, label="内置任务")
     info = s.job_info("builtin_x")

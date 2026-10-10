@@ -190,11 +190,6 @@
         "type": "bool",
         "default": false
       },
-      "maintenance": {
-        "description": "维护模式(开启后拒绝玩家指令)",
-        "type": "bool",
-        "default": false
-      },
       "cooldown_default": {
         "description": "指令默认冷却(秒)",
         "type": "float",

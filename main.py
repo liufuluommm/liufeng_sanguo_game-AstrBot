@@ -27,9 +27,10 @@ from .core import audit, maintenance, security, storage
 from .core.config import GameConfig
 from .core.scheduler import Scheduler
 from .core.utils import (
+    ATTR_KEYS,
+    ATTR_LABEL,
     FACTION_LABEL,
     RARITY_LABEL,
-    TROOP_LABEL,
     base_power,
     fmt_duration,
     general_power,
@@ -77,6 +78,11 @@ EMOJI = {
 
 def equipment_stats_text(eq: Dict[str, Any]) -> str:
     return f"武{eq.get('force', 0)} 智{eq.get('intellect', 0)} 统{eq.get('lead', 0)}"
+
+
+def attrs_text(info: Dict[str, Any]) -> str:
+    """武将六维紧凑文本（武力/智力/体力/魅力/口才/速度）。"""
+    return " ".join(f"{ATTR_LABEL.get(k, k)}{info.get(k, 0)}" for k in ATTR_KEYS)
 
 
 class LiuFengSanGuoGame(Star):
@@ -647,7 +653,7 @@ class LiuFengSanGuoGame(Star):
             f"🎴 兑换成功！【{result['general']}】{dup}\n"
             f"品质：{RARITY_LABEL.get(result['rarity'], result['rarity'])} · "
             f"{FACTION_LABEL.get(info.get('faction', ''), '')}\n"
-            f"⚔️武力 {info.get('force')}  📖智力 {info.get('intellect')}  👑统帅 {info.get('lead')}\n"
+            f"📊 {attrs_text(info)}\n"
             f"💪战力 {base_power(info)}\n"
             f"🧩 剩余碎片：{result['fragments_left']}"
         )
@@ -723,7 +729,7 @@ class LiuFengSanGuoGame(Star):
         return (
             f"🎴 【架空】招募成功！{dup}\n"
             f"品质：{RARITY_LABEL.get(res['rarity'])} 【{res['general']}】\n"
-            f"⚔️武力 {info.get('force')}  📖智力 {info.get('intellect')}  👑统帅 {info.get('lead')}\n"
+            f"📊 {attrs_text(info)}\n"
             f"💪战力 {base_power(info)}\n💰 剩余金币：{res['gold_left']}"
         )
 
@@ -1210,7 +1216,7 @@ class LiuFengSanGuoGame(Star):
         yield event.plain_result(
             f"⚗️ 合成成功！消耗 {'、'.join(res['consumed'])}\n"
             f"获得：【{res['general']}】{RARITY_LABEL.get(res['rarity'])} {dup}\n"
-            f"⚔️武力 {info.get('force')}  📖智力 {info.get('intellect')}  👑统帅 {info.get('lead')}"
+            f"📊 {attrs_text(info)}"
         )
 
     @filter.command("遣散")
@@ -2331,7 +2337,7 @@ class LiuFengSanGuoGame(Star):
         power = player_mod.general_power_of(player, name)
         fallback = (
             f"🎴 {name} {RARITY_LABEL.get(info.get('rarity', ''), '')}\n"
-            f"武力{info.get('force')} 智力{info.get('intellect')} 统帅{info.get('lead')}\n"
+            f"{attrs_text(info)}\n"
             f"战力 {power}"
         )
         if not self.cfg.get("text_image.enable", True):

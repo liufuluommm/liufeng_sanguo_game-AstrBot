@@ -12,12 +12,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Awaitable, Callable, Dict, Optional
 
-try:  # pragma: no cover
-    from astrbot.api import logger
-except Exception:  # noqa: BLE001
-    import logging
-
-    logger = logging.getLogger("liufeng_sanguo_game")
+from astrbot.api import logger
 
 JobFunc = Callable[[], Optional[Awaitable[None]]]
 

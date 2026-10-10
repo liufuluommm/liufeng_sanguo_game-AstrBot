@@ -5,7 +5,6 @@ import asyncio
 import pytest
 
 from liufeng_sanguo_game.core import storage
-from liufeng_sanguo_game.core.scheduler import Scheduler
 from liufeng_sanguo_game.systems import (auction_admin as aa, equipment_admin as ea,
                                          events, guild, guild_admin as ga,
                                          player as pm, worldboss)
@@ -95,6 +94,9 @@ def test_events_admin_custom_and_toggle():
 
 
 def test_scheduler_admin():
+    pytest.importorskip("astrbot.api")
+    from liufeng_sanguo_game.core.scheduler import Scheduler
+
     s = Scheduler()
     s.add_job("j1", lambda: None, 60)
     assert s.set_interval("j1", 120)

@@ -736,6 +736,14 @@ def test_generals_admin_crud(tmp_path):
         tables.reload_tables()
 
 
+def test_equipment_power_counts_lead():
+    from liufeng_sanguo_game.systems import equipment
+
+    base = equipment.equipment_power({"force": 10, "intellect": 0, "lead": 0})
+    more = equipment.equipment_power({"force": 10, "intellect": 0, "lead": 10})
+    assert more > base  # 装备「统率」计入战力
+
+
 
 
 
