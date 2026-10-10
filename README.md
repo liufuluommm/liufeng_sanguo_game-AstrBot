@@ -1,6 +1,6 @@
 # 柳弗罗三国演义 · AstrBot 插件
 
-> 版本 `1.2.0`　AstrBot `>=4.17.0`　支持 `aiocqhttp` / `qq_official`
+> 版本 `1.2.1`　AstrBot `>=4.17.0`　支持 `aiocqhttp` / `qq_official`
 > 一款接入 QQ 群的三国题材**卡牌收集 / 养成 / 对战**游戏插件，自带 WebUI 管理台（14 页）与 GM 工具。
 
 **English:** LiuFeng Romance of the Three Kingdoms is an AstrBot plugin that turns a QQ group chat into a living Three Kingdoms world. It is a card-collection, character-development, and battle game: players register, sign in daily, recruit generals, and grow an army. It features 370 generals (historical, obscure, and fictional), each with six attributes—Force, Intellect, Vitality, Charisma, Eloquence, and Speed—that affect both power and combat. Combat uses a dual-defense, penetration-based damage model with crit, attack speed, CDR, tenacity, damage reduction and mana; every general has a passive and up to three active skills, and a three-tier troop system (basic/elite/special, 16 troops) with counter relations and carried effects. Players level up and star-up generals, learn/upgrade skills, forge and enhance equipment, challenge PVE dungeons, a world boss, or duel other players 1v1. Shops, currency exchange, an auction house, factions, guilds, quests, a season pass, and events keep communities engaged. The bot owner gets a WebUI admin console (dashboard, players, general/skill/troop libraries, guilds, equipment, auction, events, scheduled jobs, world boss, broadcast) and GM tools.
@@ -37,7 +37,7 @@
 战力 = `武力×2 + 智力×1.5 + 体力×1.5 + 魅力×1 + 口才×1 + 速度×1.2`，再叠加星级系数、等级成长与装备加成。
 历史武将按史实生成，架空与自定义武将随机生成。
 
-## 技能与兵种（v1.2.0）
+## 技能与兵种（v1.2.1）
 
 - **技能**：效果原子涵盖 伤害（兵刃/谋略/真实）、治疗/回复、增益/减益、持续伤害、控制、护盾、净化、驱散、无敌、斩杀、复活等，每个效果可设**概率随机抽取**；技能等级影响伤害公式；主动技能消耗**法力**、受冷却与沉默影响。
 - **兵种**：基础（步兵/骑兵/弓兵/枪兵）、精锐（重步兵/铁骑/强弩兵/长枪兵）、特殊（虎豹骑/白毦兵/陷阵营/锦帆军/无当飞军/藤甲兵/象兵/白马义从）；携带效果在战斗开场与战斗中生效。
@@ -131,4 +131,4 @@ python -m compileall core systems main.py
 
 ---
 
-作者：柳弗罗　|　版本：1.2.0
+作者：柳弗罗　|　版本：1.2.1
