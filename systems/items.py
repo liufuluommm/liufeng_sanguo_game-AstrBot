@@ -112,7 +112,12 @@ def delete_custom_item(item_id: str) -> Dict[str, Any]:
     if item_id not in custom:
         return {"ok": False, "reason": "not_found"}
     custom.pop(item_id, None)
-    _custom_path().write_text(json.dumps(custom, ensure_ascii=False, indent=2), encoding="utf-8")
+    custom_path = _custom_path()
+    tmp = custom_path.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(custom, ensure_ascii=False, indent=2), encoding="utf-8")
+    import os
+
+    os.replace(tmp, custom_path)
     reload_items()
     return {"ok": True}
 

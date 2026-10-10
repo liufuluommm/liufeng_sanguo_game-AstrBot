@@ -28,7 +28,9 @@ def equipment_stats(eq_def: Dict[str, Any], level: int = 1) -> Dict[str, int]:
 
 
 def equipment_power(eq_def: Dict[str, Any], level: int = 1) -> int:
-    return base_power(equipment_stats(eq_def, level))
+    st = equipment_stats(eq_def, level)
+    # 装备三维：武力/智力/统率；统率不在六维权重内，单独计入
+    return base_power(st) + int(st.get("lead", 0) * 1.5)
 
 
 def _new_uid() -> str:
